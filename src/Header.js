@@ -96,6 +96,7 @@ export default function Header() {
                 <div className="navbar-dropdown-content bg-white  w-48 shadow-lg rounded-lg">
                  
                   <Link to="/about/company-intro" className="block px-4 py-2  hover:bg-primary/80" onClick={handleDropdownLinkClick}>Our Story</Link>
+                  <Link to="/about-us" className="block px-4 py-2  hover:bg-primary/80" onClick={handleDropdownLinkClick}>About</Link>
                   <Link to="/about/mission-vision" className="block px-4 py-2  hover:bg-primary/80" onClick={handleDropdownLinkClick}>Mission & Vision</Link>
                 </div>
               </div>
@@ -281,6 +282,7 @@ export default function Header() {
                 <div className="relative bg-white  w-48 shadow-lg rounded-lg">
                  
                   <Link to="/about/company-intro" className="block px-4 py-2  hover:bg-primary/80" onClick={handleDropdownLinkClick}>Our Story</Link>
+                  <Link to="/about-us" className="block px-4 py-2  hover:bg-primary/80" onClick={handleDropdownLinkClick}>About</Link>
                   <Link to="/about/mission-vision" className="block px-4 py-2  hover:bg-primary/80" onClick={handleDropdownLinkClick}>Mission & Vision</Link>
                 </div>
               )}

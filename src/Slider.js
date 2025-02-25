@@ -169,6 +169,13 @@ export default function AnimatedSlider() {
                     Our Story
                   </Link>
                   <Link
+                    to="/about-us"
+                    className="block px-4 py-2  hover:bg-primary/80"
+                    onClick={handleDropdownLinkClick}
+                  >
+                    About Us
+                  </Link>
+                  <Link
                     to="/about/mission-vision"
                     className="block px-4 py-2  hover:bg-primary/80"
                     onClick={handleDropdownLinkClick}
@@ -543,6 +550,13 @@ export default function AnimatedSlider() {
                     onClick={handleDropdownLinkClick}
                   >
                     Our Story
+                  </Link>
+                  <Link
+                    to="/about-us"
+                    className="block px-4 py-2  hover:bg-primary/80"
+                    onClick={handleDropdownLinkClick}
+                  >
+                  About 
                   </Link>
                   <Link
                     to="/about/mission-vision"

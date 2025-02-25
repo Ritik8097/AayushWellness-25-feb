@@ -53,9 +53,10 @@ const AnimatedRoutes = () => {
         <Route path="privacy-policy" element={<PageTransition><PrivacyPolicy /></PageTransition>} />
         
         <Route path="growth-accelerator" element={<PageTransition><AayushVenture /></PageTransition>} />
-        <Route path="health" element={<PageTransition><Health /></PageTransition>} />
+        {/* this is for about us only name health*/}
+        <Route path="about-us" element={<PageTransition><Health /></PageTransition>} />
 
-        <Route path="healthh" element={<PageTransition><Healthh /></PageTransition>} />
+        <Route path="health" element={<PageTransition><Healthh /></PageTransition>} />
 
         <Route path="/Blog1" element={<Blog1 />} />
         <Route path="/Blog2" element={<Blog2 />} />
