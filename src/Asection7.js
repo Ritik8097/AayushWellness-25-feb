@@ -151,7 +151,7 @@ const Asection7 = () => {
         </div>
         <div className="in-view fadein animated style-zXIZf" id="style-zXIZf">
           <div className="footer__copy">
-            <div className="footer__text">© Aayush Wellness. All Rights Reserved 2025</div>
+            <div className="footer__text">© Aayush Wellness. All Rights Reserved</div>
            
             <div className="footer__text">Created by<a  target="_blank" rel="noreferrer"><svg width={72} height={21} fill="none" xmlns="http://www.w3.org/2000/svg">
             {/* href="https://equal.design/" */}
