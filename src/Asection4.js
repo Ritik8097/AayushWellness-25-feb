@@ -28,29 +28,43 @@ export default function Asection4() {
 
   const items = [
     {
-      img: "https://img.freepik.com/free-photo/person-running-beach-sunset_1048-4498.jpg?t=st=1740549909~exp=1740553509~hmac=4233c3d965d86576a2d03efec850c98aee088852f7f59d4276a663127d53aeaa&w=1380",
+      img: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/woman-2592247_1920.jpg?v=1740573108",
       title: "How It Started",
       link: "find-us/",
       buttonText: "Explore Aayush Wellness",
       content:"A vision to transform everyday health.",
-        content2: "Our journey began with a simple yet profound question:How can we make holistic wellness more accessible, personalized, and proactive? This led us to build Aayush Wellness, a brand that blends cutting-edge research with nature’s best-kept secrets, crafting solutions that don’t just treat but empower people to take charge of their health—every single day.From meticulously formulated nutraceuticals and dietary supplements to AI-powered preventive healthcare services, our mission has always been to bring you the best of health, backed by science.",
+        content2: `<span style="color: #3a4458">Our journey began with a simple yet profound question:</span> <br/> 
+        <span style="font-style:italic; color: #3a4458""> "How can we make holistic wellness more accessible, personalized,and proactive? "</span> <br /> <br />
+        <span style="color: #3a4458">This led us to build</span> <span style="font-weight: 500; color: #000000;">Aayush Wellness,</span> <span style="color: #3a4458">a brand that blends </span>
+       <span style="font-weight: 500; color: #000000;">cutting-edge research with nature’s best-kept secrets,</span> 
+        <span style="color: #3a4458">crafting solutions that don’t just treat but</span> <span style="font-weight: 500; color: #000000;">empower people to take charge of their health.</span> <br/> <br/>
+        <span style="color: #3a4458">From meticulously formulated</span> <span style="font-weight: 500; color: #000000;">nutraceuticals and dietary supplements</span>  <span style="color: #3a4458">to</span> <span style="font-weight: 500; color: #000000;">AI-powered preventive healthcare services,</span>  <span style="color: #3a4458">our mission has always been to</span> <span style="font-weight: 500; color: #000000;">bring you the best of health, backed by science.</span> `,
     },
     {
-      img: "https://img.freepik.com/free-photo/question-mark-icon-solving-problem-solution-concept_53876-13887.jpg?t=st=1740549955~exp=1740553555~hmac=2e53a5f2d1debc89ee6d8fcb3b472c60cdce5a953bd841a88bce58cade5db8d2&w=1060",
+      img: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/medical-artificial-intelligence.jpg?v=1740573135",
       title: "What We Do",
       link: "/products",
       buttonText: "Explore Aayush Wellness",
       content: "At the intersection of wellness and technology, we are shaping the future of health.",
-      content2: "Advanced Nutraceuticals & Dietary Supplements💡 AI-Driven Preventive Healthcare Solutions🌿 Organic & Functional Health Foods for Everyday Well-Being🩺 Telemedicine & Smart Health Diagnostics (Health Care Centers)Every product and service we create is designed to align with your body’s natural rhythm, enhance vitality, and offer long-term health benefits.",
-    },
+      content2: `<span style="font-weight: 500; color: #000000;">🟢 Advanced Nutraceuticals & Dietary Supplements</span> <br/> <br/> 
+      <span style="font-weight: 500; color: #000000;">💡AI-Driven Preventive Healthcare Solutions</span> <br/> <br/>
+      <span style="font-weight: 500; color: #000000;">🌿 Organic & Functional Health Foods</strong> for Everyday Well-Being</span> <br/> <br/>🩺 
+      <span style="font-weight: 500; color: #000000;">Telemedicine & Smart Health Diagnostics (Health Care Centers)</span> <br/> <br/>
+      <span style="color: #3a4458">Every product and service we create is designed to</span>  <span style="font-weight: 500; color: #000000;">align with your body’s <strong>natural rhythm</strong>, 
+      enhance <strong>vitality</strong>, and offer <strong>long-term health benefits</span>.`,
+  },
+
     {
-      img: "https://img.freepik.com/free-photo/hand-holding-question-mark_1134-114.jpg?t=st=1740550013~exp=1740553613~hmac=a93affc4baa238df94424f313657f7ea1c92dccee8109da3352e028a68843dbe&w=1060",
+      img: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/washing-hands-with-soap-prevent-disease.jpg?v=1740573151",
       title: "Why Aayush Wellness?",
       link: "find-us/",
       buttonText: "Explore Aayush Wellness",
       content:"We don’t just sell wellness—we create a movement that empowers individuals to make informed choices about their health.",
-        content2: "✔️ Science-Backed Formulations – Developed by leading experts in nutraceuticals & healthcare.✔️ Personalized Health Solutions – Tailored to fit individual wellness needs.✔️ Future-Ready Preventive Care – Focusing on early detection, proactive health monitoring & smart interventions.✔️ Commitment to Purity & Quality – Every product undergoes rigorous testing for safety & efficacy.",
-    },
+      content2: `✔️ <span style="font-weight: 500; color: #000000;">Science-Backed Formulations</span> – <span style="color: #3a4458">Developed by leading experts in nutraceuticals & healthcare.</span><br /> <br/>
+      ✔️ <span style="font-weight: 500; color: #000000;">Personalized Health Solutions</span> – <span style="color: #3a4458">Tailored to fit individual wellness needs.</span><br /> <br/>
+      ✔️ <span style="font-weight: 500; color: #000000;">Future-Ready Preventive Care</span> – <span style="color: #3a4458">Focusing on early detection, proactive health monitoring & smart interventions.</span><br /> <br/>
+      ✔️ <span style="font-weight: 500; color: #000000;">Commitment to Purity & Quality</span> – <span style="color: #3a4458">Every product undergoes rigorous testing for <strong>safety & efficacy.</span>`,
+  },
     
   ]
 
@@ -138,10 +152,10 @@ export default function Asection4() {
                   {item.title}
                 </div>
                 <div
-                  className="image-content"
+                  className="imagee-content"
                   style={{
                     fontFamily: "Gotham Pro",
-                    fontSize: "16px",
+                    fontSize: "20px",
                     lineHeight: "150%",
                     color: "rgba(0, 0, 0, 0.8)",
                   }}
@@ -196,18 +210,7 @@ export default function Asection4() {
                 alignItems: "center",
                 justifyContent: "center",
               }}
-            >
-              {/* <div
-                style={{
-                  fontFamily: "Gotham Pro",
-                  fontSize: "18px",
-                  lineHeight: "150%",
-                  color: "#202A41",
-                  maxWidth: "80%",
-                }}
-              >
-                {item.content}
-              </div> */}
+            >             
               <div
                   className="image-content"
                   style={{
@@ -217,7 +220,7 @@ export default function Asection4() {
                     color: "rgba(0, 0, 0, 0.8)",
                   }}
                 >
-                  {item.content2}
+                  <p dangerouslySetInnerHTML={{ __html: item.content2 }}></p>
                 </div>
             </div>
           </div>
