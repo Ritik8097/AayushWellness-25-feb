@@ -148,7 +148,7 @@ const Asection5 = () => {
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(6, 1fr)",
-          columnGap: "32px",
+          columnGap: "10px",
           marginTop: "40px",
         }}
       >
