@@ -55,7 +55,7 @@ const AwCard2 = () => {
             </svg></div>
         </div>
         <div className="IconCard_content__4IB9P">
-          <div className="IconCard_title__S5GeF"><a href="/use-cases/ev-charging">Holistic Health</a></div>
+          <div className="IconCard_title__S5GeF"><a href="/health">Holistic Health</a></div>
           <p className="IconCard_text__hTwP4">A science-backed range of gummies, supplements, and Ayurvedic solutions for complete well-being.</p>
         </div>
       </div>
@@ -69,7 +69,7 @@ const AwCard2 = () => {
             </svg></div>
         </div>
         <div className="IconCard_content__4IB9P">
-          <div className="IconCard_title__S5GeF"><a href="/use-cases/energy-management">Investor Relations</a></div>
+          <div className="IconCard_title__S5GeF"><a href="/investors">Investor Relations</a></div>
           <p className="IconCard_text__hTwP4">Join our mission of sustainable wellness innovation and explore investment opportunities.</p>
         </div>
       </div>
@@ -83,7 +83,7 @@ const AwCard2 = () => {
             </svg></div>
         </div>
         <div className="IconCard_content__4IB9P">
-          <div className="IconCard_title__S5GeF"><a href="/use-cases/property-management">Research & Development</a></div>
+          <div className="IconCard_title__S5GeF"><a href="/wellness/health-wellness">Research & Development</a></div>
           <p className="IconCard_text__hTwP4">Driven by scientific advancements and Ayurvedic wisdom, ensuring effective and natural health solutions.</p>
         </div>
       </div>
@@ -97,7 +97,7 @@ const AwCard2 = () => {
             </svg></div>
         </div>
         <div className="IconCard_content__4IB9P">
-          <div className="IconCard_title__S5GeF"><a href="/use-cases/carbon-accounting-software">Sustainability & Impact</a></div>
+          <div className="IconCard_title__S5GeF"><a href="/sustainability">Sustainability & Impact</a></div>
           <p className="IconCard_text__hTwP4">Committed to eco-friendly packaging, ethical sourcing, and community well-being for a healthier future.</p>
         </div>
       </div>
