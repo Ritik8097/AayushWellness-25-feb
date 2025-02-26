@@ -81,18 +81,8 @@ const Asection5 = () => {
         }}
       >
         <h2 
-          className="follow-us__title" 
-          style={{ 
-            textAlign: "center", 
-            width: "100%", 
-            fontWeight: "bold", 
-            fontSize: "54px",
-            lineHeight: "120%",
-            letterSpacing: "0.02em",
-            marginBottom: "12px",
-            paddingTop: "60px",
-          }}
-        >
+          className="text-center font-bold leading-[120%] tracking-[0.02em] w-full mb-3 pt-[60px] text-[54px] lg:text-[94px]" 
+            >
           The Future of Wellness is Here
         </h2>
         <div
