@@ -63,7 +63,7 @@ const Asection7 = () => {
             <div className="footer__left">
               <h2 className="footer__title">Join the Aayush Wellness &amp; Travel Newsletter</h2>
               <div className="footer__form">
-                <div className="footer__input"><input type="email" placeholder="Your Email" defaultValue /></div>
+                <div className="footer__input"><input type="email" placeholder="Your Email"  /></div>
                 <div className="button beige button-arrow"><svg viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 8.5h24m0 0-6.857-7M24 8.5l-6.857 7" stroke="#fff" strokeWidth="1.5" />
                   </svg></div>
