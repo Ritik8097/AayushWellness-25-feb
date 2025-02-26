@@ -50,7 +50,7 @@ const AwCard = () => {
             </svg></div>
         </div>
         <div className="IconCard_content__4IB9P">
-          <div className="IconCard_title__S5GeF"><a href="/solutions/utility-bill-management">Natural Ingredients, Proven Benefits</a></div>
+          <div className="IconCard_title__S5GeF"><a href="/ayurveda">Natural Ingredients, Proven Benefits</a></div>
           <p className="IconCard_text__hTwP4">Harnessing the power of nature, our products are formulated with pure herbal extracts, vitamins, and minerals for maximum effectiveness.</p>
         </div>
       </div>
@@ -64,7 +64,7 @@ const AwCard = () => {
             </svg></div>
         </div>
         <div className="IconCard_content__4IB9P">
-          <div className="IconCard_title__S5GeF"><a href="/solutions/energy-procurement-advisory">Scientifically Crafted for Your Well-being</a></div>
+          <div className="IconCard_title__S5GeF"><a href="/wellness/modern-science">Scientifically Crafted for Your Well-being</a></div>
           <p className="IconCard_text__hTwP4">Each product is developed using rigorous research and testing, ensuring safe, effective, and results-driven wellness solutions.</p>
         </div>
       </div>
@@ -78,7 +78,7 @@ const AwCard = () => {
             </svg></div>
         </div>
         <div className="IconCard_content__4IB9P">
-          <div className="IconCard_title__S5GeF"><a href="/solutions/sustainability-reporting">Delicious, Convenient, & Effective</a></div>
+          <div className="IconCard_title__S5GeF"><a href="/wellness/health-wellness">Delicious, Convenient, & Effective</a></div>
           <p className="IconCard_text__hTwP4">No pills, no hassle—our wellness solutions are designed to be easy-to-use, great-tasting, and perfect for your daily routine.</p>
         </div>
       </div>
