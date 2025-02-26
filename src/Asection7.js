@@ -20,36 +20,37 @@ const Asection7 = () => {
     setOpenSection(openSection === section ? null : section);
   };
 
-  const sections = [
+   const sections = [
     {
       title: "Explore",
       links: [
-        { text: "Contact Us",  },          //href: "/contact-us"
-        { text: "FAQ",  },                                     //href: "/faq"
-        { text: "Career",  },                //href: "/careers"
-        { text: "Press Room",  },            //href: "https://berelax.com/press-room/"
-        { text: "Wellness Journal", },       // href: "https://berelax.com/news/"
+        { text: "About",}, 
+        { text: "Modern Science",  },          //href: "/contact-us"
+        { text: "Ayurverda",  },                                     //href: "/faq"
+        { text: "Health & Wellness",  },                //href: "/careers"
+        { text: "In the News",  },            //href: "https://berelax.com/press-room/"
+        { text: "Press Release", },       // href: "https://berelax.com/news/"
       ],
     },
     {
-      title: "Treatments",
+      title: "CSR",
       links: [
-        { text: "Massages", },  // href: "/treatments/massages"
-        { text: "Nail Care", },  //href: "/treatments/nail-care" 
-        { text: "Beauty",  },    //href: "/treatments/beauty"
-        { text: "Wellness", },  //href: "/treatments/wellness" 
-        { text: "Combo",  },   //href: "/treatments/combo"
+        { text: "Library", },  // href: "/treatments/massages"
+        { text: "Malnutrition", },  //href: "/treatments/nail-care" 
+        { text: "Healthcare Check",  },    //href: "/treatments/beauty"
+        { text: "Sustainability", },  //href: "/treatments/wellness" 
+        
       ],
     },
     {
-      title: "Products",
+      title: "Corporate",
       links: [
-        { text: "Pillows",  },   //href: "/products/travel-pillows"
-        { text: "Travel Accessories", },  //href: "/products/travel-accessories/" 
-        { text: "Massage Devices",  },    //href: "/products/massage-devices/"
-        { text: "Beauty Devices", },      //href: "/products/beauty-devices/" 
+        { text: "Careers",  },   //href: "/products/travel-pillows"
+        { text: "Pricay Policy", },  //href: "/products/travel-accessories/" 
+        { text: "Growth accelerator",  },    //href: "/products/massage-devices/"
+        { text: "Health", },      //href: "/products/beauty-devices/" 
         { text: "Register Product", },    // href: "/products/register"
-        { text: "Find a Retailer", },     //href: "/products/find-retailer" 
+       
       ],
     },
   ];
