@@ -39,12 +39,12 @@ const Asection5 = () => {
   }, []);
 
   const images = [
-    "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/sleep_gummy_product_banner1_1.jpg?v=1724399086",
-    "https://img.freepik.com/free-photo/front-view-woman-meditating-nature_23-2149698178.jpg?ga=GA1.1.1002746497.1740224156&semt=ais_hybrid",
-    "https://img.freepik.com/free-photo/vibrant-appetizing-display-protein-gummies_23-2151022938.jpg?ga=GA1.1.1002746497.1740224156&semt=ais_hybrid",
-    "https://img.freepik.com/free-photo/still-life-with-gummy-bears_23-2150250931.jpg?ga=GA1.1.1002746497.1740224156&semt=ais_hybrid",
-    "https://img.freepik.com/free-photo/man-practicing-balance-yoga-pose_23-2148234142.jpg?ga=GA1.1.1002746497.1740224156&semt=ais_hybrid",
-    "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Beauty_gummy_product_bannner_1_1.jpg?v=1724399086",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/camille-brodard-9j1r-lLPW1o-unsplash.jpg?v=1740573256",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Untitled-2.jpg?v=1740576210",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/1094.jpg?v=1740576296",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/pexels-asphotograpy-105028.jpg?v=1740573271",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/tirza-van-dijk-dq0x8AvNKv8-unsplash.jpg?v=1740575836",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/image_3.jpg?v=1740575855",
   ];
 
   const buttonStyle = {
