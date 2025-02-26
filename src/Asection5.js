@@ -89,7 +89,8 @@ const Asection5 = () => {
             fontSize: "54px",
             lineHeight: "120%",
             letterSpacing: "0.02em",
-            marginBottom: "12px"
+            marginBottom: "12px",
+            paddingTop: "60px",
           }}
         >
           The Future of Wellness is Here
