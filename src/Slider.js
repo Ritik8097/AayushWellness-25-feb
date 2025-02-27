@@ -120,9 +120,9 @@ export default function AnimatedSlider() {
   return (
     <>
       <nav
-        className="md:text-white text-[rgb(112, 112, 112)] g font-serif"
+        className="md:text-white text-[rgb(112, 112, 112)]  font-sans"
         style={{
-          fontFamily: '"Source Serif 4", sans-serif',
+          fontFamily: '"Inter", sans-serif',
           fontWeight: "bold",
           fontSize: "clamp(0.875rem, 0.9rem + 0.2667vw, 1.125rem)",
         }}
@@ -139,14 +139,14 @@ export default function AnimatedSlider() {
               </Link>
             </div>
             <div className="hidden gap-4 md:flex space-x-4  text-[20px] font-[500]">
-              <Link to="/" className=" hover:text-primary/80">
+              <Link to="/" className=" hover:text-primary/80" style={{ fontFamily: '"Inter", sans-serif' }}>
                 Home
               </Link>
 
 
 
                <div className="navbar-dropdown relative group">
-               <button className="hover:text-primary/80 flex items-center">
+               <button className="hover:text-primary/80 flex items-center" style={{ fontFamily: '"Inter", sans-serif' }}>
                  Our Story
                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
@@ -187,7 +187,7 @@ export default function AnimatedSlider() {
 
 
              <div className="navbar-dropdown relative group">
-  <button className="hover:text-primary/80 flex items-center">
+  <button className="hover:text-primary/80 flex items-center" style={{ fontFamily: '"Inter", sans-serif' }}>
     Wellness & You
     <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
@@ -234,7 +234,7 @@ export default function AnimatedSlider() {
 
 
 <div className="navbar-dropdown relative group">
-  <button className="hover:text-primary/80 flex items-center">
+  <button className="hover:text-primary/80 flex items-center" style={{ fontFamily: '"Inter", sans-serif' }}>
     Newsroom
     <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
@@ -280,17 +280,17 @@ export default function AnimatedSlider() {
 </div>
 
 
-              <Link to="/investors" className=" hover:text-primary/80">
+              <Link to="/investors" className=" hover:text-primary/80" style={{ fontFamily: '"Inter", sans-serif' }}>
                 Investors
               </Link>
-              <Link to="/ourproduct" className=" hover:text-primary/80">
+              <Link to="/ourproduct" className=" hover:text-primary/80" style={{ fontFamily: '"Inter", sans-serif' }}>
                 Our Product
               </Link>
 
 
 
               <div className="navbar-dropdown relative group">
-  <button className="hover:text-primary/80 flex items-center">
+  <button className="hover:text-primary/80 flex items-center" style={{ fontFamily: '"Inter", sans-serif' }}>
     CSR
     <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
@@ -343,18 +343,18 @@ export default function AnimatedSlider() {
 
 
 
-              <Link to="/career" className=" hover:text-primary/80">
+              <Link to="/career" className=" hover:text-primary/80" style={{ fontFamily: '"Inter", sans-serif' }}>
                 Careers
               </Link>
-              <Link to="/support" className=" hover:text-primary/80">
+              <Link to="/support" className=" hover:text-primary/80" style={{ fontFamily: '"Inter", sans-serif' }}>
                 Support
               </Link>
-              <Link to="/health" className="hover:text-primary/80">
+              <Link to="/health" className="hover:text-primary/80" style={{ fontFamily: '"Inter", sans-serif' }}>
                 HealthCare
               </Link>
               <Link
                 to="/growth-accelerator"
-                className="  hover:text-primary/80"
+                className="  hover:text-primary/80" style={{ fontFamily: '"Inter", sans-serif' }}
               >
                 Accelerator
               </Link>
