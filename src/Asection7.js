@@ -24,32 +24,32 @@ const Asection7 = () => {
     {
       title: "Explore",
       links: [
-        { text: "About",}, 
-        { text: "Modern Science",  },          //href: "/contact-us"
-        { text: "Ayurverda",  },                                     //href: "/faq"
-        { text: "Health & Wellness",  },                //href: "/careers"
-        { text: "In the News",  },            //href: "https://berelax.com/press-room/"
-        { text: "Press Release", },       // href: "https://berelax.com/news/"
+        { text: "About",href: "/about-us"}, 
+        { text: "Modern Science", href:"/wellness/modern-science"  },          
+        { text: "Ayurverda",  href:"/wellness/ayurveda" },                                     
+        { text: "Health & Wellness", href:"/wellness/health-wellness"  },                
+        { text: "In the News", href:"/newsroom/in-the-news"  },            
+        { text: "Press Release", href:"/newsroom/press-release" },       
       ],
     },
     {
       title: "CSR",
       links: [
-        { text: "Library", },  // href: "/treatments/massages"
-        { text: "Malnutrition", },  //href: "/treatments/nail-care" 
-        { text: "Healthcare Check",  },    //href: "/treatments/beauty"
-        { text: "Sustainability", },  //href: "/treatments/wellness" 
+        { text: "Library", href:"/newsroom/library" },  
+        { text: "Malnutrition",href:"/csr-at-aayush/malnutrition"  },  
+        { text: "Healthcare Check", href:"/csr-at-aayush/health-check"  },    
+        { text: "Sustainability",href:"/sustainability" },  
         
       ],
     },
     {
       title: "Corporate",
       links: [
-        { text: "Careers",  },   //href: "/products/travel-pillows"
-        { text: "Pricay Policy", },  //href: "/products/travel-accessories/" 
-        { text: "Growth accelerator",  },    //href: "/products/massage-devices/"
-        { text: "Health", },      //href: "/products/beauty-devices/" 
-        { text: "Register Product", },    // href: "/products/register"
+        { text: "Careers", href:"/career" },   
+        { text: "Pricay Policy", href: "/privacy-policy" },  
+        { text: "Growth accelerator", href:"/growth-accelerator" },    
+        { text: "Health", href: "/health" },      
+        
        
       ],
     },
