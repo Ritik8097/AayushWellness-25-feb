@@ -155,7 +155,7 @@ export default function AnimatedSlider() {
              
                {/* Dropdown Menu */}
                <div
-                 className="absolute left-0 top-full w-[1110px] h-[250px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible transform translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 "
+                 className="absolute left-0 top-full w-[1110px] h-[250px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible transform translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 mt-6"
                >
                  {/* Left Side: Title & Description */}
                  <div className="w-[60%] mt-10">
@@ -196,7 +196,7 @@ export default function AnimatedSlider() {
 
   {/* Dropdown Menu */}
   <div
-    className="absolute left-0 top-full w-[1110px] h-[290px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible transform translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50"
+    className="absolute left-0 top-full w-[1110px] h-[290px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible transform translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 mt-6"
   >
     {/* Left Side: Title & Description */}
     <div className="w-[60%] mt-10">
@@ -243,7 +243,7 @@ export default function AnimatedSlider() {
 
   {/* Dropdown Menu */}
   <div
-    className="absolute left-0 top-full w-[1110px] h-[290px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible transform translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50"
+    className="absolute left-0 top-full w-[1110px] h-[290px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible transform translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 mt-6"
   >
     {/* Left Side: Title & Description */}
     <div className="w-[60%] mt-10">
@@ -299,7 +299,7 @@ export default function AnimatedSlider() {
 
   {/* Dropdown Menu (Centered & Similar to Our Story) */}
   <div
-    className="absolute left-1/2 top-full w-[1110px] h-[290px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible transform -translate-x-1/2 translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50"
+    className="absolute left-1/2 top-full w-[1110px] h-[290px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible transform -translate-x-1/2 translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 mt-6"
   >
     {/* Left Side: Title & Description */}
     <div className="w-[60%] mt-10">
