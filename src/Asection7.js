@@ -118,31 +118,31 @@ const Asection7 = () => {
     {
       title: "Explore",
       links: [
-        { text: "About"}, 
-        { text: "Modern Science" },          
-        { text: "Ayurverda", },                                     
-        { text: "Health & Wellness"  },                
-        { text: "In the News"  },            
-        { text: "Press Release" },       
+        { text: "About",href: "/about-us"}, 
+        { text: "Modern Science", href:"/wellness/modern-science"  },          
+        { text: "Ayurverda",  href:"/wellness/ayurveda" },                                     
+        { text: "Health & Wellness", href:"/wellness/health-wellness"  },                
+        { text: "In the News", href:"/newsroom/in-the-news"  },            
+        { text: "Press Release", href:"/newsroom/press-release" },       
       ],
     },
     {
       title: "CSR",
       links: [
-        { text: "Library"  },  
-        { text: "Malnutrition" },  
-        { text: "Healthcare Check" },    
-        { text: "Sustainability"},  
+        { text: "Library", href:"/newsroom/library" },  
+        { text: "Malnutrition",href:"/csr-at-aayush/malnutrition"  },  
+        { text: "Healthcare Check", href:"/csr-at-aayush/health-check"  },    
+        { text: "Sustainability",href:"/sustainability" },  
         
       ],
     },
     {
       title: "Corporate",
       links: [
-        { text: "Careers"},   
-        { text: "Pricay Policy"},  
-        { text: "Growth accelerator" },    
-        { text: "Health"},      
+        { text: "Careers", href:"/career" },   
+        { text: "Pricay Policy", href: "/privacy-policy" },  
+        { text: "Growth accelerator", href:"/growth-accelerator" },    
+        { text: "Health", href: "/health" },      
         
        
       ],
