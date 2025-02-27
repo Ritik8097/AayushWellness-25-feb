@@ -159,7 +159,7 @@ export default function Header() {
 
               <Link to="/career" className=" hover:text-primary/80">Careers</Link>
               <Link to="/support" className=" hover:text-primary/80">Support</Link>
-              <Link to="/health" className="block  hover:text-primary/80"> Health</Link>
+              <Link to="/health" className="block  hover:text-primary/80"> HealthCare</Link>
               <Link  to="/growth-accelerator" className="block  hover:text-primary/80">Accelerator</Link>
               
             
@@ -329,7 +329,7 @@ export default function Header() {
 
             <Link to="/career" className="block py-2 px-4  hover:text-primary/80">Careers</Link>
             <Link to="/support" className="block py-2 px-4  hover:text-primary/80">Support</Link>
-            <Link to="/health" className="block px-4 py-2 hover:text-primary/80">Health</Link>
+            <Link to="/health" className="block px-4 py-2 hover:text-primary/80">HealthCare</Link>
             <Link to="/growth-accelerator" className="block px-4 py-2 hover:text-primary/80">Accelerator</Link>
           </div>
           
