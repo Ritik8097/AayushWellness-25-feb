@@ -253,6 +253,7 @@ const companyValuesStyles = {
     color: "#13233b",
     textAlign: "center",
     marginBottom: "32px",
+    paddingTop: "40px",
   },
   sliderContainer: {
     width: "100%",
@@ -262,7 +263,7 @@ const companyValuesStyles = {
     padding: "0 10px",
   },
   sliderItem: {
-    width: "322px",
+    
     height: "auto",
     padding: "24px",
     background: "#f5f3f0",
@@ -273,6 +274,8 @@ const companyValuesStyles = {
     textAlign: "start",
     boxSizing: "border-box",
     margin: "0 auto",
+    width: "100%", // Makes sure the card takes full width
+  maxWidth: "322px", // You can adjust this based on your design
   },
 }
 
@@ -320,8 +323,8 @@ const CompanyValues = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
-    centerMode: true,
-    centerPadding: "20px",
+    centerMode: false,
+    adaptiveHeight: true, // Adjust height dynamically if needed
     arrows: false,
   }
 

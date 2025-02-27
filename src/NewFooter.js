@@ -79,7 +79,7 @@ const NewFooter = () => {
                         </ul>
                     </div>
                     <div>
-                        <h3 className="font-bold text-lg" style={{color:'#d1a272'}}>NEWSROOM</h3>
+                        <h3 className="font-bold text-lg" style={{color:'#fffffff'}}>NEWSROOM</h3>
                         <ul className="mt-2 space-y-2">
                             <li><Link to="/newsroom/in-the-news" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>In the News</Link></li>
                             <li><Link to="/newsroom/press-release" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>Press Release</Link></li>
@@ -87,7 +87,7 @@ const NewFooter = () => {
                         </ul>
                     </div>
                     <div>
-                        <h3 className="font-bold text-lg" style={{color:'#d1a272'}}>CSR</h3>
+                        <h3 className="font-bold text-lg" style={{color:'#fffffff'}}>CSR</h3>
                         <ul className="mt-2 space-y-2">
                             <li><Link to="/csr-at-aayush/malnutrition" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>Malnutrition</Link></li>
                             <li><Link to="/csr-at-aayush/health-check" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>Healthcare Check</Link></li>
@@ -96,7 +96,7 @@ const NewFooter = () => {
                     </div>
 
                     <div>
-                        <h3 className="font-bold text-lg"  style={{color:'#d1a272'}}>Corporate</h3>
+                        <h3 className="font-bold text-lg"  style={{color:'#fffffff'}}>Corporate</h3>
                         <ul className="mt-2 space-y-2">
                             <li><Link to="/career" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>Careers</Link></li>
                             <li><Link to="/privacy-policy" className="text-muted-foreground hover:text-primary" style={{color:'white'}}>Privacy Policy</Link></li>

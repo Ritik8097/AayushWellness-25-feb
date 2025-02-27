@@ -60,7 +60,7 @@ export default function NewsletterSignup() {
               name="email"
               id="email"
               required
-              className="w-full md:w-80 px-4 py-2 border border-[#004037] rounded-md text-gray-800"
+              className=" md:w-80 px-4 py-2 border border-[#004037] rounded-md text-gray-800"
               placeholder="Enter your email"
             />
             <button

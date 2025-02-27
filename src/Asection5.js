@@ -139,11 +139,6 @@
 
 
 
-
-
-
-
-
 import React, { useState, useEffect, useRef } from "react";
 
 const Asection5 = () => {
@@ -184,12 +179,12 @@ const Asection5 = () => {
   }, []);
 
   const images = [
-    "https://berelax.com/wp-content/uploads/2023/03/talika-genius-light-be-relax-airport-copy.webp",
-    "https://berelax.com/wp-content/uploads/2023/03/cryo-therapy-beauty-wrinkles.webp",
-    "https://berelax.com/wp-content/uploads/2023/03/be-relax-spa-toronto-yyz.webp",
-    "https://berelax.com/wp-content/uploads/2023/01/photo_2022-10-13_11-30-08-2.png",
-    "https://berelax.com/wp-content/uploads/2023/03/head-up-massage-airport-spa.webp",
-    "https://berelax.com/wp-content/uploads/2023/03/doha-qatar-city.webp",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/camille-brodard-9j1r-lLPW1o-unsplash.jpg?v=1740573256",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Untitled-2.jpg?v=1740576210",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/1094.jpg?v=1740576296",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/pexels-asphotograpy-105028.jpg?v=1740573271",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/tirza-van-dijk-dq0x8AvNKv8-unsplash.jpg?v=1740575836",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/image_3.jpg?v=1740575855",
   ];
 
   const buttonStyle = {
@@ -226,17 +221,8 @@ const Asection5 = () => {
         }}
       >
         <h2 
-          className="follow-us__title" 
-          style={{ 
-            textAlign: "center", 
-            width: "100%", 
-            fontWeight: "bold", 
-            fontSize: "54px",
-            lineHeight: "120%",
-            letterSpacing: "0.02em",
-            marginBottom: "12px"
-          }}
-        >
+          className="text-center font-bold leading-[120%] tracking-[0.02em] w-full mb-3 pt-[60px] text-[54px] lg:text-[94px]" 
+            >
           The Future of Wellness is Here
         </h2>
         <div
@@ -302,7 +288,7 @@ const Asection5 = () => {
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(6, 1fr)",
-          columnGap: "32px",
+          columnGap: "10px",
           marginTop: "40px",
         }}
       >
@@ -337,6 +323,9 @@ const Asection5 = () => {
 };
 
 export default Asection5;
+
+
+
 
 
 

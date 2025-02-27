@@ -725,7 +725,7 @@
   
     .footer__block1-bottom {
       flex-direction: column;
-      align-items: center;
+      
     }
   
     .footer__socials {
@@ -734,7 +734,7 @@
   
     .footer__block1-right {
       flex-direction: column;
-      align-items: center;
+      
     }
   
     .footer__links {
