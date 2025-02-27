@@ -344,7 +344,7 @@ export default function AnimatedSlider() {
                 Support
               </Link>
               <Link to="/health" className="hover:text-primary/80">
-                Health
+                HealthCare
               </Link>
               <Link
                 to="/growth-accelerator"
@@ -671,7 +671,7 @@ export default function AnimatedSlider() {
               to="/health"
               className="block py-2 px-4  hover:text-primary/80"
             >
-              Health
+              HealthCare
             </Link>
             <Link
               to="/growth-accelerator"
