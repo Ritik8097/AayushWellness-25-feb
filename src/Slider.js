@@ -143,131 +143,142 @@ export default function AnimatedSlider() {
                 Home
               </Link>
 
-              <div className="navbar-dropdown relative">
-                <button className=" hover:text-primary/80 flex items-center">
-                  About Us
-                  <svg
-                    className="svg w-4 h-4 ml-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M19 9l-7 7-7-7"
-                    ></path>
-                  </svg>
-                </button>
-                <div className="navbar-dropdown-content bg-white  w-48 shadow-lg rounded-lg">
-                  <Link
-                    to="/about/company-intro"
-                    className="block px-4 py-2  hover:bg-primary/80"
-                    onClick={handleDropdownLinkClick}
-                  >
-                    Our Story
-                  </Link>
-                  <Link
-                    to="/about-us"
-                    className="block px-4 py-2  hover:bg-primary/80"
-                    onClick={handleDropdownLinkClick}
-                  >
-                    About Us
-                  </Link>
-                  <Link
-                    to="/about/mission-vision"
-                    className="block px-4 py-2  hover:bg-primary/80"
-                    onClick={handleDropdownLinkClick}
-                  >
-                    Mission & Vision
-                  </Link>
-                </div>
-              </div>
 
-              <div className="navbar-dropdown relative">
-                <button className=" hover:text-primary/80 flex items-center">
-                  Wellness & You
-                  <svg
-                    className="svg w-4 h-4 ml-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M19 9l-7 7-7-7"
-                    ></path>
-                  </svg>
-                </button>
-                <div className="navbar-dropdown-content bg-white  w-48 shadow-lg rounded-lg">
-                  <Link
-                    to="/wellness/modern-science"
-                    className="block px-4 py-2  hover:bg-primary/80"
-                    onClick={handleDropdownLinkClick}
-                  >
-                    Modern Science
-                  </Link>
-                  <Link
-                    to="/ayurveda"
-                    className="block px-4 py-2  hover:bg-primary/80"
-                    onClick={handleDropdownLinkClick}
-                  >
-                    Ayurveda
-                  </Link>
-                  <Link
-                    to="/wellness/health-wellness"
-                    className="block px-4 py-2  hover:bg-primary/80"
-                    onClick={handleDropdownLinkClick}
-                  >
-                    Health & Wellness
-                  </Link>
-                </div>
-              </div>
 
-              <div className="navbar-dropdown relative">
-                <button className=" hover:text-primary/80 flex items-center">
-                  Newsroom
-                  <svg
-                    className="svg w-4 h-4 ml-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M19 9l-7 7-7-7"
-                    ></path>
-                  </svg>
-                </button>
-                <div className="navbar-dropdown-content bg-white  w-48 shadow-lg rounded-lg">
-                  <Link
-                    to="/newsroom/in-the-news"
-                    className="block px-4 py-2  hover:bg-primary/80"
-                    onClick={handleDropdownLinkClick}
-                  >
-                    In the News
-                  </Link>
-                  <Link
-                    to="/newsroom/press-release"
-                    className="block px-4 py-2  hover:bg-primary/80"
-                    onClick={handleDropdownLinkClick}
-                  >
-                    Press Release
-                  </Link>
-                  <Link
-                    to="/newsroom/library"
-                    className="block px-4 py-2  hover:bg-primary/80"
-                    onClick={handleDropdownLinkClick}
-                  >
-                    Library
-                  </Link>
-                </div>
-              </div>
+               <div className="navbar-dropdown relative group">
+               <button className="hover:text-primary/80 flex items-center">
+                 Our Story
+                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                 </svg>
+               </button>
+             
+               {/* Dropdown Menu */}
+               <div
+                 className="absolute left-0 top-full w-[1110px] h-[250px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible transform translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 "
+               >
+                 {/* Left Side: Title & Description */}
+                 <div className="w-[60%] mt-10">
+                   <h3 className="text-3xl font-bold text-gray-900">Our Story</h3>
+                   <p className="text-lg text-gray-600 mt-2">
+                     We started with a vision to create something meaningful. Our journey has been shaped by passion, innovation, and dedication.
+                   </p>
+                 </div>
+             
+                 {/* Right Side: Links */}
+                 <div className="w-[35%] flex flex-col gap-3 mt-12 ">
+                   <Link
+                     to="/about-us"
+                     className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white ">
+                     <span className="block font-bold w-full  text-inherit">About Us </span>
+                     <span className="block text-sm text-grey-900 text-inherit">We started with a vision to create something</span>
+                   </Link>
+                   
+                   <Link
+                     to="/about/mission-vision"
+                     className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white">
+                     <span className="block font-bold w-full  text-inherit">Mission & Vision</span>
+                     <span className="block text-sm text-grey-900 text-inherit">Our mission is to do something Great</span>
+                   </Link>
+                 </div>
+               </div>
+             </div>
+
+
+
+             <div className="navbar-dropdown relative group">
+  <button className="hover:text-primary/80 flex items-center">
+    Wellness & You
+    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </button>
+
+  {/* Dropdown Menu */}
+  <div
+    className="absolute left-0 top-full w-[1110px] h-[290px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible transform translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50"
+  >
+    {/* Left Side: Title & Description */}
+    <div className="w-[60%] mt-10">
+      <h3 className="text-3xl font-bold text-[#004037]">Wellness & You</h3>
+      <p className="text-lg text-gray-600 mt-2">
+        Discover the perfect balance of modern science and ancient wisdom to enhance your well-being.
+      </p>
+    </div>
+
+    {/* Right Side: Links */}
+    <div className="w-[35%] flex flex-col gap-3 mt-8">
+      <Link
+        to="/wellness/modern-science"
+        className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white">
+        <span className="block font-bold w-full  text-inherit">Modern Science</span>
+        <span className="block text-sm text-gray-900 text-inherit">Explore the latest advancements in science</span>
+      </Link>
+
+      <Link
+        to="/ayurveda"
+        className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white">
+        <span className="block font-bold w-full  text-inherit">Ayurveda</span>
+        <span className="block text-sm text-gray-900 text-inherit">Ancient wisdom for holistic wellness</span>
+      </Link>
+
+      <Link
+        to="/wellness/health-wellness"
+        className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white">
+        <span className="block font-bold w-full  text-inherit">Health & Wellness</span>
+        <span className="block text-sm text-gray-900 text-inherit">Your guide to a healthier lifestyle</span>
+      </Link>
+    </div>
+  </div>
+</div>
+
+
+<div className="navbar-dropdown relative group">
+  <button className="hover:text-primary/80 flex items-center">
+    Newsroom
+    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </button>
+
+  {/* Dropdown Menu */}
+  <div
+    className="absolute left-0 top-full w-[1110px] h-[290px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible transform translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50"
+  >
+    {/* Left Side: Title & Description */}
+    <div className="w-[60%] mt-10">
+      <h3 className="text-3xl font-bold text-[#004037]">Newsroom</h3>
+      <p className="text-lg text-gray-600 mt-2">
+        Stay updated with the latest news, press releases, and important announcements.
+      </p>
+    </div>
+
+    {/* Right Side: Links */}
+    <div className="w-[35%] flex flex-col gap-3 mt-10">
+      <Link
+        to="/newsroom/in-the-news"
+        className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white">
+        <span className="block font-bold w-full  text-inherit">In the News</span>
+        <span className="block text-sm text-gray-900">Latest media coverage and reports</span>
+      </Link>
+
+      <Link
+        to="/newsroom/press-release"
+        className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white">
+        <span className="block font-bold w-full  text-inherit">Press Release</span>
+        <span className="block text-sm text-gray-900 text-inherit">Official statements and updates</span>
+      </Link>
+
+      <Link
+        to="/newsroom/library"
+        className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white">
+        <span className="block font-bold w-full  text-inherit">Library</span>
+        <span className="block text-sm text-gray-900 text-inherit">Access research and archived news</span>
+      </Link>
+    </div>
+  </div>
+</div>
+
 
               <Link to="/investors" className=" hover:text-primary/80">
                 Investors
@@ -275,67 +286,62 @@ export default function AnimatedSlider() {
               <Link to="/ourproduct" className=" hover:text-primary/80">
                 Our Product
               </Link>
-              <div className="navbar-dropdown relative">
-                <button className=" hover:text-primary/80 flex items-center">
-                  CSR
-                  <svg
-                    className="svg w-4 h-4 ml-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M19 9l-7 7-7-7"
-                    ></path>
-                  </svg>
-                </button>
-                <div className="navbar-dropdown-content bg-white pt-2 w-48 shadow-lg rounded-lg ">
-                  <div className="relative">
-                    <button className="text-[#d1a272]  hover:text-primary/80 flex items-center md:w-full md:justify-center">
-                      CSR At Aayush
-                      <svg
-                        className="svg w-4 h-4 ml-1"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M19 9l-7 7-7-7"
-                        ></path>
-                      </svg>
-                    </button>
-                    <div className=" bg-white  w-48  rounded-lg">
-                      <Link
-                        to="/csr-at-aayush/malnutrition"
-                        className="block px-4 py-2  hover:bg-primary/80"
-                        onClick={handleDropdownLinkClick}
-                      >
-                        Malnutrition
-                      </Link>
-                      <Link
-                        to="/csr-at-aayush/health-check"
-                        className="block px-4 py-2  hover:bg-primary/80"
-                        onClick={handleDropdownLinkClick}
-                      >
-                        Healthcare Check
-                      </Link>
-                    </div>
-                  </div>
-                  <Link
-                    to="/sustainability"
-                    className="block px-4 py-2  hover:bg-primary/80"
-                    onClick={handleDropdownLinkClick}
-                  >
-                    Sustainability
-                  </Link>
-                </div>
-              </div>
+
+
+
+              <div className="navbar-dropdown relative group">
+  <button className="hover:text-primary/80 flex items-center">
+    CSR
+    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </button>
+
+  {/* Dropdown Menu (Centered & Similar to Our Story) */}
+  <div
+    className="absolute left-1/2 top-full w-[1110px] h-[290px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible transform -translate-x-1/2 translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50"
+  >
+    {/* Left Side: Title & Description */}
+    <div className="w-[60%] mt-10">
+      <h3 className="text-3xl font-bold text-[#004037]">Corporate Social Responsibility</h3>
+      <p className="text-lg text-gray-600 mt-2">
+        Our commitment to creating a better world through sustainable and impactful initiatives.
+      </p>
+    </div>
+
+    {/* Right Side: Links */}
+    <div className="w-[35%] flex flex-col gap-3 mt-8">
+   
+      {/* Sub-links for CSR */}
+      <Link
+        to="/csr-at-aayush/malnutrition"
+        className="grid grid-cols-1 text-left py-2 text-black rounded-md hover:bg-[#004037] !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
+      >
+        <span className="block font-bold w-full text-inherit">Malnutrition</span>
+        <span className="block text-sm text-gray-900 text-inherit">Fighting malnutrition with dedicated programs</span>
+      </Link>
+
+      <Link
+        to="/csr-at-aayush/health-check"
+        className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
+      >
+        <span className="block font-bold w-full  text-inherit">Healthcare Check</span>
+        <span className="block text-sm text-gray-900 text-inherit">Providing essential healthcare services</span>
+      </Link>
+
+      <Link
+        to="/sustainability"
+        className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
+      >
+        <span className="block font-bold w-full  text-inherit">Sustainability</span>
+        <span className="block text-sm text-gray-900 text-inherit">Driving positive change for a greener future</span>
+      </Link>
+    </div>
+  </div>
+</div>
+
+
+
 
               <Link to="/career" className=" hover:text-primary/80">
                 Careers
