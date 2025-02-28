@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import Footer from './Footer';
+import NewFooter from './NewFooter';
 
 function PressRelease() {
   const articles = [
@@ -260,7 +260,7 @@ function PressRelease() {
         ))}
       </div>
     </div>
-    <Footer/>
+    <NewFooter/>
     </>
   );
 }

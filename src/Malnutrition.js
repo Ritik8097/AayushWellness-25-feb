@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import SkeletonLoader from './SkeletonLoader';
 
 import Header from './Header';
-import Footer from './Footer';
+import NewFooter from './NewFooter';
 
 function Malnutrition() {
     const [loading, setLoading] = useState(true);
@@ -112,7 +112,7 @@ function Malnutrition() {
 
 
 
-      <Footer/>
+      <NewFooter/>
     </div>
   )
 }

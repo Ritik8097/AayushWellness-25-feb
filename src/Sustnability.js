@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import Footer from './Footer'
 import Header from './Header'
 import SkeletonLoader from './SkeletonLoader';
+import NewFooter from './NewFooter';
 
 function Sustnability() {
     
@@ -145,7 +145,7 @@ As we continue to grow, Aayush Wellness will remain steadfast in our commitment 
 
 
 
-      <Footer/>
+      <NewFooter/>
     </div>
   )
 }

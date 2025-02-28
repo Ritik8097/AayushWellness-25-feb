@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import AccordionItem from './AccordionItem'; // Ensure the correct path
 import Header from './Header';
-import INewfooter from './INewfooter'
+import NewFooter from './NewFooter';
 
 let faqs = require('./faqs.json');
 
@@ -97,7 +97,7 @@ const Accordionweb = () => {
                 </div>
             </div>
             </div>
-            <INewfooter/>
+            <NewFooter/>
         </>
     );
 };

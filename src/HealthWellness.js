@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Header from './Header';
-import Footer from './Footer';
 import SkeletonLoader from './SkeletonLoader';
+import NewFooter from './NewFooter';
 
 function HealthWellness() {
     
@@ -142,7 +142,7 @@ Sustainable Living: Aayush Wellness promotes eco-friendly practices that support
 
 
 
-      <Footer/>
+      <NewFooter/>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Header from './Header';
-import Footer from './Footer';
+import NewFooter from './NewFooter';
 import SkeletonLoader from './SkeletonLoader';
 
 function MissionVision() {
@@ -169,7 +169,7 @@ function MissionVision() {
           </div>
         </div>
       </div>
-      <Footer />
+      <NewFooter />
     </div>
   );
 }

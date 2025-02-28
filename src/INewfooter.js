@@ -27,6 +27,7 @@ const ANewFooter = () => {
   return (
     <>
     <footer className="Footer_container__UU6GV snipcss0-0-0-1 snipcss-Olh9m" style={{
+
   backgroundImage: 'url("https://img.freepik.com/free-photo/stacked-zen-stones-sand-background-art-balance-concept_53876-110629.jpg?t=st=1740718924~exp=1740722524~hmac=d391898956fdcab1f6989d60d62c63417b56f9ffd810dfebac9888c6cbad6d00&w=1060")',
   backgroundSize: 'cover',  // Ensures the image covers the full area
   backgroundPosition: 'center',  // Centers the background image
@@ -36,7 +37,7 @@ const ANewFooter = () => {
   
 }}>
       <div className='main-container h-fit md:h-[500px] flex flex-col justify-between'style={{
-    backgroundColor: '#000000',  // Green background
+    backgroundColor: '#d3aa6e',  // Green background
     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',  // Box shadow
     padding: '20px',  // Adjust padding as needed
     borderRadius: '8px',  // Optional: For rounded corners

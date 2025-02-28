@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import SkeletonLoader from './SkeletonLoader';
 
 import Header from './Header';
-import Footer from './Footer';
+import NewFooter from './NewFooter';
 
 function HealthCheck() {
     const [loading, setLoading] = useState(true);
@@ -76,7 +76,7 @@ Aayush Wellness recognizes these challenges and is committed to overcoming them 
       </div>
 
 
-      <Footer/>
+      <NewFooter/>
     </div>
   )
 }

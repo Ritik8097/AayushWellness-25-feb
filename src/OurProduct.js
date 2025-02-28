@@ -1,8 +1,8 @@
 import React from 'react';
-import Footer from './Footer';
 import Header from './Header';
 import './OurProduct.css'; // Import the CSS file
 import { Link } from 'react-router-dom';
+import NewFooter from './NewFooter';
 
 
 const products = [
@@ -81,7 +81,7 @@ function OurProduct() {
           <ProductCard key={index} {...product} />
         ))}
       </div>
-      <Footer />
+      <NewFooter />
     </div>
   );
 }

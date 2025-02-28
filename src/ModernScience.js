@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Header from './Header';
-import Footer from './Footer';
 import SkeletonLoader from './SkeletonLoader';
+import NewFooter from './NewFooter';
 
 
 function ModernScience() {
@@ -103,7 +103,7 @@ This integration is particularly evident in how Aayush Wellness addresses therap
 
 
 
-          <Footer/>
+          <NewFooter/>
     </div>
    
   )

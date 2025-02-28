@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import Footer from './Footer';
+import NewFooter from './NewFooter';
 
 function Career() {
     const [result, setResult] = React.useState("");
@@ -97,7 +97,7 @@ function Career() {
                 </div>
             )}
         </div>
-        <Footer/>
+        <NewFooter/>
         </>
     );
 }

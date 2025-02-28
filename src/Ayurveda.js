@@ -6,8 +6,9 @@ import SkeletonLoader from './SkeletonLoader';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import Footer from './Footer';
+
 import Header from './Header';
+import NewFooter from './NewFooter';
 
 
 
@@ -73,7 +74,7 @@ Ayurveda, rooted in the Indian subcontinent, is an alternative medical system pr
      
 
 
-      <Footer />
+      <NewFooter />
         </div>
         
   </>

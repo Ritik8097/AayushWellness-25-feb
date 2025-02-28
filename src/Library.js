@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from './Header';
-import Footer from './Footer';
+import NewFooter from './NewFooter';
 
 
 
@@ -16,7 +16,7 @@ export default function Library() {
         <h1>Coming Soon .....</h1>
       </div>
      
-        <Footer/>
+        <NewFooter/>
       
 
      

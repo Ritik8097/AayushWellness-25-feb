@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './CompanyIntro.css';
-
 import Header from './Header';
-import Footer from './Footer';
 import SkeletonLoader from './SkeletonLoader';
+import NewFooter from './NewFooter';
 
 // Slider settings
 
@@ -104,7 +103,7 @@ export default function CompanyIntro() {
           </div>
         ))}
       </div>
-      <Footer />
+      <NewFooter />
     </>
   );
 }
