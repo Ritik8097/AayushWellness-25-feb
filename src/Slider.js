@@ -13,6 +13,7 @@ export default function AnimatedSlider() {
   const [isVisible, setIsVisible] = useState(false);
   const [showText, setShowText] = useState(false);
   const sliderRef = useRef(null);
+  const [csrOpen, setCsrOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
@@ -170,15 +171,15 @@ export default function AnimatedSlider() {
                    <Link
                      to="/about-us"
                      className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white ">
-                     <span className="block font-bold w-full  text-inherit">About Us </span>
-                     <span className="block text-sm text-grey-900 text-inherit">We started with a vision to create something</span>
+                     <span className="block font-bold w-full px-4 text-inherit">About Us </span>
+                     <span className="block text-sm px-4 text-grey-900 text-inherit">We started with a vision to create something</span>
                    </Link>
                    
                    <Link
                      to="/about/mission-vision"
                      className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white">
-                     <span className="block font-bold w-full  text-inherit">Mission & Vision</span>
-                     <span className="block text-sm text-grey-900 text-inherit">Our mission is to do something Great</span>
+                     <span className="block font-bold w-full px-4 text-inherit">Mission & Vision</span>
+                     <span className="block text-sm px-4 text-grey-900 text-inherit">Our mission is to do something Great</span>
                    </Link>
                  </div>
                </div>
@@ -211,22 +212,22 @@ export default function AnimatedSlider() {
       <Link
         to="/wellness/modern-science"
         className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white">
-        <span className="block font-bold w-full  text-inherit">Modern Science</span>
-        <span className="block text-sm text-gray-900 text-inherit">Explore the latest advancements in science</span>
+        <span className="block font-bold w-full px-4 text-inherit">Modern Science</span>
+        <span className="block text-sm px-4 text-gray-900 text-inherit">Explore the latest advancements in science</span>
       </Link>
 
       <Link
         to="/ayurveda"
         className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white">
-        <span className="block font-bold w-full  text-inherit">Ayurveda</span>
-        <span className="block text-sm text-gray-900 text-inherit">Ancient wisdom for holistic wellness</span>
+        <span className="block font-bold w-full px-4 text-inherit">Ayurveda</span>
+        <span className="block text-sm px-4 text-gray-900 text-inherit">Ancient wisdom for holistic wellness</span>
       </Link>
 
       <Link
         to="/wellness/health-wellness"
         className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white">
-        <span className="block font-bold w-full  text-inherit">Health & Wellness</span>
-        <span className="block text-sm text-gray-900 text-inherit">Your guide to a healthier lifestyle</span>
+        <span className="block font-bold w-full px-4 text-inherit">Health & Wellness</span>
+        <span className="block text-sm px-4 text-gray-900 text-inherit">Your guide to a healthier lifestyle</span>
       </Link>
     </div>
   </div>
@@ -241,9 +242,10 @@ export default function AnimatedSlider() {
     </svg>
   </button>
 
-  {/* Dropdown Menu */}
+  {/* Dropdown Menu - Centered Below Newsroom */}
   <div
-    className="absolute left-0 top-full w-[1110px] h-[290px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible transform translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 mt-6" >
+    className="absolute left-1/2 top-full w-[1110px] h-[290px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible transform -translate-x-1/2 translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 mt-6"
+  >
     {/* Left Side: Title & Description */}
     <div className="w-[60%] mt-10">
       <h3 className="text-3xl font-bold text-[#004037]">Newsroom</h3>
@@ -257,31 +259,27 @@ export default function AnimatedSlider() {
       <Link
         to="/newsroom/in-the-news"
         className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white">
-        <span className="block font-bold w-full  text-inherit">In the News</span>
-        <span className="block text-sm text-gray-900 text-inherit">Latest media coverage and reports</span>
+        <span className="block font-bold w-full px-4 text-inherit">In the News</span>
+        <span className="block text-sm px-4 text-gray-900 text-inherit">Latest media coverage and reports</span>
       </Link>
 
       <Link
         to="/newsroom/press-release"
         className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white">
-        <span className="block font-bold w-full  text-inherit">Press Release</span>
-        <span className="block text-sm text-gray-900 text-inherit">Official statements and updates</span>
+        <span className="block font-bold w-full px-4 text-inherit">Press Release</span>
+        <span className="block text-sm px-4 text-gray-900 text-inherit">Official statements and updates</span>
       </Link>
 
       <Link
         to="/newsroom/library"
         className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white">
-        <span className="block font-bold w-full  text-inherit">Library</span>
-        <span className="block text-sm text-gray-900 text-inherit">Access research and archived news</span>
+        <span className="block font-bold w-full px-4 text-inherit">Library</span>
+        <span className="block text-sm px-4 text-gray-900 text-inherit">Access research and archived news</span>
       </Link>
     </div>
   </div>
 </div>
 
-
-              <Link to="/investors" className=" hover:text-primary/80" style={{ fontFamily: '"Inter", sans-serif' }}>
-                Investors
-              </Link>
               <Link to="/ourproduct" className=" hover:text-primary/80" style={{ fontFamily: '"Inter", sans-serif' }}>
                 Our Product
               </Link>
@@ -289,62 +287,104 @@ export default function AnimatedSlider() {
 
 
               <div className="navbar-dropdown relative group">
-  <button className="hover:text-primary/80 flex items-center" style={{ fontFamily: '"Inter", sans-serif' }}>
-    CSR
-    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-    </svg>
-  </button>
+      <button className="hover:text-primary/80 flex items-center" style={{ fontFamily: '"Inter", sans-serif' }}>
+        Corporate
+        <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
 
-  {/* Dropdown Menu (Centered & Similar to Our Story) */}
-  <div
-    className="absolute left-1/2 top-full w-[1110px] h-[290px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible transform -translate-x-1/2 translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 mt-6"
-  >
-    {/* Left Side: Title & Description */}
-    <div className="w-[60%] mt-10">
-      <h3 className="text-3xl font-bold text-[#004037]">Corporate Social Responsibility</h3>
-      <p className="text-lg text-gray-600 mt-2">
-        Our commitment to creating a better world through sustainable and impactful initiatives.
-      </p>
-    </div>
+      {/* Dropdown Menu */}
+      <div
+        className="absolute left-1/2 top-full w-[1110px] h-auto bg-white shadow-lg rounded-lg p-5 opacity-0 invisible transform -translate-x-1/2 translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 mt-6"
+      >
+        {/* Left Side: Title & Description */}
+        <div className="w-[60%] mt-10">
+          <h3 className="text-3xl font-bold text-[#004037]">Corporate Initiatives</h3>
+          <p className="text-lg text-gray-600 mt-2">
+            Our dedication to ethical business practices, community engagement, and sustainable growth.
+          </p>
+          <p className="text-lg text-gray-600 mt-2">
+            We believe in making a lasting impact through responsible actions and meaningful partnerships.
+          </p>
+        </div>
 
-    {/* Right Side: Links */}
-    <div className="w-[35%] flex flex-col gap-3 mt-8">
-   
-      {/* Sub-links for CSR */}
-      <Link
+        {/* Right Side: Links */}
+        <div className="w-[35%] flex flex-col gap-3 mt-8">
+          {/* CSR Dropdown */}
+          <div className="relative">
+            <button
+              onClick={() => setCsrOpen(!csrOpen)}
+              className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white flex justify-between items-center"
+            >
+              <div>
+                <span className="block font-bold text-inherit flex px-4 items-center">
+                  CSR
+                  <svg
+                    className={`w-4 h-4 ml-1 transition-transform duration-200 ${csrOpen ? "rotate-180" : ""}`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </span>
+                <span className="block text-sm px-4 text-gray-900 text-inherit">
+                  Our impact on society and sustainability efforts
+                </span>
+              </div>
+            </button>
+
+            {csrOpen && (
+              <div className="absolute left-0 top-full mt-2 w-full bg-white shadow-md rounded-lg p-3 flex flex-col gap-2 border border-gray-200">
+                <Link
         to="/csr-at-aayush/malnutrition"
         className="grid grid-cols-1 text-left py-2 text-black rounded-md hover:bg-[#004037] !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
       >
-        <span className="block font-bold w-full text-inherit">Malnutrition</span>
-        <span className="block text-sm text-gray-900 text-inherit">Fighting malnutrition with dedicated programs</span>
+        <span className="block font-bold w-full px-4 text-inherit">Malnutrition</span>
+        <span className="block text-sm px-4 text-gray-900 text-inherit">Fighting malnutrition with dedicated programs</span>
       </Link>
 
       <Link
         to="/csr-at-aayush/health-check"
         className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
       >
-        <span className="block font-bold w-full  text-inherit">Healthcare Check</span>
-        <span className="block text-sm text-gray-900 text-inherit">Providing essential healthcare services</span>
+        <span className="block font-bold w-full px-4 text-inherit">Healthcare Check</span>
+        <span className="block text-sm px-4 text-gray-900 text-inherit">Providing essential healthcare services</span>
       </Link>
 
       <Link
         to="/sustainability"
         className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
       >
-        <span className="block font-bold w-full  text-inherit">Sustainability</span>
-        <span className="block text-sm text-gray-900 text-inherit">Driving positive change for a greener future</span>
+        <span className="block font-bold w-full px-4 text-inherit">Sustainability</span>
+        <span className="block text-sm px-4 text-gray-900 text-inherit">Driving positive change for a greener future</span>
       </Link>
+              </div>
+            )}
+          </div>
+
+          {/* Other Links */}
+          <Link
+            to="/career"
+            className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
+          >
+            <span className="block font-bold w-full px-4 text-inherit">Careers</span>
+            <span className="block text-sm px-4 text-gray-900 text-inherit">Join our team and shape the future</span>
+          </Link>
+
+          <Link
+            to="/investors"
+            className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
+          >
+            <span className="block font-bold w-full px-4 text-inherit">Investors</span>
+            <span className="block text-sm px-4 text-gray-900 text-inherit">Partner with us for sustainable growth</span>
+          </Link>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-
-
-
-              <Link to="/career" className=" hover:text-primary/80" style={{ fontFamily: '"Inter", sans-serif' }}>
-                Careers
-              </Link>
+            
               <Link to="/support" className=" hover:text-primary/80" style={{ fontFamily: '"Inter", sans-serif' }}>
                 Support
               </Link>
