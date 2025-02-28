@@ -258,7 +258,7 @@ export default function AnimatedSlider() {
         to="/newsroom/in-the-news"
         className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white">
         <span className="block font-bold w-full  text-inherit">In the News</span>
-        <span className="block text-sm text-gray-900">Latest media coverage and reports</span>
+        <span className="block text-sm text-gray-900 text-inherit">Latest media coverage and reports</span>
       </Link>
 
       <Link
