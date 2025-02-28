@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from "react"
 
 export default function Asection4() {
@@ -30,7 +31,7 @@ export default function Asection4() {
     {
       img: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/woman-2592247_1920.jpg?v=1740573108",
       title: "How It Started",
-      link: "find-us/",
+      link: "/gummies-sleep",
       buttonText: "Explore Aayush Wellness",
       content:"A vision to transform everyday health.",
         content2: `<span style="color: #3a4458">Our journey began with a simple yet profound question:</span> <br/> 
@@ -43,7 +44,7 @@ export default function Asection4() {
     {
       img: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/medical-artificial-intelligence.jpg?v=1740573135",
       title: "What We Do",
-      link: "/products",
+      link: "/health",
       buttonText: "Explore Aayush Wellness",
       content: "At the intersection of wellness and technology, we are shaping the future of health.",
       content2: `<span style="font-weight: 500; color: #000000;">🟢 Advanced Nutraceuticals & Dietary Supplements</span> <br/> <br/> 
@@ -57,7 +58,7 @@ export default function Asection4() {
     {
       img: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/washing-hands-with-soap-prevent-disease.jpg?v=1740573151",
       title: "Why Aayush Wellness?",
-      link: "find-us/",
+      link: "/investors",
       buttonText: "Explore Aayush Wellness",
       content:"We don’t just sell wellness—we create a movement that empowers individuals to make informed choices about their health.",
       content2: `✔️ <span style="font-weight: 500; color: #000000;">Science-Backed Formulations</span> – <span style="color: #3a4458">Developed by leading experts in nutraceuticals & healthcare.</span><br /> <br/>
@@ -285,4 +286,32 @@ export default function Asection4() {
       `}</style>
     </section>
   )
-}
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

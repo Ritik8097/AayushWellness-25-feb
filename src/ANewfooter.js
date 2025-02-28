@@ -27,7 +27,11 @@ const ANewFooter = () => {
   return (
     <>
     <footer className="Footer_container__UU6GV snipcss0-0-0-1 snipcss-Olh9m" style={{
+
   backgroundImage: 'url("https://cdn.shopify.com/s/files/1/0636/5226/6115/files/footer_image_accelerator_1.jpg?v=1740564379")',
+
+  backgroundImage: 'url("https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Untitled-1.jpg?v=1740565489")',
+
   backgroundSize: 'cover',  // Ensures the image covers the full area
   backgroundPosition: 'center',  // Centers the background image
   backgroundColor: '#28a745',  // Green background for fallback

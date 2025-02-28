@@ -1,9 +1,9 @@
 import React, { useState ,useEffect} from 'react';
-import './NewFooter.css'
+import './ANewfooter.css'
 import { Link } from "react-router-dom";
 import FooterCopyright from './FooterCopyright';
 
-const NewFooter = () => {
+const ANewFooter = () => {
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -27,7 +27,7 @@ const NewFooter = () => {
   return (
     <>
     <footer className="Footer_container__UU6GV snipcss0-0-0-1 snipcss-Olh9m" style={{
-  backgroundImage: 'url("https://cdn.shopify.com/s/files/1/0636/5226/6115/files/footer_image.jpg?v=1739961894")',
+  backgroundImage: 'url("https://img.freepik.com/free-photo/stacked-zen-stones-sand-background-art-balance-concept_53876-110629.jpg?t=st=1740718924~exp=1740722524~hmac=d391898956fdcab1f6989d60d62c63417b56f9ffd810dfebac9888c6cbad6d00&w=1060")',
   backgroundSize: 'cover',  // Ensures the image covers the full area
   backgroundPosition: 'center',  // Centers the background image
   backgroundColor: '#28a745',  // Green background for fallback
@@ -36,7 +36,7 @@ const NewFooter = () => {
   
 }}>
       <div className='main-container h-fit md:h-[500px] flex flex-col justify-between'style={{
-    backgroundColor: '#004037',  // Green background
+    backgroundColor: '#000000',  // Green background
     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',  // Box shadow
     padding: '20px',  // Adjust padding as needed
     borderRadius: '8px',  // Optional: For rounded corners
@@ -64,42 +64,43 @@ const NewFooter = () => {
                     <div className="hidden text-[#e7e6e6] justify-center text-center  w-full text-[10px] md:flex">A Public Listed Company on <br/>Bombay Stock Exchange [BSE Code: 539528]</div>
                     </div>
                     <div>
-                        <h3 className="font-bold text-lg" style={{color:'#fffffff'}}>ABOUT US</h3>
+                        <h3 className="font-bold text-lg" style={{color:'#a8ff00'}}>ABOUT US</h3>
                         <ul className="mt-2 space-y-2">
-                            <li><Link to="/about/company-intro" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>Our Story</Link></li>
-                            <li><Link to="/about/mission-vision" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>Mission & Vision</Link></li>
+                            <li><Link to="/about/company-intro" className="text-muted-foreground hover:text-primary"  style={{color:'#ffffff'}}>Our Story</Link></li>
+                            <li><Link to="/about/mission-vision" className="text-muted-foreground hover:text-primary"  style={{color:'#ffffff'}}>Mission & Vision</Link></li>
                         </ul>
                     </div>
                     <div>
-                        <h3 className="font-bold text-lg" style={{color:'#fffffff'}}>WELLNESS</h3>
+                        <h3 className="font-bold text-lg" style={{color:'#a8ff00'}}>WELLNESS</h3>
                         <ul className="mt-2 space-y-2">
-                            <li><Link to="/wellness/modern-science" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>Modern Science</Link></li>
-                            <li><Link to="/ayurveda" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>Ayurveda</Link></li>
-                            <li><Link to="/wellness/health-wellness" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>Health & Wellness</Link></li>
+                            <li><Link to="/wellness/modern-science" className="text-muted-foreground hover:text-primary"  style={{color:'#ffffff'}}>Modern Science</Link></li>
+                            <li><Link to="/ayurveda" className="text-muted-foreground hover:text-primary"  style={{color:'#ffffff'}}>Ayurveda</Link></li>
+                            <li><Link to="/wellness/health-wellness" className="text-muted-foreground hover:text-primary"  style={{color:'#ffffff'}}>Health & Wellness</Link></li>
                         </ul>
                     </div>
                     <div>
-                        <h3 className="font-bold text-lg" style={{color:'#fffffff'}}>NEWSROOM</h3>
+                        <h3 className="font-bold text-lg" style={{color:'#a8ff00'}}>NEWSROOM</h3>
                         <ul className="mt-2 space-y-2">
-                            <li><Link to="/newsroom/in-the-news" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>In the News</Link></li>
-                            <li><Link to="/newsroom/press-release" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>Press Release</Link></li>
-                            <li><Link to="/newsroom/library" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>Library</Link></li>
+                            <li><Link to="/newsroom/in-the-news" className="text-muted-foreground hover:text-primary"  style={{color:'#ffffff'}}>In the News</Link></li>
+                            <li><Link to="/newsroom/press-release" className="text-muted-foreground hover:text-primary"  style={{color:'#ffffff'}}>Press Release</Link></li>
+                            <li><Link to="/newsroom/library" className="text-muted-foreground hover:text-primary"  style={{color:'#ffffff'}}>Library</Link></li>
                         </ul>
                     </div>
                     <div>
-                        <h3 className="font-bold text-lg" style={{color:'#fffffff'}}>CSR</h3>
+                        <h3 className="font-bold text-lg" style={{color:'#a8ff00'}}>CSR</h3>
                         <ul className="mt-2 space-y-2">
-                            <li><Link to="/csr-at-aayush/malnutrition" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>Malnutrition</Link></li>
-                            <li><Link to="/csr-at-aayush/health-check" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>Healthcare Check</Link></li>
-                            <li><Link to="/sustainability" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>Sustainability</Link></li>
+                            <li><Link to="/csr-at-aayush/malnutrition" className="text-muted-foreground hover:text-primary"  style={{color:'#ffffff'}}>Malnutrition</Link></li>
+                            <li><Link to="/csr-at-aayush/health-check" className="text-muted-foreground hover:text-primary"  style={{color:'#ffffff'}}>Healthcare Check</Link></li>
+                            <li><Link to="/sustainability" className="text-muted-foreground hover:text-primary"  style={{color:'#ffffff'}}>Sustainability</Link></li>
                         </ul>
                     </div>
 
                     <div>
-                        <h3 className="font-bold text-lg"  style={{color:'#fffffff'}}>Corporate</h3>
+                        <h3 className="font-bold text-lg"  style={{color:'#a8ff00'}}>Corporate</h3>
                         <ul className="mt-2 space-y-2">
-                            <li><Link to="/career" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>Careers</Link></li>
-                            <li><Link to="/privacy-policy" className="text-muted-foreground hover:text-primary" style={{color:'white'}}>Privacy Policy</Link></li>
+                            <li><Link to="/career" className="text-muted-foreground hover:text-primary"  style={{color:'#ffffff'}}>Careers</Link></li>
+                            <li><Link to="/privacy-policy" className="text-muted-foreground hover:text-primary" style={{color:'#ffffff'}}>Privacy Policy</Link></li>
+                            <li><Link to="/health" className="text-muted-foreground hover:text-primary" style={{color:'#ffffff'}}>Health</Link></li>
                             
                         </ul>
                     </div>
@@ -128,4 +129,4 @@ const NewFooter = () => {
   )
 }
 
-export default NewFooter;
+export default ANewFooter;

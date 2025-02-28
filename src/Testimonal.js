@@ -78,7 +78,7 @@ export default function TestimonialSlider() {
             {testimonials.map((testimonial, index) => (
               <SwiperSlide key={index}>
               <div className="testimonial-bx">
-              <div className="sticky-comma">“</div>
+              <div className="sticky-comma">"</div>
                 {/* Feedback Container */}
                 <div className="testimonial-content" style={{ textAlign: "center" }}>
                   <p style={{ color: "white" }}>{testimonial.feedback}</p>

@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import Slider from "react-slick"
@@ -58,6 +57,7 @@ const companyValuesStyles = {
     color: "#13233b",
     textAlign: "center",
     marginBottom: "32px",
+    paddingTop: "40px",
   },
   sliderContainer: {
     width: "100%",
@@ -67,6 +67,7 @@ const companyValuesStyles = {
     padding: "0 10px",
   },
   sliderItem: {
+    
     height: "auto",
     padding: "24px",
     background: "#f5f3f0",
@@ -77,8 +78,8 @@ const companyValuesStyles = {
     textAlign: "start",
     boxSizing: "border-box",
     margin: "0 auto",
-   width: "100%", // Makes sure the card takes full width
-   maxWidth: "322px", // You can adjust this based on your design
+    width: "100%", // Makes sure the card takes full width
+  maxWidth: "322px", // You can adjust this based on your design
   },
 }
 
@@ -126,10 +127,9 @@ const CompanyValues = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
-    centerPadding: "20px",
-    arrows: false,
-   centerMode: false,
+    centerMode: false,
     adaptiveHeight: true, // Adjust height dynamically if needed
+    arrows: false,
   }
 
   return (

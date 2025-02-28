@@ -243,8 +243,7 @@ export default function AnimatedSlider() {
 
   {/* Dropdown Menu */}
   <div
-    className="absolute left-0 top-full w-[1110px] h-[290px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible transform translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 mt-6"
-  >
+    className="absolute left-0 top-full w-[1110px] h-[290px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible transform translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 mt-6" >
     {/* Left Side: Title & Description */}
     <div className="w-[60%] mt-10">
       <h3 className="text-3xl font-bold text-[#004037]">Newsroom</h3>
@@ -375,7 +374,7 @@ export default function AnimatedSlider() {
                   <input
                     type="text"
                     placeholder="Search..."
-                    className="px-4 py-2 border rounded-md focus:outline-none"
+                    className="px-4 py-2 border rounded-md focus:outline-none text-black"
                     onBlur={() => setIsSearchOpen(false)} // Hide search input when it loses focus
                   />
                 </div>
