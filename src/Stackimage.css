@@ -50,7 +50,7 @@
     transition: .5s visibility var(cubic-bezier(0.22,1,0.36,1)), .5s opacity var(cubic-bezier(0.22,1,0.36,1));
   }
   .active-background {
-    background-color:#dccaa0  !important;
+    background-color:#f9f3e9 !important;
     transition: .5s visibility var(cubic-bezier(0.22,1,0.36,1)), .5s opacity var(cubic-bezier(0.22,1,0.36,1));
   }
   
