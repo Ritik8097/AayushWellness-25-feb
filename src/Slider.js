@@ -388,7 +388,7 @@ export default function AnimatedSlider() {
               <Link to="/support" className=" hover:text-primary/80" style={{ fontFamily: '"Inter", sans-serif' }}>
                 Support
               </Link>
-              <Link to="/health" className="hover:text-primary/80" style={{ fontFamily: '"Inter", sans-serif' }}>
+              <Link to="/healthcare" className="hover:text-primary/80" style={{ fontFamily: '"Inter", sans-serif' }}>
                 HealthCare
               </Link>
               <Link
@@ -713,7 +713,7 @@ export default function AnimatedSlider() {
               Support
             </Link>
             <Link
-              to="/health"
+              to="/healthcare"
               className="block py-2 px-4  hover:text-primary/80"
             >
               HealthCare
