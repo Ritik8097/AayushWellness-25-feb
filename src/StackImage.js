@@ -60,8 +60,8 @@ const StackImage = () => {
                 className="StackedContent_media__haQuf style-mKRVT image-transition"
                 src={
                   isInView
-                    ? "https://cdn.shopify.com/videos/c/o/v/400e5697bcc6497eaf8fa8a3471479bc.mp4"
-                    : "https://cdn.shopify.com/videos/c/o/v/120abaf722cf4d77ae37d7626603f20a.mp4"
+                    ? "https://cdn.shopify.com/videos/c/o/v/c51bc13058c44c33a9dee1247959d273.mp4"
+                    : "https://cdn.shopify.com/videos/c/o/v/fed476cd8dd24d17b7ebf64e63335c99.mp4"
                 }
                 id="style-mKRVT"
               />
