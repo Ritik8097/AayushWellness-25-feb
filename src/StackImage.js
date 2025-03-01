@@ -19,7 +19,7 @@ const StackImage = () => {
             
 
 
-            if (rect.top < windowHeight * 0.47 && rect.bottom > -windowHeight * 0.1) {
+            if (rect.top < windowHeight * 0.47 && rect.bottom > -windowHeight * 0.5) {
               setIsInView(true);
              // 50% to 150%
             } else {
@@ -60,7 +60,7 @@ const StackImage = () => {
                 className="StackedContent_media__haQuf style-mKRVT image-transition"
                 src={
                   isInView
-                    ? "https://cdn.shopify.com/videos/c/o/v/c51bc13058c44c33a9dee1247959d273.mp4"
+                    ? "https://cdn.shopify.com/videos/c/o/v/400e5697bcc6497eaf8fa8a3471479bc.mp4"
                     : "https://cdn.shopify.com/videos/c/o/v/fed476cd8dd24d17b7ebf64e63335c99.mp4"
                 }
                 id="style-mKRVT"
