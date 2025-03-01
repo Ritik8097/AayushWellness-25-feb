@@ -19,7 +19,7 @@ const StackImage = () => {
             
 
 
-            if (rect.top < windowHeight * 0.19 && rect.bottom > -windowHeight * 0) {
+            if (rect.top < windowHeight * 0.29 && rect.bottom > -windowHeight * 0.1) {
               setIsInView(true);
              // 50% to 150%
             } else {
