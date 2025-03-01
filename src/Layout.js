@@ -29,7 +29,7 @@ import CleanEnergyHero from "./CleanEnergyHero";
 
 function Layout() {
   return (
-    <SmoothScroll>
+     <SmoothScroll>
      
       <Sliding />     
       <CleanEnergyHero/>
@@ -39,7 +39,7 @@ function Layout() {
       <AwCard/>
       <AwCard2/>
       <HeroSection />
-      <SectionTrail/>
+      {/* <SectionTrail/> */}
 
       {/* <SectionSecond />
       <SliderThird /> */}
@@ -47,6 +47,7 @@ function Layout() {
       <SectionFive />
       <SectionSix /> */}
    {/* <CircularSlider/> */}
+   <HomeBlog/>
       <NewsletterSignup />
       <NewFooter />
       {/* <FooterCopyright /> */}
