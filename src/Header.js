@@ -159,7 +159,7 @@
 
 //               <Link to="/career" className=" hover:text-primary/80">Careers</Link>
 //               <Link to="/support" className=" hover:text-primary/80">Support</Link>
-//               <Link to="/health" className="block  hover:text-primary/80"> HealthCare</Link>
+//               <Link to="/healthcare" className="block  hover:text-primary/80"> HealthCare</Link>
 //                <Link  to="/growth-accelerator" className="block   hover:text-primary/80">Accelerator</Link>
              
               
@@ -511,7 +511,7 @@ export default function Header() {
 
               <Link to="/career" className=" hover:text-primary/80">Careers</Link>
               <Link to="/support" className=" hover:text-primary/80">Support</Link>
-              <Link to="/health" className="block  hover:text-primary/80"> HealthCare</Link>
+              <Link to="/healthcare" className="block  hover:text-primary/80"> HealthCare</Link>
                <Link  to="/growth-accelerator" className="block   hover:text-primary/80">Accelerator</Link>
              
               
