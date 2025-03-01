@@ -48,7 +48,7 @@ const AwCard2 = () => {
       <div className="IconCard_contentCardWrapper__RhxGf IconCard_container__yA35h" imagesizes="[object Object]" breadcrumbs date source topics>
         <div className="IconCard_head__LrWtD">
           <div className="IconCard_logoWrapper__TE3eO">
-            <div><img alt loading="lazy" width={150} height={150} decoding="async" data-nimg={1} className="IconCard_logo__Wwg7E style-jZK21" src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/corp_web_new_icons_-2.png?v=1739883372" id="style-jZK21" /></div>
+            <div><img alt loading="lazy" width={150} height={150} decoding="async" data-nimg={1} className="IconCard_logo__Wwg7E style-jZK21" src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/new_icons_corp_web.png?v=1740397824" /></div>
           </div>
           <div className="CircleButton_circleButton__hdzso IconCard_circleButton__4U5_0"><svg width={11} height={10} viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="false">
               <path fillRule="evenodd" clipRule="evenodd" d="M7.586.531a.75.75 0 1 0-1.172.938L8.64 4.25H1a.75.75 0 0 0 0 1.5h7.64L6.414 8.531a.75.75 0 1 0 1.172.938l3.2-4a.75.75 0 0 0 0-.938l-3.2-4Z" fill="currentColor" />
@@ -62,7 +62,7 @@ const AwCard2 = () => {
       <div className="IconCard_contentCardWrapper__RhxGf IconCard_container__yA35h" imagesizes="[object Object]" breadcrumbs date source topics>
         <div className="IconCard_head__LrWtD">
           <div className="IconCard_logoWrapper__TE3eO">
-            <div><img alt loading="lazy" width={150} height={150} decoding="async" data-nimg={1} className="IconCard_logo__Wwg7E style-gmsgY" src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/corp_web_new_icons_-3.png?v=1739883385" id="style-gmsgY" /></div>
+            <div><img alt loading="lazy" width={150} height={150} decoding="async" data-nimg={1} className="IconCard_logo__Wwg7E style-gmsgY" srchttps://cdn.shopify.com/s/files/1/0636/5226/6115/files/new_icons_corp_web_3.png?v=1740397816" /></div>
           </div>
           <div className="CircleButton_circleButton__hdzso IconCard_circleButton__4U5_0"><svg width={11} height={10} viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="false">
               <path fillRule="evenodd" clipRule="evenodd" d="M7.586.531a.75.75 0 1 0-1.172.938L8.64 4.25H1a.75.75 0 0 0 0 1.5h7.64L6.414 8.531a.75.75 0 1 0 1.172.938l3.2-4a.75.75 0 0 0 0-.938l-3.2-4Z" fill="currentColor" />
