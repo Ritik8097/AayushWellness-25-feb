@@ -50,7 +50,7 @@
     transition: .5s visibility var(cubic-bezier(0.22,1,0.36,1)), .5s opacity var(cubic-bezier(0.22,1,0.36,1));
   }
   .active-background {
-    background-color:#faf4e8  !important;
+    background-color:#dccaa0  !important;
     transition: .5s visibility var(cubic-bezier(0.22,1,0.36,1)), .5s opacity var(cubic-bezier(0.22,1,0.36,1));
   }
   
@@ -194,7 +194,7 @@
     position: relative;
   } 
 
-  .StackedContent_mediaWrapper__gRyP.StackedContent_isActive_U4mo3 { 
+  .StackedContent_mediaWrapper___gRyP.StackedContent_isActive__U4mo3 { 
     opacity: 1; 
     visibility: visible;
   } 
@@ -222,7 +222,7 @@
 }     
 
 @media (min-width: 768px){ 
-  .StackedContent_content_QTFkv.StackedContent_isActive_U4mo3 { 
+  .StackedContent_content__QTFkv.StackedContent_isActive__U4mo3 { 
     opacity: 1;
   } 
 }     
@@ -330,18 +330,18 @@
   } 
 }     
 
-.BaseButton_baseButton_gki38.BaseButton_isLushGreen_Of4fS { 
+.BaseButton_baseButton__gki38.BaseButton_isLushGreen__Of4fS { 
     color: var(--color-cream); 
     background-color: var(--color-lushGreen);
 } 
 
-.BaseButton_baseButton_gki38.BaseButton_hasOutline_IILGk { 
+.BaseButton_baseButton__gki38.BaseButton_hasOutline__IILGk { 
     background-color: transparent; 
     border: 1px solid var(--color-arcadiaGreen); 
     color: var(--color-arcadiaGreen);
 } 
 
-.BaseButton_baseButton_gki38.BaseButton_isLushGreenOf4fS.BaseButton_hasOutline_IILGk { 
+.BaseButton_baseButton__gki38.BaseButton_isLushGreen__Of4fS.BaseButton_hasOutline__IILGk { 
     color: var(--color-lushGreen); 
     border-color: var(--color-lushGreen);
 } 
@@ -351,16 +351,16 @@
     background-color: var(--color-arcadiaGreen--hover);
   } 
 
-  .BaseButton_baseButton_gki38.BaseButton_isLushGreen_Of4fS:hover { 
+  .BaseButton_baseButton__gki38.BaseButton_isLushGreen__Of4fS:hover { 
     background-color: var(--color-lushGreen--hover);
   } 
 
-  .BaseButton_baseButton_gki38.BaseButton_hasOutline_IILGk:hover { 
+  .BaseButton_baseButton__gki38.BaseButton_hasOutline__IILGk:hover { 
     color: var(--color-lushGreen); 
     background-color: var(--color-arcadiaGreen);
   } 
 
-  .BaseButton_baseButton_gki38.BaseButton_isLushGreenOf4fS.BaseButton_hasOutline_IILGk:hover { 
+  .BaseButton_baseButton__gki38.BaseButton_isLushGreen__Of4fS.BaseButton_hasOutline__IILGk:hover { 
     color: var(--color-cream); 
     background-color: var(--color-lushGreen);
   } 
@@ -382,4 +382,4 @@
 }  
 #style-9BbQF.style-9BbQF {  
    color: transparent;  
-}
+}  
