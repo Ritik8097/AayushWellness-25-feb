@@ -26,6 +26,7 @@ import StackImageMobile from "./StackImageMobile";
 import StackImageMobile2 from "./StackImageMobile2";
 import CircularSlider from "./CircularSlider";
 import CleanEnergyHero from "./CleanEnergyHero";
+import HomeBlog from "./HomeBlog";
 
 function Layout() {
   return (
