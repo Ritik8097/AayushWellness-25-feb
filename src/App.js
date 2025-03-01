@@ -58,7 +58,7 @@ const AnimatedRoutes = () => {
          <Route path="pan-masala" element={<PageTransition><ProductCarousel /></PageTransition>} />
     <Route path="gummies" element={<PageTransition><ProductGummies /></PageTransition>} />
     <Route path="gummies-sleep" element={<PageTransition><ProductPageSleep /></PageTransition>} />
-        <Route path="health" element={<PageTransition><Healthh /></PageTransition>} />
+        <Route path="healthcare" element={<PageTransition><Healthh /></PageTransition>} />
         <Route path="pan-masala" element={<PageTransition><ProductCarousel /></PageTransition>} />
         <Route path="gummies" element={<PageTransition><ProductGummies /></PageTransition>} />
         <Route path="gummies-sleep" element={<PageTransition><ProductPageSleep /></PageTransition>} />
