@@ -50,7 +50,7 @@
     transition: .5s visibility var(cubic-bezier(0.22,1,0.36,1)), .5s opacity var(cubic-bezier(0.22,1,0.36,1));
   }
   .active-background {
-    background-color:#faf4e8  !important;
+    background-color:#dccaa0  !important;
     transition: .5s visibility var(cubic-bezier(0.22,1,0.36,1)), .5s opacity var(cubic-bezier(0.22,1,0.36,1));
   }
   
@@ -167,7 +167,7 @@
 
 @media (min-width: 1680px){ 
   .StackedContent_contentWrapper__6MXgH { 
-    row-gap: 14rem; 
+    row-gap: 20rem; 
     padding-bottom: 20rem;
   } 
 }     
