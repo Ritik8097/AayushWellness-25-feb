@@ -64,7 +64,7 @@ const Banner = () => {
           {item.type === 'image' ? (
             <img
               loading="lazy"
-              className="w-full object-contain h-[100vh] pt-[80px]"
+              className="w-full object-fill h-[100vh] pt-[80px]"
               src={item.src}
               alt={`Slide ${index + 1}`}
              
