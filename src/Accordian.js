@@ -76,7 +76,7 @@ const Accordionweb = () => {
             </div>
           ))}
         </Slider>
-        <div className='first' style={{ backgroundColor: "#f9f3e8", height:"100vh" }}>
+        <div className='first' style={{ backgroundColor: "#f9f3e8",  }}>
             <div className="container-fluid mt-5 mb-5 max-w-3xl mx-auto p-2" style={{ backgroundColor: "#f9f3e8" }}>
                 <div className="row justify-content-center">
                     <div className="col-md-8 mt-2">
