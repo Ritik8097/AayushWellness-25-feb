@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css"
 
 
 const DoctorOnboardForm = () => {
-
+    const [loading, setLoading] = useState(false);
   const [doctorData, setDoctorData] = useState({
     firstName: "",
     lastName: "",
@@ -39,7 +39,7 @@ const DoctorOnboardForm = () => {
   const isAdmin = searchParams.get("admin") === "true"
 
   const handleChange = (e) => {
-    setDoctorData({ ...doctorData, [e.target.name]: e.target.value });
+    setDoctorData({ ...doctorData, [e.target.name]: e.target.value })
   }
 
   const handleFileChange = (e) => {
@@ -53,7 +53,7 @@ const DoctorOnboardForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-
+    setLoading(true); // Start loader
     
     const formData = new FormData()
 
@@ -105,7 +105,9 @@ const DoctorOnboardForm = () => {
     } catch (error) {
       console.error("Error submitting form:", error)
       toast.error("Error submitting form. Please try again.")
-    }
+    }finally {
+        setLoading(false); // Stop loader
+      }
   }
 
   const handleDownload = async () => {
@@ -570,14 +572,45 @@ const DoctorOnboardForm = () => {
 
           {/* Submit Button */}
           <div className="flex justify-center pt-4">
-          <ToastContainer />
-            <button
-              type="submit"
-              className="px-6 py-3 bg-blue-600 text-white font-medium rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
+      <ToastContainer />
+      <button
+        type="submit"
+        onClick={handleSubmit}
+        disabled={loading} // Disable button while loading
+        className={`px-6 py-3 font-medium rounded-md shadow-sm transition-colors ${
+          loading
+            ? "bg-gray-400 cursor-not-allowed"
+            : "bg-blue-600 hover:bg-blue-700 text-white focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+        }`}
+      >
+        {loading ? (
+          <div className="flex items-center">
+            <svg
+              className="animate-spin h-5 w-5 mr-2 text-white"
+              viewBox="0 0 24 24"
             >
-              Submit
-            </button>
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+                fill="none"
+              />
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 0116 0"
+              />
+            </svg>
+            Submitting...
           </div>
+        ) : (
+          "Submit"
+        )}
+      </button>
+    </div>
           {isAdmin && (
             <div className="mt-6 flex justify-center">
               <button
