@@ -32,14 +32,14 @@ const Banner = () => {
   
   const mobileContent = [
     { type: 'image', src: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/grand_opning_healthcare_ad_-_02-03-2025_-_portrait_BANNER.jpg?v=1741005542" }, ,
-    { type: 'video', src: "https://cdn.shopify.com/videos/c/o/v/8d0959b295d641eca5343020820154ae.mp4" },
+    { type: 'video', src: "https://cdn.shopify.com/videos/c/o/v/720f0d6cd9eb40b384d816e6513b576b.mp4" },
     { type: 'image', src: "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Slider_banner_2_mobile_9bbc2622-bb9e-48d8-a303-b1dfd6dcd11d.jpg?v=1740134272" },  
     { type: 'video', src: "https://cdn.shopify.com/videos/c/o/v/3454076400644c5aa9bac0f343e93b32.mp4" },
   ];
 
   const desktopContent = [
     { type: 'image', src: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/GRAND_OPRNING.jpg?v=1741005102" },
-    { type: 'video', src: "https://cdn.shopify.com/videos/c/o/v/8ed5b00321384769b00257e7753c8ed6.mp4" },
+    { type: 'video', src: "https://cdn.shopify.com/videos/c/o/v/e503e53958ed4a32bfe5f570fa73dc93.mp4" },
     { type: 'image', src: "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Slider_banner_2_158998cf-e091-408f-913c-aa86b186ea43.jpg?v=1740134272" },
     { type: 'video', src: "https://cdn.shopify.com/videos/c/o/v/403fc210eec54d41b620a0cabe78c9f9.mp4" }, 
   ];
