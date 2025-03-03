@@ -29,7 +29,6 @@ const DoctorOnboardForm = () => {
     establishment: "",
     city1: "",
     state1: "",
-    aadharCard: null,
     panCard: null,
     certificates: [],
   })
@@ -95,7 +94,6 @@ const DoctorOnboardForm = () => {
           establishment: "",
           city1: "",
           state1: "",
-          aadharCard: null,
           panCard: null,
           certificates: [],
         })
@@ -163,7 +161,7 @@ const DoctorOnboardForm = () => {
         <form onSubmit={handleSubmit} className="space-y-6" encType="multipart/form-data">
           {/* Full Name Section */}
           <div>
-            <label className="block text-bold font-medium text-gray-700 mb-1">Full Name</label>
+            <label className="block text-bold font-medium text-gray-700 mb-1">Full Name <span className="text-red-500">*</span></label>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <input
@@ -193,7 +191,7 @@ const DoctorOnboardForm = () => {
           {/* Contact Information */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <label className="block text-bold font-medium text-gray-700 mb-1">Email</label>
+              <label className="block text-bold font-medium text-gray-700 mb-1">Email <span className="text-red-500">*</span></label>
               <input
                 type="email"
                 name="email"
@@ -205,7 +203,7 @@ const DoctorOnboardForm = () => {
               />
             </div>
             <div>
-              <label className="block text-bold font-medium text-gray-700 mb-1">Phone</label>
+              <label className="block text-bold font-medium text-gray-700 mb-1">Phone <span className="text-red-500">*</span></label>
               <input
                 type="text"
                 name="phone"
@@ -220,7 +218,7 @@ const DoctorOnboardForm = () => {
 
           {/* Address */}
           <div>
-            <label className="block text-bold font-medium text-gray-700 mb-1">Address</label>
+            <label className="block text-bold font-medium text-gray-700 mb-1">Address <span className="text-red-500">*</span></label>
             <input
               type="text"
               name="address"
@@ -235,7 +233,7 @@ const DoctorOnboardForm = () => {
           {/* City, State, Postal Code */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
-              <label className="block text-bold font-medium text-gray-700 mb-1">City</label>
+              <label className="block text-bold font-medium text-gray-700 mb-1">City <span className="text-red-500">*</span></label>
               <input
                 type="text"
                 name="city"
@@ -247,7 +245,7 @@ const DoctorOnboardForm = () => {
               />
             </div>
             <div>
-              <label className="block text-bold font-medium text-gray-700 mb-1">State</label>
+              <label className="block text-bold font-medium text-gray-700 mb-1">State <span className="text-red-500">*</span></label>
               <input
                 type="text"
                 name="state"
@@ -259,7 +257,7 @@ const DoctorOnboardForm = () => {
               />
             </div>
             <div>
-              <label className="block text-bold font-medium text-gray-700 mb-1">Postal/ zip Code</label>
+              <label className="block text-bold font-medium text-gray-700 mb-1">Postal/ zip Code <span className="text-red-500">*</span></label>
               <input
                 type="text"
                 name="postalCode"
@@ -278,14 +276,14 @@ const DoctorOnboardForm = () => {
               <div className="w-full border-t border-gray-300"></div>
             </div>
             <div className="relative flex justify-center text-sm">
-              <span className="px-2 text-xl bg-white text-red text-bold text-gray-900">Medical Registration</span>
+              <span className="px-2 text-xl bg-white text-red text-bold text-gray-900">Medical Registration </span>
             </div>
           </div>
 
           {/* Registration Information */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
-              <label className="block text-bold font-medium text-gray-700 mb-1">Registration Number</label>
+              <label className="block text-bold font-medium text-gray-700 mb-1">Registration Number <span className="text-red-500">*</span></label>
               <input
                 type="text"
                 name="registrationNumber"
@@ -297,7 +295,7 @@ const DoctorOnboardForm = () => {
               />
             </div>
             <div>
-              <label className="block text-bold font-medium text-gray-700 mb-1">Registration Council</label>
+              <label className="block text-bold font-medium text-gray-700 mb-1">Registration Council <span className="text-red-500">*</span></label>
               <input
                 type="text"
                 name="registrationCouncil"
@@ -309,7 +307,7 @@ const DoctorOnboardForm = () => {
               />
             </div>
             <div>
-              <label className="block text-bold font-medium text-gray-700 mb-1">Registration Year</label>
+              <label className="block text-bold font-medium text-gray-700 mb-1">Registration Year <span className="text-red-500">*</span></label>
               <input
                 type="text"
                 name="registrationYear"
@@ -334,7 +332,7 @@ const DoctorOnboardForm = () => {
           {/* Education */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
-              <label className="block text-bold font-medium text-gray-700 mb-1">Qualification</label>
+              <label className="block text-bold font-medium text-gray-700 mb-1">Qualification <span className="text-red-500">*</span></label>
               <input
                 type="text"
                 name="qualification"
@@ -346,7 +344,7 @@ const DoctorOnboardForm = () => {
               />
             </div>
             <div>
-              <label className="block text-bold font-medium text-gray-700 mb-1">Year of Completion</label>
+              <label className="block text-bold font-medium text-gray-700 mb-1">Year of Completion <span className="text-red-500">*</span></label>
               <input
                 type="text"
                 name="yearOfCompletion"
@@ -358,7 +356,7 @@ const DoctorOnboardForm = () => {
               />
             </div>
             <div>
-              <label className="block text-bold font-medium text-gray-700 mb-1">College/Institute</label>
+              <label className="block text-bold font-medium text-gray-700 mb-1">College/Institute <span className="text-red-500">*</span></label>
               <input
                 type="text"
                 name="collegeInstitute"
@@ -374,7 +372,7 @@ const DoctorOnboardForm = () => {
           {/* Professional Details */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
-              <label className="block text-bold font-medium text-gray-700 mb-1">Years of Experience</label>
+              <label className="block text-bold font-medium text-gray-700 mb-1">Years of Experience <span className="text-red-500">*</span></label>
               <input
                 type="text"
                 name="yearsOfExperience"
@@ -386,7 +384,7 @@ const DoctorOnboardForm = () => {
               />
             </div>
             <div>
-              <label className="block text-bold font-medium text-gray-700 mb-1">Speciality</label>
+              <label className="block text-bold font-medium text-gray-700 mb-1">Speciality <span className="text-red-500">*</span></label>
               <input
                 type="text"
                 name="specialty"
@@ -410,7 +408,7 @@ const DoctorOnboardForm = () => {
 
           {/* Establishment Radio Buttons */}
           <div>
-            <label className="block font-medium text-gray-700 mb-2">Establishment:</label>
+            <label className="block font-medium text-gray-700 mb-2">Establishment: <span className="text-red-500">*</span></label>
             <div className="space-y-2 flex flex-col">
               <label className="flex items-center">
                 <input
@@ -440,7 +438,7 @@ const DoctorOnboardForm = () => {
             {/* City and State Fields */}
             <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label className="block font-medium text-gray-700 mb-1">City</label>
+                <label className="block font-medium text-gray-700 mb-1">City <span className="text-red-500">*</span></label>
                 <input
                   type="text"
                   name="city1"
@@ -452,7 +450,7 @@ const DoctorOnboardForm = () => {
               </div>
 
               <div>
-                <label className="block font-medium text-gray-700 mb-1">State</label>
+                <label className="block font-medium text-gray-700 mb-1">State <span className="text-red-500">*</span></label>
                 <input
                   type="text"
                   name="state1"
@@ -467,7 +465,7 @@ const DoctorOnboardForm = () => {
 
           {/* Additional Notes */}
           <div className="mt-4">
-            <label className="block font-medium text-gray-700 mb-1">Additional Notes</label>
+            <label className="block font-medium text-gray-700 mb-1">Additional Notes </label>
             <textarea
               name="additionalNotes"
               placeholder="Additional Notes"
@@ -489,86 +487,67 @@ const DoctorOnboardForm = () => {
           </div>
 
           <div className="space-y-4">
-            {/* Aadhaar & PAN in one row */}
-            <div className="flex flex-col md:flex-row justify-between gap-4">
-              {/* Aadhaar Card Upload */}
-              <div className="w-full md:w-2/5">
-                <label className="block font-medium text-gray-700 mb-2">Aadhaar Card:</label>
-                <div
-                  className="h-52 border-2 border-dashed border-gray-400 rounded-lg flex flex-col items-center justify-center cursor-pointer"
-                  onClick={() => document.getElementById("aadharUpload").click()}
-                >
-                  <input
-                    type="file"
-                    name="aadharCard"
-                    accept="image/*"
-                    onChange={handleFileChange}
-                    className="hidden"
-                    id="aadharUpload"
-                  />
-                  <span className="text-sm text-gray-600 text-center">
-                    <span className="font-semibold text-primary-600">Browse File</span>
-                  </span>
-                </div>
-                {doctorData.aadharCard && (
-                  <p className="mt-2 text-sm text-gray-500 text-center">{doctorData.aadharCard.name}</p>
-                )}
-              </div>
+  {/* PAN Card & Dr. License in one row */}
+  <div className="flex flex-col md:flex-row justify-between gap-4">
+    {/* PAN Card Upload */}
+    <div className="w-full md:w-2/5">
+      <label className="block font-medium text-gray-700 mb-2">
+        PAN Card: <span className="text-red-500">*</span>
+      </label>
+      <div
+        className="h-52 border-2 border-dashed border-gray-400 rounded-lg flex flex-col items-center justify-center cursor-pointer"
+        onClick={() => document.getElementById("panUpload").click()}
+      >
+        <input
+          type="file"
+          name="panCard"
+          accept="image/*"
+          onChange={handleFileChange}
+          className="hidden"
+          id="panUpload"
+        />
+        <span className="text-sm text-gray-600 text-center">
+          <span className="font-semibold text-primary-600">Browse File</span>
+        </span>
+      </div>
+      {doctorData.panCard && (
+        <p className="mt-2 text-sm text-gray-500 text-center">{doctorData.panCard.name}</p>
+      )}
+    </div>
 
-              {/* PAN Card Upload */}
-              <div className="w-full md:w-2/5">
-                <label className="block font-medium text-gray-700 mb-2">PAN Card:</label>
-                <div
-                  className="h-52 border-2 border-dashed border-gray-400 rounded-lg flex flex-col items-center justify-center cursor-pointer"
-                  onClick={() => document.getElementById("panUpload").click()}
-                >
-                  <input
-                    type="file"
-                    name="panCard"
-                    accept="image/*"
-                    onChange={handleFileChange}
-                    className="hidden"
-                    id="panUpload"
-                  />
-                  <span className="text-sm text-gray-600 text-center">
-                    <span className="font-semibold text-primary-600">Browse File</span>
-                  </span>
-                </div>
-                {doctorData.panCard && (
-                  <p className="mt-2 text-sm text-gray-500 text-center">{doctorData.panCard.name}</p>
-                )}
-              </div>
-            </div>
+    {/* Dr. License Upload */}
+    <div className="w-full md:w-2/5">
+      <label className="block font-medium text-gray-700 mb-2">
+        Dcotor's Licence <span className="text-red-500">*</span>
+      </label>
+      <div
+        className="h-52 border-2 border-dashed border-gray-400 rounded-lg flex flex-col items-center justify-center cursor-pointer"
+        onClick={() => document.getElementById("certificatesUpload").click()}
+      >
+        <input
+          type="file"
+          name="certificates"
+          accept=".pdf,.jpg,.png"
+          multiple
+          onChange={handleFileChange}
+          className="hidden"
+          id="certificatesUpload"
+        />
+        <span className="text-sm text-gray-600 text-center">
+          <span className="font-semibold text-primary-600">Browse Files</span>
+        </span>
+      </div>
+      {doctorData.certificates && doctorData.certificates.length > 0 && (
+        <ul className="mt-2 text-sm text-gray-500 text-center">
+          {Array.from(doctorData.certificates).map((file, index) => (
+            <li key={index}>{file.name}</li>
+          ))}
+        </ul>
+      )}
+    </div>
+  </div>
+</div>
 
-            {/* Certificates Below with Full Width */}
-            <div className="w-full">
-              <label className="block font-medium text-gray-700 mb-2">Certificates:</label>
-              <div
-                className="h-52 border-2 border-dashed border-gray-400 rounded-lg flex flex-col items-center justify-center cursor-pointer"
-                onClick={() => document.getElementById("certificatesUpload").click()}
-              >
-                <input
-                  type="file"
-                  name="certificates"
-                  accept=".pdf,.jpg,.png"
-                  multiple
-                  onChange={handleFileChange}
-                  className="hidden"
-                  id="certificatesUpload"
-                />
-                <span className="text-sm text-gray-600 text-center">
-                  <span className="font-semibold text-primary-600">Browse Files</span>
-                </span>
-              </div>
-              {doctorData.certificates && doctorData.certificates.length > 0 && (
-                <ul className="mt-2 text-sm text-gray-500 text-center">
-                  {Array.from(doctorData.certificates).map((file, index) => (
-                    <li key={index}>{file.name}</li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          </div>
 
           {/* Submit Button */}
           <div className="flex justify-center pt-4">
