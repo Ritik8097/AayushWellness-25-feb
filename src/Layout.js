@@ -27,6 +27,7 @@ import StackImageMobile2 from "./StackImageMobile2";
 import CircularSlider from "./CircularSlider";
 import CleanEnergyHero from "./CleanEnergyHero";
 import HomeBlog from "./HomeBlog";
+import Banner from "./Banner";
 
 function Layout() {
   return (
@@ -38,6 +39,7 @@ function Layout() {
       <StackImageMobile/>
       <StackImageMobile2/>
       <AwCard/>
+    <Banner/>
       <AwCard2/>
       <HeroSection />
       {/* <SectionTrail/> */}
