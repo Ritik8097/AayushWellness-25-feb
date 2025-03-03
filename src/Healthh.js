@@ -7,6 +7,7 @@ import Blog from './Blog'
 import Service from './Service'
 import Testimonal from './Testimonal'
 import HNewFooter from './HNewfooter'
+import DoctorOnboardButton from './DoctoronboardButton'
 
 
 const Healthh = () => {
@@ -19,6 +20,7 @@ const Healthh = () => {
     <Service/>
      <Blog />
     <Testimonal />
+    <DoctorOnboardButton/>
     <HNewFooter />
     </>
   )
