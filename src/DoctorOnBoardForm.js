@@ -39,7 +39,7 @@ const DoctorOnboardForm = () => {
   const isAdmin = searchParams.get("admin") === "true"
 
   const handleChange = (e) => {
-    setDoctorData({ ...doctorData, [e.target.name]: e.target.value })
+    setDoctorData({ ...doctorData, [e.target.name]: e.target.value });
   }
 
   const handleFileChange = (e) => {
