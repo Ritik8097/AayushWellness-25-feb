@@ -548,12 +548,12 @@ export default function AnimatedSlider() {
 
             <div className="md:hidden">
               <div className="flex">
-                <button
+                {/* <button
                   onClick={toggleSearch}
                   className="block py-2 px-2  hover:text-primary/80"
                 >
                   <img src={searchIcon} alt="Search" className="h-6 w-6" />
-                </button>
+                </button> */}
 
                 {isSearchOpen && (
                   <input
