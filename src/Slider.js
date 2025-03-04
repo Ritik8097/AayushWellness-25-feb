@@ -559,12 +559,12 @@ export default function AnimatedSlider() {
 
             <div className="md:hidden">
               <div className="flex">
-                <button
+                {/* <button
                   onClick={toggleSearch}
                   className="block py-2 px-2  hover:text-primary/80"
                 >
                   <img src={searchIcon} alt="Search" className="h-6 w-6" />
-                </button>
+                </button> */}
 
                 {isSearchOpen && (
                   <input
@@ -588,11 +588,11 @@ export default function AnimatedSlider() {
           </div>
         </div>
         <div
-  id="mobile-menu"
-  className={`fixed top-0 left-0 h-[100dvh] w-full bg-white shadow-md z-50 transition-all duration-300 overflow-y-auto ${
-    isMenuOpen ? "block !translate-x-0" : "hidden !-translate-x-full"
-  }`}
->
+          id="mobile-menu"
+          className={`fixed top-0 left-0 h-full w-full bg-white shadow-md z-50 transition-all duration-300 ${
+            isMenuOpen ? "block !translate-x-0" : "hidden !-translate-x-full"
+          }`}
+        >
           <div className="flex justify-between items-center px-6 ">
     {/* Logo on the left */}
     <img
