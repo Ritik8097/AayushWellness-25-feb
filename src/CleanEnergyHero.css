@@ -211,7 +211,7 @@
 
 .HomeHero_content__DYNN6 {
   flex: 1;
-  max-width: 50%;
+  max-width:50%;
 }
 
 .HomeHero_mediaWrapper__g_1Dk {
@@ -405,6 +405,26 @@ object-fit: cover; /* Keeps the aspect ratio intact */
 }
 
 
+@media screen and (max-width:600px){
+  .HomeHero_content__DYNN6 {
+    padding-right: 20px;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.HomeHero_content__DYNN6, .HomeHero_mediaWrapper__g_1Dk {
+    flex: 1 1;
+    max-width: 100%;
+}
+  .HomeHero_mediaWrapper__g_1Dk {
+    width: 100%;
+}
+
+.HomeHero_content__DYNN6, .HomeHero_mediaWrapper__g_1Dk {
+    flex: 1 1;
+    max-width: 100%;
+}
+}
 
 
 
