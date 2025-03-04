@@ -247,7 +247,7 @@ export default function Header() {
     </button>
   </div>
 
-          <div className="flex flex-col mt-20 px-6 overflow-y-auto h-full pb-20">
+          <div className="flex flex-col mt-10 px-6 overflow-y-auto h-full pb-20">
             {/* Home Link */}
             <Link
               to="/"
