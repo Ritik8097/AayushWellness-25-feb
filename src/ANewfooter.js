@@ -59,7 +59,7 @@ const ANewFooter = () => {
                     <img className='h-14 footer-img' src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Aayush_Wellness_Limited_-_Logo_-_17-10-2024-02_-_png-white_1.png?v=1739961559" alt="logo" />
     </Link>
                 </div>
-                <div className="block md:hidden  text-[10px] text-center !text-[#ffffff]">A Public Listed Company on <br/>Bombay Stock Exchange [BSE Code: 539528]</div>
+                <div className="block md:hidden  text-[15px] text-center !text-[#ffffff]">A Public Listed Company on <br/>Bombay Stock Exchange [BSE Code: 539528]</div>
                     </div>
                 
                 <div className="container mx-auto grid grid-cols-2 md:grid-cols-6 gap-8">
@@ -69,7 +69,7 @@ const ANewFooter = () => {
                         <img className='h-[4.5rem] footer-img' src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Aayush_Wellness_Limited_-_Logo_-_17-10-2024-02_-_png-white_1.png?v=1739961559" alt="logo" />
     </Link>
                     </div>
-                    <div className="hidden text-[#e7e6e6] justify-center text-center  w-full text-[10px] md:flex">A Public Listed Company on <br/>Bombay Stock Exchange [BSE Code: 539528]</div>
+                    <div className="hidden text-[#e7e6e6] justify-center text-center  w-full text-[15px] md:flex">A Public Listed Company on <br/>Bombay Stock Exchange [BSE Code: 539528]</div>
                     </div>
                     <div>
                         <h3 className="font-bold text-lg" style={{color:'#a8ff00'}}>ABOUT US</h3>
