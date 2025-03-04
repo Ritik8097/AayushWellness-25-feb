@@ -65,6 +65,7 @@ const Banner = () => {
               <img loading="lazy" className="w-full object-fill h-[100vh] pt-[80px]" src={item.src} alt={`Slide ${index + 1}`} />
             ) : (
               <video
+                preload="auto"
                 ref={(el) => (videoRefs.current[index] = el)}
                 className="w-full object-cover h-[100vh] pt-[110px]"
                 autoPlay
