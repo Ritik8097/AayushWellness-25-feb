@@ -56,7 +56,7 @@ const ANewFooter = () => {
     <div className="flex flex-col items-center justify-center pb-8 md:hidden">
                 <div className="flex justify-center items-center  ">
     <Link to="/">
-                    <img className='h-14 footer-img' src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Aayush_Wellness_Limited_-_Logo_-_17-10-2024-02_-_png-white_1.png?v=1739961559" alt="logo" />
+                    <img className='h-[6.5rem] md:h-[6.5rem] footer-img' src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Aayush_Wellness_Limited_-_Logo_-_17-10-2024-02_-_png-white_1.png?v=1739961559" alt="logo" />
     </Link>
                 </div>
                 <div className="block md:hidden  text-[15px] text-center !text-[#ffffff]">A Public Listed Company on <br/>Bombay Stock Exchange [BSE Code: 539528]</div>
@@ -66,7 +66,7 @@ const ANewFooter = () => {
                   <div className=" flex-col items-center justify-center hidden md:flex">
                     <div className=" justify-center items-center flex">
      <Link to='/'>
-                        <img className='h-[4.5rem] footer-img' src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Aayush_Wellness_Limited_-_Logo_-_17-10-2024-02_-_png-white_1.png?v=1739961559" alt="logo" />
+                        <img className='h-[6.5rem] md:h-[6.5rem]] footer-img' src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Aayush_Wellness_Limited_-_Logo_-_17-10-2024-02_-_png-white_1.png?v=1739961559" alt="logo" />
     </Link>
                     </div>
                     <div className="hidden text-[#e7e6e6] justify-center text-center  w-full text-[15px] md:flex">A Public Listed Company on <br/>Bombay Stock Exchange [BSE Code: 539528]</div>
