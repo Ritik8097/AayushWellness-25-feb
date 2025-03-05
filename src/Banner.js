@@ -73,8 +73,9 @@ const Banner = () => {
                 muted
                 playsInline
                 crossOrigin="anonymous"
-                onCanPlay={() => videoRefs.current[index]?.play().catch(err => console.log("Autoplay prevented:", err))}
-                className="w-full object-cover h-[100vh] pt-[110px]"
+                onLoadedData={() => {
+                  videoRefs.current[index]?.play().catch((err) => console.log("Autoplay prevented:", err));
+                }}
               >
                 <source src={item.src} type="video/mp4" />
                 Your browser does not support the video tag.
