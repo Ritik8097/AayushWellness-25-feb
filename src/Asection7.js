@@ -116,7 +116,7 @@ const Asection7 = () => {
                       }}
                     >
                       {section.links.map((link, idx) => (
-                        <a key={idx} className="footer__link block py-1 w-full" href={link.href}>
+                        <a key={idx} className="text-gray-300 hover:text-white transition font-inter" href={link.href}>
                           {link.text}
                         </a>
                       ))}
@@ -153,7 +153,7 @@ const Asection7 = () => {
           <div className="footer__copy">
             <div className="footer__text">© Aayush Wellness. All Rights Reserved 2025</div>
             {/* <img src="https://berelax.com/wp-content/uploads/2023/01/Logo-Be-Relax.png" width="100%" height="100%" alt="be relax" className="footer__logo" /> */}
-            <div className="footer__text">Created by<a  target="_blank" rel="noreferrer"><svg width={72} height={21} fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div className="footer__text"><a  target="_blank" rel="noreferrer"><svg width={72} height={21} fill="none" xmlns="http://www.w3.org/2000/svg">
             {/* href="https://equal.design/" */}
                   {/* <g clipPath="url(#equal_svg__a)" fill="#5D8395">
                     <path fillRule="evenodd" clipRule="evenodd" d="M55.412 12.11c0-1.183 1.08-1.612 3.56-1.612 2.115 0 3.501.281 4.668.651-.291.887-1.196 1.434-2.232 1.774-1.328.43-5.996 1.405-5.996-.813Zm4.216-8.162c-2.378 0-4.669.429-6.988 1.198L53.82 7.6c2.35-.71 4.173-.842 5.661-.842 1.547 0 4.334.177 4.334 2.38-1.489-.517-3.298-.828-5.253-.828-3.618 0-6.872.946-6.872 3.948 0 2.617 2 3.652 5.194 3.652 1.313 0 2.524-.148 3.648-.414 1.62-.606 2.699-1.567 3.457-2.647.176.045.292.148.482.193a62.44 62.44 0 0 0-.642 2.365v.326h3.326V9.877c-.058-4.376-2.757-5.929-7.528-5.929Z" />
