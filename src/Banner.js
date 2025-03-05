@@ -65,21 +65,21 @@ const Banner = () => {
               <img loading="lazy" className="w-full object-fill h-[100vh] pt-[80px]" src={item.src} alt={`Slide ${index + 1}`} />
             ) : (
               <video
-                preload="auto"
-                ref={(el) => (videoRefs.current[index] = el)}
-                className="w-full object-cover h-[100vh] pt-[110px]"
-                autoPlay
-                loop
-                muted
-                playsInline
-                crossOrigin="anonymous"
-                onLoadedData={() => {
-                  videoRefs.current[index]?.play().catch((err) => console.log("Autoplay prevented:", err));
-                }}
-              >
-                <source src={item.src} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              preload="auto"
+              ref={(el) => (videoRefs.current[index] = el)}
+              className="w-full object-cover h-[100vh] pt-[110px]"
+              autoPlay
+              loop
+              muted
+              playsInline
+              disableRemotePlayback
+              onCanPlayThrough={() => {
+                videoRefs.current[index]?.play().catch((err) => console.log("Autoplay prevented:", err));
+              }}
+            >
+              <source src={item.src} type="video/mp4" muted playsInline />
+              Your browser does not support the video tag.
+            </video>
             )}
           </div>
         ))}
