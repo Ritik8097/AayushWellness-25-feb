@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect, useRef } from "react";
+import BlurText from './BlurText';
 
 const Asection5 = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -80,11 +81,13 @@ const Asection5 = () => {
           transition: "opacity 1s ease-out, transform 1s ease-out",
         }}
       >
-        <h2 
-          className="text-center font-bold leading-[120%] tracking-[0.02em] w-full mb-3 pt-[60px] text-[54px] lg:text-[94px]" 
-            >
-          The Future of Wellness is Here
-        </h2>
+        <div><BlurText
+            text="The Future of Wellness is Here"
+            animateOn="view"
+            revealDirection="center"
+            className="text-center font-bold text-black leading-[120%] tracking-[0.02em] w-full mb-3 pt-[60px] text-[38px] sm:text-[38px] md:text-[54px] lg:text-[94px]"
+          /></div>
+              
         <div
           className="follow-us__text"
           style={{
