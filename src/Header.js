@@ -731,9 +731,9 @@ export default function AnimatedSlider() {
     </div>
   )}
 </div> */}
-            <div className="h-px w-full bg-gray-200 my-1"></div>
+            {/* <div className="h-px w-full bg-gray-200 my-1"></div> */}
 
-            <div className="relative">
+            {/* <div className="relative">
   <button
     onClick={() => setIsNewsroomDropdownOpen(!isNewsroomDropdownOpen)}
     className="w-full py-4 font-extrabold text-[#004037] text-[36px] flex items-center justify-between"
@@ -749,20 +749,20 @@ export default function AnimatedSlider() {
     >
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
     </svg>
-  </button>
+  </button> */}
 
-  {isNewsroomDropdownOpen && (
-    <div className="rounded-md mt-2 mb-3 py-2 ">
+  {/* {isNewsroomDropdownOpen && (
+    <div className="rounded-md mt-2 mb-3 py-2 "> */}
       {/* Title & Description */}
-      <div className="px-4 py-2">
+      {/* <div className="px-4 py-2">
         <h3 className="text-xl font-bold text-[#004037]">Newsroom</h3>
         <p className="text-lg text-gray-600 mt-2">
           Stay updated with the latest news, press releases, and important announcements.
         </p>
-      </div>
+      </div> */}
 
       {/* Dropdown Links */}
-      <div className="flex flex-col">
+      {/* <div className="flex flex-col">
         <Link
           to="/newsroom/in-the-news"
           className="block px-4 py-3 text-[#004037] font-bold hover:bg-gray-100 transition"
@@ -792,9 +792,9 @@ export default function AnimatedSlider() {
       </div>
     </div>
   )}
-</div>
+</div> */}
 
-            <div className="h-px w-full bg-gray-200 my-1"></div>
+            {/* <div className="h-px w-full bg-gray-200 my-1"></div> */}
 
             <Link
               to="/ourproduct"
