@@ -72,6 +72,7 @@ const Banner = () => {
                 loop
                 muted
                 playsInline
+                crossOrigin="anonymous"
                 onCanPlay={() => videoRefs.current[index]?.play().catch(err => console.log("Autoplay prevented:", err))}
                 className="w-full object-cover h-[100vh] pt-[110px]"
               >
