@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './Asection7.css'
 import FooterBlock from './FooterBlock';
+import { Typewriter } from 'react-simple-typewriter';
 
 const Asection7 = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -57,31 +58,20 @@ const Asection7 = () => {
 
   return (
 <footer className="footer snipcss-DVqsh">
-      <div className="footer__block1">
+<div className="footer__block1">
         <img src="https://berelax.com/_next/static/media/4-1.515f831f.webp" className="footer__block1-img" width="100%" height="100%" />
         <div className="footer__row">
-        <div className="in-view fadein animated style-ooSFT" id="style-ooSFT">
-      <div className="footer__left">
-        <h2 className="footer__title">
-          <Typewriter 
-            words={['Join the Aayush Wellness & Travel Newsletter']}
-            loop={true} // Set true if you want it to repeat
-            cursor
-            typeSpeed={120} // Adjust speed as needed
-          />
-        </h2>
-        <div className="footer__form">
-          <div className="footer__input">
-            <input type="email" placeholder="Your Email" />
+          <div className="in-view fadein animated style-ooSFT" id="style-ooSFT">
+            <div className="footer__left">
+              <h2 className="footer__title">Join the Aayush Wellness &amp; Travel Newsletter</h2>
+              <div className="footer__form">
+                <div className="footer__input"><input type="email" placeholder="Your Email"  /></div>
+                <div className="button beige button-arrow"><svg viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 8.5h24m0 0-6.857-7M24 8.5l-6.857 7" stroke="#fff" strokeWidth="1.5" />
+                  </svg></div>
+              </div>
+            </div>
           </div>
-          <div className="button beige button-arrow">
-            <svg viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 8.5h24m0 0-6.857-7M24 8.5l-6.857 7" stroke="#fff" strokeWidth="1.5" />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
           <div className="in-view fadein animated style-9mrno" id="style-9mrno">
             {!isMobile ? (
               <div className="footer__list">
