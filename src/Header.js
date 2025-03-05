@@ -203,7 +203,7 @@ export default function AnimatedSlider() {
                 </div>
               </div>
 
-              <div className="navbar-dropdown relative group">
+              {/* <div className="navbar-dropdown relative group">
                 <button
                   className="hover:text-primary/80 flex items-center"
                   style={{ fontFamily: '"Inter", sans-serif' }}
@@ -222,12 +222,12 @@ export default function AnimatedSlider() {
                       d="M19 9l-7 7-7-7"
                     ></path>
                   </svg>
-                </button>
+                </button> */}
 
                 {/* Dropdown Menu */}
-                <div className="absolute left-0 top-full w-[1110px] h-[290px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible transform translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 mt-6">
+                {/* <div className="absolute left-0 top-full w-[1110px] h-[290px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible transform translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 mt-6"> */}
                   {/* Left Side: Title & Description */}
-                  <div className="w-[60%] mt-10">
+                  {/* <div className="w-[60%] mt-10">
                     <h3 className="text-3xl font-bold text-[#004037]">
                       Wellness & You
                     </h3>
@@ -235,10 +235,10 @@ export default function AnimatedSlider() {
                       Discover the perfect balance of modern science and ancient
                       wisdom to enhance your well-being.
                     </p>
-                  </div>
+                  </div> */}
 
                   {/* Right Side: Links */}
-                  <div className="w-[35%] flex flex-col gap-3 mt-8">
+                  {/* <div className="w-[35%] flex flex-col gap-3 mt-8">
                     <Link
                       to="/wellness/modern-science"
                       className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
@@ -276,9 +276,9 @@ export default function AnimatedSlider() {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="navbar-dropdown relative group">
+              {/* <div className="navbar-dropdown relative group">
                 <button
                   className="hover:text-primary/80 flex items-center"
                   style={{ fontFamily: '"Inter", sans-serif' }}
@@ -297,12 +297,12 @@ export default function AnimatedSlider() {
                       d="M19 9l-7 7-7-7"
                     ></path>
                   </svg>
-                </button>
+                </button> */}
 
                 {/* Dropdown Menu - Centered Below Newsroom */}
-                <div className="absolute left-1/2 top-full w-[1110px] h-[290px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible transform -translate-x-1/2 translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 mt-6">
+                {/* <div className="absolute left-1/2 top-full w-[1110px] h-[290px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible transform -translate-x-1/2 translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 mt-6"> */}
                   {/* Left Side: Title & Description */}
-                  <div className="w-[60%] mt-10">
+                  {/* <div className="w-[60%] mt-10">
                     <h3 className="text-3xl font-bold text-[#004037]">
                       Newsroom
                     </h3>
@@ -310,10 +310,10 @@ export default function AnimatedSlider() {
                       Stay updated with the latest news, press releases, and
                       important announcements.
                     </p>
-                  </div>
+                  </div> */}
 
                   {/* Right Side: Links */}
-                  <div className="w-[35%] flex flex-col gap-3 mt-10">
+                  {/* <div className="w-[35%] flex flex-col gap-3 mt-10">
                     <Link
                       to="/newsroom/in-the-news"
                       className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
@@ -351,7 +351,7 @@ export default function AnimatedSlider() {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               <Link
                 to="/ourproduct"
@@ -670,7 +670,7 @@ export default function AnimatedSlider() {
             <div className="h-px w-full bg-gray-200 my-1"></div>
 
             {/* Wellness & You Dropdown */}
-            <div className="relative">
+            {/* <div className="relative">
   <button
     onClick={() => setIsWellnessDropdownOpen(!isWellnessDropdownOpen)}
     className="w-full py-4 font-extrabold text-[#004037] text-[36px] flex items-center justify-between"
@@ -689,18 +689,18 @@ export default function AnimatedSlider() {
   </button>
 
   {isWellnessDropdownOpen && (
-    <div className="rounded-md mt-2 mb-3 py-2 ">
+    <div className="rounded-md mt-2 mb-3 py-2 "> */}
       {/* Title & Description */}
-      <div className="px-4 py-2">
+      {/* <div className="px-4 py-2">
         <h3 className="text-xl font-bold text-[#004037]">Wellness & You</h3>
         <p className="text-lg text-gray-600 mt-2">
           Discover the perfect balance of modern science and ancient
           wisdom to enhance your well-being.
         </p>
-      </div>
+      </div> */}
 
       {/* Dropdown Links */}
-      <div className="flex flex-col">
+      {/* <div className="flex flex-col">
         <Link
           to="/wellness/modern-science"
           className="block px-4 py-3 text-[#004037] font-bold hover:bg-gray-100 transition"
@@ -730,7 +730,7 @@ export default function AnimatedSlider() {
       </div>
     </div>
   )}
-</div>
+</div> */}
             <div className="h-px w-full bg-gray-200 my-1"></div>
 
             <div className="relative">
