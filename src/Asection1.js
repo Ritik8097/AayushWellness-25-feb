@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Asection1 = () => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 80 }}
+      initial={{ opacity: 0, y: 280 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.8, ease: "easeInOut" }}
       viewport={{ once: true }}
