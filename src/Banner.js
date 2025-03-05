@@ -36,7 +36,7 @@ const Banner = () => {
     { type: "image", src: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/grand_opning_healthcare_ad_-_02-03-2025_-_portrait_BANNER.jpg?v=1741005542" },
     { type: "video", src: "https://cdn.shopify.com/videos/c/o/v/3454076400644c5aa9bac0f343e93b32.mp4" },
     { type: "image", src: "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Slider_banner_2_mobile_9bbc2622-bb9e-48d8-a303-b1dfd6dcd11d.jpg?v=1740134272" },
-    { type: "video", src: "https://cdn.shopify.com/videos/c/o/v/8d0959b295d641eca5343020820154ae.mp4" },
+    { type: "video", src: "https://cdn.shopify.com/videos/c/o/v/720f0d6cd9eb40b384d816e6513b576b.mp4" },
   ];
 
   const desktopContent = [
