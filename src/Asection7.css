@@ -1,39 +1,4 @@
-@font-face { 
-    font-family:Gotham Pro;
-    src:url(https://berelax.com/_next/static/media/gothampro_light.e17db98b.ttf) format("truetype");
-    font-weight:300;
-    font-style:normal;
-  } 
-  @font-face { 
-    font-family:Gotham Pro;
-    src:url(https://berelax.com/_next/static/media/gothampro.e894eef3.ttf) format("truetype");
-    font-weight:400;
-    font-style:normal;
-  } 
-  @font-face { 
-    font-family:Gotham Pro;
-    src:url(https://berelax.com/_next/static/media/gothampro_medium.7a6ea239.ttf) format("truetype");
-    font-weight:500;
-    font-style:normal;
-  } 
-  @font-face { 
-    font-family:Gotham Pro;
-    src:url(https://berelax.com/_next/static/media/gothampro_bold.ef5aef0b.ttf) format("truetype");
-    font-weight:700;
-    font-style:normal;
-  } 
-  @font-face { 
-    font-family:Gotham Pro;
-    src:url(https://berelax.com/_next/static/media/gothampro_italic.c4949d3d.ttf) format("truetype");
-    font-weight:400;
-    font-style:italic;
-  } 
-  @font-face { 
-    font-family:Gotham Pro;
-    src:url(https://berelax.com/_next/static/media/gothampro_black.3aee5097.ttf) format("truetype");
-    font-weight:900;
-    font-style:normal;
-  } 
+
   @import url('https://fonts.googleapis.com/css?family=Antic+Didone:400&display=swap'); 
   * { 
       padding: 0; 
@@ -41,6 +6,7 @@
       box-sizing: border-box; 
       font-display: optional;
   } 
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
   
   *,:hover { 
       -webkit-appearance: none; 
@@ -241,7 +207,7 @@
   } 
   
   .footer__text { 
-      font-family: Gotham Pro; 
+      font-family: "Inter", sans-serif; 
       font-style: normal; 
       font-weight: 400; 
       font-size: 14px; 
@@ -328,7 +294,7 @@
   } 
   
   .title { 
-      font-family: Antic Didone; 
+      font-family: "Inter", sans-serif; 
       font-style: normal; 
       font-weight: 400; 
       font-size: 75px; 
@@ -337,11 +303,10 @@
       letter-spacing: .02em; 
       color: #13233b;
   } 
-  
-  a { 
-      text-decoration: none; 
-      color: inherit;
+  .footer__subtitle a {
+    color: black;
   } 
+  
   
   .button { 
       width: -moz-fit-content; 
@@ -352,7 +317,7 @@
       text-align: center; 
       cursor: pointer; 
       border-radius: 100px; 
-      font-family: Gotham Pro; 
+      font-family: "Inter", sans-serif; 
       font-style: normal; 
       font-weight: 400; 
       font-size: 20px; 
@@ -387,7 +352,7 @@
   } 
   
   .footer__title { 
-      font-family: Antic Didone; 
+      font-family: "Inter", sans-serif; 
       font-size: 40px; 
       line-height: 125%; 
       color: #3a4458; 
@@ -470,7 +435,7 @@
   } 
   
   .footer__subtitle { 
-      font-family: Gotham Pro; 
+      font-family: "Inter", sans-serif;
       font-size: 14px; 
       line-height: 100%; 
       text-transform: uppercase; 
@@ -488,7 +453,7 @@
   } 
   
   .footer__link { 
-      font-family: Gotham Pro; 
+      font-family: "Inter", sans-serif;
       font-style: normal; 
       font-weight: 400; 
       font-size: 14px; 
@@ -539,7 +504,7 @@
   
   .footer__input input  { 
       width: 100%; 
-      font-family: Gotham Pro; 
+      font-family: "Inter", sans-serif;
       font-style: normal; 
       font-weight: 400; 
       font-size: 16px; 
@@ -561,7 +526,7 @@
   
   .footer__select-top span  { 
       margin: 0 4px; 
-      font-family: Gotham Pro; 
+      font-family: "Inter", sans-serif;
       font-style: normal; 
       font-weight: 400; 
       font-size: 14px; 
@@ -680,7 +645,7 @@
    @media (max-width: 768px) {
     .footer__list { 
         
-        column-gap: 56px;
+        column-gap: 36px;
     } 
   } 
    
