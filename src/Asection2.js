@@ -6,7 +6,7 @@ const Asection2 = () => {
     <div className="w-full flex justify-center">
       {/* Image Background Container with fade-in animation */}
       <motion.div
-        initial={{ opacity: 0, y: 50 }} // Start hidden and move up
+        initial={{ opacity: 0, y: 320 }} // Start hidden and move up
         animate={{ opacity: 1, y: 0 }} // Fade in and move to position
         transition={{ duration: 1, ease: "easeOut" }} // Smooth animation
         className="w-[368px] h-[196px] md:w-[80vw] md:h-[29.5vw] max-w-[80vw] rounded-[48px] overflow-hidden mt-[40px] mx-auto"
