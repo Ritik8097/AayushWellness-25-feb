@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './Asection7.css'
 import FooterBlock from './FooterBlock';
-import { Typewriter } from 'react-simple-typewriter';
+
 
 const Asection7 = () => {
   const [isMobile, setIsMobile] = useState(false);
