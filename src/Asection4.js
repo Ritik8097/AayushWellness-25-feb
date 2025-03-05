@@ -66,22 +66,22 @@ export default function Asection4() {
       content: "A vision to transform everyday health.",
       icon: <Sparkles className="text-amber-500" size={32} />,
       content2: `<div style="width: 100%; max-width: 100%; padding: 0 2%; box-sizing: border-box; font-size: clamp(14px, 1.2vw, 18px); color: #3a4458; line-height: 1.8; font-weight: 400;">
-    <h3 style="font-size: clamp(18px, 1.5vw, 22px); font-weight: 600; color: #000; display: flex; align-items: center; gap: 10px;">
+    <h3 style="font-size: clamp(18px, 1.5vw, 22px); font-weight: 600; color: #3a4458; display: flex; align-items: center; gap: 10px;">
       <svg width="24" height="24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77 5.82 21 7 14.13l-5-4.86 6.91-1.01L12 2z"></path></svg>
       How It All Began
     </h3>
-    <p>
+    <p style="color: #3a4458">
       Our journey started with a simple yet profound question:
-      <span style="font-style:italic; font-weight: 500; color: #000;"> "How can we make holistic wellness more accessible, personalized, and proactive?"</span>
+      <span style="font-style:italic; font-weight: 500; color: #000; text-[#3a4458];"> "How can we make holistic wellness more accessible, personalized, and proactive?"</span>
     </p>
 
     <h3 style="font-size: clamp(18px, 1.5vw, 22px); font-weight: 600; color: #000; display: flex; align-items: center; gap: 10px; margin-top: 16px;">
       <svg width="24" height="24" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5m0 0L5 12m7-7l7 7"></path></svg>
       The Vision Behind Aayush Wellness
     </h3>
-    <p>
-      This vision led to the creation of <span style="font-weight: 600; color: #000;">Aayush Wellness</span> — a brand that seamlessly blends 
-      <span style="font-weight: 500; color: #000;"> cutting-edge research</span> with nature’s best-kept secrets, crafting solutions that empower people 
+    <p style="color: #3a4458">
+      This vision led to the creation of <span style="font-weight: 600; color: #000;">Aayush Wellness</span style="color: #3a4458"> — a brand that seamlessly blends 
+      <span style="font-weight: 500; color: #000;"> cutting-edge research</span style="color: #3a4458"> with nature’s best-kept secrets, crafting solutions that empower people 
       to take charge of their health.
     </p>
 
@@ -89,7 +89,7 @@ export default function Asection4() {
       <svg width="24" height="24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 12a4 4 0 0 1-8 0 4 4 0 0 1 8 0z"></path></svg>
       Science Meets Nature
     </h3>
-    <p>
+    <p style="color: #3a4458">
       From meticulously formulated <span style="font-weight: 500; color: #000;">nutraceuticals and dietary supplements</span> to 
       <span style="font-weight: 500; color: #000;"> AI-powered preventive healthcare services</span>, our mission is to bring the best of health, backed by science.
     </p>
@@ -98,7 +98,7 @@ export default function Asection4() {
       <svg width="24" height="24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7"></path><path d="M16 5H3"></path></svg>
       Empowering a Healthier Tomorrow
     </h3>
-    <p>
+    <p style="color: #3a4458">
       At Aayush Wellness, we don’t just treat health concerns; we provide <span style="font-weight: 500; color: #000;">holistic, science-backed solutions</span> 
       that empower individuals to take control of their well-being.
     </p>
@@ -117,7 +117,7 @@ export default function Asection4() {
         <svg width="24" height="24" fill="none" stroke="#34d399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5m0 0L5 12m7-7l7 7"></path></svg>
         Advanced Nutraceuticals & Supplements
       </h3>
-      <p>
+      <p style="color: #3a4458">
         Our scientifically formulated <span style="font-weight: 500; color: #000;">nutraceuticals and dietary supplements</span> are designed to enhance 
         wellness and bridge nutritional gaps effectively.
       </p>
@@ -126,7 +126,7 @@ export default function Asection4() {
         <svg width="24" height="24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77 5.82 21 7 14.13l-5-4.86 6.91-1.01L12 2z"></path></svg>
         AI-Driven Preventive Healthcare
       </h3>
-      <p>
+      <p style="color: #3a4458">
         By integrating <span style="font-weight: 500; color: #000;">cutting-edge AI technology</span>, we empower individuals with personalized 
         health monitoring and proactive wellness insights.
       </p>
@@ -135,7 +135,7 @@ export default function Asection4() {
         <svg width="24" height="24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"></path><path d="M20 6a10 10 0 1 1-8-4"></path></svg>
         Holistic Health Foods & Wellness
       </h3>
-      <p>
+      <p style="color: #3a4458">
         Our <span style="font-weight: 500; color: #000;">organic and functional health foods</span> are crafted to support everyday well-being 
         and promote a balanced lifestyle.
       </p>
@@ -154,7 +154,7 @@ export default function Asection4() {
           <svg width="24" height="24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
           Science-Backed Formulations
         </h3>
-        <p>
+        <p style="color: #3a4458">
           Our products are developed by leading experts in <span style="font-weight: 500; color: #000;">nutraceuticals and healthcare</span>, 
           ensuring safety, efficacy, and reliability.
         </p>
@@ -163,7 +163,7 @@ export default function Asection4() {
           <svg width="24" height="24" fill="none" stroke="#f87171" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"></path><path d="M12 3v18"></path></svg>
           Personalized Health Solutions
         </h3>
-        <p>
+        <p style="color: #3a4458">
           Our tailored wellness solutions cater to <span style="font-weight: 500; color: #000;">individual health needs</span>, ensuring a customized 
           approach to well-being.
         </p>
@@ -172,7 +172,7 @@ export default function Asection4() {
           <svg width="24" height="24" fill="none" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"></path></svg>
           Future-Ready Preventive Care
         </h3>
-        <p>
+        <p style="color: #3a4458">
           We focus on <span style="font-weight: 500; color: #000;">early detection and smart interventions</span>, promoting proactive health monitoring 
           for a better future.
         </p>
@@ -181,7 +181,7 @@ export default function Asection4() {
           <svg width="24" height="24" fill="none" stroke="#14b8a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"></path></svg>
           Commitment to Purity & Quality
         </h3>
-        <p>
+        <p style="color: #3a4458">
           Every product undergoes <span style="font-weight: 500; color: #000;">rigorous testing</span> to ensure the highest standards of safety and efficacy.
         </p>
       </div>`,
