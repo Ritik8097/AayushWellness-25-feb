@@ -137,7 +137,7 @@ const CompanyValues = () => {
     <motion.div
       ref={ref}
       style={companyValuesStyles.container}
-      initial={{ opacity: 0, y: 50 }}
+      initial={{ opacity: 0, y: 340 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
