@@ -66,13 +66,13 @@ const Banner = () => {
             ) : (
               <video
               preload="auto"
-              ref={(el) => (videoRefs.current[index] = el)}
+              
               className="w-full object-cover h-[100vh] pt-[110px]"
               autoPlay
               loop
               muted
               playsInline
-              disableRemotePlayback
+              
               onCanPlayThrough={() => {
                 videoRefs.current[index]?.play().catch((err) => console.log("Autoplay prevented:", err));
               }}
