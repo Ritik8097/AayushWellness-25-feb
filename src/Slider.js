@@ -968,17 +968,20 @@ export default function AnimatedSlider() {
             <span className="word fade-word delay-4">Lives</span>
           </p>
         </div>
-        <video
+       <video
           className={`video ${isVisible ? "fade-in" : ""}`}
           autoPlay
           muted
           loop
           playsInline
-          preload="auto"
-          crossOrigin="anonymous"
-          src={selectedVideo.src}
-          type="video/mp4"
-        ></video>
+          poster="https://res.cloudinary.com/dudn5tfkq/image/upload/v1741259430/o3zcqyhewzusfycdygyc.png"
+        
+      
+          
+        >
+          <source src={selectedVideo.src} type="video/mp4"/>
+          
+        </video>
         <style jsx>{`
           .video-wrapper {
             position: relative;
