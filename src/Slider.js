@@ -974,7 +974,7 @@ export default function AnimatedSlider() {
           muted
           loop
           playsInline
-          poster="https://res.cloudinary.com/dudn5tfkq/image/upload/v1741259430/o3zcqyhewzusfycdygyc.png"
+         
         
       
           
