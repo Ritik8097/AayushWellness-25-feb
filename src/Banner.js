@@ -77,7 +77,7 @@ const Banner = () => {
                 videoRefs.current[index]?.play().catch((err) => console.log("Autoplay prevented:", err));
               }}
             >
-              <source src={item.src} type="video/mp4" muted playsInline />
+              <source src={item.src} type="video/mp4"  />
               Your browser does not support the video tag.
             </video>
             )}
