@@ -518,7 +518,7 @@ const DoctorOnboardForm = () => {
     {/* Dr. License Upload */}
     <div className="w-full md:w-2/5">
       <label className="block font-medium text-gray-700 mb-2">
-        Dcotor's Licence <span className="text-red-500">*</span>
+        Doctor's Licence <span className="text-red-500">*</span>
       </label>
       <div
         className="h-52 border-2 border-dashed border-gray-400 rounded-lg flex flex-col items-center justify-center cursor-pointer"
