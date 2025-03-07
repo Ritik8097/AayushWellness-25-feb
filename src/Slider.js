@@ -43,11 +43,11 @@ export default function AnimatedSlider() {
 
   const videos = {
     desktop: {
-      src: "https://cdn.shopify.com/videos/c/o/v/d2a5d80ae3b34d55b259ac5caaba58c4.mp4",
+      src: "https://cdn.shopify.com/videos/c/o/v/139791bdf7224d648c2a57aa7f458592.mp4",
       text: "Transforming Wellness , Transforming Lives",
     },
     mobile: {
-      src: "https://cdn.shopify.com/videos/c/o/v/b337ff7b84f641f8a4920f8e1e865278.mp4",
+      src: "https://cdn.shopify.com/videos/c/o/v/cd7177ad46114615a673ec4ef80c210f.mp4",
       text: "Transforming wellness, transforming lives",
     },
   };
