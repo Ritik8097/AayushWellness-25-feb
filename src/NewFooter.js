@@ -1,131 +1,326 @@
-import React, { useState ,useEffect} from 'react';
-import './NewFooter.css'
+"use client"
+
+import { useState , useEffect} from "react";
 import { Link } from "react-router-dom";
-import FooterCopyright from './FooterCopyright';
+import { ArrowRight } from "lucide-react";
 
 const NewFooter = () => {
-
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [email, setEmail] = useState("");
+  const [isSubscribed, setIsSubscribed] = useState(false);
+  const [videoSrc, setVideoSrc] = useState(
+    "https://cdn.shopify.com/videos/c/o/v/ef92913a3d004ba4bbe7ab21d8d6afe3.mp4"
+  );
 
   useEffect(() => {
     const handleResize = () => {
-      setWindowWidth(window.innerWidth);
+      if (window.innerWidth <= 768) {
+        setVideoSrc("https://cdn.shopify.com/videos/c/o/v/your-mobile-video.mp4");
+      } else {
+        setVideoSrc("https://cdn.shopify.com/videos/c/o/v/ef92913a3d004ba4bbe7ab21d8d6afe3.mp4");
+      }
     };
 
-    window.addEventListener('resize', handleResize);
+    handleResize();
+    window.addEventListener("resize", handleResize);
 
-    // Clean up the event listener on component unmount
-    return () => window.removeEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
-  // Determine height based on window size
-  const containerHeight = windowWidth <= 768 ? '650px' : '500px';
-  //padding for main-conatiner
-  const paddingTop = windowWidth > 768 ? '60px' : '0px';
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
 
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+    if (email && email.includes("@")) {
+      setIsSubscribed(true);
+    }
+  };
 
   return (
-    <>
-    <footer className="Footer_container__UU6GV snipcss0-0-0-1 snipcss-Olh9m" style={{
-  backgroundImage: 'url("https://cdn.shopify.com/s/files/1/0636/5226/6115/files/footer_image.jpg?v=1739961894")',
-  backgroundSize: 'cover',  // Ensures the image covers the full area
-  backgroundPosition: 'center',  // Centers the background image
-  backgroundColor: '#28a745',  // Green background for fallback
-  paddingTop: windowWidth > 768 ? '60px' : '20px',
-  boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',  // Optional: Box shadow for outer container
-  
-}}>
-      <div className='main-container h-fit md:h-[500px] flex flex-col justify-between'style={{
-    backgroundColor: '#004037',  // Green background
-    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',  // Box shadow
-    padding: '20px',  // Adjust padding as needed
-    borderRadius: '8px',  // Optional: For rounded corners
-    width: '80%',  // Reduce width (you can adjust the percentage)
-     // Dynamic height based on window size
-    margin: '0 auto',  // Centers the container horizontally
-    paddingTop: paddingTop,    
-  }}>
-    <div className="flex flex-col items-center justify-center pb-8 md:hidden">
-                <div className="flex justify-center items-center  ">
-    <Link to="/">
-                    <img className='h-[6.5rem] md:h-[6.5rem] footer-img' src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Aayush_Wellness_Limited_-_Logo_-_17-10-2024-02_-_png-white_1.png?v=1739961559" alt="logo" />
-    </Link>
-                </div>
-                <div className="block md:hidden  text-[15px] text-center !text-[#ffffff]">A Public Listed Company on <br/>Bombay Stock Exchange [BSE Code: 539528]</div>
-                    </div>
-                
-                <div className="container mx-auto grid grid-cols-2 md:grid-cols-6 gap-8">
-                  <div className=" flex-col items-center justify-center hidden md:flex">
-                    <div className=" justify-center items-center flex">
-     <Link to='/'>
-                        <img className='h-[6.5rem] md:h-[6.5rem] footer-img' src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Aayush_Wellness_Limited_-_Logo_-_17-10-2024-02_-_png-white_1.png?v=1739961559" alt="logo" />
-    </Link>
-                    </div>
-                    <div className="hidden text-[#e7e6e6] justify-center text-center  w-full text-[15px] md:flex">A Public Listed Company on <br/>Bombay Stock Exchange [BSE Code: 539528]</div>
-                    </div>
-                    <div>
-                        <h3 className="font-bold text-lg" style={{color:'#fffffff'}}>ABOUT US</h3>
-                        <ul className="mt-2 space-y-2">
-                            <li><Link to="/about/company-intro" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>Our Story</Link></li>
-                            <li><Link to="/about/mission-vision" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>Mission & Vision</Link></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 className="font-bold text-lg" style={{color:'#fffffff'}}>WELLNESS</h3>
-                        <ul className="mt-2 space-y-2">
-                            <li><Link to="/wellness/modern-science" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>Modern Science</Link></li>
-                            <li><Link to="/ayurveda" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>Ayurveda</Link></li>
-                            <li><Link to="/wellness/health-wellness" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>Health & Wellness</Link></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 className="font-bold text-lg" style={{color:'#fffffff'}}>NEWSROOM</h3>
-                        <ul className="mt-2 space-y-2">
-                            <li><Link to="/newsroom/in-the-news" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>In the News</Link></li>
-                            <li><Link to="/newsroom/press-release" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>Press Release</Link></li>
-                            <li><Link to="/newsroom/library" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>Library</Link></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 className="font-bold text-lg" style={{color:'#fffffff'}}>CSR</h3>
-                        <ul className="mt-2 space-y-2">
-                            <li><Link to="/csr-at-aayush/malnutrition" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>Malnutrition</Link></li>
-                            <li><Link to="/csr-at-aayush/health-check" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>Healthcare Check</Link></li>
-                            <li><Link to="/sustainability" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>Sustainability</Link></li>
-                        </ul>
-                    </div>
+    <footer className="relative w-full md:h-[80vh] overflow-hidden text-white font-sans">
+      <video className="absolute top-0 left-0 w-full h-full object-cover z-0" autoPlay loop muted>
+        <source src={videoSrc} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
-                    <div>
-                        <h3 className="font-bold text-lg"  style={{color:'#fffffff'}}>Corporate</h3>
-                        <ul className="mt-2 space-y-2">
-                            <li><Link to="/career" className="text-muted-foreground hover:text-primary"  style={{color:'white'}}>Careers</Link></li>
-                            <li><Link to="/privacy-policy" className="text-muted-foreground hover:text-primary" style={{color:'white'}}>Privacy Policy</Link></li>
-                            
-                        </ul>
-                    </div>
-                   
-                </div>
-                <FooterCopyright/>
-                </div>
-  <div className="Footer_brandMark__8eNWC snipcss0-1-1-109">
-  <img
-    src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/png_footer_aw_1.png?v=1739967055"
-    alt="Arcadia logo"
-    width={18}
-    height={20}
-    className="snipcss0-2-109-110"
-    style={{
-      width: "100%",  
-      height: "100%", 
-      objectFit: "contain", 
-    }}
-  />
-</div>
-  {/* <div className="snipcss0-1-1-111"><img alt loading="lazy" width={3362} height={1680} decoding="async" data-nimg={1} className="Footer_image__yOn3D snipcss0-2-111-112 style-rSYGB" src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/png_footer_aw.png?v=1739961854" id="style-rSYGB" /></div> */}
+      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10"></div>
 
-</footer>
-    </>
-  )
-}
+      <div className="relative z-20 flex flex-col h-full p-4 md:p-10">
+        <div className="flex flex-col md:flex-row justify-between mb-auto">
+          <div className="flex-1 min-w-[300px] mb-8 md:mb-0">
+            <h2 className="mb-2 text-xxl font-semibold text-white">Connect With Us</h2>
+            <p className="mb-5 text-base md:text-lg max-w-[600px] text-white text-lg">
+              Subscribe for 15% off your first order and unlock your inner potential with us.
+            </p>
+
+            <form onSubmit={handleSubscribe} className="flex items-center max-w-[500px]">
+              {!isSubscribed ? (
+                <div className="flex w-full rounded-full overflow-hidden border-2">
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    value={email}
+                    onChange={handleEmailChange}
+                    className="py-4 px-5 flex-grow border-none text-sm text-black outline-none h-[60px]"
+                  />
+                  <button
+                    type="submit"
+                    className="bg-white-500 text-white border-none cursor-pointer flex items-center justify-center px-4 h-[60px]"
+                  >
+                    <div className="bg-white rounded-full w-10 h-10 flex items-center justify-center">
+                      <ArrowRight size={18} className="text-green-500" />
+                    </div>
+                  </button>
+                </div>
+              ) : (
+                <p className="text-green-500">Thanks for subscribing!</p>
+              )}
+            </form>
+          </div>
+
+          <div className="flex flex-col md:flex-row gap-8 md:gap-10 md:pl-2 md:border-l md:border-white/90">
+            <div className="min-w-[120px]">
+              <h3 className="mb-4 text-xxl font-medium">Company</h3>
+              <ul className="list-none p-0">
+                <li className="mb-2"><Link to="/about-us" className="text-white no-underline hover:underline font-bold text-[25px]">About Us</Link></li>
+                <li className="mb-2"><Link to="/about/company-intro" className="text-white no-underline hover:underline font-bold text-[25px]">Our Story</Link></li>
+                <li className="mb-2"><Link to="/career" className="text-white no-underline hover:underline font-bold text-[25px]">Contact Us</Link></li>
+                <li><Link to="/about/mission-vision" className="text-white no-underline hover:underline font-bold text-[25px]">Mission & Vision</Link></li>
+              </ul>
+            </div>
+            <div className="min-w-[120px]">
+              <h3 className="mb-4 text-xxl font-medium">Resources</h3>
+              <ul className="list-none p-0">
+              <li><Link to="/wellness/modern-science" className="text-white no-underline hover:underline font-bold text-[25px]">Modern Science</Link></li>
+                            <li><Link to="/ayurveda" className="text-white no-underline hover:underline font-bold text-[25px]">Ayurveda</Link></li>
+                            <li><Link to="/wellness/health-wellness" className="text-white no-underline hover:underline font-bold text-[25px]">Health & Wellness</Link></li>
+                            <li><Link to="/newsroom/in-the-news" className="text-white no-underline hover:underline font-bold text-[25px]">In the News</Link></li>
+                            <li><Link to="/newsroom/press-release" className="text-white no-underline hover:underline font-bold text-[25px]">Press Release</Link></li>
+                            <li><Link to="/newsroom/library" className="text-white no-underline hover:underline font-bold text-[25px]">Library</Link></li>
+              </ul>
+            </div>
+            <div className="min-w-[120px]">
+              <h3 className="mb-4 text-xxl font-medium font-bold">Connect</h3>
+              <ul className="list-none p-0">
+              <li><Link to="/csr-at-aayush/malnutrition" className="text-white no-underline hover:underline font-bold text-[25px]">Malnutrition</Link></li>
+                            <li><Link to="/csr-at-aayush/health-check" className="text-white no-underline hover:underline font-bold text-[25px]">Healthcare Check</Link></li>
+                            <li><Link to="/sustainability" className="text-white no-underline hover:underline font-bold text-[25px]">Sustainability</Link></li>
+                            <li><Link to="/healthcare" className="text-white no-underline hover:underline font-bold text-[25px]">Healthcare</Link></li>
+                            <li><Link to="/growth-accelerator" className="text-white no-underline hover:underline font-bold text-[25px]">Accelarator</Link></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full max-w-[1791px] h-auto md:h-[267px] flex items-center justify-center mx-auto px-4">
+          <img src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/footer_logo.png?v=1741340063" alt="Aayushwellness Logo" className="w-full h-full object-contain" />
+        </div>
+
+        <div className="w-full h-px bg-white/30 my-4"></div>
+
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-4 md:gap-0 pb-4">
+          <div className="text-center md:text-left max-w-md">
+            <p className="text-sm text-white mb-2">© 2025 Aayush. All rights reserved.</p>
+            <p className="text-sm text-gray-300">Elevating experiences through innovative design and technology.</p>
+          </div>
+          <div className="flex gap-6">
+            <Link to="#" className="text-sm text-white no-underline hover:underline">Terms</Link>
+            <Link to="/privacy-policy" className="text-sm text-white no-underline hover:underline">Privacy Policy</Link>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
 
 export default NewFooter;
+
+
+
+
+
+
+
+
+
+
+
+// import { useState } from "react"
+// import { ArrowRight } from "lucide-react"
+
+// const Footer = () => {
+//   const [email, setEmail] = useState("")
+//   const [isSubscribed, setIsSubscribed] = useState(false)
+
+//   const handleEmailChange = (e) => {
+//     setEmail(e.target.value)
+//   }
+
+//   const handleSubscribe = (e) => {
+//     e.preventDefault()
+//     if (email && email.includes("@")) {
+//       setIsSubscribed(true)
+//     }
+//   }
+
+//   return (
+//     <footer className="relative w-full h-screen md:h-[80vh] overflow-hidden text-white font-sans">
+//       {/* Video Background */}
+//       <video className="absolute top-0 left-0 w-full h-full object-cover z-0" autoPlay loop muted>
+//         <source src="https://www.devion.nl/app/uploads/2024/09/Head-Video-Website-5.mp4" type="video/mp4" />
+//         Your browser does not support the video tag.
+//       </video>
+
+//       {/* Overlay to make content more visible */}
+//       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10"></div>
+
+//       {/* Content Container */}
+//       <div className="relative z-20 flex flex-col h-full p-4 md:p-10">
+//         {/* Top Content */}
+//         <div className="flex flex-col md:flex-row justify-between mb-auto">
+//           {/* Left Side */}
+//           <div className="flex-1 min-w-[300px] mb-8 md:mb-0">
+//             <h2 className="mb-2 text-2xl font-semibold">Connect With Us</h2>
+//             <p className="mb-5 text-base md:text-lg max-w-[600px]">
+//               Subscribe for 15% off your first order and unlock your inner potential with us.
+//             </p>
+//             <form onSubmit={handleSubscribe} className="flex items-center max-w-[500px]">
+//               {!isSubscribed ? (
+//                 <div className="flex w-full rounded-full overflow-hidden border-2 border-green-500">
+//                   <input
+//                     type="email"
+//                     placeholder="Enter your email"
+//                     value={email}
+//                     onChange={handleEmailChange}
+//                     className="py-3 px-5 flex-grow border-none text-sm text-black outline-none"
+//                   />
+//                   <button
+//                     type="submit"
+//                     className="bg-green-500 text-white border-none cursor-pointer flex items-center justify-center px-4"
+//                   >
+//                     <div className="bg-white rounded-full w-8 h-8 flex items-center justify-center">
+//                       <ArrowRight size={16} className="text-green-500" />
+//                     </div>
+//                   </button>
+//                 </div>
+//               ) : (
+//                 <div className="py-3 px-5 bg-green-500 text-white border-none rounded-full w-full text-center text-sm">
+//                   Thanks for subscribing!
+//                 </div>
+//               )}
+//             </form>
+//           </div>
+
+//           {/* Right Side - Links */}
+//           <div className="flex flex-col md:flex-row gap-8 md:gap-10 md:pl-6 md:border-l md:border-white/30">
+//             {/* Column 1 */}
+//             <div className="min-w-[120px]">
+//               <h3 className="mb-4 text-lg font-medium">Company</h3>
+//               <ul className="list-none p-0">
+//                 <li className="mb-2">
+//                   <a href="#" className="text-white no-underline hover:underline">
+//                     About Us
+//                   </a>
+//                 </li>
+//                 <li className="mb-2">
+//                   <a href="#" className="text-white no-underline hover:underline">
+//                     Our Story
+//                   </a>
+//                 </li>
+//                 <li className="mb-2">
+//                   <a href="#" className="text-white no-underline hover:underline">
+//                     Contact Us
+//                   </a>
+//                 </li>
+//               </ul>
+//             </div>
+
+//             {/* Column 2 */}
+//             <div className="min-w-[120px]">
+//               <h3 className="mb-4 text-lg font-medium">Resources</h3>
+//               <ul className="list-none p-0">
+//                 <li className="mb-2">
+//                   <a href="#" className="text-white no-underline hover:underline">
+//                     Blog
+//                   </a>
+//                 </li>
+//                 <li className="mb-2">
+//                   <a href="#" className="text-white no-underline hover:underline">
+//                     News
+//                   </a>
+//                 </li>
+//                 <li className="mb-2">
+//                   <a href="#" className="text-white no-underline hover:underline">
+//                     Events
+//                   </a>
+//                 </li>
+//                 <li className="mb-2">
+//                   <a href="#" className="text-white no-underline hover:underline">
+//                     FAQ
+//                   </a>
+//                 </li>
+//               </ul>
+//             </div>
+
+//             {/* Column 3 - Social */}
+//             <div className="min-w-[120px]">
+//               <h3 className="mb-4 text-lg font-medium">Connect</h3>
+//               <ul className="list-none p-0">
+//                 <li className="mb-2">
+//                   <a href="#" className="text-white no-underline hover:underline">
+//                     Facebook
+//                   </a>
+//                 </li>
+//                 <li className="mb-2">
+//                   <a href="#" className="text-white no-underline hover:underline">
+//                     Twitter
+//                   </a>
+//                 </li>
+//                 <li className="mb-2">
+//                   <a href="#" className="text-white no-underline hover:underline">
+//                     Instagram
+//                   </a>
+//                 </li>
+//               </ul>
+//             </div>
+//           </div>
+//         </div>
+
+//         {/* Center - Aayush */}
+//         <div className="text-center mt-4 w-full">
+//           <h1 className="text-[clamp(30px,8vw,300px)] font-bold tracking-wider leading-none max-h-[25vh] overflow-hidden">
+//             Aayush
+//           </h1>
+//         </div>
+
+//         {/* Horizontal Divider */}
+//         <div className="w-full h-px bg-white/30 my-4"></div>
+
+//         {/* Bottom Footer Content */}
+//         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-4 md:gap-0 pb-4">
+//           {/* Left Side - 2 Lines Text */}
+//           <div className="text-center md:text-left max-w-md">
+//             <p className="text-sm mb-2">© 2025 Aayush. All rights reserved.</p>
+//             <p className="text-xs text-gray-300">Elevating experiences through innovative design and technology.</p>
+//           </div>
+
+//           {/* Right Side - Terms & Policy */}
+//           <div className="flex gap-6">
+//             <a href="#" className="text-sm text-white no-underline hover:underline">
+//               Terms
+//             </a>
+//             <a href="#" className="text-sm text-white no-underline hover:underline">
+//               Privacy Policy
+//             </a>
+//           </div>
+//         </div>
+//       </div>
+//     </footer>
+//   )
+// }
+
+// export default NewFooter
+
