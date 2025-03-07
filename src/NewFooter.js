@@ -1,10 +1,8 @@
-"use client"
-
 import { useState , useEffect} from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
-const NewFooter = () => {
+const Footer2 = () => {
   const [email, setEmail] = useState("");
   const [isSubscribed, setIsSubscribed] = useState(false);
   const [videoSrc, setVideoSrc] = useState(
@@ -92,18 +90,19 @@ const NewFooter = () => {
               </ul>
             </div>
             <div className="min-w-[120px]">
-              <h3 className="mb-4 text-xxl font-medium">Resources</h3>
+              <h3 className="mb-4 text-xxl font-medium">Wellness</h3>
               <ul className="list-none p-0">
               <li><Link to="/wellness/modern-science" className="text-white no-underline hover:underline font-bold text-[25px]">Modern Science</Link></li>
                             <li><Link to="/ayurveda" className="text-white no-underline hover:underline font-bold text-[25px]">Ayurveda</Link></li>
                             <li><Link to="/wellness/health-wellness" className="text-white no-underline hover:underline font-bold text-[25px]">Health & Wellness</Link></li>
+                            <h3 className="mb-4 mt-4 text-xxl font-medium">Newsroom</h3>
                             <li><Link to="/newsroom/in-the-news" className="text-white no-underline hover:underline font-bold text-[25px]">In the News</Link></li>
                             <li><Link to="/newsroom/press-release" className="text-white no-underline hover:underline font-bold text-[25px]">Press Release</Link></li>
                             <li><Link to="/newsroom/library" className="text-white no-underline hover:underline font-bold text-[25px]">Library</Link></li>
               </ul>
             </div>
             <div className="min-w-[120px]">
-              <h3 className="mb-4 text-xxl font-medium font-bold">Connect</h3>
+              <h3 className="mb-4 text-xxl font-medium font-bold">Corporate</h3>
               <ul className="list-none p-0">
               <li><Link to="/csr-at-aayush/malnutrition" className="text-white no-underline hover:underline font-bold text-[25px]">Malnutrition</Link></li>
                             <li><Link to="/csr-at-aayush/health-check" className="text-white no-underline hover:underline font-bold text-[25px]">Healthcare Check</Link></li>
@@ -136,191 +135,4 @@ const NewFooter = () => {
   );
 };
 
-export default NewFooter;
-
-
-
-
-
-
-
-
-
-
-
-// import { useState } from "react"
-// import { ArrowRight } from "lucide-react"
-
-// const Footer = () => {
-//   const [email, setEmail] = useState("")
-//   const [isSubscribed, setIsSubscribed] = useState(false)
-
-//   const handleEmailChange = (e) => {
-//     setEmail(e.target.value)
-//   }
-
-//   const handleSubscribe = (e) => {
-//     e.preventDefault()
-//     if (email && email.includes("@")) {
-//       setIsSubscribed(true)
-//     }
-//   }
-
-//   return (
-//     <footer className="relative w-full h-screen md:h-[80vh] overflow-hidden text-white font-sans">
-//       {/* Video Background */}
-//       <video className="absolute top-0 left-0 w-full h-full object-cover z-0" autoPlay loop muted>
-//         <source src="https://www.devion.nl/app/uploads/2024/09/Head-Video-Website-5.mp4" type="video/mp4" />
-//         Your browser does not support the video tag.
-//       </video>
-
-//       {/* Overlay to make content more visible */}
-//       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10"></div>
-
-//       {/* Content Container */}
-//       <div className="relative z-20 flex flex-col h-full p-4 md:p-10">
-//         {/* Top Content */}
-//         <div className="flex flex-col md:flex-row justify-between mb-auto">
-//           {/* Left Side */}
-//           <div className="flex-1 min-w-[300px] mb-8 md:mb-0">
-//             <h2 className="mb-2 text-2xl font-semibold">Connect With Us</h2>
-//             <p className="mb-5 text-base md:text-lg max-w-[600px]">
-//               Subscribe for 15% off your first order and unlock your inner potential with us.
-//             </p>
-//             <form onSubmit={handleSubscribe} className="flex items-center max-w-[500px]">
-//               {!isSubscribed ? (
-//                 <div className="flex w-full rounded-full overflow-hidden border-2 border-green-500">
-//                   <input
-//                     type="email"
-//                     placeholder="Enter your email"
-//                     value={email}
-//                     onChange={handleEmailChange}
-//                     className="py-3 px-5 flex-grow border-none text-sm text-black outline-none"
-//                   />
-//                   <button
-//                     type="submit"
-//                     className="bg-green-500 text-white border-none cursor-pointer flex items-center justify-center px-4"
-//                   >
-//                     <div className="bg-white rounded-full w-8 h-8 flex items-center justify-center">
-//                       <ArrowRight size={16} className="text-green-500" />
-//                     </div>
-//                   </button>
-//                 </div>
-//               ) : (
-//                 <div className="py-3 px-5 bg-green-500 text-white border-none rounded-full w-full text-center text-sm">
-//                   Thanks for subscribing!
-//                 </div>
-//               )}
-//             </form>
-//           </div>
-
-//           {/* Right Side - Links */}
-//           <div className="flex flex-col md:flex-row gap-8 md:gap-10 md:pl-6 md:border-l md:border-white/30">
-//             {/* Column 1 */}
-//             <div className="min-w-[120px]">
-//               <h3 className="mb-4 text-lg font-medium">Company</h3>
-//               <ul className="list-none p-0">
-//                 <li className="mb-2">
-//                   <a href="#" className="text-white no-underline hover:underline">
-//                     About Us
-//                   </a>
-//                 </li>
-//                 <li className="mb-2">
-//                   <a href="#" className="text-white no-underline hover:underline">
-//                     Our Story
-//                   </a>
-//                 </li>
-//                 <li className="mb-2">
-//                   <a href="#" className="text-white no-underline hover:underline">
-//                     Contact Us
-//                   </a>
-//                 </li>
-//               </ul>
-//             </div>
-
-//             {/* Column 2 */}
-//             <div className="min-w-[120px]">
-//               <h3 className="mb-4 text-lg font-medium">Resources</h3>
-//               <ul className="list-none p-0">
-//                 <li className="mb-2">
-//                   <a href="#" className="text-white no-underline hover:underline">
-//                     Blog
-//                   </a>
-//                 </li>
-//                 <li className="mb-2">
-//                   <a href="#" className="text-white no-underline hover:underline">
-//                     News
-//                   </a>
-//                 </li>
-//                 <li className="mb-2">
-//                   <a href="#" className="text-white no-underline hover:underline">
-//                     Events
-//                   </a>
-//                 </li>
-//                 <li className="mb-2">
-//                   <a href="#" className="text-white no-underline hover:underline">
-//                     FAQ
-//                   </a>
-//                 </li>
-//               </ul>
-//             </div>
-
-//             {/* Column 3 - Social */}
-//             <div className="min-w-[120px]">
-//               <h3 className="mb-4 text-lg font-medium">Connect</h3>
-//               <ul className="list-none p-0">
-//                 <li className="mb-2">
-//                   <a href="#" className="text-white no-underline hover:underline">
-//                     Facebook
-//                   </a>
-//                 </li>
-//                 <li className="mb-2">
-//                   <a href="#" className="text-white no-underline hover:underline">
-//                     Twitter
-//                   </a>
-//                 </li>
-//                 <li className="mb-2">
-//                   <a href="#" className="text-white no-underline hover:underline">
-//                     Instagram
-//                   </a>
-//                 </li>
-//               </ul>
-//             </div>
-//           </div>
-//         </div>
-
-//         {/* Center - Aayush */}
-//         <div className="text-center mt-4 w-full">
-//           <h1 className="text-[clamp(30px,8vw,300px)] font-bold tracking-wider leading-none max-h-[25vh] overflow-hidden">
-//             Aayush
-//           </h1>
-//         </div>
-
-//         {/* Horizontal Divider */}
-//         <div className="w-full h-px bg-white/30 my-4"></div>
-
-//         {/* Bottom Footer Content */}
-//         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-4 md:gap-0 pb-4">
-//           {/* Left Side - 2 Lines Text */}
-//           <div className="text-center md:text-left max-w-md">
-//             <p className="text-sm mb-2">© 2025 Aayush. All rights reserved.</p>
-//             <p className="text-xs text-gray-300">Elevating experiences through innovative design and technology.</p>
-//           </div>
-
-//           {/* Right Side - Terms & Policy */}
-//           <div className="flex gap-6">
-//             <a href="#" className="text-sm text-white no-underline hover:underline">
-//               Terms
-//             </a>
-//             <a href="#" className="text-sm text-white no-underline hover:underline">
-//               Privacy Policy
-//             </a>
-//           </div>
-//         </div>
-//       </div>
-//     </footer>
-//   )
-// }
-
-// export default NewFooter
-
+export default Footer2;
