@@ -12,7 +12,7 @@ const Footer2 = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 768) {
-        setVideoSrc("https://cdn.shopify.com/videos/c/o/v/your-mobile-video.mp4");
+        setVideoSrc("https://cdn.shopify.com/videos/c/o/v/a5dd2b88f5b64cb2929ce6bf43cef8c8.mp4");
       } else {
         setVideoSrc("https://cdn.shopify.com/videos/c/o/v/ef92913a3d004ba4bbe7ab21d8d6afe3.mp4");
       }
