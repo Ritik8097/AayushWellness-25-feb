@@ -726,7 +726,7 @@ export default function AnimatedSlider() {
         </div>
       </nav>
 
-      <div className="video-wrapper relative" ref={sliderRef}>
+       <div className="video-wrapper relative" ref={sliderRef}>
         <div className="video-overlay">
           {/* Divider Line Below the Text */}
           <div className="absolute left-0 w-full border-t-2 border-[#ffebc4] opacity-80 mt-24 h-[1px]"></div>
@@ -734,7 +734,7 @@ export default function AnimatedSlider() {
           {/* Text Below Divider on the Left Side */}
           <div
             className="absolute top-20 left-8 text-[#ffebc4] font-bold leading-none 
-                 text-[40px] md:text-[100px] mt-6"
+             text-[clamp(2rem,5vw,40px)] md:text-[clamp(3.5rem,8vw,100px)] mt-6"
           >
             A New Era of Preventive
             <br /> Healthcare
@@ -742,7 +742,7 @@ export default function AnimatedSlider() {
         </div>
 
         {/* Services/Products Title - Visible on all screen sizes */}
-        <div className="absolute md:bottom-[370px] md:left-4 bottom-[550px] left-0 right-0 text-center md:text-left text-[#ffebc4] text-[24px] font-bold z-20">
+        <div className="absolute md:bottom-[370px] md:left-4 bottom-[550px] left-0 right-0 text-center md:text-left text-[#ffebc4] text-[clamp(1.25rem,4vw,24px)] font-bold z-20">
           Services/Products
         </div>
 
@@ -762,22 +762,22 @@ export default function AnimatedSlider() {
         <div className="absolute bottom-0 left-1/2 w-[1px] h-[360px] bg-[#ffebc4] z-10 transform -translate-x-1/2 hidden md:block"></div>
 
         {/* Right-Side Text (Desktop) */}
-        <div className="absolute bottom-[370px] left-[52%] text-[#ffebc4] text-[28px] md:text-[20px] leading-tight font-medium w-[40%] z-20 md:block hidden">
+        <div className="absolute bottom-[370px] left-[52%] text-[#ffebc4] text-[clamp(1.25rem,2vw,28px)] md:text-[clamp(1rem,1.5vw,20px)] leading-tight font-medium w-[40%] z-20 md:block hidden">
           Introduction
         </div>
 
-        <div className="absolute bottom-[240px] left-[52%] text-[#ffebc4] text-[28px] md:text-[20px] leading-tight font-medium w-[40%] z-20 md:block hidden">
+        <div className="absolute bottom-[240px] left-[52%] text-[#ffebc4] text-[clamp(1.25rem,2vw,28px)] md:text-[clamp(0.875rem,1.5vw,20px)] leading-tight font-medium w-[40%] z-20 md:block hidden">
           At Aayush Wellness, we believe that true health & wellness is not just about treatment but prevention. Through
           healthcare services, science-backed products, holistic wellness solutions, we empower individuals to take
           proactive steps toward lifelong well-being.
         </div>
 
         {/* Introduction & Other Text Just Below Divider on Mobile */}
-        <div className="absolute bottom-[250px] left-4 right-4 text-center text-[#ffebc4] text-[20px] leading-tight font-medium z-20 md:hidden">
+        <div className="absolute bottom-[250px] left-4 right-4 text-center text-[#ffebc4] text-[clamp(1.125rem,4vw,20px)] leading-tight font-medium z-20 md:hidden">
           Introduction
         </div>
 
-        <div className="absolute bottom-[50px] left-4 right-4 text-center text-[#ffebc4] text-[20px] leading-tight font-medium z-20 md:hidden">
+        <div className="absolute bottom-[50px] left-4 right-4 text-center text-[#ffebc4] text-[clamp(0.875rem,3.5vw,20px)] leading-tight font-medium z-20 md:hidden">
           At Aayush Wellness, we believe that true health & wellness is not just about treatment but prevention. Through
           healthcare services, science-backed products, holistic wellness solutions, we empower individuals to take
           proactive steps toward lifelong well-being.
