@@ -34,7 +34,7 @@ const slides = [
   },
   {
     id: 4,
-    image: "https://img.freepik.com/free-photo/top-view-mint-cinnamon-with-spices-white-ingredients-leaves_140725-25144.jpg?uid=R186725298&ga=GA1.1.1002746497.1740224156&semt=ais_hybrid",
+    image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/WhatsApp_Image_2025-03-08_at_3.53.38_PM.jpg?v=1741430393",
     title: "Herbal Tobacco Alternative",
     // description: "Another product description",
     buttonText: "Order Now", // Dynamic Button Text
