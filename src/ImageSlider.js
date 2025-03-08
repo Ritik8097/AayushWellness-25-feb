@@ -54,7 +54,7 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="relative bottom-4 left-4 w-[331px]">
+    <div className="relative bottom-4 w-[331px]">
       <Swiper
         modules={[Pagination, Navigation, Autoplay]}
         pagination={{ clickable: true, el: ".custom-pagination" }}
