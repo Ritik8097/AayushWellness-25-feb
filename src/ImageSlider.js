@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -26,10 +26,13 @@ const slides = [
   },
   {
     id: 3,
-    image: "https://img.freepik.com/free-photo/portrait-biologist-scientist-white-coat-working-expertise-laboratory-looking-into-microscope-analyzing-organic-gmo-leaf_482257-2118.jpg?uid=R186725298&ga=GA1.1.1002746497.1740224156&semt=ais_hybrid",
+    images: [ // Multiple images for 3rd slide
+      "https://img.freepik.com/free-photo/portrait-biologist-scientist-white-coat-working-expertise-laboratory-looking-into-microscope-analyzing-organic-gmo-leaf_482257-2118.jpg?uid=R186725298&ga=GA1.1.1002746497.1740224156&semt=ais_hybrid",
+      "https://img.freepik.com/free-photo/top-view-diet-concept-diet-food-bowl-with-notepad-copy-space_23-2148722647.jpg",
+      "https://img.freepik.com/free-photo/nutritionist-desk-fruits-vegetables-diet-notes-wooden-background-top-view_176420-4867.jpg"
+    ],
     title: "Science-Backed Nutrition",
-    // description: "Short product description",
-    buttonText: "Order Now", // Dynamic Button Text
+    buttonText: "Order Now",
     path: "https://aayushlife.com/",
   },
   {
@@ -44,7 +47,18 @@ const slides = [
 
 const ImageSlider = () => {
   const navigate = useNavigate();
-  
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        (prevIndex + 1) % slides[2].images.length // Loop through images
+      );
+    }, 2000); // Change image every 2 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
 
   const handleRedirect = (path) => {
     if (path.startsWith("http")) {
@@ -55,7 +69,7 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="relative bottom-4 w-[331px]">
+    <div className="relative bottom-4  w-[331px]">
       <Swiper
         modules={[Pagination, Navigation, Autoplay]}
         pagination={{ clickable: true, el: ".custom-pagination" }}
@@ -69,30 +83,37 @@ const ImageSlider = () => {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={slide.id}>
-           <div className="flex bg-white/10 backdrop-blur-sm shadow-lg rounded-lg overflow-hidden md:w-[331px] w-[100%] h-[145px] p-3">
-              <img
-                src={slide.image}
-                alt={slide.title}
-                className="w-1/3 !pt-0 h-full object-cover rounded-lg"
-              />
+            <div className="flex bg-white/10 backdrop-blur-sm shadow-lg rounded-lg overflow-hidden md:w-[331px] w-[100%] h-[145px] p-3">
+              {/* Conditionally Render Image */}
+              {slide.images ? (
+                <img
+                  src={slide.images[currentImageIndex]}
+                  alt={slide.title}
+                  className="w-1/3 !pt-0 h-full object-cover rounded-lg"
+                />
+              ) : (
+                <img
+                  src={slide.image}
+                  alt={slide.title}
+                  className="w-1/3 !pt-0 h-full object-cover rounded-lg"
+                />
+              )}
+
               <div className="flex flex-col justify-between ml-3 w-2/3">
                 <div>
                   <h3 className="text-lg !text-[#ffebc4] font-[100] w-[80%]">
                     {slide.title}
                   </h3>
-                  {/* <p className="text-sm text-[#ffebc4]">{slide.description}</p> */}
                 </div>
-                {/* Buy Now Button with Click Event */}
                 <button
                   onClick={() => handleRedirect(slide.path)}
-                  className="border-4  whitespace-nowrap  uppercase border-blue-500 bg-transparent text-[#ffebc4] text-lg py-1 px-3 rounded-lg w-fit flex items-center justify-center transition-all duration-300 hover:bg-[#ffebc4] hover:text-black"
+                  className="border-4 whitespace-nowrap uppercase border-blue-500 bg-transparent text-[#ffebc4] text-lg py-1 px-3 rounded-lg w-fit flex items-center justify-center transition-all duration-300 hover:bg-[#ffebc4] hover:text-black"
                   style={{ border: "1px solid #ffebc4", height: "28px", fontSize: "14px" }}
                 >
-                 {slide.buttonText}
+                  {slide.buttonText}
                 </button>
               </div>
-              {/* Card Number on Top-Right */}
-              <span className="absolute top-2 right-2 text-[#ffebc4] text-sm  px-2 py-1 rounded-lg">
+              <span className="absolute top-2 right-2 text-[#ffebc4] text-sm px-2 py-1 rounded-lg">
                 {String(index + 1).padStart(2, "0")}
               </span>
             </div>
