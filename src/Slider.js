@@ -775,7 +775,7 @@ export default function AnimatedSlider() {
 
         {/* Introduction & Other Text Just Below Divider on Mobile */}
         <div
-  className="absolute bottom-[120px] left-4 md:left-4 text-left text-[#ffebc4] leading-tight font-sm z-20 md:hidden"
+  className="absolute bottom-[100px] left-4 md:left-4 text-left text-[#ffebc4] leading-tight font-sm z-20 md:hidden"
   style={{
     fontSize: window.innerWidth < 768 ? "10px" : "16px", left: "0.5rem" // 10px for mobile, 20px for desktop
   }}
@@ -783,7 +783,7 @@ export default function AnimatedSlider() {
   Introduction
 </div>
 
-        <div className="absolute bottom-[70px] left-4 right-4 text-center text-[#ffebc4]  leading-tight font-sm z-20 md:hidden" style={{
+        <div className="absolute bottom-[40px] left-4 right-4 text-center text-[#ffebc4]  leading-tight font-sm z-20 md:hidden" style={{
     fontSize: window.innerWidth < 768 ? "10px" : "20px",   // 20px for small screens, 24px for larger screens
   }}>
           We prioritise prevention over treatment, offering healthcare, science-backed products, and holistic wellness empowering individuals towards lifelong well-being.
