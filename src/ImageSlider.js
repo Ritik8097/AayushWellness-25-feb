@@ -60,7 +60,7 @@ const ImageSlider = () => {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={slide.id}>
-            <div className="flex bg-white/10 backdrop-blur-sm shadow-lg rounded-lg overflow-hidden w-[331px] h-[144px] p-3">
+            <div className="flex bg-white/10 backdrop-blur-sm shadow-lg rounded-lg overflow-hidden w-[331px] h-[154px] p-3">
               <img
                 src={slide.image}
                 alt={slide.title}
