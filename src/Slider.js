@@ -728,7 +728,7 @@ export default function AnimatedSlider() {
           {/* Text Below Divider on the Left Side */}
           <div
              className="absolute top-20 left-2 text-[#ffebc4] font-bold leading-none 
-             text-[25px] sm:text-[30px] md:text-[30px] lg:text-[40px] xl:text-[100px] "  style={{ marginTop: window.innerWidth < 640 ? "0px !important" : "1.5rem" }} // 1.5rem = mt-6
+             text-[28px] sm:text-[30px] md:text-[30px] lg:text-[40px] xl:text-[100px] "  style={{ marginTop: window.innerWidth < 640 ? "0px !important" : "1.5rem" }} // 1.5rem = mt-6
          >
             A New Era of Preventive
             <br /> Healthcare
