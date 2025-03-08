@@ -727,7 +727,7 @@ export default function AnimatedSlider() {
 
           {/* Text Below Divider on the Left Side */}
           <div
-             className="absolute top-20 left-2 text-[#ffebc4] font-bold leading-none 
+             className="absolute top-20 left-2 text-[#ffebc4] font-bold leading-none font-[400] 
              text-[50px] sm:text-[50px] md:text-[30px] lg:text-[40px] xl:text-[120px] "  style={{ marginTop: window.innerWidth < 640 ? "0px !important" : "1.5rem" }} // 1.5rem = mt-6
          >
             A New Era of
