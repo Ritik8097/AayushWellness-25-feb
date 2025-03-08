@@ -742,9 +742,14 @@ export default function AnimatedSlider() {
         </div>
 
         {/* Services/Products Title - Visible on all screen sizes */}
-        <div className="absolute md:bottom-[370px] md:left-4 bottom-[550px] left-0 right-0 text-center md:text-left text-[#ffebc4] text-[clamp(1.25rem,4vw,24px)] font-bold z-20">
-          Services/Products
-        </div>
+        <div
+  className="absolute md:bottom-[370px] bottom-[530px] left-4 sm:left-4 md:left-4 text-left text-[#ffebc4] font-sm z-20"
+  style={{
+    fontSize: window.innerWidth < 768 ? "10px" : "20px",   // 20px for small screens, 24px for larger screens
+  }}
+>
+  Services/Products
+</div>
 
         {/* Left Horizontal Divider (Desktop) */}
         <div className="absolute bottom-[360px] left-0 w-1/2 h-[1px] bg-[#ffebc4] z-10 hidden md:block"></div>
@@ -773,9 +778,14 @@ export default function AnimatedSlider() {
         </div>
 
         {/* Introduction & Other Text Just Below Divider on Mobile */}
-        <div className="absolute bottom-[250px] left-4 right-4 text-center text-[#ffebc4] text-[clamp(1.125rem,4vw,20px)] leading-tight font-medium z-20 md:hidden">
-          Introduction
-        </div>
+       <div
+  className="absolute bottom-[250px] left-4 sm:left-6 md:left-4 text-left text-[#ffebc4] leading-tight font-medium z-20 md:hidden"
+  style={{
+    fontSize: window.innerWidth < 768 ? "10px" : "20px", // 10px for mobile, 20px for desktop
+  }}
+>
+  Introduction
+</div>
 
         <div className="absolute bottom-[50px] left-4 right-4 text-center text-[#ffebc4] text-[clamp(0.875rem,3.5vw,25px)] leading-tight font-medium z-20 md:hidden">
           At Aayush Wellness, we believe that true health & wellness is not just about treatment but prevention. Through
