@@ -62,7 +62,7 @@ const ImageSlider = () => {
           nextEl: ".custom-next",
           prevEl: ".custom-prev",
         }}
-        autoplay={{ delay: 300000 }}
+        autoplay={{ delay: 3000 }}
         loop={true}
         className="w-full"
       >
