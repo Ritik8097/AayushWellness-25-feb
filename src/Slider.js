@@ -728,7 +728,7 @@ export default function AnimatedSlider() {
           {/* Text Below Divider on the Left Side */}
           <div
              className="absolute top-20 left-2 text-[#ffebc4] font-bold leading-none 
-             text-[28px] sm:text-[50px] md:text-[30px] lg:text-[40px] xl:text-[120px] "  style={{ marginTop: window.innerWidth < 640 ? "0px !important" : "1.5rem" }} // 1.5rem = mt-6
+             text-[50px] sm:text-[50px] md:text-[30px] lg:text-[40px] xl:text-[120px] "  style={{ marginTop: window.innerWidth < 640 ? "0px !important" : "1.5rem" }} // 1.5rem = mt-6
          >
             A New Era of
             <br /> Healthcare
@@ -783,8 +783,8 @@ export default function AnimatedSlider() {
   Introduction
 </div>
 
-        <div className="absolute bottom-[40px] left-4 right-4 text-center text-[#ffebc4]  leading-tight font-sm z-20 md:hidden" style={{
-    fontSize: window.innerWidth < 768 ? "13px" : "20px",   // 20px for small screens, 24px for larger screens
+        <div className="absolute bottom-[30px] left-4 right-4 text-center text-[#ffebc4]  leading-tight font-sm z-20 md:hidden" style={{
+    fontSize: window.innerWidth < 768 ? "10px" : "20px",   // 20px for small screens, 24px for larger screens
   }}>
           We prioritise prevention over treatment, offering healthcare, science-backed products, and holistic wellness empowering individuals towards lifelong well-being.
         </div>
