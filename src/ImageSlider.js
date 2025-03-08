@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -26,7 +26,11 @@ const slides = [
   },
   {
     id: 3,
-    image: "https://img.freepik.com/free-photo/portrait-biologist-scientist-white-coat-working-expertise-laboratory-looking-into-microscope-analyzing-organic-gmo-leaf_482257-2118.jpg?uid=R186725298&ga=GA1.1.1002746497.1740224156&semt=ais_hybrid",
+    image: [ // Multiple images for 3rd slide
+      "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/WhatsApp_Image_2025-03-08_at_4.02.47_PM_1.jpg?v=1741438159",
+      "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/WhatsApp_Image_2025-03-08_at_4.02.47_PM.jpg?v=1741438148",
+      "https://img.freepik.com/free-vector/flat-world-food-safety-day-illustration_23-2149388308.jpg?uid=R186725298&ga=GA1.1.1002746497.1740224156&semt=ais_hybrid"
+    ],
     title: "Science-Backed Nutrition",
     // description: "Short product description",
     buttonText: "Order Now", // Dynamic Button Text
@@ -44,6 +48,17 @@ const slides = [
 
 const ImageSlider = () => {
   const navigate = useNavigate();
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        (prevIndex + 1) % slides[2].images.length // Loop through images
+      );
+    }, 2000); // Change image every 2 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   const handleRedirect = (path) => {
     if (path.startsWith("http")) {
@@ -62,18 +77,27 @@ const ImageSlider = () => {
           nextEl: ".custom-next",
           prevEl: ".custom-prev",
         }}
-        autoplay={{ delay: 3000 }}
+        autoplay={{ delay: 4000 }}
         loop={true}
         className="w-full"
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={slide.id}>
-            <div className="flex bg-white/10 backdrop-blur-sm shadow-lg rounded-lg overflow-hidden w-[331px] h-[145px] p-3">
-              <img
-                src={slide.image}
-                alt={slide.title}
-                className="w-1/3 !pt-0 h-full object-cover rounded-lg"
-              />
+           <div className="flex bg-white/10 backdrop-blur-sm shadow-lg rounded-lg overflow-hidden md:w-[331px] w-[100%] h-[145px] p-3 ">
+              {/* Conditionally Render Image */}
+              {slide.images ? (
+                <img
+                  src={slide.images[currentImageIndex]}
+                  alt={slide.title}
+                  className="w-1/3 !pt-0 h-full object-fitcover rounded-lg !pt-0"
+                />
+              ) : (
+                <img
+                  src={slide.image}
+                  alt={slide.title}
+                  className="w-1/3 !pt-0 h-full object-cover rounded-lg"
+                />
+              )}
               <div className="flex flex-col justify-between ml-3 w-2/3">
                 <div>
                   <h3 className="text-lg !text-[#ffebc4] font-[100] w-[80%]">
