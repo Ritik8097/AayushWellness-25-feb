@@ -770,9 +770,7 @@ export default function AnimatedSlider() {
         <div className="absolute bottom-[240px] left-[52%] text-[#ffebc4] md:text-[20px] leading-tight font-sm w-[40%] z-20 md:block hidden" style={{
     fontSize: window.innerWidth < 768 ? "10px" : "20px",   // 20px for small screens, 24px for larger screens
   }}>
-          At Aayush Wellness, we believe that true health & wellness is not just about treatment but prevention. Through
-          healthcare services, science-backed products, holistic wellness solutions, we empower individuals to take
-          proactive steps toward lifelong well-being.
+          We prioritise prevention over treatment, offering healthcare, science-backed products, and holistic wellness empowering individuals towards lifelong well-being.
         </div>
 
         {/* Introduction & Other Text Just Below Divider on Mobile */}
@@ -788,9 +786,7 @@ export default function AnimatedSlider() {
         <div className="absolute bottom-[180px] left-4 right-4 text-center text-[#ffebc4]  leading-tight font-sm z-20 md:hidden" style={{
     fontSize: window.innerWidth < 768 ? "10px" : "20px",   // 20px for small screens, 24px for larger screens
   }}>
-          At Aayush Wellness, we believe that true health & wellness is not just about treatment but prevention. Through
-          healthcare services, science-backed products, holistic wellness solutions, we empower individuals to take
-          proactive steps toward lifelong well-being.
+          We prioritise prevention over treatment, offering healthcare, science-backed products, and holistic wellness empowering individuals towards lifelong well-being.
         </div>
 
         {/* Centered ImageSlider on Mobile, Original Position on Desktop */}
