@@ -761,7 +761,7 @@ export default function AnimatedSlider() {
         <div className="absolute bottom-0 left-1/2 w-[1px] h-[360px] bg-[#ffebc4] z-10 transform -translate-x-1/2 hidden md:block"></div>
 
         {/* Right-Side Text (Desktop) */}
-        <div className="absolute bottom-[370px] left-[52%] text-[#ffebc4]  md:text-[20px] leading-tight font-sm w-[40%] z-20 md:block hidden" style={{
+        <div className="absolute bottom-[370px] left-[52%] text-[#ffebc4]  md:text-[20px] leading-tight font-sm w-[40%] z-20 md:block hidden opacity-60" style={{
     fontSize: window.innerWidth < 768 ? "10px" : "16px",   // 20px for small screens, 24px for larger screens
   }}>
           Introduction
