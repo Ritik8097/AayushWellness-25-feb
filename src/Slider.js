@@ -783,7 +783,7 @@ export default function AnimatedSlider() {
   Introduction
 </div>
 
-        <div className="absolute bottom-[10px] left-4 right-4 text-center text-[#ffebc4]  leading-tight font-bold z-20 md:hidden" style={{
+        <div className="absolute bottom-[5px] left-4 right-4 text-center text-[#ffebc4]  leading-tight font-bold z-20 md:hidden" style={{
     fontSize: window.innerWidth < 768 ? "14px" : "20px",   // 20px for small screens, 24px for larger screens
   }}>
           We prioritise prevention over treatment, offering healthcare, science-backed products, and holistic wellness empowering individuals towards lifelong well-being.
