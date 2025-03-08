@@ -777,7 +777,7 @@ export default function AnimatedSlider() {
         <div
   className="absolute bottom-[110px] left-4 md:left-4 text-left text-[#ffebc4] leading-tight font-sm z-20 md:hidden"
   style={{
-    fontSize: window.innerWidth < 768 ? "10px" : "16px", left: "0.5rem" // 10px for mobile, 20px for desktop
+    fontSize: window.innerWidth < 768 ? "14px" : "16px", left: "0.5rem" // 10px for mobile, 20px for desktop
   }}
 >
   Introduction
