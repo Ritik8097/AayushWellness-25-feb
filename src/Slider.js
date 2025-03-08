@@ -737,9 +737,9 @@ export default function AnimatedSlider() {
 
         {/* Services/Products Title - Visible on all screen sizes */}
         <div
-  className="absolute md:bottom-[370px] bottom-[530px] left-4 sm:left-1 md:left-4 text-left text-[#ffebc4] font-sm z-20"
+  className="absolute md:bottom-[370px] bottom-[530px] left-4  md:left-4 text-left text-[#ffebc4] font-sm z-20"
   style={{
-    fontSize: window.innerWidth < 768 ? "16px" : "20px",   // 20px for small screens, 24px for larger screens
+    fontSize: window.innerWidth < 768 ? "16px" : "20px", left: "0.5rem"  // 20px for small screens, 24px for larger screens
   }}
 >
   Services/Products
@@ -777,9 +777,9 @@ export default function AnimatedSlider() {
 
         {/* Introduction & Other Text Just Below Divider on Mobile */}
         <div
-  className="absolute bottom-[250px] left-4 sm:left-1 md:left-4 text-left text-[#ffebc4] leading-tight font-medium z-20 md:hidden"
+  className="absolute bottom-[250px] left-4 md:left-4 text-left text-[#ffebc4] leading-tight font-medium z-20 md:hidden"
   style={{
-    fontSize: window.innerWidth < 768 ? "16px" : "20px", // 10px for mobile, 20px for desktop
+    fontSize: window.innerWidth < 768 ? "16px" : "20px", left: "0.5rem" // 10px for mobile, 20px for desktop
   }}
 >
   Introduction
