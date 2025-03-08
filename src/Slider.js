@@ -145,12 +145,12 @@ export default function AnimatedSlider() {
             </div>
             <div className="hidden gap-4 md:flex space-x-4  text-[20px] font-[500]">
             <Link
-//                 to="/"
-//                 className=" hover:text-primary/80"
-//                 style={{ fontFamily: '"Inter", sans-serif' }}
-//               >
-//                 Home
-//               </Link>
+                to="/"
+                 className=" hover:text-primary/80"
+                 style={{ fontFamily: '"Inter", sans-serif' }}
+               >
+                Home
+              </Link>
 
               <div className="navbar-dropdown relative group">
                 <button
