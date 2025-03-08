@@ -733,9 +733,9 @@ export default function AnimatedSlider() {
 
           {/* Text Below Divider on the Left Side */}
           <div
-            className="absolute top-20 left-8 text-[#ffebc4] font-bold leading-none 
-    text-[25px] sm:text-[20px] md:text-[30px] lg:text-[40px] xl:text-[100px] mt-6"
->
+             className="absolute top-20 left-8 text-[#ffebc4] font-bold leading-none 
+             text-[25px] sm:text-[30px] md:text-[30px] lg:text-[40px] xl:text-[100px] "  style={{ marginTop: window.innerWidth < 640 ? "0px !important" : "1.5rem" }} // 1.5rem = mt-6
+         >
             A New Era of Preventive
             <br /> Healthcare
           </div>
@@ -767,18 +767,22 @@ export default function AnimatedSlider() {
         <div className="absolute bottom-0 left-1/2 w-[1px] h-[360px] bg-[#ffebc4] z-10 transform -translate-x-1/2 hidden md:block"></div>
 
         {/* Right-Side Text (Desktop) */}
-        <div className="absolute bottom-[370px] left-[52%] text-[#ffebc4] text-[clamp(1.25rem,2vw,28px)] md:text-[clamp(1rem,1.5vw,20px)] leading-tight font-medium w-[40%] z-20 md:block hidden">
+        <div className="absolute bottom-[370px] left-[52%] text-[#ffebc4]  md:text-[20px] leading-tight font-sm w-[40%] z-20 md:block hidden" style={{
+    fontSize: window.innerWidth < 768 ? "10px" : "20px",   // 20px for small screens, 24px for larger screens
+  }}>
           Introduction
         </div>
 
-        <div className="absolute bottom-[240px] left-[52%] text-[#ffebc4] text-[clamp(1.25rem,2vw,28px)] md:text-[clamp(0.875rem,1.5vw,20px)] leading-tight font-medium w-[40%] z-20 md:block hidden">
+        <div className="absolute bottom-[240px] left-[52%] text-[#ffebc4] md:text-[20px] leading-tight font-sm w-[40%] z-20 md:block hidden" style={{
+    fontSize: window.innerWidth < 768 ? "10px" : "20px",   // 20px for small screens, 24px for larger screens
+  }}>
           At Aayush Wellness, we believe that true health & wellness is not just about treatment but prevention. Through
           healthcare services, science-backed products, holistic wellness solutions, we empower individuals to take
           proactive steps toward lifelong well-being.
         </div>
 
         {/* Introduction & Other Text Just Below Divider on Mobile */}
-       <div
+        <div
   className="absolute bottom-[250px] left-4 sm:left-6 md:left-4 text-left text-[#ffebc4] leading-tight font-medium z-20 md:hidden"
   style={{
     fontSize: window.innerWidth < 768 ? "10px" : "20px", // 10px for mobile, 20px for desktop
@@ -787,7 +791,9 @@ export default function AnimatedSlider() {
   Introduction
 </div>
 
-        <div className="absolute bottom-[50px] left-4 right-4 text-center text-[#ffebc4] text-[clamp(0.875rem,3.5vw,25px)] leading-tight font-medium z-20 md:hidden">
+        <div className="absolute bottom-[180px] left-4 right-4 text-center text-[#ffebc4]  leading-tight font-sm z-20 md:hidden" style={{
+    fontSize: window.innerWidth < 768 ? "10px" : "20px",   // 20px for small screens, 24px for larger screens
+  }}>
           At Aayush Wellness, we believe that true health & wellness is not just about treatment but prevention. Through
           healthcare services, science-backed products, holistic wellness solutions, we empower individuals to take
           proactive steps toward lifelong well-being.
