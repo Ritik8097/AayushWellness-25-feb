@@ -727,7 +727,7 @@ export default function AnimatedSlider() {
 
           {/* Text Below Divider on the Left Side */}
           <div
-             className="absolute top-20 left-4 text-[#ffebc4] font-bold leading-none 
+             className="absolute top-20 left-2 text-[#ffebc4] font-bold leading-none 
              text-[25px] sm:text-[30px] md:text-[30px] lg:text-[40px] xl:text-[100px] "  style={{ marginTop: window.innerWidth < 640 ? "0px !important" : "1.5rem" }} // 1.5rem = mt-6
          >
             A New Era of Preventive
@@ -737,7 +737,7 @@ export default function AnimatedSlider() {
 
         {/* Services/Products Title - Visible on all screen sizes */}
         <div
-  className="absolute md:bottom-[370px] bottom-[530px] left-4 sm:left-4 md:left-4 text-left text-[#ffebc4] font-sm z-20"
+  className="absolute md:bottom-[370px] bottom-[530px] left-4 sm:left-2 md:left-4 text-left text-[#ffebc4] font-sm z-20"
   style={{
     fontSize: window.innerWidth < 768 ? "16px" : "20px",   // 20px for small screens, 24px for larger screens
   }}
@@ -777,7 +777,7 @@ export default function AnimatedSlider() {
 
         {/* Introduction & Other Text Just Below Divider on Mobile */}
         <div
-  className="absolute bottom-[250px] left-4 sm:left-6 md:left-4 text-left text-[#ffebc4] leading-tight font-medium z-20 md:hidden"
+  className="absolute bottom-[250px] left-4 sm:left-2 md:left-4 text-left text-[#ffebc4] leading-tight font-medium z-20 md:hidden"
   style={{
     fontSize: window.innerWidth < 768 ? "16px" : "20px", // 10px for mobile, 20px for desktop
   }}
