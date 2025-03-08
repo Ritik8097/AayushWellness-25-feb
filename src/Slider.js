@@ -762,7 +762,7 @@ export default function AnimatedSlider() {
 
         {/* Right-Side Text (Desktop) */}
         <div className="absolute bottom-[370px] left-[52%] text-[#ffebc4]  md:text-[20px] leading-tight font-sm w-[40%] z-20 md:block hidden" style={{
-    fontSize: window.innerWidth < 768 ? "10px" : "20px",   // 20px for small screens, 24px for larger screens
+    fontSize: window.innerWidth < 768 ? "10px" : "16px",   // 20px for small screens, 24px for larger screens
   }}>
           Introduction
         </div>
@@ -779,7 +779,7 @@ export default function AnimatedSlider() {
         <div
   className="absolute bottom-[250px] left-4 md:left-4 text-left text-[#ffebc4] leading-tight font-medium z-20 md:hidden"
   style={{
-    fontSize: window.innerWidth < 768 ? "16px" : "20px", left: "0.5rem" // 10px for mobile, 20px for desktop
+    fontSize: window.innerWidth < 768 ? "16px" : "16px", left: "0.5rem" // 10px for mobile, 20px for desktop
   }}
 >
   Introduction
