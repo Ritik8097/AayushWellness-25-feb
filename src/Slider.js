@@ -734,7 +734,7 @@ export default function AnimatedSlider() {
           {/* Text Below Divider on the Left Side */}
           <div
             className="absolute top-20 left-8 text-[#ffebc4] font-bold leading-none 
-    text-[20px] sm:text-[20px] md:text-[30px] lg:text-[40px] xl:text-[100px] mt-6"
+    text-[25px] sm:text-[20px] md:text-[30px] lg:text-[40px] xl:text-[100px] mt-6"
 >
             A New Era of Preventive
             <br /> Healthcare
@@ -777,7 +777,7 @@ export default function AnimatedSlider() {
           Introduction
         </div>
 
-        <div className="absolute bottom-[50px] left-4 right-4 text-center text-[#ffebc4] text-[clamp(0.875rem,3.5vw,20px)] leading-tight font-medium z-20 md:hidden">
+        <div className="absolute bottom-[50px] left-4 right-4 text-center text-[#ffebc4] text-[clamp(0.875rem,3.5vw,25px)] leading-tight font-medium z-20 md:hidden">
           At Aayush Wellness, we believe that true health & wellness is not just about treatment but prevention. Through
           healthcare services, science-backed products, holistic wellness solutions, we empower individuals to take
           proactive steps toward lifelong well-being.
