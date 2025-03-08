@@ -737,7 +737,7 @@ export default function AnimatedSlider() {
 
         {/* Services/Products Title - Visible on all screen sizes */}
         <div
-  className="absolute md:bottom-[370px] bottom-[440px] left-4  md:left-4 text-left text-[#ffebc4] font-sm z-20"
+  className="absolute md:bottom-[370px] bottom-[440px] left-4  md:left-4 text-left text-[#ffebc4] font-sm z-20 opacity-60"
   style={{
     fontSize: window.innerWidth < 768 ? "18px" : "16px", left: "0.5rem"  // 20px for small screens, 24px for larger screens
   }}
@@ -775,7 +775,7 @@ export default function AnimatedSlider() {
 
         {/* Introduction & Other Text Just Below Divider on Mobile */}
         <div
-  className="absolute bottom-[130px] left-4 md:left-4 text-left text-[#ffebc4] leading-tight font-sm z-20 md:hidden"
+  className="absolute bottom-[130px] left-4 md:left-4 text-left text-[#ffebc4] leading-tight font-sm z-20 md:hidden opacity-60"
   style={{
     fontSize: window.innerWidth < 768 ? "18px" : "16px", left: "0.5rem" // 10px for mobile, 20px for desktop
   }}
