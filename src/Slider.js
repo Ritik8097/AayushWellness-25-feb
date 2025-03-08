@@ -728,9 +728,9 @@ export default function AnimatedSlider() {
           {/* Text Below Divider on the Left Side */}
           <div
              className="absolute top-20 left-2 text-[#ffebc4] font-bold leading-none 
-             text-[28px] sm:text-[30px] md:text-[30px] lg:text-[40px] xl:text-[100px] "  style={{ marginTop: window.innerWidth < 640 ? "0px !important" : "1.5rem" }} // 1.5rem = mt-6
+             text-[28px] sm:text-[50px] md:text-[30px] lg:text-[40px] xl:text-[120px] "  style={{ marginTop: window.innerWidth < 640 ? "0px !important" : "1.5rem" }} // 1.5rem = mt-6
          >
-            A New Era of Preventive
+            A New Era of
             <br /> Healthcare
           </div>
         </div>
@@ -775,7 +775,7 @@ export default function AnimatedSlider() {
 
         {/* Introduction & Other Text Just Below Divider on Mobile */}
         <div
-  className="absolute bottom-[100px] left-4 md:left-4 text-left text-[#ffebc4] leading-tight font-sm z-20 md:hidden"
+  className="absolute bottom-[110px] left-4 md:left-4 text-left text-[#ffebc4] leading-tight font-sm z-20 md:hidden"
   style={{
     fontSize: window.innerWidth < 768 ? "10px" : "16px", left: "0.5rem" // 10px for mobile, 20px for desktop
   }}
@@ -784,7 +784,7 @@ export default function AnimatedSlider() {
 </div>
 
         <div className="absolute bottom-[40px] left-4 right-4 text-center text-[#ffebc4]  leading-tight font-sm z-20 md:hidden" style={{
-    fontSize: window.innerWidth < 768 ? "10px" : "20px",   // 20px for small screens, 24px for larger screens
+    fontSize: window.innerWidth < 768 ? "13px" : "20px",   // 20px for small screens, 24px for larger screens
   }}>
           We prioritise prevention over treatment, offering healthcare, science-backed products, and holistic wellness empowering individuals towards lifelong well-being.
         </div>
