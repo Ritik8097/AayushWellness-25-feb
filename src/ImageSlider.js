@@ -27,9 +27,9 @@ const slides = [
   {
     id: 3,
     images: [ // Multiple images for 3rd slide
-      "https://img.freepik.com/free-photo/portrait-biologist-scientist-white-coat-working-expertise-laboratory-looking-into-microscope-analyzing-organic-gmo-leaf_482257-2118.jpg?uid=R186725298&ga=GA1.1.1002746497.1740224156&semt=ais_hybrid",
-      "https://img.freepik.com/free-photo/top-view-diet-concept-diet-food-bowl-with-notepad-copy-space_23-2148722647.jpg",
-      "https://img.freepik.com/free-photo/nutritionist-desk-fruits-vegetables-diet-notes-wooden-background-top-view_176420-4867.jpg"
+      "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/WhatsApp_Image_2025-03-08_at_4.02.47_PM_1.jpg?v=1741438159",
+      "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/WhatsApp_Image_2025-03-08_at_4.02.47_PM.jpg?v=1741438148",
+      "https://img.freepik.com/free-vector/flat-world-food-safety-day-illustration_23-2149388308.jpg?uid=R186725298&ga=GA1.1.1002746497.1740224156&semt=ais_hybrid"
     ],
     title: "Science-Backed Nutrition",
     buttonText: "Order Now",
