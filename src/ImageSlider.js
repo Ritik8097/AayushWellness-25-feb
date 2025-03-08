@@ -77,7 +77,7 @@ const ImageSlider = () => {
               />
               <div className="flex flex-col justify-between ml-3 w-2/3">
                 <div>
-                  <h3 className="text-lg !text-[#ffebc4]  w-[80%]">
+                  <h3 className="text-lg !text-[#ffebc4] font-[100] w-[80%]">
                     {slide.title}
                   </h3>
                   {/* <p className="text-sm text-[#ffebc4]">{slide.description}</p> */}
