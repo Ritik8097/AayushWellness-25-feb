@@ -729,7 +729,7 @@ export default function AnimatedSlider() {
        <div className="video-wrapper relative" ref={sliderRef}>
         <div className="video-overlay">
           {/* Divider Line Below the Text */}
-          <div className="absolute left-0 w-full border-t-2 border-[#ffebc4] opacity-80 mt-24 h-[1px]"></div>
+          <div className="absolute left-0 w-full border-t border-[#ffebc4] z-10 mt-[4.3rem] md:mt-24 h-[1px]"></div>
 
           {/* Text Below Divider on the Left Side */}
           <div
