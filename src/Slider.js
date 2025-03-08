@@ -734,8 +734,8 @@ export default function AnimatedSlider() {
           {/* Text Below Divider on the Left Side */}
           <div
             className="absolute top-20 left-8 text-[#ffebc4] font-bold leading-none 
-             text-[clamp(2rem,5vw,40px)] md:text-[clamp(3.5rem,8vw,100px)] mt-6"
-          >
+    text-[30px] sm:text-[30px] md:text-[30px] lg:text-[40px] xl:text-[100px] mt-6"
+>
             A New Era of Preventive
             <br /> Healthcare
           </div>
