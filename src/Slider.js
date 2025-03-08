@@ -737,9 +737,9 @@ export default function AnimatedSlider() {
 
         {/* Services/Products Title - Visible on all screen sizes */}
         <div
-  className="absolute md:bottom-[370px] bottom-[530px] left-4  md:left-4 text-left text-[#ffebc4] font-sm z-20"
+  className="absolute md:bottom-[370px] bottom-[440px] left-4  md:left-4 text-left text-[#ffebc4] font-sm z-20"
   style={{
-    fontSize: window.innerWidth < 768 ? "10px" : "16px", left: "0.5rem"  // 20px for small screens, 24px for larger screens
+    fontSize: window.innerWidth < 768 ? "14px" : "16px", left: "0.5rem"  // 20px for small screens, 24px for larger screens
   }}
 >
   Services/Products
@@ -752,7 +752,7 @@ export default function AnimatedSlider() {
         <div className="absolute bottom-[360px] right-0 w-1/2 h-[1px] bg-[#ffebc4] z-10 hidden md:block"></div>
 
         {/* Left Horizontal Divider (Mobile) - Above slider cards */}
-        <div className="absolute bottom-[530px] left-0 w-full h-[1px] bg-[#ffebc4] z-10 md:hidden"></div>
+        <div className="absolute bottom-[430px] left-0 w-full h-[1px] bg-[#ffebc4] z-10 md:hidden"></div>
 
         {/* Right Horizontal Divider (Mobile) - Below slider cards */}
         <div className="absolute bottom-[100px] left-0 w-full h-[1px] bg-[#ffebc4] z-10 md:hidden"></div>
@@ -784,13 +784,13 @@ export default function AnimatedSlider() {
 </div>
 
         <div className="absolute bottom-[30px] left-4 right-4 text-center text-[#ffebc4]  leading-tight font-sm z-20 md:hidden" style={{
-    fontSize: window.innerWidth < 768 ? "10px" : "20px",   // 20px for small screens, 24px for larger screens
+    fontSize: window.innerWidth < 768 ? "14px" : "20px",   // 20px for small screens, 24px for larger screens
   }}>
           We prioritise prevention over treatment, offering healthcare, science-backed products, and holistic wellness empowering individuals towards lifelong well-being.
         </div>
 
         {/* Centered ImageSlider on Mobile, Original Position on Desktop */}
-        <div className="absolute z-10 md:bottom-16 md:left-4 md:right-auto bottom-[300px] inset-x-0 flex items-center justify-center md:inset-auto">
+        <div className="absolute z-10 md:bottom-16 md:left-4 md:right-auto bottom-[220px] inset-x-0 flex items-center justify-center md:inset-auto">
           <ImageSlider />
         </div>
         
