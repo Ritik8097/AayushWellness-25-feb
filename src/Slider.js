@@ -7,6 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 import menu from "./images/menu.png";
 import closepng from "./images/close.png";
 import searchIcon from "./images/search-gray.svg";
+import ImageSlider from "./ImageSlider";
+
 
 export default function AnimatedSlider() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -142,13 +144,19 @@ export default function AnimatedSlider() {
               </Link>
             </div>
             <div className="hidden gap-4 md:flex space-x-4  text-[20px] font-[500]">
-              <Link
-                to="/"
-                className=" hover:text-primary/80"
-                style={{ fontFamily: '"Inter", sans-serif' }}
-              >
-                Home
-              </Link>
+            <Link
+  to="/"
+  className="hover:text-primary/80 nav-link transition-transform duration-500"
+  style={{
+    fontFamily: '"Inter", sans-serif',
+    display: "inline-block",
+    transformOrigin: "center",
+  }}
+  onMouseEnter={(e) => (e.target.style.transform = "rotatex(360deg)")}
+  onMouseLeave={(e) => (e.target.style.transform = "rotateY(0deg)")}
+>
+  Home
+</Link>
 
               <div className="navbar-dropdown relative group">
                 <button
@@ -213,156 +221,6 @@ export default function AnimatedSlider() {
                   </div>
                 </div>
               </div>
-
-              {/* <div className="navbar-dropdown relative group">
-                <button
-                  className="hover:text-primary/80 flex items-center"
-                  style={{ fontFamily: '"Inter", sans-serif' }}
-                >
-                  Wellness & You
-                  <svg
-                    className="w-4 h-4 ml-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M19 9l-7 7-7-7"
-                    ></path>
-                  </svg>
-                </button> */}
-
-                {/* Dropdown Menu */}
-                {/* <div className="absolute left-0 top-full w-[1110px] h-[290px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible transform translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 mt-6"> */}
-                  {/* Left Side: Title & Description */}
-                  {/* <div className="w-[60%] mt-10">
-                    <h3 className="text-3xl font-bold text-[#004037]">
-                      Wellness & You
-                    </h3>
-                    <p className="text-lg text-gray-600 mt-2">
-                      Discover the perfect balance of modern science and ancient
-                      wisdom to enhance your well-being.
-                    </p>
-                  </div> */}
-
-                  {/* Right Side: Links */}
-                  {/* <div className="w-[35%] flex flex-col gap-3 mt-8">
-                    <Link
-                      to="/wellness/modern-science"
-                      className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
-                    >
-                      <span className="block font-bold w-full px-4 text-inherit">
-                        Modern Science
-                      </span>
-                      <span className="block text-sm px-4 text-gray-900 text-inherit">
-                        Explore the latest advancements in science
-                      </span>
-                    </Link>
-
-                    <Link
-                      to="/ayurveda"
-                      className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
-                    >
-                      <span className="block font-bold w-full px-4 text-inherit">
-                        Ayurveda
-                      </span>
-                      <span className="block text-sm px-4 text-gray-900 text-inherit">
-                        Ancient wisdom for holistic wellness
-                      </span>
-                    </Link>
-
-                    <Link
-                      to="/wellness/health-wellness"
-                      className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
-                    >
-                      <span className="block font-bold w-full px-4 text-inherit">
-                        Health & Wellness
-                      </span>
-                      <span className="block text-sm px-4 text-gray-900 text-inherit">
-                        Your guide to a healthier lifestyle
-                      </span>
-                    </Link>
-                  </div>
-                </div>
-              </div> */}
-
-              {/* <div className="navbar-dropdown relative group">
-                <button
-                  className="hover:text-primary/80 flex items-center"
-                  style={{ fontFamily: '"Inter", sans-serif' }}
-                >
-                  Newsroom
-                  <svg
-                    className="w-4 h-4 ml-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M19 9l-7 7-7-7"
-                    ></path>
-                  </svg>
-                </button> */}
-
-                {/* Dropdown Menu - Centered Below Newsroom */}
-                {/* <div className="absolute left-1/2 top-full w-[1110px] h-[290px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible transform -translate-x-1/2 translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 mt-6">
-                  {/* Left Side: Title & Description */}
-                  {/* <div className="w-[60%] mt-10">
-                    <h3 className="text-3xl font-bold text-[#004037]">
-                      Newsroom
-                    </h3>
-                    <p className="text-lg text-gray-600 mt-2">
-                      Stay updated with the latest news, press releases, and
-                      important announcements.
-                    </p>
-                  </div> */}
-
-                  {/* Right Side: Links */}
-                  {/* <div className="w-[35%] flex flex-col gap-3 mt-10">
-                    <Link
-                      to="/newsroom/in-the-news"
-                      className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
-                    >
-                      <span className="block font-bold w-full px-4 text-inherit">
-                        In the News
-                      </span>
-                      <span className="block text-sm px-4 text-gray-900 text-inherit">
-                        Latest media coverage and reports
-                      </span>
-                    </Link>
-
-                    <Link
-                      to="/newsroom/press-release"
-                      className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
-                    >
-                      <span className="block font-bold w-full px-4 text-inherit">
-                        Press Release
-                      </span>
-                      <span className="block text-sm px-4 text-gray-900 text-inherit">
-                        Official statements and updates
-                      </span>
-                    </Link>
-
-                    <Link
-                      to="/newsroom/library"
-                      className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
-                    >
-                      <span className="block font-bold w-full px-4 text-inherit">
-                        Library
-                      </span>
-                      <span className="block text-sm px-4 text-gray-900 text-inherit">
-                        Access research and archived news
-                      </span>
-                    </Link>
-                  </div>
-                </div>
-              </div> */}
 
               <Link
                 to="/ourproduct"
@@ -594,25 +452,25 @@ export default function AnimatedSlider() {
           }`}
         >
           <div className="flex justify-between items-center px-6 ">
-    {/* Logo on the left */}
-    <img
-      className="h-15 w-36 "
-      src="https://aayushlife.com/cdn/shop/files/Aayush_Wellness_Limited_-_Logo_-_17-10-2024-02_240x.png?v=1729951951" 
-      alt="Logo"
-    />
+            {/* Logo on the left */}
+            <img
+              className="h-15 w-36 "
+              src="https://aayushlife.com/cdn/shop/files/Aayush_Wellness_Limited_-_Logo_-_17-10-2024-02_240x.png?v=1729951951"
+              alt="Logo"
+            />
 
-    {/* Close Button on the right */}
-    <button
-      className="hover:text-primary/80 focus:outline-none"
-      onClick={toggleMenu}
-    >
-      <img
-        className="h-8"
-        src={closepng || "/placeholder.svg"}
-        alt="Close Menu"
-      />
-    </button>
-  </div>
+            {/* Close Button on the right */}
+            <button
+              className="hover:text-primary/80 focus:outline-none"
+              onClick={toggleMenu}
+            >
+              <img
+                className="h-8"
+                src={closepng || "/placeholder.svg"}
+                alt="Close Menu"
+              />
+            </button>
+          </div>
 
           <div className="flex flex-col mt-10 px-6 overflow-y-auto h-full pb-20">
             {/* Home Link */}
@@ -626,184 +484,70 @@ export default function AnimatedSlider() {
             <div className="h-px w-full bg-gray-200 my-1"></div>
 
             <div className="relative">
-  <button
-    onClick={() => setIsAboutUsDropdownOpen(!isAboutUsDropdownOpen)}
-    className="w-full py-4 font-extrabold text-[#004037] text-[36px] flex items-center justify-between"
-  >
-    <span>Our Story</span>
-    <svg
-      className={`w-5 h-5 transition-transform duration-200 ${
-        isAboutUsDropdownOpen ? "rotate-180" : ""
-      }`}
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-    </svg>
-  </button>
+              <button
+                onClick={() => setIsAboutUsDropdownOpen(!isAboutUsDropdownOpen)}
+                className="w-full py-4 font-extrabold text-[#004037] text-[36px] flex items-center justify-between"
+              >
+                <span>Our Story</span>
+                <svg
+                  className={`w-5 h-5 transition-transform duration-200 ${
+                    isAboutUsDropdownOpen ? "rotate-180" : ""
+                  }`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
 
-  {isAboutUsDropdownOpen && (
-    <div className="rounded-md mt-2 mb-3 py-2 ">
-      {/* Title & Description */}
-      <div className="px-4 py-2">
-        <h3 className="text-xl font-bold text-[#004037]">Our Story</h3>
-        <p className="text-lg text-gray-600 mt-2">
-          We started with a vision to create something meaningful.
-          Our journey has been shaped by passion, innovation, and dedication.
-        </p>
-      </div>
+              {isAboutUsDropdownOpen && (
+                <div className="rounded-md mt-2 mb-3 py-2 ">
+                  {/* Title & Description */}
+                  <div className="px-4 py-2">
+                    <h3 className="text-xl font-bold text-[#004037]">
+                      Our Story
+                    </h3>
+                    <p className="text-lg text-gray-600 mt-2">
+                      We started with a vision to create something meaningful.
+                      Our journey has been shaped by passion, innovation, and
+                      dedication.
+                    </p>
+                  </div>
 
-      {/* Dropdown Links */}
-      <div className="flex flex-col">
-        <Link
-          to="/about-us"
-          className="block px-4 py-3 text-[#004037] font-bold transition"
-          onClick={() => setIsAboutUsDropdownOpen(false)}
-        >
-          About Us
-          <p className="text-sm text-gray-600">We started with a vision to create something</p>
-        </Link>
+                  {/* Dropdown Links */}
+                  <div className="flex flex-col">
+                    <Link
+                      to="/about-us"
+                      className="block px-4 py-3 text-[#004037] font-bold transition"
+                      onClick={() => setIsAboutUsDropdownOpen(false)}
+                    >
+                      About Us
+                      <p className="text-sm text-gray-600">
+                        We started with a vision to create something
+                      </p>
+                    </Link>
 
-        <Link
-          to="/about/mission-vision"
-          className="block px-4 py-3 text-[#004037] font-bold hover:bg-gray-100 transition"
-          onClick={() => setIsAboutUsDropdownOpen(false)}
-        >
-          Mission & Vision
-          <p className="text-sm text-gray-600">Our mission is to do something Great</p>
-        </Link>
-      </div>
-    </div>
-  )}
-</div>
+                    <Link
+                      to="/about/mission-vision"
+                      className="block px-4 py-3 text-[#004037] font-bold hover:bg-gray-100 transition"
+                      onClick={() => setIsAboutUsDropdownOpen(false)}
+                    >
+                      Mission & Vision
+                      <p className="text-sm text-gray-600">
+                        Our mission is to do something Great
+                      </p>
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
 
-            
-
-            {/* Wellness & You Dropdown */}
-            {/* <div className="relative">
-  <button
-    onClick={() => setIsWellnessDropdownOpen(!isWellnessDropdownOpen)}
-    className="w-full py-4 font-extrabold text-[#004037] text-[36px] flex items-center justify-between"
-  >
-    <span>Wellness & You</span>
-    <svg
-      className={`w-5 h-5 transition-transform duration-200 ${
-        isWellnessDropdownOpen ? "rotate-180" : ""
-      }`}
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-    </svg>
-  </button>
-
-  {isWellnessDropdownOpen && (
-    <div className="rounded-md mt-2 mb-3 py-2 ">
-      {/* Title & Description */}
-      {/* <div className="px-4 py-2">
-        <h3 className="text-xl font-bold text-[#004037]">Wellness & You</h3>
-        <p className="text-lg text-gray-600 mt-2">
-          Discover the perfect balance of modern science and ancient
-          wisdom to enhance your well-being.
-        </p>
-      </div> */} 
-
-      {/* Dropdown Links */}
-      {/* <div className="flex flex-col">
-        <Link
-          to="/wellness/modern-science"
-          className="block px-4 py-3 text-[#004037] font-bold hover:bg-gray-100 transition"
-          onClick={() => setIsWellnessDropdownOpen(false)}
-        >
-          Modern Science
-          <p className="text-sm text-gray-600">Explore the latest advancements in science</p>
-        </Link>
-
-        <Link
-          to="/ayurveda"
-          className="block px-4 py-3 text-[#004037] font-bold hover:bg-gray-100 transition"
-          onClick={() => setIsWellnessDropdownOpen(false)}
-        >
-          Ayurveda
-          <p className="text-sm text-gray-600">Ancient wisdom for holistic wellness</p>
-        </Link>
-
-        <Link
-          to="/wellness/health-wellness"
-          className="block px-4 py-3 text-[#004037] font-bold hover:bg-gray-100 transition"
-          onClick={() => setIsWellnessDropdownOpen(false)}
-        >
-          Health & Wellness
-          <p className="text-sm text-gray-600">Your guide to a healthier lifestyle</p>
-        </Link>
-      </div>
-    </div>
-  )}
-</div> */}
-            {/* <div className="h-px w-full bg-gray-200 my-1"></div> */}
-
-            {/* <div className="relative">
-  <button
-    onClick={() => setIsNewsroomDropdownOpen(!isNewsroomDropdownOpen)}
-    className="w-full py-4 font-extrabold text-[#004037] text-[36px] flex items-center justify-between"
-  >
-    <span>Newsroom</span>
-    <svg
-      className={`w-5 h-5 transition-transform duration-200 ${
-        isNewsroomDropdownOpen ? "rotate-180" : ""
-      }`}
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-    </svg>
-  </button>
-
-  {isNewsroomDropdownOpen && (
-    <div className="rounded-md mt-2 mb-3 py-2 ">
-      {/* Title & Description */}
-      {/* <div className="px-4 py-2">
-        <h3 className="text-xl font-bold text-[#004037]">Newsroom</h3>
-        <p className="text-lg text-gray-600 mt-2">
-          Stay updated with the latest news, press releases, and important announcements.
-        </p>
-      </div>  */}
-
-      {/* Dropdown Links */}
-      {/* <div className="flex flex-col">
-        <Link
-          to="/newsroom/in-the-news"
-          className="block px-4 py-3 text-[#004037] font-bold hover:bg-gray-100 transition"
-          onClick={() => setIsNewsroomDropdownOpen(false)}
-        >
-          In the News
-          <p className="text-sm text-gray-600">Latest media coverage and reports</p>
-        </Link>
-
-        <Link
-          to="/newsroom/press-release"
-          className="block px-4 py-3 text-[#004037] font-bold hover:bg-gray-100 transition"
-          onClick={() => setIsNewsroomDropdownOpen(false)}
-        >
-          Press Release
-          <p className="text-sm text-gray-600">Official statements and updates</p>
-        </Link>
-
-        <Link
-          to="/newsroom/library"
-          className="block px-4 py-3 text-[#004037] font-bold hover:bg-gray-100 transition"
-          onClick={() => setIsNewsroomDropdownOpen(false)}
-        >
-          Library
-          <p className="text-sm text-gray-600">Access research and archived news</p>
-        </Link>
-      </div>
-    </div>
-  )}
-</div> */}
 
             <div className="h-px w-full bg-gray-200 my-1"></div>
 
@@ -816,116 +560,142 @@ export default function AnimatedSlider() {
             </Link>
             <div className="h-px w-full bg-gray-200 my-1"></div>
             <div className="relative">
-  <button
-    onClick={() => setIsCorporateDropdownOpen(!isCorporateDropdownOpen)}
-    className="w-full py-4 font-extrabold text-[#004037] text-[36px] flex items-center justify-between"
-  >
-    <span>Corporate</span>
-    <svg
-      className={`w-5 h-5 transition-transform duration-200 ${
-        isCorporateDropdownOpen ? "rotate-180" : ""
-      }`}
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-    </svg>
-  </button>
-
-  {isCorporateDropdownOpen && (
-    <div className="rounded-md mt-2 mb-3 py-2 ">
-      {/* Title & Description */}
-      <div className="px-4 py-2">
-        <h3 className="text-xl font-bold text-[#004037]">Corporate Initiatives</h3>
-        <p className="text-lg text-gray-600 mt-2">
-          Our dedication to ethical business practices, community engagement, and sustainability.
-        </p>
-      </div>
-
-      {/* Dropdown Links */}
-      <div className="flex flex-col">
-        {/* CSR Section with Dropdown */}
-        <div className="relative">
-          <button
-            onClick={() => setIsCsrSubcategoryOpen(!isCsrSubcategoryOpen)}
-            className="block w-full px-4 py-3 text-[#004037] font-extrabold  flex justify-between items-center"
-          >
-            <span>CSR</span>
-            <svg
-              className={`w-4 h-4 transition-transform duration-200 ${
-                isCsrSubcategoryOpen ? "rotate-180" : ""
-              }`}
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-
-          {isCsrSubcategoryOpen && (
-            <div className="ml-4  mt-2 py-2">
-              <Link
-                to="/csr-at-aayush/malnutrition"
-                className="block px-4 py-3 text-[#004037] "
-                onClick={() => {
-                  setIsCsrSubcategoryOpen(false);
-                  setIsCorporateDropdownOpen(false);
-                }}
+              <button
+                onClick={() =>
+                  setIsCorporateDropdownOpen(!isCorporateDropdownOpen)
+                }
+                className="w-full py-4 font-extrabold text-[#004037] text-[36px] flex items-center justify-between"
               >
-                Malnutrition
-                <p className="text-sm text-gray-600">Fighting malnutrition with dedicated programs</p>
-              </Link>
-              <Link
-                to="/csr-at-aayush/health-check"
-                className="block px-4 py-3 text-[#004037] "
-                onClick={() => {
-                  setIsCsrSubcategoryOpen(false);
-                  setIsCorporateDropdownOpen(false);
-                }}
-              >
-                Healthcare Check
-                <p className="text-sm text-gray-600">Providing essential healthcare services</p>
-              </Link>
-              <Link
-                to="/sustainability"
-                className="block px-4 py-3 text-[#004037] "
-                onClick={() => {
-                  setIsCsrSubcategoryOpen(false);
-                  setIsCorporateDropdownOpen(false);
-                }}
-              >
-                Sustainability
-                <p className="text-sm text-gray-600">Driving positive change for a greener future</p>
-              </Link>
+                <span>Corporate</span>
+                <svg
+                  className={`w-5 h-5 transition-transform duration-200 ${
+                    isCorporateDropdownOpen ? "rotate-180" : ""
+                  }`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+
+              {isCorporateDropdownOpen && (
+                <div className="rounded-md mt-2 mb-3 py-2 ">
+                  {/* Title & Description */}
+                  <div className="px-4 py-2">
+                    <h3 className="text-xl font-bold text-[#004037]">
+                      Corporate Initiatives
+                    </h3>
+                    <p className="text-lg text-gray-600 mt-2">
+                      Our dedication to ethical business practices, community
+                      engagement, and sustainability.
+                    </p>
+                  </div>
+
+                  {/* Dropdown Links */}
+                  <div className="flex flex-col">
+                    {/* CSR Section with Dropdown */}
+                    <div className="relative">
+                      <button
+                        onClick={() =>
+                          setIsCsrSubcategoryOpen(!isCsrSubcategoryOpen)
+                        }
+                        className="block w-full px-4 py-3 text-[#004037] font-extrabold  flex justify-between items-center"
+                      >
+                        <span>CSR</span>
+                        <svg
+                          className={`w-4 h-4 transition-transform duration-200 ${
+                            isCsrSubcategoryOpen ? "rotate-180" : ""
+                          }`}
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M19 9l-7 7-7-7"
+                          ></path>
+                        </svg>
+                      </button>
+
+                      {isCsrSubcategoryOpen && (
+                        <div className="ml-4  mt-2 py-2">
+                          <Link
+                            to="/csr-at-aayush/malnutrition"
+                            className="block px-4 py-3 text-[#004037] "
+                            onClick={() => {
+                              setIsCsrSubcategoryOpen(false);
+                              setIsCorporateDropdownOpen(false);
+                            }}
+                          >
+                            Malnutrition
+                            <p className="text-sm text-gray-600">
+                              Fighting malnutrition with dedicated programs
+                            </p>
+                          </Link>
+                          <Link
+                            to="/csr-at-aayush/health-check"
+                            className="block px-4 py-3 text-[#004037] "
+                            onClick={() => {
+                              setIsCsrSubcategoryOpen(false);
+                              setIsCorporateDropdownOpen(false);
+                            }}
+                          >
+                            Healthcare Check
+                            <p className="text-sm text-gray-600">
+                              Providing essential healthcare services
+                            </p>
+                          </Link>
+                          <Link
+                            to="/sustainability"
+                            className="block px-4 py-3 text-[#004037] "
+                            onClick={() => {
+                              setIsCsrSubcategoryOpen(false);
+                              setIsCorporateDropdownOpen(false);
+                            }}
+                          >
+                            Sustainability
+                            <p className="text-sm text-gray-600">
+                              Driving positive change for a greener future
+                            </p>
+                          </Link>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Other Links */}
+                    <Link
+                      to="/career"
+                      className="block px-4 py-3 text-[#004037] font-bold "
+                      onClick={() => setIsCorporateDropdownOpen(false)}
+                    >
+                      Careers
+                      <p className="text-sm text-gray-600">
+                        Join our team and shape the future
+                      </p>
+                    </Link>
+
+                    <Link
+                      to="/investors"
+                      className="block px-4 py-3 text-[#004037] font-bold "
+                      onClick={() => setIsCorporateDropdownOpen(false)}
+                    >
+                      Investors
+                      <p className="text-sm text-gray-600">
+                        Partner with us for sustainable growth
+                      </p>
+                    </Link>
+                  </div>
+                </div>
+              )}
             </div>
-          )}
-        </div>
-
-        {/* Other Links */}
-        <Link
-          to="/career"
-          className="block px-4 py-3 text-[#004037] font-bold "
-          onClick={() => setIsCorporateDropdownOpen(false)}
-        >
-          Careers
-          <p className="text-sm text-gray-600">Join our team and shape the future</p>
-        </Link>
-
-        <Link
-          to="/investors"
-          className="block px-4 py-3 text-[#004037] font-bold "
-          onClick={() => setIsCorporateDropdownOpen(false)}
-        >
-          Investors
-          <p className="text-sm text-gray-600">Partner with us for sustainable growth</p>
-        </Link>
-      </div>
-    </div>
-  )}
-</div>
-
 
             <div className="h-px w-full bg-gray-200 my-1"></div>
             <Link
@@ -956,31 +726,79 @@ export default function AnimatedSlider() {
         </div>
       </nav>
 
-      <div className="video-wrapper" ref={sliderRef}>
-        <div className="video-overlay"></div>
-        <div className={`video-text ${showText ? "show" : ""}`}>
-          <p>
-            <span className="word fade-word delay-1">Transforming</span>{" "}
-            <span className="word fade-word delay-2">Wellness</span>
-          </p>
-          <p>
-            <span className="word fade-word delay-3">Transforming</span>{" "}
-            <span className="word fade-word delay-4">Lives</span>
-          </p>
+      <div className="video-wrapper relative" ref={sliderRef}>
+        <div className="video-overlay">
+          {/* Divider Line Below the Text */}
+          <div className="absolute left-0 w-full border-t-2 border-[#ffebc4] opacity-80 mt-24 h-[1px]"></div>
+
+          {/* Text Below Divider on the Left Side */}
+          <div
+            className="absolute top-20 left-8 text-[#ffebc4] font-bold leading-none 
+                 text-[40px] md:text-[100px] mt-6"
+          >
+            A New Era of Preventive
+            <br /> Healthcare
+          </div>
         </div>
-       <video
+
+        {/* Services/Products Title - Visible on all screen sizes */}
+        <div className="absolute md:bottom-[370px] md:left-4 bottom-[550px] left-0 right-0 text-center md:text-left text-[#ffebc4] text-[24px] font-bold z-20">
+          Services/Products
+        </div>
+
+        {/* Left Horizontal Divider (Desktop) */}
+        <div className="absolute bottom-[360px] left-0 w-1/2 h-[1px] bg-[#ffebc4] z-10 hidden md:block"></div>
+
+        {/* Right Horizontal Divider (Desktop) */}
+        <div className="absolute bottom-[360px] right-0 w-1/2 h-[1px] bg-[#ffebc4] z-10 hidden md:block"></div>
+
+        {/* Left Horizontal Divider (Mobile) - Above slider cards */}
+        <div className="absolute bottom-[530px] left-0 w-full h-[1px] bg-[#ffebc4] z-10 md:hidden"></div>
+
+        {/* Right Horizontal Divider (Mobile) - Below slider cards */}
+        <div className="absolute bottom-[240px] left-0 w-full h-[1px] bg-[#ffebc4] z-10 md:hidden"></div>
+
+        {/* Vertical Divider (Hidden on Mobile) */}
+        <div className="absolute bottom-0 left-1/2 w-[1px] h-[360px] bg-[#ffebc4] z-10 transform -translate-x-1/2 hidden md:block"></div>
+
+        {/* Right-Side Text (Desktop) */}
+        <div className="absolute bottom-[370px] left-[52%] text-[#ffebc4] text-[28px] md:text-[20px] leading-tight font-medium w-[40%] z-20 md:block hidden">
+          Introduction
+        </div>
+
+        <div className="absolute bottom-[240px] left-[52%] text-[#ffebc4] text-[28px] md:text-[20px] leading-tight font-medium w-[40%] z-20 md:block hidden">
+          At Aayush Wellness, we believe that true health & wellness is not just about treatment but prevention. Through
+          healthcare services, science-backed products, holistic wellness solutions, we empower individuals to take
+          proactive steps toward lifelong well-being.
+        </div>
+
+        {/* Introduction & Other Text Just Below Divider on Mobile */}
+        <div className="absolute bottom-[250px] left-4 right-4 text-center text-[#ffebc4] text-[20px] leading-tight font-medium z-20 md:hidden">
+          Introduction
+        </div>
+
+        <div className="absolute bottom-[50px] left-4 right-4 text-center text-[#ffebc4] text-[20px] leading-tight font-medium z-20 md:hidden">
+          At Aayush Wellness, we believe that true health & wellness is not just about treatment but prevention. Through
+          healthcare services, science-backed products, holistic wellness solutions, we empower individuals to take
+          proactive steps toward lifelong well-being.
+        </div>
+
+        {/* Centered ImageSlider on Mobile, Original Position on Desktop */}
+        <div className="absolute z-10 md:bottom-16 md:left-4 md:right-auto bottom-[300px] inset-x-0 flex items-center justify-center md:inset-auto">
+          <ImageSlider />
+        </div>
+        
+        <video
           className={`video ${isVisible ? "fade-in" : ""}`}
           autoPlay
           muted
           loop
           playsInline
           poster="https://res.cloudinary.com/dudn5tfkq/image/upload/v1741259430/o3zcqyhewzusfycdygyc.png"
-      
-          
         >
-          <source src={selectedVideo.src} type="video/mp4"/>
-          
+          <source src={selectedVideo.src} type="video/mp4" />
         </video>
+
         <style jsx>{`
           .video-wrapper {
             position: relative;
@@ -1077,3 +895,8 @@ export default function AnimatedSlider() {
     </>
   );
 }
+
+
+
+
+
