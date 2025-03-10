@@ -31,7 +31,7 @@ const AccordionItem = ({ handleToggle, active, faq }) => {
                        
                     }}
                 >
-                    <h5 className="rc-accordion-title !text-[24px] font-black !text-black" style={{ color: "#000 !important" }}>{header}</h5>
+                    <h5 className="rc-accordion-title !text-[26px] font-black !text-black" style={{ color: "#000 !important" }}>{header}</h5>
                     {active === id ? (
                         <FaChevronUp className="rc-accordion-icon !text-black" size={16} />
                     ) : (
