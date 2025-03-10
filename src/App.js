@@ -34,6 +34,7 @@ import Blog1 from "./Blog1";
 import Blog2 from "./Blog2";
 import Blog3 from "./Blog3";
 import Blog4 from "./Blog4";
+import Blog5 from "./Blog5";
 
 import './index.css'
 import Healthh from "./Healthh";
@@ -66,6 +67,7 @@ const AnimatedRoutes = () => {
         <Route path="/Blog2" element={<Blog2 />} />
         <Route path="/Blog3" element={<Blog3 />} />
         <Route path="/Blog4" element={<Blog4 />} />
+    <Route path="/nutraceuticals-vs-traditional" element={<Blog5 />} />
 
         <Route path="ourproduct" element={<PageTransition><OurProduct /></PageTransition>} />
         <Route path="csr-at-aayush/health-check" element={<PageTransition><HealthCheck/></PageTransition>} />
