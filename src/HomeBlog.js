@@ -23,13 +23,13 @@ function HomeBlog() {
               <h2 className="text-[25px] md:text-4xl text-white font-bold mb-6">
               Nutraceuticals vs. Traditional Supplements: What’s the Difference?
               </h2>
-              {/* <a 
-                href="#" 
+               <a 
+                href="/nutraceuticals-vs-traditional" 
                 className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
               >
                 
                 Read Post
-              </a> */}
+              </a> 
             </div>
             <div className="order-1 md:order-2">
               <img 
@@ -53,13 +53,13 @@ function HomeBlog() {
               Top 7 Ayurvedic Ingredients to Improve Focus and Mental Clarity.
 
               </h2>
-              {/* <a 
-                href="#" 
+             <a 
+                href="/top-7-ayurvedic-ingredients" 
                 className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
               >
                
                 Read Post
-              </a> */}
+              </a> 
             </div>
             <div className="order-1 md:order-2">
               <img 
