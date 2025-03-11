@@ -13,7 +13,7 @@ const Asection2 = () => {
       >
         {/* Image inside the container */}
         <img
-          src="https://img.freepik.com/free-photo/healthy-young-asian-runner-woman-warm-up-body-stretching-before-exercise_7861-1084.jpg?t=st=1740549773~exp=1740553373~hmac=927706fb364df1f465e61a4d1c89b4d72d65fc55f57b35ee59862a698431aa68&w=1060"
+          src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/indian-man-concentrating-raising-hands-outdoors-with-blue-sky-green-tree-branches.jpg?v=1741669548"
           alt="Be Relax Spa Philadelphia"
           className="w-full h-full object-cover"
         />
