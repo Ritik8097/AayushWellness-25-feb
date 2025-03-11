@@ -9,7 +9,7 @@ const Asection1 = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.8, ease: "easeInOut" }}
       viewport={{ once: true }}
-      className="flex flex-col items-center justify-center px-4 pt-40 text-center max-w-auto mx-auto"
+      className="flex flex-col items-center justify-center px-4 pt-40 text-center max-w-auto mx-auto w-full  bg-[#f9f9f9]"
     >
       {/* Title: "Our Story" */}
       <h1 
