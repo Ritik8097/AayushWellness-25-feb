@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Asection2 = () => {
   return (
-    <div className="w-full flex justify-center">
+     <div className="w-full flex justify-center" style={{ background: "linear-gradient(to bottom, #f9f9f9 50%, white 50%)" }}>
       {/* Image Background Container with fade-in animation */}
       <motion.div
         initial={{ opacity: 0, y: 320 }} // Start hidden and move up
