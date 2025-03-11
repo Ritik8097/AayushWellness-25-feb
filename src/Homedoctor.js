@@ -118,7 +118,7 @@ const Homedoctor = () => {
             <span className="picturestyle__LazyLoadPictureWrapper-sc-yn6p7g-1 fBgVUB">
               <picture className="picturestyle__PictureWrapper-sc-yn6p7g-0 jIQBvI">
                 <img
-                  src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/homepage_doc_image_1.png?v=1741692750"
+                  src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/homepage_doc_image_2.png?v=1741700486"
                   alt="Image"
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 />
