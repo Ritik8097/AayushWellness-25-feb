@@ -71,7 +71,7 @@ const Accordionweb = () => {
               <div className="col-12">
                 <div className="card" style={{ backgroundColor: "#ffffff", boxShadow: "none", width: "100%" }}>
                   <div className="card-body p-3">
-                    <h4 className="form-heading text-primary text-start text-[34px] mt-3 mb-8">Reports</h4>
+                    <h4 className="form-heading text-primary text-start text-[34px] mt-3 mb-8">REPORTS</h4>
                     {faqs.map((faq) => (
                       <AccordionItem key={faq.id} active={active} handleToggle={handleToggle} faq={faq} />
                     ))}
