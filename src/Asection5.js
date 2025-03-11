@@ -85,7 +85,7 @@ const Asection5 = () => {
             text="The Future of Wellness is Here"
             animateOn="view"
             revealDirection="center"
-            className="text-center font-bold text-black leading-[120%] tracking-[0.02em] w-full mb-3 pt-[60px] text-[38px] sm:text-[38px] md:text-[54px] lg:text-[94px]"
+            className="text-center font-bold text-black leading-[120%] tracking-[0.02em] w-full mb-6 pt-[60px] text-[38px] sm:text-[38px] md:text-[54px] lg:text-[94px]"
           /></div>
               
         <div
@@ -94,7 +94,7 @@ const Asection5 = () => {
             fontSize: "18px",
             lineHeight: "150%",
             color: "#3a4458",
-            marginBottom: "24px",
+            marginBottom: "4px",
             textAlign: "center",
           }}
         >
