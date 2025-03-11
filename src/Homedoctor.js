@@ -85,7 +85,7 @@ const Homedoctor = () => {
             <span className="picturestyle__LazyLoadPictureWrapper-sc-yn6p7g-1 fBgVUB">
               <picture className="picturestyle__PictureWrapper-sc-yn6p7g-0 jIQBvI">
                 <img
-                  src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/homepage_card.png?v=1741699590"
+                  src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/homepage_card_1.png?v=1741699969"
                   alt="Picture of cards depicting losing weight"
                 />
               </picture>
