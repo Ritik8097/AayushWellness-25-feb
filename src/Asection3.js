@@ -19,7 +19,7 @@ const companyValuesStyles = {
   item: {
     width: "100%",
     padding: "40px",
-    background: "#f5f3f0",
+    background: "#f9f9f9",
     borderRadius: "48px",
     display: "flex",
     flexDirection: "column",
