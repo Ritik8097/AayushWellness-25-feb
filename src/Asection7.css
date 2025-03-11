@@ -436,7 +436,7 @@
   
   .footer__subtitle { 
       font-family: "Inter", sans-serif;
-      font-size: 14px; 
+      font-size: 24px; 
       line-height: 100%; 
       text-transform: uppercase; 
       color: rgba(12,58,77,.6); 
@@ -707,6 +707,13 @@
     }
   }
 
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .footer__subtitle {
+      font-size: 18px !important; /* Force apply */
+  }
+}
 
 
 
