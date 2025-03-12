@@ -10,7 +10,7 @@ const AwCard2 = () => {
   };
   return (
     <>
-    <div className="Block_container__Nv4cD Block_isLushGreen__N9AXS Up_container__1NlPf Up_hasThreeColumns__AzNPd snipcss-kYyEF">
+    <div className="Block_container__Nv4cD Block_isLushGreen__N9AXS Up_container__1NlPf Up_hasThreeColumns__AzNPd snipcss-kYyEF blocks">
   <div className="Title_container__J38Ea">
     <div className="Container_container__NvvWg">
       <div className="Title_head__rrr2_ style-b193m" id="style-b193m">
