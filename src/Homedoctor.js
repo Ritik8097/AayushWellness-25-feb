@@ -7,34 +7,35 @@ const Homedoctor = () => {
      const testimonials = [
         {
           id: "style-B65FD",
-          quote: "Booking an online consultation was quick and easy. The doctor was very understanding and provided me with a personalized treatment plan. I feel much healthier and more confident now!",
-          name: "Rohit, 35",
+          quote: "The exceptional care I received at this hospital exceeded all my expectations! From accurate diagnosis to smooth treatment, everything was well-organized. The doctors and staff ensured my comfort at every step. Highly recommended!",
+          name: "Rohan Malhotra",
           product: "Online Consultation"
         },
         {
           id: "style-RAU56",
-          quote: "I was struggling with constant fatigue, but after getting my blood test and consulting with the specialists, I finally got the right vitamins and lifestyle recommendations. Now, I feel more energetic than ever!",
-          name: "Sachin, 40",
+          quote: "I recently had a complex surgery here, and the expertise of the medical team truly amazed me. The combination of advanced technology and skilled surgeons made my recovery faster than expected. Grateful for such dedicated care!",
+          name: "Neha Sharma",
           product: "Wellness & Nutrition Plan"
         },
         {
           id: "style-Xrq8z",
-          quote: "I had been ignoring my skin issues for a while, but this platform made it so easy to get expert advice. The prescribed skincare routine worked wonders, and my skin has never been clearer!",
-          name: "Kajal, 28",
+          quote: "This hospital focuses on complete wellness, not just treatment. Their personalized approach, including diet plans, stress management, and fitness programs, has truly changed my perspective on health. Impressive work!",
+          name: "Sameer Nair",
           product: "Dermatology Consultation"
         },
         {
           id: "style-LY4J2",
-          quote: "After struggling with anxiety for years, I finally decided to try online therapy. My therapist has been incredibly supportive, and I’ve learned techniques that help me stay calm and focused every day.",
-          name: "Dev, 38",
+          quote: "The state-of-the-art infrastructure here matches international standards. With cutting-edge medical technology and well-maintained facilities, my treatment process was smooth and stress-free. A top-tier experience!",
+          name: "Priya Kulkarni",
           product: "Mental Health Therapy"
         },
         {
           id: "style-l637p",
-          quote: "I was worried about my high cholesterol levels, but the doctors provided me with a clear plan, including diet and medication options. Now, my health is back on track, and I feel so much better!",
-          name: "Shreya, 50",
+          quote: "High-quality healthcare at prices that don’t break the bank! Unlike other hospitals that overcharge, this facility provides excellent medical services while being budget-friendly. Definitely worth considering!",
+          name: "Meera Chopra",
           product: "Heart Health Program"
-        }
+        },
+          
       ];
       
     
