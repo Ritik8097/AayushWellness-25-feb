@@ -88,17 +88,17 @@ const values = [
   {
     title: "Science & Innovation",
     text: "We are driven by research.At Aayush Wellness, we blend cutting-edge science with nature to create solutions that enhance health and longevity. Our team of experts is constantly researching and innovating to bring the best in nutraceuticals, preventive healthcare, and wellness technology.",
-    icon: "https://berelax.com/wp-content/uploads/2023/02/service-1.svg",
+    icon: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/svgviewer-output_3.svg?v=1741756910",
   },
   {
     title: "Accessibility for All",
     text: "Health should be within everyone's reach.We believe that wellness is a right, not a privilege. Whether it’s through affordable nutritional solutions, digital healthcare access, or community wellness programs, we ensure that everyone—regardless of location or background—can take control of their health.",
-    icon: "https://berelax.com/wp-content/uploads/2023/02/award-1.svg",
+    icon: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/svgviewer-output_2.svg?v=1741756898",
   },
   {
     title: "Holistic Well-Being",
     text: "Health isn’t just about curing—it’s about preventing.We focus on preventive healthcare and personalized wellness solutions, empowering individuals to take charge of their well-being before issues arise. From AI-powered diagnostics to natural wellness solutions, we help people live healthier, longer lives.",
-    icon: "https://berelax.com/wp-content/uploads/2023/03/Meditation.svg",
+    icon: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/svgviewer-output_1.svg?v=1741756778",
   },
   {
     title: "Trust & Transparency",
