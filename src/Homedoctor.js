@@ -50,7 +50,7 @@ const Homedoctor = () => {
   return (
     <div className="homedoctor-container">
       <div className="shortOffset-tilesstyle__OffsetTilesComponentHeadline-sc-ams4gs-1 kptVHS snipcss-YosCm">
-        <span className="typographystyle__Typography-sc-1r2rdgq-0 TlIco">
+        <span className=" md:text-6xl text-[25px] leading-[1.2] md:leading-[1.2]  text-black  font-[500]   uppercase">
           Expert-approved solutions,{" "}
           <div className="shortOffset-tilesstyle__HighlightText-sc-ams4gs-5 dICZFB">
           personalized to your health.
@@ -193,9 +193,9 @@ const Homedoctor = () => {
           id={testimonial.id}
           style={{
             display: index === currentIndex ? 'flex' : 'none',
-            justifyContent: 'center',
+            justifyContent: 'left',
             alignItems: 'center',
-            textAlign: 'center',
+            textAlign: 'left',
             height: '100%', // Ensure it takes full height
             paddingTop: '70px',
           }}
@@ -205,8 +205,8 @@ const Homedoctor = () => {
             style={{
               display: 'flex',
               flexDirection: 'column',
-              justifyContent: 'center',
-              alignItems: 'center',
+              justifyContent: 'left',
+              alignItems: 'left',
               width: '100%',
             }}
           >
