@@ -6,7 +6,7 @@ import BlurText from './BlurText'
 const AwCard = () => {
   return (
     <>
-    <div style={{background:"white"}} className="Block_container__Nv4cD Block_isCream__VRtaM Up_container__1NlPf Up_hasThreeColumns__AzNPd snipcss-Qmnp5 ">
+    <div style={{background:"white"}} className="Block_container__Nv4cD Block_isCream__VRtaM Up_container__1NlPf Up_hasThreeColumns__AzNPd snipcss-Qmnp5 blocks">
   <div className="Title_container__J38Ea">
     <div className="Container_container__NvvWg">
       <div className="Title_head__rrr2_ style-BO1LT" id="style-BO1LT">
