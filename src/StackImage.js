@@ -40,7 +40,7 @@ const StackImage = () => {
     }, []);
   return (
     
-    <div className={`Block_container__Nv4cD Block_isCream__VRtaMm StackedContent_container__DfJEU snipcss-YBdoL hidden md:block  ${isInView ? "active-background" : ""}`}>
+    <div className={`Block_container__Nv4cD Block_isCream__VRtaMm StackedContent_container__DfJEU snipcss-YBdoL blocks hidden md:block  ${isInView ? "active-background" : ""}`}>
       <div className="Container_container__NvvWg StackedContent_wrapper__2JCtc snipcss0-1-1-2 style-ee6GF" id="style-ee6GF">
         <div className="StackedContent_mediaContainer__5BNSM">
           <div className="StackedContent_mediaWrapper___gRyP StackedContent_isActive__U4mo3">
