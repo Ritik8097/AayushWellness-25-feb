@@ -40,8 +40,8 @@ function Layout() {
       <StackImageMobile/>
       <StackImageMobile2/>
       <AwCard/>
-    <Homedoctor/>
       <AwCard2/>
+    <Homedoctor/>
       <HeroSection />
       {/* <SectionTrail/> */}
 
