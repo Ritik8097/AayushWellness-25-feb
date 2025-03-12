@@ -49,7 +49,7 @@ const Homedoctor = () => {
 
 
   return (
-    <div className="homedoctor-container">
+    <div className="homedoctor-container blocks">
       <div className="shortOffset-tilesstyle__OffsetTilesComponentHeadline-sc-ams4gs-1 kptVHS snipcss-YosCm">
         <span className=" md:text-6xl text-[25px] leading-[1.2] md:leading-[1.2]  text-black  font-[500]   uppercase">
           Expert-approved solutions,{" "}
