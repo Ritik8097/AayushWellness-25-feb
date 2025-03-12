@@ -28,7 +28,7 @@ export default function NewsletterSignup() {
     }
 };
   return (
-    <div className="bg-[#f9f3e8] "> 
+    <div className="bg-[#f9f3e8] blocks"> 
       <div className="max-w-screen-md mx-auto py-20 px-4 text-center bg-[#f9f3e8] ">
         <section className="mb-10">
         <h3
