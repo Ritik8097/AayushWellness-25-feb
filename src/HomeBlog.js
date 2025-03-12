@@ -3,7 +3,7 @@ import React from 'react';
 
 function HomeBlog() {
   return (
-    <div className="min-h-screen  bg-black text-white">
+    <div className="min-h-screen  bg-[#004037] text-white">
       {/* Header */}
       {/* <header className="p-4 md:p-6 flex justify-between items-center">
         <div className="text-xl font-bold text-center">oui will</div>
@@ -17,7 +17,7 @@ function HomeBlog() {
         {/* Article 1 */}
         <h1 className=' text-center text-[25px] md:text-[40px] pb-[25px] md:pb-[60px]'>Blogs</h1>
         <article className="mb-16 md:mb-24">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid md:grid-cols-2 gap-8 items-center bg-[#023932] p-[25px] rounded-xl">
             <div className="order-2 md:order-1">
               <div className="text-gray-400 mb-4">01. 03. 2025</div>
               <h2 className="text-[25px] md:text-4xl text-white font-bold mb-6">
@@ -46,7 +46,7 @@ function HomeBlog() {
 
         {/* Article 2 */}
         <article className="mb-16 md:mb-24">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid md:grid-cols-2 gap-8 items-center bg-[#023932] p-[25px] rounded-xl">
             <div className="order-2 md:order-1">
               <div className="text-gray-400 mb-4">01. 03. 2025</div>
               <h2 className="text-[25px] md:text-4xl text-white font-bold mb-6">
