@@ -1,10 +1,8 @@
-"use client"
-
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
-import { ArrowRight, Instagram, Twitter, Facebook } from "lucide-react"
+import { ArrowRight, Instagram, Facebook } from "lucide-react"
 
-const Footer2 = () => {
+const NewFooter = () => {
   const [email, setEmail] = useState("")
   const [isSubscribed, setIsSubscribed] = useState(false)
   const [videoSrc, setVideoSrc] = useState("https://cdn.shopify.com/videos/c/o/v/ef92913a3d004ba4bbe7ab21d8d6afe3.mp4")
@@ -79,32 +77,32 @@ const Footer2 = () => {
             </form>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-8 md:gap-10 md:pl-2 md:border-l md:border-white/90">
+          <div className="flex flex-col md:flex-row gap-8 md:gap-10 md:pl-[3rem] md:border-l md:border-white/90">
             <div className="min-w-[120px]">
               <h3 className="mb-4 text-xxl font-medium">Company</h3>
               <ul className="list-none p-0">
                 <li className="mb-2">
-                  <Link to="/about-us" className="text-white no-underline hover:underline font-bold text-[25px]">
+                  <Link to="/about-us" className="text-white no-underline hover:underline  text-[25px]">
                     About Us
                   </Link>
                 </li>
                 <li className="mb-2">
                   <Link
                     to="/about/company-intro"
-                    className="text-white no-underline hover:underline font-bold text-[25px]"
+                    className="text-white no-underline hover:underline  text-[25px]"
                   >
                     Our Story
                   </Link>
                 </li>
                 <li className="mb-2">
-                  <Link to="/career" className="text-white no-underline hover:underline font-bold text-[25px]">
+                  <Link to="/career" className="text-white no-underline hover:underline  text-[25px]">
                     Contact Us
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/about/mission-vision"
-                    className="text-white no-underline hover:underline font-bold text-[25px]"
+                    className="text-white no-underline hover:underline  text-[25px]"
                   >
                     Mission & Vision
                   </Link>
@@ -117,29 +115,29 @@ const Footer2 = () => {
                 <li>
                   <Link
                     to="/wellness/modern-science"
-                    className="text-white no-underline hover:underline font-bold text-[25px]"
+                    className="text-white no-underline hover:underline  text-[25px]"
                   >
                     Modern Science
                   </Link>
                 </li>
                 <li>
-                  <Link to="/ayurveda" className="text-white no-underline hover:underline font-bold text-[25px]">
+                  <Link to="/ayurveda" className="text-white no-underline hover:underline  text-[25px]">
                     Ayurveda
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/wellness/health-wellness"
-                    className="text-white no-underline hover:underline font-bold text-[25px]"
+                    className="text-white no-underline hover:underline  text-[25px]"
                   >
                     Health & Wellness
                   </Link>
                 </li>
-                <h3 className="mb-4 mt-4 text-xxl font-medium">Newsroom</h3>
+                <h3 className="mb-4 mt-4 font-[100] ">Newsroom</h3>
                 <li>
                   <Link
                     to="/newsroom/in-the-news"
-                    className="text-white no-underline hover:underline font-bold text-[25px]"
+                    className="text-white no-underline hover:underline  text-[25px]"
                   >
                     In the News
                   </Link>
@@ -147,7 +145,7 @@ const Footer2 = () => {
                 <li>
                   <Link
                     to="/newsroom/press-release"
-                    className="text-white no-underline hover:underline font-bold text-[25px]"
+                    className="text-white no-underline hover:underline  text-[25px]"
                   >
                     Press Release
                   </Link>
@@ -155,7 +153,7 @@ const Footer2 = () => {
                 <li>
                   <Link
                     to="/newsroom/library"
-                    className="text-white no-underline hover:underline font-bold text-[25px]"
+                    className="text-white no-underline hover:underline  text-[25px]"
                   >
                     Library
                   </Link>
@@ -168,7 +166,7 @@ const Footer2 = () => {
                 <li>
                   <Link
                     to="/csr-at-aayush/malnutrition"
-                    className="text-white no-underline hover:underline font-bold text-[25px]"
+                    className="text-white no-underline hover:underline  text-[25px]"
                   >
                     Malnutrition
                   </Link>
@@ -176,25 +174,25 @@ const Footer2 = () => {
                 <li>
                   <Link
                     to="/csr-at-aayush/health-check"
-                    className="text-white no-underline hover:underline font-bold text-[25px]"
+                    className="text-white no-underline hover:underline  text-[25px]"
                   >
                     Healthcare Check
                   </Link>
                 </li>
                 <li>
-                  <Link to="/sustainability" className="text-white no-underline hover:underline font-bold text-[25px]">
+                  <Link to="/sustainability" className="text-white no-underline hover:underline  text-[25px]">
                     Sustainability
                   </Link>
                 </li>
                 <li>
-                  <Link to="/healthcare" className="text-white no-underline hover:underline font-bold text-[25px]">
+                  <Link to="/healthcare" className="text-white no-underline hover:underline  text-[25px]">
                     Healthcare
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/growth-accelerator"
-                    className="text-white no-underline hover:underline font-bold text-[25px]"
+                    className="text-white no-underline hover:underline  text-[25px]"
                   >
                     Accelarator
                   </Link>
@@ -222,23 +220,85 @@ const Footer2 = () => {
 
           {/* Social Media Icons - Desktop: Center, Mobile: Above Terms */}
           <div className="flex items-center justify-center gap-4 order-2 md:order-1 md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
+            <div className="relative group">
+              <Link
+                to="#"
+                className="bg-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-80 transition-all"
+              >
+                <Instagram size={20} className="text-black" />
+              </Link>
+              <div className="absolute left-0 bottom-full mb-2 w-48 rounded-md shadow-lg bg-white/30 backdrop-blur-md ring-1 ring-black ring-opacity-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                <div className="py-1" role="menu" aria-orientation="vertical">
+                  <Link to="https://www.instagram.com/aayush.wellness/" className="block px-4 py-2 text-sm text-white font-semibold hover:underline hover:bg-green-800" role="menuitem">
+                    Aayush Wellness Instagram
+                  </Link>
+                  <Link to="https://www.instagram.com/aayushveda_/" className="block px-4 py-2 text-sm text-white font-semibold hover:bg-green-800 hover:underline" role="menuitem">
+                    Aayush Veda Instagram
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative group">
+              <Link
+                to="#"
+                className="bg-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-80 transition-all"
+              >
+                <Facebook size={20} className="text-black" />
+              </Link>
+              <div className="absolute left-0 bottom-full mb-2 w-48 rounded-md shadow-lg bg-white/30 backdrop-blur-md ring-1 ring-black ring-opacity-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                <div className="py-1" role="menu" aria-orientation="vertical">
+                  <Link to="https://www.facebook.com/profile.php?id=61561583410258" className="block px-4 py-2 text-sm text-white font-semibold hover:underline hover:bg-green-800" role="menuitem">
+                  Aayush Wellness Facebook
+                  </Link>
+                  <Link to="https://www.facebook.com/profile.php?id=61555665373176" className="block px-4 py-2 text-sm text-white font-semibold hover:underline hover:bg-green-800" role="menuitem">
+                  Aayush Veda Facebook
+                  </Link>
+                </div>
+              </div>
+            </div>
+
             <Link
-              to="#"
+              to="https://www.youtube.com/@AayushWellnessLimited"
               className="bg-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-80 transition-all"
             >
-              <Instagram size={20} className="text-black" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="text-black"
+              >
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+              </svg>
             </Link>
+
             <Link
-              to="#"
+              to="https://www.linkedin.com/company/aayushwellness/?viewAsMember=true"
               className="bg-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-80 transition-all"
             >
-              <Twitter size={20} className="text-black" />
-            </Link>
-            <Link
-              to="#"
-              className="bg-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-80 transition-all"
-            >
-              <Facebook size={20} className="text-black" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="text-black"
+              >
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
             </Link>
           </div>
 
@@ -256,5 +316,4 @@ const Footer2 = () => {
   )
 }
 
-export default Footer2;
-
+export default NewFooter;
