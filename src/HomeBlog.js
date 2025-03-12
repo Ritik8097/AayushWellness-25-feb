@@ -3,7 +3,7 @@ import React from 'react';
 
 function HomeBlog() {
   return (
-    <div className="min-h-screen  bg-[#004037] text-white">
+    <div className="min-h-screen  bg-[#004037] text-white blocks">
       {/* Header */}
       {/* <header className="p-4 md:p-6 flex justify-between items-center">
         <div className="text-xl font-bold text-center">oui will</div>
