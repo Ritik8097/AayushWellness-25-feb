@@ -103,7 +103,7 @@ const values = [
   {
     title: "Trust & Transparency",
     text: "Your health is our priority.We hold ourselves to the highest standards of safety, quality, and ethics. Every product we offer is backed by rigorous scientific testing, ensuring transparency and effectiveness in everything we do.",
-    icon: "https://berelax.com/wp-content/uploads/2023/02/love.svg",
+    icon: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/svgviewer-output.svg?v=1741756559",
   },
 ]
 
