@@ -9,7 +9,7 @@ const CleanEnergyHero = () => {
  
 
   return (
-    <div className="md:flex md:w-full  bg-[#004037] block  items-center pl-[20px]">
+    <div className="md:flex md:w-full  bg-[#004037] block  items-center pl-[20px] blocks">
       <div className="HomeHero_content__DYNN6">
       <BlurText
   text="Science & Ayurveda for a Healthier Tomorrow"
