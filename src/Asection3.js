@@ -88,7 +88,7 @@ const values = [
   {
     title: "Science & Innovation",
     text: "We are driven by research.At Aayush Wellness, we blend cutting-edge science with nature to create solutions that enhance health and longevity. Our team of experts is constantly researching and innovating to bring the best in nutraceuticals, preventive healthcare, and wellness technology.",
-    icon: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/svgviewer-output_3.svg?v=1741756910",
+    icon: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/svgviewer-output_4.svg?v=1741757643",
   },
   {
     title: "Accessibility for All",
