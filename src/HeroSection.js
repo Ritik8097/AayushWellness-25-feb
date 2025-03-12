@@ -5,7 +5,7 @@ import BlurText from './BlurText'
 
 function HeroSection() {
   return (
-    <div class="Block_container__Nv4cD Block_isCream__VRtaM TextMedia_container__1OeME TextMedia_isCream__1R3ST snipcss-6nyWs">
+    <div class="Block_container__Nv4cD Block_isCream__VRtaM TextMedia_container__1OeME TextMedia_isCream__1R3ST snipcss-6nyWs blocks">
     <div>
         <div class="Container_container__NvvWg TextMedia_wrapper__Uesgc">
             <div class="TextMedia_content__jyQfX"><span class="TextMedia_eyebrow__y7WFh style-pFboy" id="style-pFboy">Our story</span>
