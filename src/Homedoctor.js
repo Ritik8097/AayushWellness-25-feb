@@ -118,7 +118,7 @@ const Homedoctor = () => {
             <span className="picturestyle__LazyLoadPictureWrapper-sc-yn6p7g-1 fBgVUB">
               <picture className="picturestyle__PictureWrapper-sc-yn6p7g-0 jIQBvI">
                 <img
-                  src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/homepage_doc_image_2.png?v=1741700486"
+                  src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/homepage_card_med.png?v=1741770536"
                   alt="Image"
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 />
@@ -152,7 +152,7 @@ const Homedoctor = () => {
             <span className="picturestyle__LazyLoadPictureWrapper-sc-yn6p7g-1 fBgVUB">
               <picture className="picturestyle__PictureWrapper-sc-yn6p7g-0 jIQBvI">
                 <img
-                  src="https://www.hims.com/forhims/image/upload/q_auto,f_auto,fl_lossy,c_limit/Hims/homepage/STOR-6051/offsetPersonalTiles/Hims_Homepage_OffsetTiles_Ingredients.png"
+                  src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/homepage_doc_image_2.png?v=1741700486"
                   alt="Image"
                 />
               </picture>
