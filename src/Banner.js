@@ -10,7 +10,7 @@ const sliderSettings = {
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 7000,
   arrows: false,
   pauseOnHover: false,
@@ -33,14 +33,14 @@ const Banner = () => {
   };
 
   const mobileContent = [
-    { type: "image", src: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/holi_offer_banner.jpg?v=1741857866" },
+    { type: "image", src: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/holi_offer_ad_mobile.jpg?v=1741858039" },
     { type: "video", src: "https://cdn.shopify.com/videos/c/o/v/3454076400644c5aa9bac0f343e93b32.mp4" },
     { type: "image", src: "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Slider_banner_2_mobile_9bbc2622-bb9e-48d8-a303-b1dfd6dcd11d.jpg?v=1740134272" },
-    { type: "image", src: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/720f0d6cd9eb40b384d816e6513b576b-ezgif.com-video-to-gif-converter.gif?v=1741261950" },
+    { type: "video", src: "https://res.cloudinary.com/dudn5tfkq/video/upload/v1741261300/vi6f8ixleuyv6ldoihhx.mp4" },
   ];
 
-  const desktopContent = [
-    { type: "image", src: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/holi_offer_ad_mobile.jpg?v=1741858039" },
+  const desktopContent = [  
+    { type: "image", src: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/holi_offer_banner.jpg?v=1741857866" },
     { type: "video", src: "https://cdn.shopify.com/videos/c/o/v/e503e53958ed4a32bfe5f570fa73dc93.mp4" },
     { type: "image", src: "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Slider_banner_2_158998cf-e091-408f-913c-aa86b186ea43.jpg?v=1740134272" },
     { type: "video", src: "https://cdn.shopify.com/videos/c/o/v/403fc210eec54d41b620a0cabe78c9f9.mp4" },
@@ -66,18 +66,19 @@ const Banner = () => {
             ) : (
               <video
               preload="auto"
-              
+              ref={(el) => (videoRefs.current[index] = el)}
               className="w-full object-cover h-[100vh] pt-[110px]"
               autoPlay
               loop
               muted
               playsInline
-             poster="https://res.cloudinary.com/dudn5tfkq/image/upload/v1741259430/o3zcqyhewzusfycdygyc.png"
+              
+             
               onCanPlayThrough={() => {
                 videoRefs.current[index]?.play().catch((err) => console.log("Autoplay prevented:", err));
               }}
             >
-              <source src={item.src} type="video/mp4"  />
+              <source src={item.src} type="video/mp4" muted playsInline />
               Your browser does not support the video tag.
             </video>
             )}
