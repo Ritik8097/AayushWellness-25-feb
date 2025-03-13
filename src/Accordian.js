@@ -48,7 +48,7 @@ const Accordionweb = () => {
     "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Investors_banner_mobile_1.jpg?v=1724668205";
 
   const desktopImages = 
-    "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Investors_banner.jpg?v=1724326524";
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/investor_banner_new.jpg?v=1741861349";
 
   // Choose images based on screen size
   const images = isMobile ? mobileImages : desktopImages;
@@ -61,7 +61,7 @@ const Accordionweb = () => {
     <>
       <Header />
       <div className="image-container">
-        <img src={images} alt="Banner" style={{ width: "100%", height: "auto" }} />
+        <img src={images} alt="Banner" style={{ width: "100%", height: "auto", paddingTop: "80px" }} />
       </div>
 
       <div className="first" style={{ backgroundColor: "#ffffff" }}>
