@@ -62,7 +62,7 @@ const Banner = () => {
         {content.map((item, index) => (
           <div key={index} className="w-full cursor-pointer" onClick={handleRedirect}>
             {item.type === "image" ? (
-              <img loading="lazy" className="w-full object-fill h-[100vh] pt-[80px]" src={item.src} alt={`Slide ${index + 1}`} />
+              <img loading="lazy" className="w-full max-w-full  object-fill h-[100vh] aspect-[16/9] pt-[80px]" src={item.src} alt={`Slide ${index + 1}`} />
             ) : (
               <video
               preload="auto"
