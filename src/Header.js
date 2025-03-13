@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import menu from "./images/menu.png";
 import closepng from "./images/close.png";
 import searchIcon from "./images/search-gray.svg";
 
@@ -570,7 +569,7 @@ export default function AnimatedSlider() {
                 >
                   {/* Mobile Search */}
 
-                  <img className="h-7" src={menu} alt="menu" />
+                  <img className="h-7" src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/svgviewer-output_6.svg?v=1741865755" alt="menu" />
                 </button>
               </div>
             </div>
