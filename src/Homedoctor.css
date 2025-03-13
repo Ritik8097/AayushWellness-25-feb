@@ -307,8 +307,7 @@
   } 
   
   .jFQpTd span  { 
-      height: 100%; 
-      aspect-ratio: 1312 / 800; 
+      height: 100%;  
       left: 50%; 
       transform: translateX(-50%); 
       display: flex;
@@ -566,7 +565,7 @@
     /* Ensure images don't overflow */
     .jFQpTd {
       position: relative;
-      overflow: hidden;
+      
     }
     
     /* Improve content spacing on mobile */
