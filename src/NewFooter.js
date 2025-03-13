@@ -132,8 +132,12 @@ const NewFooter = () => {
                   >
                     Health & Wellness
                   </Link>
-                </li>
-                <h3 className="mb-4 mt-4 font-[100] ">Newsroom</h3>
+                </li>                               
+              </ul>             
+            </div>
+            <div className="min-w-[120px]">
+              <h3 className="mb-4 text-xxl font-medium ">Newsroom</h3>
+              <ul>
                 <li>
                   <Link
                     to="/newsroom/in-the-news"
@@ -158,8 +162,8 @@ const NewFooter = () => {
                     Library
                   </Link>
                 </li>
-              </ul>
-            </div>
+                </ul>
+              </div>
             <div className="min-w-[120px]">
               <h3 className="mb-4 text-xxl  font-medium">Corporate</h3>
               <ul className="list-none p-0">
