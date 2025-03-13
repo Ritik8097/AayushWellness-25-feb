@@ -42,6 +42,15 @@ export default function AnimatedSlider() {
     };
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const videos = {
     desktop: {
       src: "https://cdn.shopify.com/videos/c/o/v/139791bdf7224d648c2a57aa7f458592.mp4",
@@ -726,13 +735,21 @@ export default function AnimatedSlider() {
           <div className="absolute left-0 w-full border-t border-[#ffebc4] z-10 mt-[5rem] md:mt-24 h-[1px]"></div>
 
           {/* Text Below Divider on the Left Side */}
-          <div
-             className="absolute top-[5.6rem] left-4 text-[#ffebc4] leading-none font-normal 
-             text-[25px] sm:text-[25px] md:text-[30px] lg:text-[40px] xl:text-[120px] "  style={{ marginTop: window.innerWidth < 640 ? "0px !important" : "1.5rem" }} // 1.5rem = mt-6
-         >
-            A New Era of 
-            <br /> Healthcare
-          </div>
+         <div
+      className="absolute top-[5.6rem] left-4 text-[#ffebc4] leading-none font-normal 
+      text-[60px] sm:text-[60px] md:text-[30px] lg:text-[40px] xl:text-[120px]"
+      style={{ marginTop: isMobile ? "0px" : "1.5rem" }} // No !important needed
+    >
+      {isMobile ? (
+        <>
+          A New <br /> Era of Healthcare
+        </>
+      ) : (
+        <>
+          A New Era of <br /> Healthcare
+        </>
+      )}
+    </div>
         </div>
 
         {/* Services/Products Title - Visible on all screen sizes */}
