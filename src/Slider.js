@@ -742,7 +742,7 @@ export default function AnimatedSlider() {
     >
       {isMobile ? (
         <>
-          A New <br /> Era of Healthcare
+          A New Era of Healthcare
         </>
       ) : (
         <>
