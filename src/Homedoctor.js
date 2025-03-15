@@ -7,35 +7,34 @@ const Homedoctor = () => {
      const testimonials = [
         {
           id: "style-B65FD",
-          quote: "The exceptional care I received at this hospital exceeded all my expectations! From accurate diagnosis to smooth treatment, everything was well-organized. The doctors and staff ensured my comfort at every step. Highly recommended!",
-          name: "Rohan Malhotra",
+          quote: "Booking an online consultation was quick and easy. The doctor was very understanding and provided me with a personalized treatment plan. I feel much healthier and more confident now!",
+          name: "Rohit, 35",
           product: "Online Consultation"
         },
         {
           id: "style-RAU56",
-          quote: "I recently had a complex surgery here, and the expertise of the medical team truly amazed me. The combination of advanced technology and skilled surgeons made my recovery faster than expected. Grateful for such dedicated care!",
-          name: "Neha Sharma",
+          quote: "I was struggling with constant fatigue, but after getting my blood test and consulting with the specialists, I finally got the right vitamins and lifestyle recommendations. Now, I feel more energetic than ever!",
+          name: "Sachin, 40",
           product: "Wellness & Nutrition Plan"
         },
         {
           id: "style-Xrq8z",
-          quote: "This hospital focuses on complete wellness, not just treatment. Their personalized approach, including diet plans, stress management, and fitness programs, has truly changed my perspective on health. Impressive work!",
-          name: "Sameer Nair",
+          quote: "I had been ignoring my skin issues for a while, but this platform made it so easy to get expert advice. The prescribed skincare routine worked wonders, and my skin has never been clearer!",
+          name: "Kajal, 28",
           product: "Dermatology Consultation"
         },
         {
           id: "style-LY4J2",
-          quote: "The state-of-the-art infrastructure here matches international standards. With cutting-edge medical technology and well-maintained facilities, my treatment process was smooth and stress-free. A top-tier experience!",
-          name: "Priya Kulkarni",
+          quote: "After struggling with anxiety for years, I finally decided to try online therapy. My therapist has been incredibly supportive, and I’ve learned techniques that help me stay calm and focused every day.",
+          name: "Dev, 38",
           product: "Mental Health Therapy"
         },
         {
           id: "style-l637p",
-          quote: "High-quality healthcare at prices that don’t break the bank! Unlike other hospitals that overcharge, this facility provides excellent medical services while being budget-friendly. Definitely worth considering!",
-          name: "Meera Chopra",
+          quote: "I was worried about my high cholesterol levels, but the doctors provided me with a clear plan, including diet and medication options. Now, my health is back on track, and I feel so much better!",
+          name: "Shreya, 50",
           product: "Heart Health Program"
-        },
-          
+        }
       ];
       
     
@@ -120,8 +119,7 @@ const Homedoctor = () => {
               <picture className="picturestyle__PictureWrapper-sc-yn6p7g-0 jIQBvI">
                 <img
                   src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/homepage_card_med_1.png?v=1741783789"
-                  alt="Image"
-                  
+                  alt="Image"                 
                 />
               </picture>
             </span>
@@ -183,71 +181,91 @@ const Homedoctor = () => {
             </button>
           </a>
 
-          <div className="testimonial-cardstyle__SlideOuterWrapper-sc-1f80141-1 eiAZRs">
-    <div className="testimonial-cardstyle__SlideWrapper-sc-1f80141-2 ljFWsD keen-slider">
-      {testimonials.map((testimonial, index) => (
+          <div className="testimonial-cardstyle__SlideOuterWrapper-sc-1f80141-1 eiAZRs" style={{ position: 'relative' }}>
+  {/* Video Element - Stays fixed at the top-left */}
+  <video
+    className="testimonial-video"
+    src="https://cdn.shopify.com/videos/c/o/v/a11eabec21b44e4aaf7ede428f75cca4.mp4" // Replace with your video URL
+    
+    autoPlay
+    loop
+    muted
+    style={{
+      position: 'relative',
+      top: '10px',
+      left: '150px',
+      width: '90px', // Adjust size as needed
+      height: 'auto',
+      borderRadius: '10px', // Optional: Adds rounded corners
+      zIndex: 10, // Ensures the video stays on top
+    }}
+  />
+
+  <div className="testimonial-cardstyle__SlideWrapper-sc-1f80141-2 ljFWsD keen-slider">
+    {testimonials.map((testimonial, index) => (
+      <div
+        key={testimonial.id}
+        className={`testimonial-cardstyle__SlideItemWrapper-sc-1f80141-5 cSThpo keen-slider__slide ${
+          index === currentIndex ? 'active' : 'hidden'
+        }`}
+        id={testimonial.id}
+        style={{
+          display: index === currentIndex ? 'flex' : 'none',
+          justifyContent: 'left',
+          alignItems: 'center',
+          textAlign: 'left',
+          height: '100%',
+          paddingTop: '10px',
+        }}
+      >
         <div
-          key={testimonial.id}
-          className={`testimonial-cardstyle__SlideItemWrapper-sc-1f80141-5 cSThpo keen-slider__slide ${
-            index === currentIndex ? 'active' : 'hidden'
-          }`}
-          id={testimonial.id}
+          className="testimonial-cardstyle__SlideItem-sc-1f80141-6 dIMjIe"
           style={{
-            display: index === currentIndex ? 'flex' : 'none',
+            display: 'flex',
+            flexDirection: 'column',
             justifyContent: 'left',
-            alignItems: 'center',
-            textAlign: 'left',
-            height: '100%', // Ensure it takes full height
-            paddingTop: '70px',
+            alignItems: 'left',
+            width: '100%',
           }}
         >
-          <div
-            className="testimonial-cardstyle__SlideItem-sc-1f80141-6 dIMjIe"
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'left',
-              alignItems: 'left',
-              width: '100%',
-            }}
-          >
-            <p className="testimonial-cardstyle__Quote-sc-1f80141-8 bshcsw">{testimonial.quote}</p>
-            <div className="testimonial-cardstyle__UserDetailWrapper-sc-1f80141-10 jGXlEb">
-              <h3 className="!text-black">{testimonial.name}</h3>
-              <h3 className="!text-black">{testimonial.product}</h3>
-            </div>
+          <p className="testimonial-cardstyle__Quote-sc-1f80141-8 bshcsw">{testimonial.quote}</p>
+          <div className="testimonial-cardstyle__UserDetailWrapper-sc-1f80141-10 jGXlEb">
+            <h3 className="!text-black">{testimonial.name}</h3>
+            <h3 className="!text-black">{testimonial.product}</h3>
           </div>
         </div>
-      ))}
-    </div>
+      </div>
+    ))}
+  </div>
 
-    {/* Slider Buttons */}
-    <button className="testimonial-cardstyle__SlideNavigationButton-sc-1f80141-3 jPltbT" onClick={prevSlide}>
-      &#10094;
-    </button>
-    <button className="testimonial-cardstyle__SlideNavigationButton-sc-1f80141-3 gSCsvg" onClick={nextSlide}>
-      &#10095;
-    </button>
+  {/* Slider Buttons */}
+  <button className="testimonial-cardstyle__SlideNavigationButton-sc-1f80141-3 jPltbT" onClick={prevSlide}>
+    &#10094;
+  </button>
+  <button className="testimonial-cardstyle__SlideNavigationButton-sc-1f80141-3 gSCsvg" onClick={nextSlide}>
+    &#10095;
+  </button>
 
-    {/* Slider Dots */}
-    <div className="testimonial-cardstyle__Footer-sc-1f80141-11 ObQZJ">
-      <div className="testimonial-cardstyle__SlideIndicatorOuterWrapper-sc-1f80141-12 koQJgw">
-        <div className="testimonial-cardstyle__SlideIndicatorWrapper-sc-1f80141-13 MZjm">
-          {testimonials.map((_, index) => (
-            <div
-              key={index}
-              className={`testimonial-cardstyle__SlideIndicator-sc-1f80141-15 knJYxX ${
-                index === currentIndex ? 'active' : 'small'
-              }`}
-              onClick={() => setCurrentIndex(index)}
-            >
-              <span className="testimonial-cardstyle__SlideIndicatorDot-sc-1f80141-14 lklafC" />
-            </div>
-          ))}
-        </div>
+  {/* Slider Dots */}
+  <div className="testimonial-cardstyle__Footer-sc-1f80141-11 ObQZJ">
+    <div className="testimonial-cardstyle__SlideIndicatorOuterWrapper-sc-1f80141-12 koQJgw">
+      <div className="testimonial-cardstyle__SlideIndicatorWrapper-sc-1f80141-13 MZjm">
+        {testimonials.map((_, index) => (
+          <div
+            key={index}
+            className={`testimonial-cardstyle__SlideIndicator-sc-1f80141-15 knJYxX ${
+              index === currentIndex ? 'active' : 'small'
+            }`}
+            onClick={() => setCurrentIndex(index)}
+          >
+            <span className="testimonial-cardstyle__SlideIndicatorDot-sc-1f80141-14 lklafC" />
+          </div>
+        ))}
       </div>
     </div>
-  </div> 
+  </div>
+</div>
+
         </div>
       </div>
     </div>
