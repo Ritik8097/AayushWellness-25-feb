@@ -737,7 +737,7 @@ export default function AnimatedSlider() {
           {/* Text Below Divider on the Left Side */}
          <div
       className="absolute top-[5.6rem] left-4 text-[#f9f3e8] leading-none font-normal 
-      text-[50px] sm:text-[50px] md:text-[30px] lg:text-[40px] xl:text-[120px]"
+      text-[60px] sm:text-[60px] md:text-[30px] lg:text-[40px] xl:text-[120px]"
       style={{ marginTop: isMobile ? "0px" : "1.5rem" }} // No !important needed
     >
       {isMobile ? (
