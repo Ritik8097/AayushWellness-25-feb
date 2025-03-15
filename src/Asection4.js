@@ -1,5 +1,3 @@
-"use client"
-
 import { useEffect, useRef, useState } from "react"
 import { ArrowRight, Sparkles, Shield, Activity } from "lucide-react"
 
@@ -120,7 +118,7 @@ export default function Asection4() {
               <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77 5.82 21 7 14.13l-5-4.86 6.91-1.01L12 2z"></path>
             </svg>
           ),
-          content: `Our journey started with a simple yet profound question:
+          content: ` <span style="color: black;">Our journey started with a simple yet profound question:</span>
           <span style="font-style:italic; font-weight: 500; color: black;"> "How can we make holistic wellness more accessible, personalized, and proactive?"</span>`,
         },
         {
@@ -138,9 +136,9 @@ export default function Asection4() {
               <path d="M12 19V5m0 0L5 12m7-7l7 7"></path>
             </svg>
           ),
-          content: `This vision led to the creation of <span style="font-weight: 600; color: black;">Aayush Wellness</span> — a brand that seamlessly blends 
-          <span style="font-weight: 500; color: black;"> cutting-edge research</span> with nature's best-kept secrets, crafting solutions that empower people 
-          to take charge of their health.`,
+          content: `<span style="color: black;">This vision led to the creation of</span> <span style="font-weight: 600; color: black;">Aayush Wellness</span> — <span style="color: black;">a brand that seamlessly blends </span>
+          <span style="font-weight: 500; color: black;">cutting-edge research</span>  <span style="color: black;">with nature's best-kept secrets, crafting solutions that empower people 
+          to take charge of their health.</span>`,
         },
         {
           title: "Science Meets Nature",
@@ -158,8 +156,8 @@ export default function Asection4() {
               <path d="M16 12a4 4 0 0 1-8 0 4 4 0 0 1 8 0z"></path>
             </svg>
           ),
-          content: `From meticulously formulated <span style="font-weight: 500; color: black;">nutraceuticals and dietary supplements</span> to 
-          <span style="font-weight: 500; color: black;"> AI-powered preventive healthcare services</span>, our mission is to bring the best of health, backed by science.`,
+          content: `<span style="color: black;">From meticulously formulated</span> <span style="font-weight: 500; color: black;">nutraceuticals and dietary supplements</span> to 
+          <span style="font-weight: 500; color: black;"> AI-powered preventive healthcare services</span>, <span style="color: black;">our mission is to bring the best of health, backed by science.</span>`,
         },
         {
           title: "Empowering a Healthier Tomorrow",
@@ -178,8 +176,8 @@ export default function Asection4() {
               <path d="M16 5H3"></path>
             </svg>
           ),
-          content: `At Aayush Wellness, we don't just treat health concerns; we provide <span style="font-weight: 500; color: black;">holistic, science-backed solutions</span> 
-          that empower individuals to take control of their well-being.`,
+          content: `<span style="color: black;">At Aayush Wellness, we don't just treat health concerns; we provide</span> <span style="font-weight: 500; color: black;">holistic, science-backed solutions</span> 
+          <span style="color: black;">that empower individuals to take control of their well-being.</span>`,
         },
       ],
     },
@@ -206,8 +204,8 @@ export default function Asection4() {
               <path d="M12 19V5m0 0L5 12m7-7l7 7"></path>
             </svg>
           ),
-          content: `Our scientifically formulated <span style="font-weight: 500; color: black;">nutraceuticals and dietary supplements</span> are designed to enhance 
-          wellness and bridge nutritional gaps effectively.`,
+          content: `<span style="color: black;">Our scientifically formulated</span> <span style="font-weight: 500; color: black;">nutraceuticals and dietary supplements</span> <span style="color: black;">are designed to enhance 
+          wellness and bridge nutritional gaps effectively.</span>`,
         },
         {
           title: "AI-Driven Preventive Healthcare",
@@ -224,8 +222,8 @@ export default function Asection4() {
               <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77 5.82 21 7 14.13l-5-4.86 6.91-1.01L12 2z"></path>
             </svg>
           ),
-          content: `By integrating <span style="font-weight: 500; color: black;">cutting-edge AI technology</span>, we empower individuals with personalized 
-          health monitoring and proactive wellness insights.`,
+          content: `<span style="color: black;">By integrating</span> <span style="font-weight: 500; color: black;">cutting-edge AI technology</span>, <span style="color: black;">we empower individuals with personalized 
+          health monitoring and proactive wellness insights.</span>`,
         },
         {
           title: "Holistic Health Foods & Wellness",
@@ -243,8 +241,8 @@ export default function Asection4() {
               <path d="M20 6a10 10 0 1 1-8-4"></path>
             </svg>
           ),
-          content: `Our <span style="font-weight: 500; color: black;">organic and functional health foods</span> are crafted to support everyday well-being 
-          and promote a balanced lifestyle.`,
+          content: `<span style="color: black;">Our</span> <span style="font-weight: 500; color: black;">organic and functional health foods</span> <span style="color: black;">are crafted to support everyday well-being 
+          and promote a balanced lifestyle.</span>`,
         },
       ],
     },
@@ -274,8 +272,8 @@ export default function Asection4() {
               <path d="M2 12l10 5 10-5"></path>
             </svg>
           ),
-          content: `Our products are developed by leading experts in <span style="font-weight: 500; color: black;">nutraceuticals and healthcare</span>, 
-          ensuring safety, efficacy, and reliability.`,
+          content: `<span style="color: black;">Our products are developed by leading experts in</span> <span style="font-weight: 500; color: black;">nutraceuticals and healthcare</span>, 
+          <span style="color: black;">ensuring safety, efficacy, and reliability.</span>`,
         },
         {
           title: "Personalized Health Solutions",
@@ -293,8 +291,8 @@ export default function Asection4() {
               <path d="M12 3v18"></path>
             </svg>
           ),
-          content: `Our tailored wellness solutions cater to <span style="font-weight: 500; color: black;">individual health needs</span>, ensuring a customized 
-          approach to well-being.`,
+          content: `<span style="color: black;">Our tailored wellness solutions cater to</span> <span style="font-weight: 500; color: black;">individual health needs</span>, <span style="color: black;">ensuring a customized 
+          approach to well-being.</span>`,
         },
         {
           title: "Future-Ready Preventive Care",
@@ -312,8 +310,8 @@ export default function Asection4() {
               <path d="M12 8v4l3 3"></path>
             </svg>
           ),
-          content: `We focus on <span style="font-weight: 500; color: black;">early detection and smart interventions</span>, promoting proactive health monitoring 
-          for a better future.`,
+          content: `<span style="color: black;">We focus on</span> <span style="font-weight: 500; color: black;">early detection and smart interventions</span>, <span style="color: black;">promoting proactive health monitoring 
+          for a better future.</span>`,
         },
         {
           title: "Commitment to Purity & Quality",
@@ -330,7 +328,7 @@ export default function Asection4() {
               <path d="M5 12l5 5L20 7"></path>
             </svg>
           ),
-          content: `Every product undergoes <span style="font-weight: 500; color: black;">rigorous testing</span> to ensure the highest standards of safety and efficacy.`,
+          content: `<span style="color: black;">Every product undergoes</span> <span style="font-weight: 500; color: black;">rigorous testing</span> <span style="color: black;">to ensure the highest standards of safety and efficacy.</span>`,
         },
       ],
     },
