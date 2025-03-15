@@ -732,11 +732,11 @@ export default function AnimatedSlider() {
        <div className="video-wrapper relative" ref={sliderRef}>
         <div className="video-overlay">
           {/* Divider Line Below the Text */}
-          <div className="absolute left-0 w-full border-t border-[#ffebc4] z-10 mt-[5rem] md:mt-24 h-[1px]"></div>
+          <div className="absolute left-0 w-full border-t border-[#f9f3e8] z-10 mt-[5rem] md:mt-24 h-[1px]"></div>
 
           {/* Text Below Divider on the Left Side */}
          <div
-      className="absolute top-[5.6rem] left-4 text-[#ffebc4] leading-none font-normal 
+      className="absolute top-[5.6rem] left-4 text-[#f9f3e8] leading-none font-normal 
       text-[50px] sm:text-[50px] md:text-[30px] lg:text-[40px] xl:text-[120px]"
       style={{ marginTop: isMobile ? "0px" : "1.5rem" }} // No !important needed
     >
@@ -754,7 +754,7 @@ export default function AnimatedSlider() {
 
         {/* Services/Products Title - Visible on all screen sizes */}
         <div
-  className="absolute md:bottom-[370px] bottom-[440px] left-4  md:left-4 text-left text-[#ffebc4] font-sm z-20 opacity-60"
+  className="absolute md:bottom-[370px] bottom-[440px] left-4  md:left-4 text-left text-[#f9f3e8] font-sm z-20 opacity-60"
   style={{
     fontSize: window.innerWidth < 768 ? "18px" : "16px", left: "0.5rem"  // 20px for small screens, 24px for larger screens
   }}
@@ -763,28 +763,28 @@ export default function AnimatedSlider() {
 </div>
 
         {/* Left Horizontal Divider (Desktop) */}
-        <div className="absolute bottom-[360px] left-0 w-1/2 h-[1px] bg-[#ffebc4] z-10 hidden md:block"></div>
+        <div className="absolute bottom-[360px] left-0 w-1/2 h-[1px] bg-[#f9f3e8] z-10 hidden md:block"></div>
 
         {/* Right Horizontal Divider (Desktop) */}
-        <div className="absolute bottom-[360px] right-0 w-1/2 h-[1px] bg-[#ffebc4] z-10 hidden md:block"></div>
+        <div className="absolute bottom-[360px] right-0 w-1/2 h-[1px] bg-[#f9f3e8] z-10 hidden md:block"></div>
 
         {/* Left Horizontal Divider (Mobile) - Above slider cards */}
-        <div className="absolute bottom-[430px] left-0 w-full h-[1px] bg-[#ffebc4] z-10 md:hidden"></div>
+        <div className="absolute bottom-[430px] left-0 w-full h-[1px] bg-[#f9f3e8] z-10 md:hidden"></div>
 
         {/* Right Horizontal Divider (Mobile) - Below slider cards */}
-        <div className="absolute bottom-[110px] left-0 w-full h-[1px] bg-[#ffebc4] z-10 md:hidden"></div>
+        <div className="absolute bottom-[110px] left-0 w-full h-[1px] bg-[#f9f3e8] z-10 md:hidden"></div>
 
         {/* Vertical Divider (Hidden on Mobile) */}
-        <div className="absolute bottom-0 left-1/2 w-[1px] h-[360px] bg-[#ffebc4] z-10 transform -translate-x-1/2 hidden md:block"></div>
+        <div className="absolute bottom-0 left-1/2 w-[1px] h-[360px] bg-[#f9f3e8] z-10 transform -translate-x-1/2 hidden md:block"></div>
 
         {/* Right-Side Text (Desktop) */}
-        <div className="absolute bottom-[395px] left-[52%] text-[#ffebc4]  md:text-[20px] leading-tight font-sm w-[40%] z-20 md:block hidden opacity-60" style={{
+        <div className="absolute bottom-[395px] left-[52%] text-[#f9f3e8]  md:text-[20px] leading-tight font-sm w-[40%] z-20 md:block hidden opacity-60" style={{
     fontSize: window.innerWidth < 768 ? "10px" : "16px",   // 20px for small screens, 24px for larger screens
   }}>
           Introduction
         </div>
 
-        <div className="absolute bottom-[240px] left-[52%] text-[#ffebc4] md:text-[20px] leading-tight font-sm w-[40%] z-20 md:block hidden" style={{
+        <div className="absolute bottom-[240px] left-[52%] text-[#f9f3e8] md:text-[20px] leading-tight font-sm w-[40%] z-20 md:block hidden" style={{
     fontSize: window.innerWidth < 768 ? "10px" : "20px",   // 20px for small screens, 24px for larger screens
   }}>
           We prioritise prevention over treatment, offering healthcare, science-backed products, and holistic wellness empowering individuals towards lifelong well-being.
@@ -792,7 +792,7 @@ export default function AnimatedSlider() {
 
         {/* Introduction & Other Text Just Below Divider on Mobile */}
         <div
-  className="absolute bottom-[130px] left-4 md:left-4 text-left text-[#ffebc4] leading-tight font-sm z-20 md:hidden opacity-60"
+  className="absolute bottom-[130px] left-4 md:left-4 text-left text-[#f9f3e8] leading-tight font-sm z-20 md:hidden opacity-60"
   style={{
     fontSize: window.innerWidth < 768 ? "18px" : "16px", left: "0.5rem" // 10px for mobile, 20px for desktop
   }}
@@ -800,7 +800,7 @@ export default function AnimatedSlider() {
   Introduction
 </div>
 
-        <div className="absolute bottom-[25px] left-4 right-4 text-left text-[#ffebc4]  leading-tight font-bold z-20 md:hidden" style={{
+        <div className="absolute bottom-[25px] left-4 right-4 text-left text-[#f9f3e8]  leading-tight font-bold z-20 md:hidden" style={{
     fontSize: window.innerWidth < 768 ? "14px" : "20px",   // 20px for small screens, 24px for larger screens
   }}>
           We prioritise prevention over treatment, offering healthcare, science-backed products, and holistic wellness empowering individuals towards lifelong well-being.
