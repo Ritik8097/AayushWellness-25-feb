@@ -34,7 +34,7 @@ const products = [
     image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/sleep_gummy_product_banner1_1.jpg?v=1724399086",
     title: "Aayush Sleep Gummies",
     description: "100% Effective And Help To Restful Night Sleeps.",
-     link:'/gummies'
+     link:'/gummies-sleep'
   },
   {
     image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/coming_us_banner.jpg?v=1724408124",
