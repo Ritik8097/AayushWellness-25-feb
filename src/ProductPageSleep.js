@@ -99,7 +99,7 @@ const ProductPageSleep = () => {
               <p className="font-medium text-lg text-gray-900 mb-2">Variant</p>
               <div className="grid grid-cols-3 gap-3 mb-6 max-w-sm">
                 <div className="color-box group">
-                    <Link to='/gummies'>
+                    <Link to='/gummies-sleep'>
                   <div>
                     <img
                       src="https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Beauty_gummy_product_bannner_1_1.jpg?v=1724399086"
