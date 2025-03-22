@@ -101,14 +101,14 @@ const ImageSlider = () => {
 
               <div className="flex flex-col justify-between ml-3 w-2/3">
                 <div>
-                  <h3 className="text-lg !text-[#ffebc4] font-[100] w-[80%]">
+                  <h3 className="text-lg !text-[#f9f3f8] font-[100] w-[80%]">
                     {slide.title}
                   </h3>
                 </div>
                 <button
                   onClick={() => handleRedirect(slide.path)}
-                  className="border-4 whitespace-nowrap uppercase border-blue-500 bg-transparent text-[#ffebc4] text-lg py-1 px-3 rounded-lg w-fit flex items-center justify-center transition-all duration-300 hover:bg-[#ffebc4] hover:text-black"
-                  style={{ border: "1px solid #ffebc4", height: "28px", fontSize: "14px" }}
+                  className="border-4 whitespace-nowrap uppercase border-blue-500 bg-transparent text-[#f9f3f8] text-lg py-1 px-3 rounded-lg w-fit flex items-center justify-center transition-all duration-300 hover:bg-[#f9f3f8] hover:text-black"
+                  style={{ border: "1px solid #f9f3f8", height: "28px", fontSize: "14px" }}
                 >
                   {slide.buttonText}
                 </button>
@@ -124,13 +124,13 @@ const ImageSlider = () => {
       {/* Custom Navigation & Pagination */}
       <div className="flex flex-col items-center mt-2">
         <div className="flex items-center gap-4">
-          <button className="custom-prev bg-[#ffebc4] hover:bg-[#ffebc4] p-2 rounded-full">
+          <button className="custom-prev bg-[#f9f3f8] hover:bg-[#f9f3f8] p-2 rounded-full">
             <ChevronLeft size={20} />
           </button>
 
           <div className="custom-pagination flex gap-1 [&>.swiper-pagination-bullet]:bg-white [&>.swiper-pagination-bullet-active]:bg-white"></div>
 
-          <button className="custom-next bg-[#ffebc4] hover:bg-[#ffebc4] p-2 rounded-full">
+          <button className="custom-next bg-[#f9f3f8] hover:bg-[#f9f3f8] p-2 rounded-full">
             <ChevronRight size={20} />
           </button>
         </div>
