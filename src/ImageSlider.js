@@ -113,7 +113,7 @@ const ImageSlider = () => {
                   {slide.buttonText}
                 </button>
               </div>
-              <span className="absolute top-2 right-2 text-[#ffebc4] text-sm px-2 py-1 rounded-lg">
+              <span className="absolute top-2 right-2 text-[#f9f3f8] text-sm px-2 py-1 rounded-lg">
                 {String(index + 1).padStart(2, "0")}
               </span>
             </div>
