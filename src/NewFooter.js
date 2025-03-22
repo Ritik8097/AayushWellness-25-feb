@@ -234,10 +234,10 @@ const NewFooter = () => {
               <div className="absolute left-0 bottom-full mb-2 w-48 rounded-md shadow-lg bg-white/30 backdrop-blur-md ring-1 ring-black ring-opacity-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                 <div className="py-1" role="menu" aria-orientation="vertical">
                   <Link to="https://www.instagram.com/aayush.wellness/" className="block px-4 py-2 text-sm text-white font-semibold hover:underline hover:bg-green-800" role="menuitem">
-                    Aayush Wellness Instagram
+                    Aayush Wellness 
                   </Link>
                   <Link to="https://www.instagram.com/aayushveda_/" className="block px-4 py-2 text-sm text-white font-semibold hover:bg-green-800 hover:underline" role="menuitem">
-                    Aayush Veda Instagram
+                    Aayush Veda 
                   </Link>
                 </div>
               </div>
@@ -253,10 +253,10 @@ const NewFooter = () => {
               <div className="absolute left-0 bottom-full mb-2 w-48 rounded-md shadow-lg bg-white/30 backdrop-blur-md ring-1 ring-black ring-opacity-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                 <div className="py-1" role="menu" aria-orientation="vertical">
                   <Link to="https://www.facebook.com/profile.php?id=61561583410258" className="block px-4 py-2 text-sm text-white font-semibold hover:underline hover:bg-green-800" role="menuitem">
-                  Aayush Wellness Facebook
+                  Aayush Wellness 
                   </Link>
                   <Link to="https://www.facebook.com/profile.php?id=61555665373176" className="block px-4 py-2 text-sm text-white font-semibold hover:underline hover:bg-green-800" role="menuitem">
-                  Aayush Veda Facebook
+                  Aayush Veda 
                   </Link>
                 </div>
               </div>
