@@ -265,7 +265,7 @@ const ProductGummies = () => {
 
             <div className="border-t border-b border-gray-200 py-6 mb-6">
               <p className="text-base text-gray-700 mb-4">
-                "Our Beauty BioSeries™ Gummies are clinically shown to support healthy skin, hair, and nails while promoting hydration and collagen synthesis for a radiant glow.*†"
+                "Our Beauty BioSeries™ Gummies are clinically shown to support healthy skin, hair, and nails while promoting hydration and collagen synthesis for a radiant glow."
               </p>
             </div>
 
