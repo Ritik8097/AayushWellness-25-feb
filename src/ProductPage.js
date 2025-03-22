@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Header from './Header';
-import Footer from './Footer';
+import NewFooter from './NewFooter';
 
 const ProductCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -211,7 +211,7 @@ const ProductCarousel = () => {
           </div>
         </div>
       </section>
-      <Footer />
+      <NewFooter />
     </>
   );
 };
