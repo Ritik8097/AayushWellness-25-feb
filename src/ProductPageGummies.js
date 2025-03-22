@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
+import NewFooter from './NewFooter';
 
 const ProductGummies = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -708,7 +709,7 @@ const ProductGummies = () => {
   </div>
 </section>
 
-      <Footer />
+      <NewFooter />
     </>
   )
 }
