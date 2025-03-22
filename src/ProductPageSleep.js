@@ -3,6 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import { Plus, ChevronLeft, ChevronRight, Minus } from "lucide-react";
 import Header from "./Header";
 import Footer from "./Footer";
+import NewFooter from './NewFooter';
 import {
   Library,
   Leaf,
@@ -839,7 +840,7 @@ const ProductPageSleep = () => {
         </div>
       </section>
 
-      <Footer />
+      <NewFooter />
     </>
   );
 };
