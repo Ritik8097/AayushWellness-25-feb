@@ -23,10 +23,13 @@ const ProductGummies = () => {
 
   const images = [
     
-    'https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Beauty_gummy_product_bannner_1_1.jpg?v=1724399086',  
-    'https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Beauty_gummy_product_bannner_2-ingredients_1.jpg?v=1724399086',
-    'https://cdn.shopify.com/s/files/1/0674/9614/9171/files/beauty_gummy_product_banner_benefits_1.jpg?v=1724399086',
-    'https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Beauty_Gummies_Product_banner_-_Nutraceutical_Values_Corousal_1.jpg?v=1724399108',
+     
+    'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/1st_Banner_-_Product_Preview_-_27-1-2025.jpg?v=1742647580',  
+    'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/3rd_banner_-_Benefits_-_29-1-2025.jpg?v=1742647549',
+    'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/2nd_Banner_-_Ingredients_-_27-1-2025.jpg?v=1742647536',
+    'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/9th_banner_-_Certified_-_21-1-2025.jpg?v=1742647446',
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/6th_Banner_-_How_to_Consume_-_27-1-2025.jpg?v=1742647484",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/7th_Banner_-_Comparisn_Competitors_-_9-1-2025_2.jpg?v=1742647496",
     'https://iili.io/dWaG7LX.gif',  
   ];
 
