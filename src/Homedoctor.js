@@ -190,6 +190,7 @@ const Homedoctor = () => {
     autoPlay
     loop
     muted
+    playsInline
     style={{
       position: 'relative',
       top: '10px',
