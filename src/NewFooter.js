@@ -49,7 +49,10 @@ const NewFooter = () => {
           <div className="flex-1 min-w-[300px] mb-8 md:mb-0">
             <h2 className="mb-2 text-xxl font-semibold text-white">Connect With Us</h2>
             <p className="mb-5  md:text-lg max-w-[600px] text-white text-lg">
-              Subscribe for 15% off your first order and unlock your inner potential with us.
+              (Formerly known as Aayush Food and Herbs Limited) 
+            CIN:L01122DL1984PLC018307 Registered Office: 275, Ground Floor, West
+              End Marg, Near Saket Metro Station Exit: 2, New Delhi-110030 <br></br>
+              Contact No: +91 84486 93031 | Email:cs@aayushwellness.com | 
             </p>
 
             <form onSubmit={handleSubscribe} className="flex items-center max-w-[500px]">
