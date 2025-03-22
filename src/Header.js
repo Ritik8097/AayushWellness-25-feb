@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import menu from "./images/menu.png";
 import closepng from "./images/close.png";
 import searchIcon from "./images/search-gray.svg";
 
@@ -13,6 +14,7 @@ export default function AnimatedSlider() {
   const [showText, setShowText] = useState(false);
   const sliderRef = useRef(null);
   const [csrOpen, setCsrOpen] = useState(false);
+  const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
@@ -352,13 +354,65 @@ export default function AnimatedSlider() {
                 </div>
               </div> */}
 
-              <Link
-                to="/ourproduct"
-                className=" hover:text-primary/80"
-                style={{ fontFamily: '"Inter", sans-serif' }}
-              >
-                Our Product
-              </Link>
+             {/* Our Product Tab with Dropdown */}
+             <div className="navbar-dropdown relative group ">
+               <button
+                 className="hover:text-primary/80 flex items-center"
+                 style={{ fontFamily: '"Inter", sans-serif' }}
+               >
+                 Our Product
+                 <svg
+                   className="w-4 h-4 ml-1"
+                   fill="none"
+                   stroke="currentColor"
+                   viewBox="0 0 24 24"
+                 >
+                   <path
+                     strokeLinecap="round"
+                     strokeLinejoin="round"
+                     strokeWidth="2"
+                     d="M19 9l-7 7-7-7"
+                   ></path>
+                 </svg>
+               </button>
+             
+               {/* Our Product Dropdown */}
+               <div className="absolute left-1/2 transform -translate-x-1/2 top-full w-[1110px] h-[280px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 mt-6 ">
+                 <div className="w-[60%] mt-10">
+                   <h3 className="text-3xl font-bold text-gray-900">Our Product</h3>
+                   <p className="text-lg text-gray-600 mt-2">
+                     Discover our range of premium products designed for your well-being and lifestyle.
+                   </p>
+                 </div>
+             
+                 <div className="w-[35%] flex flex-col gap-3 mt-4">
+                   <Link
+                     to="/gummies-sleep"
+                     className="grid grid-cols-1 text-left py-2  rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
+                   >
+                     <span className="block font-bold w-full px-4 text-inherit">Sleep Gummies</span>
+                     <span className="block text-sm px-4 text-grey-900 text-inherit">Supports better sleep and relaxation</span>
+                   </Link>
+             
+                   <Link
+                     to="/gummies"
+                     className="grid grid-cols-1 text-left py-2  rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
+                   >
+                     <span className="block font-bold w-full px-4 text-inherit">Beauty Gummies</span>
+                     <span className="block text-sm px-4 text-grey-900 text-inherit">Enhances skin, hair, and nail health</span>
+                   </Link>
+             
+                   <Link
+                     to="/pan-masala"
+                     className="grid grid-cols-1 text-left py-2  rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
+                   >
+                     <span className="block font-bold w-full px-4 text-inherit">Herbal Pan Masala</span>
+                     <span className="block text-sm px-4 text-grey-900 text-inherit">Refreshing and herbal mouth freshener</span>
+                   </Link>
+                 </div>
+               </div>
+             </div>
+             
 
               <div className="navbar-dropdown relative group">
                 <button
@@ -408,7 +462,7 @@ export default function AnimatedSlider() {
                       >
                         <div>
                           <span className="block font-bold text-inherit flex px-4 items-center">
-                            Welfare
+                            CSR
                             <svg
                               className={`w-4 h-4 ml-1 transition-transform duration-200 ${
                                 csrOpen ? "rotate-180" : ""
@@ -569,7 +623,7 @@ export default function AnimatedSlider() {
                 >
                   {/* Mobile Search */}
 
-                  <img className="h-7" src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/svgviewer-output_6.svg?v=1741865755" alt="menu" />
+                  <img className="h-7" src={menu} alt="menu" />
                 </button>
               </div>
             </div>
@@ -795,13 +849,75 @@ export default function AnimatedSlider() {
 
             {/* <div className="h-px w-full bg-gray-200 my-1"></div> */}
 
+            <div className="relative">
+      {/* Our Product Tab */}
+      <button
+        onClick={() => setIsProductDropdownOpen(!isProductDropdownOpen)}
+        className="w-full py-4 font-extrabold text-[#004037] text-[36px] flex items-center justify-between"
+      >
+        <span>Our Product</span>
+        <svg
+          className={`w-5 h-5 transition-transform duration-200 ${
+            isProductDropdownOpen ? "rotate-180" : ""
+          }`}
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M19 9l-7 7-7-7"
+          ></path>
+        </svg>
+      </button>
+
+      {/* Dropdown Menu */}
+      {isProductDropdownOpen && (
+        <div className="rounded-md mt-2 mb-3 py-2 ">
+          {/* Title & Description */}
+          <div className="px-4 py-2">
+            <h3 className="text-xl font-bold text-[#004037]">Our Product</h3>
+            <p className="text-lg text-gray-600 mt-2">
+              Discover our range of premium products designed for your well-being and lifestyle.
+            </p>
+          </div>
+
+          {/* Dropdown Links */}
+          <div className="flex flex-col">
             <Link
-              to="/ourproduct"
-              className="block py-4 font-extrabold text-[#004037] text-[36px] "
-              onClick={handleDropdownLinkClick}
+              to="/gummies-sleep"
+              className="block px-4 py-3 text-[#004037] font-bold hover:bg-gray-100 transition"
+              onClick={() => setIsProductDropdownOpen(false)}
             >
-              Our Product
+              Sleep Gummies
+              <p className="text-sm text-gray-600">Supports better sleep and relaxation</p>
             </Link>
+
+            <Link
+              to="/gummies"
+              className="block px-4 py-3 text-[#004037] font-bold hover:bg-gray-100 transition"
+              onClick={() => setIsProductDropdownOpen(false)}
+            >
+              Beauty Gummies
+              <p className="text-sm text-gray-600">Enhances skin, hair, and nail health</p>
+            </Link>
+
+            <Link
+              to="/pan-masala"
+              className="block px-4 py-3 text-[#004037] font-bold hover:bg-gray-100 transition"
+              onClick={() => setIsProductDropdownOpen(false)}
+            >
+              Herbal Pan Masala
+              <p className="text-sm text-gray-600">Refreshing and herbal mouth freshener</p>
+            </Link>
+          </div>
+        </div>
+      )}
+    </div>
+
+
             <div className="h-px w-full bg-gray-200 my-1"></div>
             <div className="relative">
   <button
@@ -839,7 +955,7 @@ export default function AnimatedSlider() {
             onClick={() => setIsCsrSubcategoryOpen(!isCsrSubcategoryOpen)}
             className="block w-full px-4 py-3 text-[#004037] font-extrabold  flex justify-between items-center"
           >
-            <span>Welfare</span>
+            <span>CSR</span>
             <svg
               className={`w-4 h-4 transition-transform duration-200 ${
                 isCsrSubcategoryOpen ? "rotate-180" : ""
