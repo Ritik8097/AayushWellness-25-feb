@@ -379,7 +379,7 @@ const ProducCarousal = () => {
                       </div>
                       <span className="font-medium">Buy once</span>
                     </div>
-                    <span className="font-bold text-[#730a0a]">₹750</span>
+                    <span className="font-bold text-[#730a0a]">₹599</span>
                   </div>
                 </div>
               </div>
@@ -391,7 +391,7 @@ const ProducCarousal = () => {
                   style={{ display: "block" }}
                 >
                   <button className="bg-[#730a0a] text-white py-3 px-6 rounded-lg w-full text-center font-semibold">
-                    Add to Cart
+                    Shop Now
                   </button>
                 </Link>
               </div>
