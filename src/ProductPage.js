@@ -119,7 +119,7 @@ const ProducCarousal = () => {
       answer: (
         <div className="space-y-4">
           <p>
-          Our Herbal Pan Masala undergoes rigorous quality testing to ensure it meets the highest safety and purity standards. 
+          Our Herbal Masala undergoes rigorous quality testing to ensure it meets the highest safety and purity standards. 
           </p>
           <p>
           This includes:
