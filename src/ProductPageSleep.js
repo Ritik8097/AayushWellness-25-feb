@@ -289,7 +289,7 @@ const ProductPageSleep = () => {
               className="w-full md:py-20 px-0 md:pl-[150px] max-w-[755px]"
             >
               <h1 className="text-[35px] font-bold text-[#420560] mb-1">
-                Aayush Sleep Gummies
+                Dreamy Sleep Gummies
               </h1>
               <p className="text-base text-[#420560] mb-6 italic">
                 Aayush Wellness{" "}
