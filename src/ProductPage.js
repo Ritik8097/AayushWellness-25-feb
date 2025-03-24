@@ -137,15 +137,15 @@ const ProducCarousal = () => {
     },
     {
       question: "How and when should I enjoy Herbal Pan Masala?",
-      answer: "You can enjoy Herbal Pan Masala as a refreshing mouth freshener after meals or during social gatherings. Simply tear open the sachet, chew slowly, and savor the rich herbal blend. It offers a pleasant taste and aroma, making it perfect for cleansing your palate throughout the day.",
+      answer: "You can enjoy Herbal Masala as a refreshing mouth freshener after meals or during social gatherings. Simply tear open the sachet, chew slowly, and savor the rich herbal blend. It offers a pleasant taste and aroma, making it perfect for cleansing your palate throughout the day.",
     },
     {
       question: "How does the herbal formulation work?",
-      answer: "The herbal formulation of Herbal Pan Masala works by combining a blend of natural ingredients, such as fennel seeds, cardamom, betel leaves, and select aromatic herbs. These ingredients are carefully chosen for their refreshing properties and soothing effect on the palate. The blend releases a burst of flavor and aroma, providing a pleasant mouth-freshening experience while leaving a lingering herbal essence.",
+      answer: "The herbal formulation of Herbal Masala works by combining a blend of natural ingredients, such as fennel seeds, cardamom, betel leaves, and select aromatic herbs. These ingredients are carefully chosen for their refreshing properties and soothing effect on the palate. The blend releases a burst of flavor and aroma, providing a pleasant mouth-freshening experience while leaving a lingering herbal essence.",
     },
     {
-      question: "Why is Herbal Pan Masala free from tobacco and harmful chemicals? ",
-      answer: "Herbal Pan Masala is free from tobacco and harmful chemicals because it is crafted with a focus on health and well-being. By using only natural ingredients and eliminating addictive or hazardous substances, it offers a safe and flavorful alternative to traditional pan masala. This ensures that consumers can enjoy a refreshing mouth-freshener without exposing themselves to the risks associated with tobacco or synthetic chemicals.",
+      question: "Why is Herbal Masala free from tobacco and harmful chemicals? ",
+      answer: "Herbal Masala is free from tobacco and harmful chemicals because it is crafted with a focus on health and well-being. By using only natural ingredients and eliminating addictive or hazardous substances, it offers a safe and flavorful alternative to traditional pan masala. This ensures that consumers can enjoy a refreshing mouth-freshener without exposing themselves to the risks associated with tobacco or synthetic chemicals.",
     },
   ]
 
