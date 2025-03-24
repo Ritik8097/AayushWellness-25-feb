@@ -1,12 +1,11 @@
-
-  @import url('https://fonts.googleapis.com/css?family=Antic+Didone:400&display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Antic+Didone:400&display=swap'); 
   * { 
       padding: 0; 
       margin: 0; 
       box-sizing: border-box; 
       font-display: optional;
   } 
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
   
   *,:hover { 
       -webkit-appearance: none; 
@@ -269,10 +268,11 @@
   
   .footer__list { 
       display: grid; 
-      grid-template-columns: repeat(3,1fr); 
-      grid-column-gap: 96px; 
+      grid-template-columns: repeat(4,1fr); 
+      /* grid-column-gap: 96px;  */
       -moz-column-gap: 96px; 
       column-gap: 96px;
+      padding-left: 420px;
   } 
   
   .footer__socials { 
@@ -333,7 +333,7 @@
       text-align: center; 
       color: #fff; 
       background-size: 200% 200%; 
-       background-image: linear-gradient(90deg,#929292,#929292,#6b6b6b,#6b6b6b,#6b6b6b);  
+      background-image: linear-gradient(90deg,#929292,#929292,#6b6b6b,#6b6b6b,#6b6b6b); 
       background-position: 0;
   } 
   
@@ -705,15 +705,22 @@
     .footer__links {
       margin-bottom: 1rem;
     }
+
+   
   }
 
 
 /* Media Query for Mobile */
 @media (max-width: 768px) {
   .footer__subtitle {
-      font-size: 18px !important; /* Force apply */
+      font-size: 18px !important;       
   }
 }
 
 
-
+@media(max-width: 768px){
+  .footer__list {
+    padding-left: 0px;
+    grid-template-columns: repeat(2,1fr) !important; 
+  }
+}
