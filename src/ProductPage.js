@@ -22,25 +22,25 @@ const ProducCarousal = () => {
 
   const images = [
     
-    "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/our_product_-1.jpg?v=1724245732",
-    "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/our_product_-2.jpg?v=1724245733",
-    "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/our_product_-3_blue.jpg?v=1724245732",
-    "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/our_product_-4.jpg?v=1724245732",
-    "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/our_product_-5.jpg?v=1724400057",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/our_product_-1_-_blue_product.jpg?v=1742815756",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/our_product_-2_eng.jpg?v=1742815883",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/our_product_-3-_blue_product.jpg?v=1742815917",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/our_product_-4-_blue_product.jpg?v=1742815955",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/our_product_-5-_blue_product.jpg?v=1742816001",
     "https://iili.io/dVSnjfa.gif",
 
-    "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/our_product_-1_black_product.jpg?v=1724397529",
-    "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/our_product_-2_black_product.jpg?v=1724397529",
-    "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/our_product_-3_balck.jpg?v=1724397529",
-    "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/our_product_-4_black_product.jpg?v=1724397528",
-    "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/our_product_-5_black_product.jpg?v=1724397529",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/our_product_-1_black_product.jpg?v=1742815830",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/our_product_-2_black_productc_english.jpg?v=1742815857",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/our_product_-3_balck.jpg?v=1742815906",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/our_product_-4_black_product.jpg?v=1742815942",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/our_product_-5_black_product.jpg?v=1742815989",
     "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/our_product_-_gold_pan_masala_1.gif?v=1724399830",
 
-    "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/our_product_-1_gold.jpg?v=1724397529",
-    "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/our_product_-2_gold_1.jpg?v=1724397529",
-    "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/our_product_-3_gold.jpg?v=1724397529",
-    "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/our_product_-4_gold.jpg?v=1724397529",
-    "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/our_product_-5_gold_product.jpg?v=1724397529",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/our_product_-1_gold.jpg?v=1742815845",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/our_product_-2_gold.jpg?v=1742815894",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/our_product_-3_gold.jpg?v=1742815932",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/our_product_-4_gold.jpg?v=1742815979",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/our_product_-5_gold_product.jpg?v=1742816011",
     "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/our_product_-_gold_pan_masala_2.gif?v=1724399800",
 
     
