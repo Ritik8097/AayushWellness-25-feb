@@ -337,15 +337,8 @@ const ProductPageSleep = () => {
               <div className="space-y-4">
                 <div>
                   <p className="text-base text-gray-700 mb-4">
-                    Say hello to radiant skin and luscious hair with our Glow
-                    Beauty Gummies. Crafted with a blend of Modern Scientific
-                    ingredients such as Glutathione, Hyaluronic Acid, and
-                    Biotin, and Active Ayurveda such as Curcumin and Sea
-                    Buckthorn Extract. These gummies support skin hydration,
-                    repair, and nourishment while promoting healthy hair growth,
-                    helping you achieve a youthful, glowing complexion and
-                    strong, vibrant locks. These gummies are Non-GMO & 100%
-                    Vegan.
+                    Say hello to restful nights and refreshed mornings with our Sleep Bliss Gummies. 🌙
+                    Crafted with a powerful blend of Modern Scientific ingredients like Melatonin, L-Theanine, and Magnesium, combined with Active Ayurveda such as Ashwagandha and Brahmi Extract, these gummies promote relaxation, reduce stress, and support a healthy sleep cycle. Wake up feeling rejuvenated and ready to take on the day.
                   </p>
                 </div>
 
