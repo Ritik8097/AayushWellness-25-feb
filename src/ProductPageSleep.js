@@ -297,7 +297,7 @@ const ProductPageSleep = () => {
 
               <div className="border-t border-b border-gray-200 py-6 mb-6">
                 <p className="text-base text-gray-700 mb-4">
-                 "The world's first sleep supplement powered by Aayush Wellness technology, clinically proven to improve sleep quality, reduce stress, and promote relaxation with science-backed ingredients." 🌙💤
+                 "The world's first sleep supplement powered by Aayush Wellness, clinically proven to improve sleep quality, reduce stress, and promote relaxation with science-backed ingredients." 🌙💤
                 </p>
               </div>
 
