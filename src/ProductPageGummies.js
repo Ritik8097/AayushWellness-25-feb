@@ -263,7 +263,7 @@ const ProductGummies = () => {
         <div className="flex flex-col md:flex-row relative gap-[80px]">
           {/* Product Details Section - Left side */}
           <div ref={contentRef} className="w-full md:py-20 px-0 md:pl-[150px] max-w-[755px]">
-            <h1 className="text-[35px] font-bold text-[#d15523] mb-1">Beauty Gummies</h1>
+            <h1 className="text-[35px] font-bold text-[#d15523] mb-1">Beauty Vitamin Gummies</h1>
             <p className="text-base text-[#d15523] mb-6 italic">Aayush Wellness </p>
 
             <div className="border-t border-b border-gray-200 py-6 mb-6">
