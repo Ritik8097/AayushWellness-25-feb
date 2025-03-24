@@ -5,14 +5,14 @@ import Header from "./Header";
 import Footer from "./Footer";
 import NewFooter from './NewFooter';
 import {
-  Library,
   Leaf,
   ShieldCheck,
   PackageCheck,
   Vegan,
-  WheatOff,
-  SearchCheck,
   Microscope,
+  FlaskConical,
+  Moon,
+  Flag
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -598,43 +598,43 @@ const ProductPageSleep = () => {
               </div> */}
 
               {/* Icon List */}
-              <div className="space-y-4 mb-8">
-                <div className="flex items-center space-x-3">
-                  <Library className="text-[#420560] w-6 h-6" />
-                  <span className="text-gray-700">Non-GMO Certified</span>
-                </div>
+               <div className="space-y-4 mb-8">
                 <div className="flex items-center space-x-3">
                   <Leaf className="text-[#420560] w-6 h-6" />
-                  <span className="text-gray-700">Carbon Free Certified</span>
+                  <span className="text-gray-700">Plant-Based Formulation</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <FlaskConical className="text-[#420560] w-6 h-6" />
+                  <span className="text-gray-700">Clinically Researched Ingredients</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <ShieldCheck className="text-[#420560] w-6 h-6" />
-                  <span className="text-gray-700">Clean Label Certified</span>
+                  <span className="text-gray-700">Non Habit-Forming </span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <SearchCheck className="text-[#420560] w-6 h-6" />
+                  <Moon className="text-[#420560] w-6 h-6" />
                   <span className="text-gray-700">
-                    Clinically Studied Ingredients
+                  Supports Restful Sleep & Relaxation
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Vegan className="text-[#420560] w-6 h-6" />
-                  <span className="text-gray-700">Vegan</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <WheatOff className="text-[#420560] w-6 h-6" />
-                  <span className="text-gray-700">
-                    Gluten & Major Allergen Free
-                  </span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <PackageCheck className="text-[#420560] w-6 h-6" />
-                  <span className="text-gray-700">Made Traceable®</span>
+                  <span className="text-gray-700">100% Vegan & Gluten-Free</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Microscope className="text-[#420560] w-6 h-6" />
                   <span className="text-gray-700">
-                    Third-Party Tested (for heavy metals & microbes)
+                  Lab-Tested for Purity & Quality
+                  </span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <PackageCheck className="text-[#420560] w-6 h-6" />
+                  <span className="text-gray-700">Non-GMO Certified </span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Flag className="text-[#420560] w-6 h-6" />
+                  <span className="text-gray-700">
+                  Made in India, FSSAI Certified
                   </span>
                 </div>
               </div>
