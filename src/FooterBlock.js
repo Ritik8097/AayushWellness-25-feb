@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 
 const FooterBlock = () => {
   const slides = [
-    { title: "Be Pampered", link: "/treatments", text: "See our Treatments" },
-    { title: "Be Involved", link: "/careers/", text: "See our Job Offers" },
-    { title: "Be Inspired", link: "/our-story/", text: "See our Story" },
-    { title: "Be Informed", link: "/news/", text: "See our Wellness Journal" },
+    { title: "Be Calm", link: "/gummies-sleep", text: "See our Gummies" },
+    { title: "Be Involved", link: "/career", text: "See our Job Offers" },
+    { title: "Be Inspired", link: "/about-us", text: "See our Story" },
+    { title: "Be Informed", link: "//newsroom/in-the-news", text: "See our Wellness Journal" },
     { title: "Be Relieved", link: "/products/", text: "See our Products" },
   ];
 
