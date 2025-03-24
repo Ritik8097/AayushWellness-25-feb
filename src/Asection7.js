@@ -23,33 +23,44 @@ const Asection7 = () => {
 
   const sections = [
     {
-      title: "Explore",
+      title: "Company",
       links: [
-        { text: "About",href: "/about-us"}, 
-        { text: "Modern Science", href:"/wellness/modern-science"  },          
-        { text: "Ayurverda",  href:"/wellness/ayurveda" },                                     
-        { text: "Health & Wellness", href:"/wellness/health-wellness"  },                
-        { text: "In the News", href:"/newsroom/in-the-news"  },            
-        { text: "Press Release", href:"/newsroom/press-release" },       
+        { text: "About us",href: "/about-us"}, 
+        { text: "Our Story", href:"/about/company-intro"  },                                           
+        { text: "Contact us", href:"/career"},                
+        { text: "Mission & Vision", href:"/about/mission-vision"},            
+         
       ],
     },
     {
-      title: "CSR",
+      title: "wellness",
       links: [
-        { text: "Library", href:"/newsroom/library" },  
-        { text: "Malnutrition",href:"/csr-at-aayush/malnutrition"  },  
-        { text: "Healthcare Check", href:"/csr-at-aayush/health-check"  },    
-        { text: "Sustainability",href:"/sustainability" },  
+        { text: "Modern Science", href:"/wellness/modern-science" },  
+        { text: "Ayurveda",href:"/ayurveda"  },  
+        { text: "Health & Wellness", href:"/wellness/health-wellness"  },    
+         
         
+      ],
+    },
+    {
+      title: "Newsroom",
+      links: [
+        { text: "In The News", href:"/newsroom/in-the-news" },   
+        { text: "Press Release", href: "/newsroom/press-release" },  
+        { text: "Library", href:"/newsroom/library" },    
+            
+        
+       
       ],
     },
     {
       title: "Corporate",
       links: [
-        { text: "Careers", href:"/career" },   
-        { text: "Pricay Policy", href: "/privacy-policy" },  
-        { text: "Growth accelerator", href:"/growth-accelerator" },    
-        { text: "Health", href: "/health" },      
+        { text: "Malnutrition", href:"csr-at-aayush/malnutrition" },   
+        { text: "HealthCare check", href: "/csr-at-aayush/health-check" },  
+        { text: "Sustainability", href:"/sustainability" },    
+        { text: "Healthcare", href: "/healthcare" }, 
+        { text: "Accelarator", href: "/growth-accelerator" },      
         
        
       ],
@@ -117,7 +128,7 @@ const Asection7 = () => {
                       }}
                     >
                       {section.links.map((link, idx) => (
-                        <a key={idx} className="text-gray-300 hover:text-white transition font-inter" href={link.href}>
+                        <a key={idx} className="text-black  transition font-inter" href={link.href}>
                           {link.text}
                         </a>
                       ))}
@@ -131,15 +142,15 @@ const Asection7 = () => {
         <div className="in-view fadein animated style-MzNLt" id="style-MzNLt">
           <div className="footer__block1-bottom">
             <div className="footer__socials">
-              <a  className="footer__socials-item" target="_blank" rel="noreferrer"><img src="https://berelax.com/wp-content/uploads/2023/02/facebook.svg" width="100%" height="100%" alt="be relax" className /></a>  
-              {/* href="https://www.facebook.com/berelaxspa"       */}
-              <a  className="footer__socials-item" target="_blank" rel="noreferrer"><img src="https://berelax.com/wp-content/uploads/2023/02/linkedin.svg" width="100%" height="100%" alt="be relax" className /></a>
-              {/* href="https://www.linkedin.com/company/be-relax/" */}
-              <a  className="footer__socials-item" target="_blank" rel="noreferrer"><img src="https://berelax.com/wp-content/uploads/2023/02/instagram.svg" width="100%" height="100%" alt="be relax" className /></a>
-              {/* href="https://instagram.com/berelax_spa" */}
+              <a  href="https://www.facebook.com/profile.php?id=61561583410258"  className="footer__socials-item" target="_blank" rel="noreferrer"><img src="https://berelax.com/wp-content/uploads/2023/02/facebook.svg" width="100%" height="100%" alt="be relax" className /></a>  
+                  
+              <a  href="https://www.linkedin.com/company/aayushwellness/?viewAsMember=true"  className="footer__socials-item" target="_blank" rel="noreferrer"><img src="https://berelax.com/wp-content/uploads/2023/02/linkedin.svg" width="100%" height="100%" alt="be relax" className /></a>
+             
+              <a href="https://www.instagram.com/aayush.wellness/" className="footer__socials-item" target="_blank" rel="noreferrer"><img src="https://berelax.com/wp-content/uploads/2023/02/instagram.svg" width="100%" height="100%" alt="be relax" className /></a>
+              
             </div>
             <div className="footer__block1-right">
-              <div className="footer__links"><a className="footer__link" href="/terms-conditions">Terms &amp; Conditions</a><a className="footer__link" href="/privacy-policy/">Privacy Policy</a></div>
+              <div className="footer__links"><a className="footer__link" href="/terms-conditions"></a><a className="footer__link" href="/privacy-policy/">Privacy Policy</a></div>
               <div className="footer__select">
                 <div className="footer__select-top"><svg width={16} height={16} fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 2.987a5.657 5.657 0 0 0-8 8l3.513 3.52a.667.667 0 0 0 .947 0L12 10.954a5.633 5.633 0 0 0 0-7.967ZM11.047 10 8 13.06 4.953 10a4.307 4.307 0 1 1 6.094 0ZM6 4.94a2.88 2.88 0 0 0 1.464 4.853 2.873 2.873 0 0 0 3.443-2.786 2.826 2.826 0 0 0-.84-2.033A2.867 2.867 0 0 0 6 4.94Zm3.127 3.12a1.553 1.553 0 1 1 .446-1.086c-.01.411-.182.802-.48 1.086h.034Z" fill="#3A4458" />
