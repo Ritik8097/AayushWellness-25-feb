@@ -298,7 +298,7 @@ const ProducCarousal = () => {
           <div className="flex flex-col md:flex-row relative gap-[80px]">
             {/* Product Details Section - Left side */}
             <div ref={contentRef} className="w-full md:py-20 px-0 md:pl-[150px] max-w-[755px]">
-              <h1 className="text-[35px] font-bold text-[#730a0a] mb-1">Aayush Herbal Pan Masala</h1>
+              <h1 className="text-[35px] font-bold text-[#730a0a] mb-1">Aayush Herbal Masala</h1>
               <p className="text-base text-[#730a0a] mb-6 italic">Swaad Wahi, Sehat Bhi ✅ </p>
 
               <div className="border-t border-b border-gray-200 py-6 mb-6">
