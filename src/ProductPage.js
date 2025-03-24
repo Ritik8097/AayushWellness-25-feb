@@ -7,6 +7,7 @@ import { Link } from "react-router-dom"
 import { Swiper, SwiperSlide } from "swiper/react"
 // Import Swiper styles
 import "swiper/css"
+import NewFooter from './NewFooter';
 
 const ProducCarousal = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -813,7 +814,7 @@ const ProducCarousal = () => {
         </div>
       </section>
 
-      <Footer />
+      <NewFooter />
     </>
   )
 }
