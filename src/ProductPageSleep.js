@@ -326,7 +326,7 @@ const ProductPageSleep = () => {
                   style={{ display: "block" }}
                 >
                   <button className="bg-[#420560] text-white py-3 px-6 rounded-lg w-full text-center font-semibold">
-                    Add to Cart
+                    Shop Now
                   </button>
                 </Link>
               </div>
