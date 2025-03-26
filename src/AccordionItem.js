@@ -17,9 +17,7 @@ const AccordionItem = ({ handleToggle, active, faq }) => {
     }, [active, id]);
 
     // Sort text array in descending order based on 'head'
-   const sortedText = Array.isArray(text)
-    ? [...text].sort((a, b) => a.head.localeCompare(b.head)) // Sorting in ascending order
-    : [];
+   const sortedText = Array.isArray(text) ? text : [];
 
     return (
         <div className="rc-accordion-card !mb-0 !rounded-none">
