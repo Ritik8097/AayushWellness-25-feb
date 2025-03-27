@@ -257,6 +257,15 @@ export default function AnimatedSlider() {
                         Refreshing and herbal mouth freshener
                       </span>
                     </Link>
+                        Link
+                      to="/ourproduct"
+                      className="grid grid-cols-1 text-left py-2 rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
+                    >
+                      <span className="block font-bold w-full px-4 text-inherit">View our Products</span>
+                      <span className="block text-sm px-4 text-grey-900 text-inherit">
+                      Explore our full range of high-quality products
+                      </span>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -581,6 +590,13 @@ export default function AnimatedSlider() {
                     >
                       Herbal Pan Masala
                       <p className="text-sm text-gray-600">Refreshing and herbal mouth freshener</p>
+                    <Link
+                      to="/ourproduct"
+                      className="block px-4 py-3 text-[#004037] font-bold hover:bg-gray-100 transition"
+                      onClick={() => setIsProductDropdownOpen(false)}
+                    >
+                      View our Products
+                      <p className="text-sm text-gray-600">    Explore our full range of high-quality products</p>
                     </Link>
                   </div>
                 </div>
