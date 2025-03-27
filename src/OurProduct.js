@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Eye, X } from "lucide-react"
-import Footer2 from './Footer2';
+import NewFooter from './NewFooter';
 import Header from './Header';
 
 const products = [
@@ -152,7 +152,7 @@ const OurProduct = () => {
         </div>
       </div>     
     </div>
-    <Footer2 />
+    <NewFooter />
     </>
   )
 }
