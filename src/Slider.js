@@ -256,12 +256,11 @@ export default function AnimatedSlider() {
                       <span className="block text-sm px-4 text-grey-900 text-inherit">
                         Refreshing and herbal mouth freshener
                       </span>
-                    </Link>
-                        Link
+                    <Link
                       to="/ourproduct"
                       className="grid grid-cols-1 text-left py-2 rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
                     >
-                      <span className="block font-bold w-full px-4 text-inherit">View our Products</span>
+                      <span className="block font-bold w-full px-4 text-inherit">See All Products</span>
                       <span className="block text-sm px-4 text-grey-900 text-inherit">
                       Explore our full range of high-quality products
                       </span>
