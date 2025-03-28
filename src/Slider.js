@@ -591,6 +591,7 @@ export default function AnimatedSlider() {
                     >
                       Herbal Pan Masala
                       <p className="text-sm text-gray-600">Refreshing and herbal mouth freshener</p>
+                      </Link>
                     <Link
                       to="/ourproduct"
                       className="block px-4 py-3 text-[#004037] font-bold hover:bg-gray-100 transition"
