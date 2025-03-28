@@ -377,7 +377,7 @@ export default function AnimatedSlider() {
                </button>
              
                {/* Our Product Dropdown */}
-               <div className="absolute left-1/2 transform -translate-x-1/2 top-full w-[1110px] h-[280px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 mt-6 ">
+               <div className="absolute left-1/2 transform -translate-x-1/2 top-full w-[1110px] h-[300px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 mt-6 ">
                  <div className="w-[60%] mt-10">
                    <h3 className="text-3xl font-bold text-gray-900">Our Product</h3>
                    <p className="text-lg text-gray-600 mt-2">
