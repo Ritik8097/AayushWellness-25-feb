@@ -205,71 +205,49 @@ export default function AnimatedSlider() {
               </div>
 
               {/* Our Product Dropdown - Desktop */}
-              <div className="navbar-dropdown relative group">
-                <button
-                  className="hover:text-primary/80 flex items-center"
-                  style={{ fontFamily: '"Inter", sans-serif' }}
-                >
-                  Our Product
-                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-                  </svg>
-                </button>
+              <div className="absolute left-1/2 transform -translate-x-1/2 top-full w-[1110px] h-[300px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 mt-6 ">
+                 <div className="w-[60%] mt-10" >
+                   <h3 className="text-3xl font-bold text-gray-900"> Our Products</h3>
+                   <p className="text-lg text-gray-600 mt-2">
+                     Discover our range of premium products designed for your well-being and lifestyle.
+                   </p>
+                 </div>
+             
+                 <div className="w-[35%] flex flex-col gap-3 ">
+                   <Link
+                     to="/gummies-sleep"
+                     className="grid grid-cols-1 text-left py-2  rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
+                   >
+                     <span className="block font-bold w-full px-4 text-inherit">Dreamy Sleep Gummies</span>
+                     <span className="block text-sm px-4 text-grey-900 text-inherit">Supports better sleep and relaxation</span>
+                   </Link>
+             
+                   <Link
+                     to="/gummies"
+                     className="grid grid-cols-1 text-left py-2  rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
+                   >
+                     <span className="block font-bold w-full px-4 text-inherit">Beauty Vitamin Gummies</span>
+                     <span className="block text-sm px-4 text-grey-900 text-inherit">Enhances skin, hair, and nail health</span>
+                   </Link>
+             
+                   <Link
+                     to="/pan-masala"
+                     className="grid grid-cols-1 text-left py-2  rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
+                   >
+                     <span className="block font-bold w-full px-4 text-inherit">Herbal Pan Masala</span>
+                     <span className="block text-sm px-4 text-grey-900 text-inherit">Refreshing and herbal mouth freshener</span>
+                   </Link>
 
-                {/* Our Product Dropdown Menu */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 top-full w-[1110px] h-[300px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 mt-6">
-                  {/* Left Side: Title & Description */}
-                  <div className="w-[60%] mt-10">
-                    <h3 className="text-3xl font-bold text-gray-900">Our Product</h3>
-                    <p className="text-lg text-gray-600 mt-2">
-                      Discover our range of premium products designed for your well-being and lifestyle.
-                    </p>
-                  </div>
-
-                  {/* Right Side: Links */}
-                  <div className="w-[35%] flex flex-col gap-3 ">
-                    <Link
-                      to="/gummies-sleep"
-                      className="grid grid-cols-1 text-left py-2 rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
-                    >
-                      <span className="block font-bold w-full px-4 text-inherit">Dreamy Sleep Gummies</span>
-                      <span className="block text-sm px-4 text-grey-900 text-inherit">
-                        Supports better sleep and relaxation
-                      </span>
-                    </Link>
-
-                    <Link
-                      to="/gummies"
-                      className="grid grid-cols-1 text-left py-2  rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
-                    >
-                      <span className="block font-bold w-full px-4 text-inherit">Beauty Vitamin Gummies</span>
-                      <span className="block text-sm px-4 text-grey-900 text-inherit">
-                        Enhances skin, hair, and nail health
-                      </span>
-                    </Link>
-
-                    <Link
-                      to="/pan-masala"
-                      className="grid grid-cols-1 text-left py-2 rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
-                    >
-                      <span className="block font-bold w-full px-4 text-inherit">Herbal Pan Masala</span>
-                      <span className="block text-sm px-4 text-grey-900 text-inherit">
-                        Refreshing and herbal mouth freshener
-                      </span>
-                    </Link>
-
-                    <Link
-                      to="/ourproduct"
-                      className="grid grid-cols-1 text-left py-2 rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
-                    >
-                      <span className="block font-bold w-full px-4 text-inherit">See All Products</span>
-                      <span className="block text-sm px-4 text-grey-900 text-inherit">
-                      Explore our full range of high-quality products
-                      </span>
-                    </Link>
-                  </div>
-                </div>
-              </div>
+                   <Link
+                     to="/ourproduct"
+                     className="grid grid-cols-1 text-left py-2  rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
+                   >
+                     <span className="block font-bold w-full px-4 text-inherit">View Our Products</span>
+                     <span className="block text-sm px-4 text-grey-900 text-inherit">  Explore our full range of high-quality products</span>
+                   </Link>
+                 </div>
+               </div>
+             </div>
 
               <div className="navbar-dropdown relative group">
                 <button
