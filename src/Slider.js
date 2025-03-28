@@ -217,7 +217,7 @@ export default function AnimatedSlider() {
                 </button>
 
                 {/* Our Product Dropdown Menu */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 top-full w-[1110px] h-[280px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 mt-6">
+                <div className="absolute left-1/2 transform -translate-x-1/2 top-full w-[1110px] h-[300px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 mt-6">
                   {/* Left Side: Title & Description */}
                   <div className="w-[60%] mt-10">
                     <h3 className="text-3xl font-bold text-gray-900">Our Product</h3>
@@ -227,12 +227,12 @@ export default function AnimatedSlider() {
                   </div>
 
                   {/* Right Side: Links */}
-                  <div className="w-[35%] flex flex-col gap-3 mt-4">
+                  <div className="w-[35%] flex flex-col gap-3 ">
                     <Link
                       to="/gummies-sleep"
                       className="grid grid-cols-1 text-left py-2 rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
                     >
-                      <span className="block font-bold w-full px-4 text-inherit">Sleep Gummies</span>
+                      <span className="block font-bold w-full px-4 text-inherit">Dreamy Sleep Gummies</span>
                       <span className="block text-sm px-4 text-grey-900 text-inherit">
                         Supports better sleep and relaxation
                       </span>
@@ -240,9 +240,9 @@ export default function AnimatedSlider() {
 
                     <Link
                       to="/gummies"
-                      className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
+                      className="grid grid-cols-1 text-left py-2  rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
                     >
-                      <span className="block font-bold w-full px-4 text-inherit">Beauty Gummies</span>
+                      <span className="block font-bold w-full px-4 text-inherit">Beauty Vitamin Gummies</span>
                       <span className="block text-sm px-4 text-grey-900 text-inherit">
                         Enhances skin, hair, and nail health
                       </span>
@@ -250,12 +250,14 @@ export default function AnimatedSlider() {
 
                     <Link
                       to="/pan-masala"
-                      className="grid grid-cols-1 text-left py-2 text-black rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
+                      className="grid grid-cols-1 text-left py-2 rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
                     >
                       <span className="block font-bold w-full px-4 text-inherit">Herbal Pan Masala</span>
                       <span className="block text-sm px-4 text-grey-900 text-inherit">
                         Refreshing and herbal mouth freshener
                       </span>
+                    </Link>
+
                     <Link
                       to="/ourproduct"
                       className="grid grid-cols-1 text-left py-2 rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
