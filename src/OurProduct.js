@@ -8,7 +8,7 @@ const products = [
     id: 1,
     category: "NATURAL FRESH",
     title: "Herbal Masala",
-    image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/our_product_-1.jpg?v=1724245732",
+    image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/AW_collection_PI.png?v=1743233945",
     description:
       "Refreshing, herbal blend made with 100% natural ingredients – betel leaves, cardamom, clove & more. Designed for lasting freshness and digestive wellness. Perfect for daily use with a clean aftertaste",
     options: ["No Tobacco", "Premium Series", "Ayurvedic"],
@@ -18,7 +18,7 @@ const products = [
     id: 2,
     category: "HERBAL ZEST",
     title: "Herbal Masala",
-    image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/our_product_-1_black_product.jpg?v=1724397529",
+    image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/black.png?v=1743250694",
     description:
       "A bold fusion of mint, tulsi, and aromatic herbs. Crafted for an instant burst of freshness and long-lasting aroma. A healthier alternative to conventional mouth fresheners.",
     options: ["Tobacco-Free", "Cooling Effect", "100% Herbal"],
@@ -28,7 +28,7 @@ const products = [
     id: 3,
     category: "ROYAL SPICE",
     title: "Herbal Masala",
-    image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/our_product_-1_gold.jpg?v=1724397529",
+    image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/gold.png?v=1743250680",
     description:
       "Spiced with traditional Indian herbs and a touch of saffron, this blend delivers an indulgent, smooth flavor with wellness in every pinch. Best enjoyed after meals.",
     options: ["Digestive Boost", "Luxury Series", "No Chemicals"],
@@ -38,7 +38,7 @@ const products = [
     id: 4,
     category: "NUTRACEUTICAL GUMMIES",
     title: "Beauty Vitamin Gummie",
-    image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Beauty_gummy_product_bannner_1_1.jpg?v=1724399086",
+    image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/beauty.png?v=1743250718",
     description:
       "Glow from within with this skin-loving gummy enriched with Biotin, Vitamin C, and Zinc. Supports hair strength, radiant skin, and nail health. Tastes like berries, works like magic.",
     options: ["2:1 Daily Dose", "3.Sugar-Free", "Glow Series:1"],
@@ -48,7 +48,7 @@ const products = [
     id: 5,
     category: "NUTRACEUTICAL GUMMIES",
     title: "Dreamy Sleep Gummie ",
-    image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/sleep_gummy_product_banner1_1.jpg?v=1724399086",
+    image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/sleep.png?v=1743250707",
     description:
       "Wind down naturally with a calming blend of Melatonin, Chamomile, and L-Theanine. Designed to promote deeper sleep, reduce stress, and reset your sleep cycle.",
     options: ["Non-Habit Forming", "No Artificial Colors", "3.Relax Series"],
@@ -80,7 +80,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <div
-      className="bg-[#f5f5f5] rounded-[45px] overflow-hidden relative h-full cursor-pointer transition-all duration-300"
+      className="bg-[#efecdf] rounded-[45px] overflow-hidden relative h-full cursor-pointer transition-all duration-300"
       onClick={handleCardClick}
       style={{
         boxShadow: "0 4px 6px rgba(0, 0, 0, 0.05)",
