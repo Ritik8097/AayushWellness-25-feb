@@ -107,7 +107,7 @@ const ProductCard = ({ product }) => {
 
           {showDetails && (
             <div className="absolute inset-0 flex flex-col justify-start p-4">
-              <p className="text-white text-sm sm:text-base mb-2 sm:mb-4">{product.description}</p>
+              <p className="text-black text-sm sm:text-base mb-2 sm:mb-4">{product.description}</p>
               <div className="flex flex-wrap gap-1 sm:gap-2">
                 {product.options.map((option, index) => (
                   <span
