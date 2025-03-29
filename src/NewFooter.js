@@ -50,9 +50,9 @@ const NewFooter = () => {
             <h2 className="mb-2 text-xxl font-semibold text-white">Connect With Us</h2>
             <p className="mb-5  md:text-lg max-w-[600px] text-white text-lg">
             (Formerly known as Aayush Food and Herbs Limited) <br></br> 
-            <span className="font-bold">CIN:</span> L01122DL1984PLC018307 Registered Office: 275, Ground Floor, West
+            <span className="font-bold">CIN:</span> L01122DL1984PLC018307 <span className="font-bold">Registered Office:</span>  275, Ground Floor, West
               End Marg, Near Saket Metro Station Exit: 2, New Delhi-110030 <br></br>
-              <span className="font-bold">Contact no.:</span>  +91 84486 93031 |  <span className="font-bold">Email:</span> cs@aayushwellness.com | 
+              <span className="font-bold">Contact no.:</span>  +91 84486 93031 | <br></br> <span className="font-bold">Email:</span> cs@aayushwellness.com | 
             </p>
 
 
