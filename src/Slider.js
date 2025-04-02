@@ -1,4 +1,9 @@
 
+
+
+
+
+
 import { useState, useEffect, useRef } from "react"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -8,16 +13,16 @@ import "slick-carousel/slick/slick-theme.css"
 import closepng from "./images/close.png"
 import searchIcon from "./images/search-gray.svg"
 import ImageSlider from "./ImageSlider"
-
+import Hls from "hls.js";
 
 export default function AnimatedSlider() {
- 
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
   const [isVisible, setIsVisible] = useState(false)
   const [showText, setShowText] = useState(false)
   const sliderRef = useRef(null)
   const [csrOpen, setCsrOpen] = useState(false)
   const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false)
+  const videoRef = useRef(null)
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768)
@@ -37,6 +42,22 @@ export default function AnimatedSlider() {
       observer.observe(sliderRef.current)
     }
 
+    // Preload video for better mobile performance
+    if (videoRef.current) {
+      videoRef.current.load()
+
+      // Force play on iOS/Android
+      document.addEventListener(
+        "touchstart",
+        () => {
+          if (videoRef.current && videoRef.current.paused) {
+            videoRef.current.play().catch((e) => console.log("Video play error:", e))
+          }
+        },
+        { once: true },
+      )
+    }
+
     return () => {
       window.removeEventListener("resize", handleResize)
       if (sliderRef.current) {
@@ -44,8 +65,6 @@ export default function AnimatedSlider() {
       }
     }
   }, [])
-
-  
 
   useEffect(() => {
     const handleResize = () => {
@@ -58,14 +77,35 @@ export default function AnimatedSlider() {
 
   const videos = {
     desktop: {
-      src: "https://cdn.shopify.com/videos/c/o/v/139791bdf7224d648c2a57aa7f458592.mp4",
+      src: "https://res.cloudinary.com/dudn5tfkq/video/upload/v1743574689/139791bdf7224d648c2a57aa7f458592_nlbocn.m3u8",
       text: "Transforming Wellness , Transforming Lives",
     },
     mobile: {
-      src: "https://cdn.shopify.com/videos/c/o/v/cd7177ad46114615a673ec4ef80c210f.mp4",
+      src: "https://res.cloudinary.com/dudn5tfkq/video/upload/v1743575331/cd7177ad46114615a673ec4ef80c210f_weasmq.m3u8",
       text: "Transforming wellness, transforming lives",
     },
   }
+  useEffect(() => {
+    const video = videoRef.current;
+    const videoSrc = isMobile ? videos.mobile.src : videos.desktop.src
+ 
+
+    if (Hls.isSupported()) {
+      const hls = new Hls();
+      hls.loadSource(videoSrc);
+      hls.attachMedia(video);
+
+      hls.on(Hls.Events.MANIFEST_PARSED, () => {
+        video.play();
+      });
+    } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
+      // Fallback for Safari
+      video.src = videoSrc;
+      video.addEventListener("loadedmetadata", () => {
+        video.play();
+      });
+    }
+  }, []);
 
   const selectedVideo = isMobile ? videos.mobile : videos.desktop
 
@@ -222,49 +262,58 @@ export default function AnimatedSlider() {
                 </button>
 
                 {/* Our Product Dropdown Menu */}
-               <div className="absolute left-1/2 transform -translate-x-1/2 top-full w-[1110px] h-[300px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 mt-6 ">
-                                <div className="w-[60%] mt-10" >
-                                  <h3 className="text-3xl font-bold text-gray-900"> Our Products</h3>
-                                  <p className="text-lg text-gray-600 mt-2">
-                                    Discover our range of premium products designed for your well-being and lifestyle.
-                                  </p>
-                                </div>
-                            
-                                <div className="w-[35%] flex flex-col gap-3 ">
-                                  <Link
-                                    to="/gummies-sleep"
-                                    className="grid grid-cols-1 text-left py-2  rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
-                                  >
-                                    <span className="block font-bold w-full px-4 text-inherit">Dreamy Sleep Gummies</span>
-                                    <span className="block text-sm px-4 text-grey-900 text-inherit">Supports better sleep and relaxation</span>
-                                  </Link>
-                            
-                                  <Link
-                                    to="/gummies"
-                                    className="grid grid-cols-1 text-left py-2  rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
-                                  >
-                                    <span className="block font-bold w-full px-4 text-inherit">Beauty Vitamin Gummies</span>
-                                    <span className="block text-sm px-4 text-grey-900 text-inherit">Enhances skin, hair, and nail health</span>
-                                  </Link>
-                            
-                                  <Link
-                                    to="/pan-masala"
-                                    className="grid grid-cols-1 text-left py-2  rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
-                                  >
-                                    <span className="block font-bold w-full px-4 text-inherit">Herbal Pan Masala</span>
-                                    <span className="block text-sm px-4 text-grey-900 text-inherit">Refreshing and herbal mouth freshener</span>
-                                  </Link>
-               
-                                  <Link
-                                    to="/ourproduct"
-                                    className="grid grid-cols-1 text-left py-2  rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
-                                  >
-                                    <span className="block font-bold w-full px-4 text-inherit">View Our Products</span>
-                                    <span className="block text-sm px-4 text-grey-900 text-inherit">  Explore our full range of high-quality products</span>
-                                  </Link>
-                                </div>
-                              </div>
-                            </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 top-full w-[1110px] h-[300px] bg-white shadow-lg rounded-lg p-5 opacity-0 invisible translate-y-3 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 flex justify-between z-50 mt-6 ">
+                  <div className="w-[60%] mt-10">
+                    <h3 className="text-3xl font-bold text-gray-900"> Our Products</h3>
+                    <p className="text-lg text-gray-600 mt-2">
+                      Discover our range of premium products designed for your well-being and lifestyle.
+                    </p>
+                  </div>
+
+                  <div className="w-[35%] flex flex-col gap-3 ">
+                    <Link
+                      to="/gummies-sleep"
+                      className="grid grid-cols-1 text-left py-2  rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
+                    >
+                      <span className="block font-bold w-full px-4 text-inherit">Dreamy Sleep Gummies</span>
+                      <span className="block text-sm px-4 text-grey-900 text-inherit">
+                        Supports better sleep and relaxation
+                      </span>
+                    </Link>
+
+                    <Link
+                      to="/gummies"
+                      className="grid grid-cols-1 text-left py-2  rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
+                    >
+                      <span className="block font-bold w-full px-4 text-inherit">Beauty Vitamin Gummies</span>
+                      <span className="block text-sm px-4 text-grey-900 text-inherit">
+                        Enhances skin, hair, and nail health
+                      </span>
+                    </Link>
+
+                    <Link
+                      to="/pan-masala"
+                      className="grid grid-cols-1 text-left py-2  rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
+                    >
+                      <span className="block font-bold w-full px-4 text-inherit">Herbal Pan Masala</span>
+                      <span className="block text-sm px-4 text-grey-900 text-inherit">
+                        Refreshing and herbal mouth freshener
+                      </span>
+                    </Link>
+
+                    <Link
+                      to="/ourproduct"
+                      className="grid grid-cols-1 text-left py-2  rounded-md !text-[#004037] hover:bg-[#004037] transition w-full hover:!text-white"
+                    >
+                      <span className="block font-bold w-full px-4 text-inherit">View Our Products</span>
+                      <span className="block text-sm px-4 text-grey-900 text-inherit">
+                        {" "}
+                        Explore our full range of high-quality products
+                      </span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
 
               <div className="navbar-dropdown relative group">
                 <button
@@ -552,7 +601,7 @@ export default function AnimatedSlider() {
               {isProductDropdownOpen && (
                 <div className="rounded-md mt-2 mb-3 py-2 ">
                   {/* Title & Description */}
-                  <div className="px-4 py-2 " >
+                  <div className="px-4 py-2 ">
                     <h3 className="text-xl font-bold text-[#004037]">our products</h3>
                     <p className="text-lg text-gray-600 mt-2">
                       Discover our range of premium products designed for your well-being and lifestyle.
@@ -594,7 +643,7 @@ export default function AnimatedSlider() {
                       onClick={() => setIsProductDropdownOpen(false)}
                     >
                       View our Products
-                      <p className="text-sm text-gray-600">    Explore our full range of high-quality products</p>
+                      <p className="text-sm text-gray-600"> Explore our full range of high-quality products</p>
                     </Link>
                   </div>
                 </div>
@@ -834,16 +883,28 @@ export default function AnimatedSlider() {
         </div>
 
         <video
-          className={`video ${isVisible ? "fade-in" : ""}`}
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="https://res.cloudinary.com/dudn5tfkq/image/upload/v1741259430/o3zcqyhewzusfycdygyc.png"
-        >
-          <source src={selectedVideo.src} type="video/mp4" />
-        </video>
+      ref={videoRef}
+      className={`video ${isVisible ? "fade-in" : ""}`}
+      autoPlay
+      muted
+      loop
+      playsInline
+      preload="auto"
+      poster="https://res.cloudinary.com/dudn5tfkq/image/upload/v1741259430/o3zcqyhewzusfycdygyc.png"
+     
+    ></video>
+       
+     
+  {/* <iframe
+    className="w-full h-full object-cover"
+    src="https://player.vimeo.com/video/1071668900?h=62d523bb47&background=1&controls=0&loop=1"
+    frameBorder="0"
+    allow="autoplay; fullscreen"
+   
+  ></iframe> */}
 
+
+        
         <style jsx>{`
           .video-wrapper {
             position: relative;
@@ -940,4 +1001,16 @@ export default function AnimatedSlider() {
     </>
   )
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
