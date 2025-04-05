@@ -73,7 +73,7 @@ const NewFooter = () => {
       <div className="relative z-20 flex flex-col h-full p-4 md:p-10">
         <div className="flex flex-col md:flex-row justify-between mb-auto">
           <div className="flex-1 min-w-[300px] mb-8 md:mb-0">
-            <h2 className="mb-2 text-xxl font-semibold text-white">Connect With Us</h2>
+            <h2 className="mb-2 text-xxl font-semibold text-white">CONNECT WITH US</h2>
             <p className="mb-5  md:text-lg max-w-[600px] text-white text-lg">
             (Formerly known as Aayush Food and Herbs Limited) <br></br> 
             <span className="font-bold">CIN:</span> L01122DL1984PLC018307 <span className="font-bold">Registered Office:</span>  275, Ground Floor, West
