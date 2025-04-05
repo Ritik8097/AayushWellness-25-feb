@@ -1,18 +1,20 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { Link } from "react-router-dom"
 import { ArrowRight, Instagram, Facebook } from "lucide-react"
+import Hls from "hls.js"
 
 const NewFooter = () => {
   const [email, setEmail] = useState("")
   const [isSubscribed, setIsSubscribed] = useState(false)
-  const [videoSrc, setVideoSrc] = useState("https://cdn.shopify.com/videos/c/o/v/ef92913a3d004ba4bbe7ab21d8d6afe3.mp4")
+  const [videoSrc, setVideoSrc] = useState("https://res.cloudinary.com/dudn5tfkq/video/upload/v1743840793/footer_video_4_as3kat.m3u8")
+  const videoRef = useRef(null)
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 768) {
-        setVideoSrc("https://cdn.shopify.com/videos/c/o/v/your-mobile-video.mp4")
+        setVideoSrc("https://res.cloudinary.com/dudn5tfkq/video/upload/v1743845639/footer_video_4_-_mobile_size_ltzdep.m3u8")
       } else {
-        setVideoSrc("https://cdn.shopify.com/videos/c/o/v/ef92913a3d004ba4bbe7ab21d8d6afe3.mp4")
+        setVideoSrc("https://res.cloudinary.com/dudn5tfkq/video/upload/v1743840793/footer_video_4_as3kat.m3u8")
       }
     }
 
@@ -24,9 +26,29 @@ const NewFooter = () => {
     }
   }, [])
 
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value)
-  }
+  useEffect(() => {
+    const video = videoRef.current
+
+    if (video && Hls.isSupported()) {
+      const hls = new Hls()
+      hls.loadSource(videoSrc)
+      hls.attachMedia(video)
+      hls.on(Hls.Events.MANIFEST_PARSED, () => {
+        video.play()
+      })
+
+      return () => {
+        hls.destroy()
+      }
+    } else if (video?.canPlayType("application/vnd.apple.mpegurl")) {
+      video.src = videoSrc
+      video.addEventListener("loadedmetadata", () => {
+        video.play()
+      })
+    }
+  }, [videoSrc])
+
+  const handleEmailChange = (e) => setEmail(e.target.value)
 
   const handleSubscribe = (e) => {
     e.preventDefault()
@@ -37,12 +59,16 @@ const NewFooter = () => {
 
   return (
     <footer className="relative w-full md:h-[80vh] overflow-hidden text-white font-sans blocks">
-      <video className="absolute top-0 left-0 w-full h-full object-cover z-0" autoPlay loop muted playsInline>
-        <source src={videoSrc} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <video
+        ref={videoRef}
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        autoPlay
+        loop
+        muted
+        playsInline
+      />
 
-      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40 z-10"></div>
 
       <div className="relative z-20 flex flex-col h-full p-4 md:p-10">
         <div className="flex flex-col md:flex-row justify-between mb-auto">
@@ -81,7 +107,7 @@ const NewFooter = () => {
             </form>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-8 md:gap-10 md:pl-[3rem] md:border-l md:border-white/90">
+          <div className="flex flex-col md:flex-row gap-8 md:gap-10 md:pl-[3rem] ">
             <div className="min-w-[120px]">
               <h3 className="mb-4 text-xxl font-medium">Company</h3>
               <ul className="list-none p-0">
@@ -210,14 +236,7 @@ const NewFooter = () => {
           </div>
         </div>
 
-        <div className="w-full max-w-[1791px] h-auto md:h-[267px] flex items-center justify-center mx-auto px-4">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/footer_logo.png?v=1741340063"
-            alt="Aayushwellness Logo"
-            className="w-full h-full object-contain"
-          />
-        </div>
-
+       
         <div className="w-full h-px bg-white/30 my-4"></div>
 
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-4 md:gap-0 pb-4">
@@ -324,4 +343,4 @@ const NewFooter = () => {
   )
 }
 
-export default NewFooter;
+export default NewFooter
