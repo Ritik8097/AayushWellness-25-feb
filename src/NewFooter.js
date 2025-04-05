@@ -68,7 +68,7 @@ const NewFooter = () => {
         playsInline
       />
 
-      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40 z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 z-10"></div>
 
       <div className="relative z-20 flex flex-col h-full p-4 md:p-10">
         <div className="flex flex-col md:flex-row justify-between mb-auto">
