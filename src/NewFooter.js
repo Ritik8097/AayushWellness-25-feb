@@ -109,30 +109,30 @@ const NewFooter = () => {
 
           <div className="flex flex-col md:flex-row gap-8 md:gap-10 md:pl-[3rem] ">
             <div className="min-w-[120px]">
-              <h3 className="mb-4 text-xxl font-medium">Company</h3>
+              <h3 className="mb-4 text-xxxl font-medium">Company</h3>
               <ul className="list-none p-0">
                 <li className="mb-2">
-                  <Link to="/about-us" className="text-white no-underline hover:underline  text-[25px]">
+                  <Link to="/about-us" className="text-white no-underline hover:underline  text-[20px]">
                     About Us
                   </Link>
                 </li>
                 <li className="mb-2">
                   <Link
                     to="/about/company-intro"
-                    className="text-white no-underline hover:underline  text-[25px]"
+                    className="text-white no-underline hover:underline  text-[20px]"
                   >
                     Our Story
                   </Link>
                 </li>
                 <li className="mb-2">
-                  <Link to="/career" className="text-white no-underline hover:underline  text-[25px]">
+                  <Link to="/career" className="text-white no-underline hover:underline  text-[20px]">
                     Contact Us
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/about/mission-vision"
-                    className="text-white no-underline hover:underline  text-[25px]"
+                    className="text-white no-underline hover:underline  text-[20px]"
                   >
                     Mission & Vision
                   </Link>
@@ -140,25 +140,25 @@ const NewFooter = () => {
               </ul>
             </div>
             <div className="min-w-[120px]">
-              <h3 className="mb-4 text-xxl font-medium">Wellness</h3>
+              <h3 className="mb-4 text-xxxl font-medium">Wellness</h3>
               <ul className="list-none p-0">
                 <li>
                   <Link
                     to="/wellness/modern-science"
-                    className="text-white no-underline hover:underline  text-[25px]"
+                    className="text-white no-underline hover:underline  text-[20px]"
                   >
                     Modern Science
                   </Link>
                 </li>
                 <li>
-                  <Link to="/ayurveda" className="text-white no-underline hover:underline  text-[25px]">
+                  <Link to="/ayurveda" className="text-white no-underline hover:underline  text-[20px]">
                     Ayurveda
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/wellness/health-wellness"
-                    className="text-white no-underline hover:underline  text-[25px]"
+                    className="text-white no-underline hover:underline  text-[20px]"
                   >
                     Health & Wellness
                   </Link>
@@ -166,12 +166,12 @@ const NewFooter = () => {
               </ul>             
             </div>
             <div className="min-w-[120px]">
-              <h3 className="mb-4 text-xxl font-medium ">Newsroom</h3>
+              <h3 className="mb-4 text-xxxl font-medium ">Newsroom</h3>
               <ul>
                 <li>
                   <Link
                     to="/newsroom/in-the-news"
-                    className="text-white no-underline hover:underline  text-[25px]"
+                    className="text-white no-underline hover:underline  text-[20px]"
                   >
                     In the News
                   </Link>
@@ -179,7 +179,7 @@ const NewFooter = () => {
                 <li>
                   <Link
                     to="/newsroom/press-release"
-                    className="text-white no-underline hover:underline  text-[25px]"
+                    className="text-white no-underline hover:underline  text-[20px]"
                   >
                     Press Release
                   </Link>
@@ -187,7 +187,7 @@ const NewFooter = () => {
                 <li>
                   <Link
                     to="/newsroom/library"
-                    className="text-white no-underline hover:underline  text-[25px]"
+                    className="text-white no-underline hover:underline  text-[20px]"
                   >
                     Library
                   </Link>
@@ -195,12 +195,12 @@ const NewFooter = () => {
                 </ul>
               </div>
             <div className="min-w-[120px]">
-              <h3 className="mb-4 text-xxl  font-medium">Corporate</h3>
+              <h3 className="mb-4 text-xxxl  font-medium">Corporate</h3>
               <ul className="list-none p-0">
                 <li>
                   <Link
                     to="/csr-at-aayush/malnutrition"
-                    className="text-white no-underline hover:underline  text-[25px]"
+                    className="text-white no-underline hover:underline  text-[20px]"
                   >
                     Malnutrition
                   </Link>
@@ -208,25 +208,25 @@ const NewFooter = () => {
                 <li>
                   <Link
                     to="/csr-at-aayush/health-check"
-                    className="text-white no-underline hover:underline  text-[25px]"
+                    className="text-white no-underline hover:underline  text-[20px]"
                   >
                     Healthcare Check
                   </Link>
                 </li>
                 <li>
-                  <Link to="/sustainability" className="text-white no-underline hover:underline  text-[25px]">
+                  <Link to="/sustainability" className="text-white no-underline hover:underline  text-[20px]">
                     Sustainability
                   </Link>
                 </li>
                 <li>
-                  <Link to="/healthcare" className="text-white no-underline hover:underline  text-[25px]">
+                  <Link to="/healthcare" className="text-white no-underline hover:underline  text-[20px]">
                     Healthcare
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/growth-accelerator"
-                    className="text-white no-underline hover:underline  text-[25px]"
+                    className="text-white no-underline hover:underline  text-[20px]"
                   >
                     Accelarator
                   </Link>
