@@ -111,7 +111,7 @@ const ANewFooter = () => {
                         </ul>
                     </div>
                     <div>
-                        <h3 className="font-bold text-lg" style={{color:'#a8ff00'}}>Corporate</h3>
+                        <h3 className="font-bold text-lg" style={{color:'#a8ff00'}}>CORPORATE</h3>
                         <ul className="mt-2 space-y-2">
                             <li><Link to="/csr-at-aayush/malnutrition" onClick={() => window.scrollTo(0, 0)} className="text-muted-foreground hover:text-primary"  style={{color:'#ffffff'}}>Malnutrition</Link></li>
                             <li><Link to="/csr-at-aayush/health-check" onClick={() => window.scrollTo(0, 0)} className="text-muted-foreground hover:text-primary"  style={{color:'#ffffff'}}>Healthcare Check</Link></li>
