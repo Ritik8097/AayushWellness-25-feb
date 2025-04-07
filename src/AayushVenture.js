@@ -657,7 +657,11 @@ export default function AayushVenture() {
                 >
                   {/* Mobile Search */}
 
-                  <img className="h-7" src={menu} alt="menu" />
+                  <img
+                    className="h-7"
+                    src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/svgviewer-output_5.svg?v=1741865350"
+                    alt="menu"
+                  />
                 </button>
               </div>
             </div>
