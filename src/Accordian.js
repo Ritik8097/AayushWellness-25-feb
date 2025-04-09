@@ -1,17 +1,19 @@
-import React, { useState, useEffect, useRef } from 'react';
-import Hls from 'hls.js';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import AccordionItem from './AccordionItem';
-import Header from './Header';
-import NewFooter from './NewFooter';
-import MissionHeader from "./MissionHeader"
+import React, { useState, useEffect, useRef } from "react";
+import Hls from "hls.js";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import AccordionItem from "./AccordionItem";
+import Header from "./Header";
+import NewFooter from "./NewFooter";
+import MissionHeader from "./MissionHeader";
 
-let faqs = require('./faqs.json');
+let faqs = require("./faqs.json");
 
 // Replace with your Cloudinary .m3u8 video URLs
-const DESKTOP_VIDEO_URL = 'https://res.cloudinary.com/dudn5tfkq/video/upload/v1744192698/investor_banner_bldv7e.m3u8';
-const MOBILE_VIDEO_URL = 'https://res.cloudinary.com/dudn5tfkq/video/upload/v1744190595/investor_banner_-_portrait_dsika5.m3u8';
+const DESKTOP_VIDEO_URL =
+  "https://res.cloudinary.com/dudn5tfkq/video/upload/v1744192698/investor_banner_bldv7e.m3u8";
+const MOBILE_VIDEO_URL =
+  "https://res.cloudinary.com/dudn5tfkq/video/upload/v1744190595/investor_banner_-_portrait_dsika5.m3u8";
 
 const Accordionweb = () => {
   const [active, setActive] = useState(faqs[0].id);
@@ -21,8 +23,8 @@ const Accordionweb = () => {
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   useEffect(() => {
@@ -46,11 +48,49 @@ const Accordionweb = () => {
 
   return (
     <>
+      <style>
+        {`
+        
+
+        @keyframes scrollAnimation {
+          0% { transform: translateY(0); }
+          50% { transform: translateY(10px); }
+          100% { transform: translateY(0); }
+        }
+
+        .scroll-indicator {
+          position: absolute;
+          bottom: 60px;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 30;
+        }
+
+        .mouse {
+          width: 30px;
+          height: 50px;
+          border: 2px solid white;
+          border-radius: 20px;
+          position: relative;
+        }
+
+        .scroll-line {
+          position: absolute;
+          width: 2px;
+          height: 10px;
+          background-color: white;
+          left: 50%;
+          top: 8px;
+          transform: translateX(-50%);
+          animation: scrollAnimation 1.5s infinite;
+        }
+      `}
+      </style>
       <MissionHeader />
 
       <div className="relative h-[100vh] md:h-[100vh] overflow-hidden">
         {/* Overlay */}
-        <div className="absolute inset-0 z-10 bg-black bg-opacity-30" />
+        <div className="absolute inset-0 z-10 bg-black bg-opacity-40" />
 
         {/* Desktop Video */}
         <video
@@ -79,34 +119,44 @@ const Accordionweb = () => {
           <h1
             className="text-white font-semibold"
             style={{
-              fontSize: '56px',
-              lineHeight: '100%',
+              fontSize: "56px",
+              lineHeight: "100%",
             }}
           >
-            <span className="hidden md:inline" style={{ fontSize: '5.8vw' }}>
-            Invest, Impact, Inspire.
+            <span className="hidden md:inline" style={{ fontSize: "5.8vw" }}>
+              Invest, Impact, Inspire
             </span>
             <span className="md:hidden block leading-[100%]">
-    <span className="block">Invest</span>
-    <span className="block">Impact</span>
-    <span className="block">Inspire</span>
-  </span>
+              <span className="block">Invest</span>
+              <span className="block">Impact</span>
+              <span className="block">Inspire</span>
+            </span>
           </h1>
           <p
             className="text-white font-medium mt-4"
             style={{
-              fontSize: '16px',
-              lineHeight: '180%',
-              maxWidth: '90%',
+              fontSize: "16px",
+              lineHeight: "180%",
+              maxWidth: "90%",
             }}
           >
-            <span className="hidden md:inline" style={{ fontSize: '1.25vw', maxWidth: '38.4vw' }}>
-            Scalable, sustainable, and aligned with tomorrow’s health needs.
+            <span
+              className="hidden md:inline"
+              style={{ fontSize: "1.25vw", maxWidth: "38.4vw" }}
+            >
+              Scalable, sustainable, and aligned with tomorrow’s health needs.
             </span>
             <span className="md:hidden block">
-            Scalable, sustainable, and aligned with tomorrow’s health needs.
+              Scalable, sustainable, and aligned with tomorrow’s health needs.
             </span>
           </p>
+        </div>
+
+        {/* Scroll Indicator - Only visible on large screens */}
+        <div className="scroll-indicator hidden lg:block">
+          <div className="mouse">
+            <div className="scroll-line"></div>
+          </div>
         </div>
       </div>
 
@@ -116,11 +166,25 @@ const Accordionweb = () => {
           <div className="w-full max-w-[1168px] p-2">
             <div className="row justify-content-center">
               <div className="col-12">
-                <div className="card" style={{ backgroundColor: "#ffffff", boxShadow: "none", width: "100%" }}>
+                <div
+                  className="card"
+                  style={{
+                    backgroundColor: "#ffffff",
+                    boxShadow: "none",
+                    width: "100%",
+                  }}
+                >
                   <div className="card-body p-3">
-                    <h4 className="form-heading text-primary text-start text-[34px] mt-3 mb-8">REPORTS</h4>
+                    <h4 className="form-heading text-primary text-start text-[34px] mt-3 mb-8">
+                      REPORTS
+                    </h4>
                     {faqs.map((faq) => (
-                      <AccordionItem key={faq.id} active={active} handleToggle={handleToggle} faq={faq} />
+                      <AccordionItem
+                        key={faq.id}
+                        active={active}
+                        handleToggle={handleToggle}
+                        faq={faq}
+                      />
                     ))}
                   </div>
                 </div>
