@@ -86,9 +86,11 @@ const Accordionweb = () => {
             <span className="hidden md:inline" style={{ fontSize: '5.8vw' }}>
             Invest, Impact, Inspire.
             </span>
-            <span className="md:hidden block">
-            Invest Impact Inspire
-            </span>
+            <span className="md:hidden block leading-[100%]">
+    <span className="block">Invest</span>
+    <span className="block">Impact</span>
+    <span className="block">Inspire</span>
+  </span>
           </h1>
           <p
             className="text-white font-medium mt-4"
