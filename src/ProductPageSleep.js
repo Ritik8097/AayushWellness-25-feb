@@ -533,7 +533,7 @@ const ProductPageSleep = () => {
                 playsInline
               >
                 <source
-                  src="https://cdn.shopify.com/videos/c/o/v/477b7c8c59ea4160858117ef561e69b3.mp4"
+                  src="https://cdn.shopify.com/videos/c/o/v/7b950b8f7866491d95cd42dca56417a8.mp4"
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.
