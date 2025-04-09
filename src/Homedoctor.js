@@ -76,7 +76,7 @@ const Homedoctor = () => {
             Affordable health checkups & diagnostics Personalized treatment plans Backed by science, driven by care
             </p>
           </div>
-          <a rel="" tabIndex={-1} className="cAOSLu hlVOrJ" href="/">
+          <a rel="" tabIndex={-1} className="cAOSLu hlVOrJ" href="/healthcare">
             <button className="cAruRV dOQfTS" type="button">
               <span className="dKfXOG"> Find My Healthcare Solution</span>
             </button>
@@ -109,7 +109,7 @@ const Homedoctor = () => {
             Wide network of partnered hospitals & clinics Hassle-free insurance partners Integrated health services for a smoother experience.
             </p>
           </div>
-          <a rel="" tabIndex={-1} className="cAOSLu hlVOrJ" href="/" >
+          <a rel="" tabIndex={-1} className="cAOSLu hlVOrJ" href="/healthcare" >
             <button className="cAruRV dOQfTS" type="button">
               <span className="dKfXOG">  Explore Our Healthcare Partners</span>
             </button>
@@ -175,7 +175,7 @@ const Homedoctor = () => {
             Instant consultation with experienced doctorsComprehensive Health Checkups & health monitoringServing Communities with Affordable & Accessible Care.
             </p>
           </div>
-          <a rel="" tabIndex={-1} className="cAOSLu hlVOrJ" href="/">
+          <a rel="" tabIndex={-1} className="cAOSLu hlVOrJ" href="/healthcare">
             <button className="cAruRV dOQfTS" type="button">
               <span className="dKfXOG">Book My Consultation</span>
             </button>
