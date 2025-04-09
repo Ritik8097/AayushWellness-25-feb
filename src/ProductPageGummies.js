@@ -456,7 +456,7 @@ const ProductGummies = () => {
             <div className="w-full h-[500px] max-w-[500px] mx-auto">
               <video className="w-full h-full object-cover rounded-lg" autoPlay muted loop playsInline>
                 <source
-                  src="https://cdn.shopify.com/videos/c/o/v/5fc670e1da6e4de0a28b5dd362ed0c3b.mp4"
+                  src="https://cdn.shopify.com/videos/c/o/v/671da7b0c9a44007a8f9a696bd71d94b.mp4"
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.
