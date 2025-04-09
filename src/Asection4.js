@@ -96,7 +96,7 @@ export default function Asection4() {
 
   const items = [
     {
-      img: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/woman-2592247_1920.jpg?v=1740573108",
+      img: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/reduced_resolution_lab_image.jpg?v=1744190510",
       title: "How It Started",
       link: "/gummies-sleep",
       buttonText: "Explore Aayush Wellness",
@@ -182,7 +182,7 @@ export default function Asection4() {
       ],
     },
     {
-      img: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/medical-artificial-intelligence.jpg?v=1740573135",
+      img: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/water-2232732_1920_c1a024be-de15-4564-a9b1-f4ec18a510a5.jpg?v=1744189962",
       title: "What We Do",
       link: "/health",
       buttonText: "Explore Aayush Wellness",
@@ -247,7 +247,7 @@ export default function Asection4() {
       ],
     },
     {
-      img: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/washing-hands-with-soap-prevent-disease.jpg?v=1740573151",
+      img: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/reduced_resolution_family_image.jpg?v=1744190509",
       title: "Why Aayush Wellness?",
       link: "/investors",
       buttonText: "Explore Aayush Wellness",
