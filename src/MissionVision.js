@@ -117,7 +117,7 @@ function MissionVision() {
         Purpose, Progress, Promise
       </span>
       <span className="md:hidden block">
-        Purpose, Progress, Promise
+        Purpose Progress Promise
       </span>
     </h1>
 
