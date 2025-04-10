@@ -4,7 +4,10 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      rogbold: ['ROGBold', 'sans-serif'],
+        minion: ['MinionPro', 'serif'],
+    },
     
   },
   plugins: [],
