@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  safelist: ['font-rogbold'],
   theme: {
     extend: {
       rogbold: ['ROGBold', 'sans-serif'],
