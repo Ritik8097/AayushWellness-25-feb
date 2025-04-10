@@ -96,19 +96,19 @@ const Asection2 = () => {
       <h1 className="text-white font-semibold leading-none">
   {/* Desktop */}
   <span className=" hidden md:inline text-[5.8vw]" style={{ fontFamily: 'ROGBold' }}>
-  Empower Wellness, Naturally
+  Care, Cure, Commitment
   </span>
 
   {/* Mobile */}
   <span className="md:hidden block text-[9vw] leading-[100%]">
-    <div className="block">Empower</div>
-    <div className="block">Wellness</div>
-    <div className="block">Naturally </div>
+    <div className="block">Care</div>
+    <div className="block">Cure</div>
+    <div className="block">Commitment </div>
   </span>
 </h1>
 
         <p className="text-white font-medium mt-4 text-[16px] leading-[180%] md:text-[1.25vw] md:max-w-[38.4vw] max-w-[90%]" style={{ fontFamily: 'Minionpro' }}>
-        Crafting a new era of refreshment and well-being with premium nutraceutical blends and herbal masala
+        Putting people first, always—with precision and purpose.
         </p>
       </div>
 
