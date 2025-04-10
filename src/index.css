@@ -56,6 +56,20 @@ html, body {
 @import url("https://fonts.googleapis.com/css?family=Gentium%20Basic:700%7CRoboto:500&display=swap&ver=1729655452"); 
 @import url("https://fonts.googleapis.com/css?family=Gentium%20Basic:700%7CRoboto:500&display=swap&ver=1729655452"); 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@font-face {
+  font-family: 'MinionPro';
+  src: url('/public/fonts/MinionPro-Regular.otf') ;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ROGBold';
+  src: url('/public/fonts/Rogbold-3llGM.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
 @media all{     
   body {  
     font-family: 'Inter', sans-serif;
