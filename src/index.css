@@ -59,14 +59,14 @@ html, body {
 
 @font-face {
   font-family: 'MinionPro';
-  src: url('/public/fonts/MinionPro-Regular.otf') ;
+  src: url('/public/fontss/MinionPro-Regular.otf') ;
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'ROGBold';
-  src: url('/public/fonts/Rogbold-3llGM.otf') format('opentype');
+  src: url('/public/fontss/Rogbold-3llGM.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
 }
