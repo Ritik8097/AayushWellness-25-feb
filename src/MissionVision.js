@@ -140,10 +140,10 @@ function MissionVision() {
               lineHeight: "100%",
             }}
           >
-            <span className="font-rogbold hidden md:inline" style={{ fontSize: "5.8vw" }}>
+            <span className="font-rogbold hidden md:inline" style={{ fontSize: "5.8vw", fontFamily: "ROGBold"  }}>
               Purpose, Progress, Promise
             </span>
-            <span className="font-rogbold md:hidden block">Purpose Progress Promise</span>
+            <span className="font-rogbold md:hidden block" style={{ fontFamily: "ROGBold"  }}>Purpose Progress Promise</span>
           </h1>
 
           <p
@@ -154,10 +154,10 @@ function MissionVision() {
               maxWidth: "90%",
             }}
           >
-            <span className="font-minion hidden md:inline" style={{ fontSize: "1.25vw", maxWidth: "38.4vw" }}>
+            <span className="font-minion hidden md:inline" style={{ fontSize: "1.25vw", maxWidth: "38.4vw", fontFamily: "Minionpro" }}>
               Bringing the power of Ayurveda and modern science to your everyday health.
             </span>
-            <span className="font-minion md:hidden block">
+            <span className="font-minion md:hidden block" style={{ fontFamily: "Minionpro"  }}>
               Bringing the power of Ayurveda and modern science to your everyday health.
             </span>
           </p>
