@@ -74,12 +74,25 @@ const NewFooter = () => {
         <div className="flex flex-col md:flex-row justify-between mb-auto">
           <div className="flex-1 min-w-[300px] mb-8 md:mb-0">
             <h2 className="mb-2 text-xxl font-semibold text-white">CONNECT WITH US</h2>
-            <p className="mb-5  md:text-lg max-w-[600px] text-white text-lg">
-            (Formerly known as Aayush Food and Herbs Limited) <br></br> 
-            <span className="font-bold">CIN:</span> L01122DL1984PLC018307 <span className="font-bold">Registered Office:</span>  275, Ground Floor, West
-              End Marg, Near Saket Metro Station Exit: 2, New Delhi-110030 <br></br>
-              <span className="font-bold">Contact no.:</span>  +91 84486 93031 | <br></br> <span className="font-bold">Email:</span> cs@aayushwellness.com | 
+            <p className="mb-5 md:text-lg max-w-[600px] text-white text-lg">
+              (Formerly known as Aayush Food and Herbs Limited) <br />
+              <span className="font-bold">CIN:</span> L01122DL1984PLC018307{" "}
+              <br />
+              <span className="font-bold">Registered Office:</span> 275, Ground
+              Floor, West End Marg, Near Saket Metro Station Exit: 2, New
+              Delhi-110030
+              <div className="flex flex-col md:flex-row md:items-center md:gap-2 mt-2">
+                <span>
+                  <span className="font-bold">Contact no.:</span> +91 84486
+                  93031 
+                </span>
+                <span>
+                  <span className="font-bold">Email:</span>{" "}
+                  cs@aayushwellness.com
+                </span>
+              </div>
             </p>
+
 
 
             <form onSubmit={handleSubscribe} className="flex items-center max-w-[500px]">
