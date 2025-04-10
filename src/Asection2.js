@@ -101,13 +101,13 @@ const Asection2 = () => {
 
   {/* Mobile */}
   <span className="md:hidden block text-[9vw] leading-[100%]" style={{ fontFamily: 'ROGBold' }}>
-    <div className="block">Care</div>
-    <div className="block">Cure</div>
+    <div className="block">Care, Cure</div>
+    
     <div className="block">Commitment </div>
   </span>
 </h1>
 
-        <p className="text-white font-medium mt-4 text-[16px] leading-[180%] md:text-[1.25vw] md:max-w-[38.4vw] max-w-[90%]" style={{ fontFamily: 'Minionpro' }}>
+        <p className="text-white font-medium mt-4 text-[16px] leading-[150%] md:text-[1.25vw] md:max-w-[38.4vw] max-w-[90%]" style={{ fontFamily: 'Minionpro' }}>
         Putting people first, always—with precision and purpose.
         </p>
       </div>
