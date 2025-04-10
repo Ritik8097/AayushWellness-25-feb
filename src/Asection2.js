@@ -100,7 +100,7 @@ const Asection2 = () => {
   </span>
 
   {/* Mobile */}
-  <span className="md:hidden block text-[9vw] leading-[100%]">
+  <span className="md:hidden block text-[9vw] leading-[100%]" style={{ fontFamily: 'ROGBold' }}>
     <div className="block">Care</div>
     <div className="block">Cure</div>
     <div className="block">Commitment </div>
