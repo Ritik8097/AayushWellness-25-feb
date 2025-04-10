@@ -184,14 +184,7 @@ const NewFooter = () => {
                     Press Release
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    to="/newsroom/library"
-                    className="text-white no-underline hover:underline  text-[20px]"
-                  >
-                    Library
-                  </Link>
-                </li>
+                
                 </ul>
               </div>
             <div className="min-w-[120px]">
