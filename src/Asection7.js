@@ -163,7 +163,7 @@ const Asection7 = () => {
         </div>
         <div className="in-view fadein animated style-zXIZf" id="style-zXIZf">
           <div className="footer__copy">
-            <div className="footer__text">© Aayush Wellness. All Rights Reserved 2025</div>
+            <div className="footer__text">© Aayush Wellness Limited. All Rights Reserved 2025</div>
             {/* <img src="https://berelax.com/wp-content/uploads/2023/01/Logo-Be-Relax.png" width="100%" height="100%" alt="be relax" className="footer__logo" /> */}
             <div className="footer__text"><a  target="_blank" rel="noreferrer"><svg width={72} height={21} fill="none" xmlns="http://www.w3.org/2000/svg">
             {/* href="https://equal.design/" */}
