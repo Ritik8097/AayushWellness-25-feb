@@ -2,10 +2,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import BlurText from './BlurText';
 
+
+
 const Asection5 = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
+
+  
 
   useEffect(() => {
     const handleResize = () => {
@@ -39,6 +43,8 @@ const Asection5 = () => {
     };
   }, []);
 
+  
+
   const images = [
     "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/camille-brodard-9j1r-lLPW1o-unsplash.jpg?v=1740573256",
     "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Untitled-2.jpg?v=1740576210",
@@ -49,6 +55,7 @@ const Asection5 = () => {
   ];
 
   const buttonStyle = {
+    fontFamily: "Minionpro",
     background: "#fff",
     borderRadius: "100px",
     color: "#13233b",
@@ -85,13 +92,14 @@ const Asection5 = () => {
             text="The Future of Wellness is Here"
             animateOn="view"
             revealDirection="center"
-            className="text-center font-bold text-black leading-[120%] tracking-[0.02em] w-full mb-6 pt-[60px] text-[38px] sm:text-[38px] md:text-[54px] lg:text-[94px]"
-          /></div>
+            className="text-center font-bold text-black leading-[120%] tracking-[0.02em] w-full mb-6 pt-[60px] text-[38px] sm:text-[38px] md:text-[54px] lg:text-[94px]" style={{ fontFamily:"ROGBold"}}/>
+            </div>
               
         <div
           className="follow-us__text"
           style={{
-            fontSize: "18px",
+            fontFamily: "Minionpro",
+            fontSize: "22px",
             lineHeight: "150%",
             color: "#3a4458",
             marginBottom: "4px",
@@ -113,7 +121,8 @@ const Asection5 = () => {
           <div
           className="follow-us__text"
           style={{
-            fontSize: "18px",
+            fontFamily: "Minionpro",
+            fontSize: "22px",
             lineHeight: "150%",
             color: "#3a4458",
             marginBottom: "24px",
@@ -182,6 +191,7 @@ const Asection5 = () => {
         ))}
       </div>
     </div>
+   
   );
 };
 
