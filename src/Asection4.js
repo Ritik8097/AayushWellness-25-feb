@@ -497,7 +497,7 @@ export default function Asection4() {
                   textAlign: "center",
                   cursor: "pointer",
                   borderRadius: "100px",
-                  fontFamily: "Inter",
+                  fontFamily: "Minionpro",
                   fontSize: "20px",
                   whiteSpace: "nowrap",
                   background: "rgba(255, 255, 255, 0.95)",
@@ -570,7 +570,7 @@ export default function Asection4() {
                 <div
                   className="content-card"
                   style={{
-                    fontFamily: "Inter",
+                    fontFamily: "Minionpro",
                     fontSize: "18px",
                     lineHeight: "160%",
                     padding: "40px",
