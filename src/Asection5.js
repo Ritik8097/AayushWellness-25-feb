@@ -78,7 +78,7 @@ const Asection5 = () => {
     <div
       ref={sectionRef}
       className="follow-us__container"
-      style={{ width: "100%", margin: "0 auto", maxWidth: "80vw" }}
+      style={{ width: "100%", margin: "0 auto", maxWidth: "80vw",  marginBottom: "30px"  }}
     >
       <div
         className="follow-us__top"
