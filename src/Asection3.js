@@ -19,7 +19,8 @@ const companyValuesStyles = {
   item: {
     width: "100%",
     padding: "40px",
-    background: "#f9f9f9",
+    // background: "#f9f9f9",
+    background: "#13233b",
     borderRadius: "48px",
     display: "flex",
     flexDirection: "column",
@@ -30,7 +31,7 @@ const companyValuesStyles = {
     maxWidth: "64px",
     minWidth: "64px",
     height: "64px",
-    border: "1px solid rgba(46,99,135,.2)",
+    // border: "1px solid rgba(46,99,135,.2)",
     borderRadius: "50%",
     marginBottom: "24px",
     display: "flex",
@@ -41,7 +42,8 @@ const companyValuesStyles = {
     fontFamily: "ROGBold",
     marginBottom: "12px",
     fontSize: "40px",
-    color: "#13233b", // Change this to your preferred color
+    // color: "#13233b", // Change this to your preferred color
+    color: "#f9f9f9",
     fontWeight: "400",
   },
   itemText: {
@@ -49,10 +51,10 @@ const companyValuesStyles = {
     fontWeight: 400,
     fontSize: "18px",
     lineHeight: "145%",
-    color: "#3a4458",
+    color: "#f9f9f9",
   },
   title40: {
-    fontFamily: "ROGBold",
+    fontFamily: "ROGBold" ,
     fontWeight: 400,
     fontSize: "60px",
     lineHeight: "125%",
@@ -72,7 +74,7 @@ const companyValuesStyles = {
     
     height: "auto",
     padding: "24px",
-    background: "#f5f3f0",
+    background: "#13233b",
     borderRadius: "48px",
     display: "flex",
     flexDirection: "column",
@@ -89,22 +91,22 @@ const values = [
   {
     title: "Science & Innovation",
     text: "We are driven by research.At Aayush Wellness, we blend cutting-edge science with nature to create solutions that enhance health and longevity. Our team of experts is constantly researching and innovating to bring the best in nutraceuticals, preventive healthcare, and wellness technology.",
-    icon: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/svgviewer-output_4.svg?v=1741757643",
+    icon: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/physics.gif?v=1744372134",
   },
   {
     title: "Accessibility for All",
     text: "Health should be within everyone's reach.We believe that wellness is a right, not a privilege. Whether it’s through affordable nutritional solutions, digital healthcare access, or community wellness programs, we ensure that everyone—regardless of location or background—can take control of their health.",
-    icon: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/svgviewer-output_2.svg?v=1741756898",
+    icon: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/available-worldwide.gif?v=1744372133",
   },
   {
     title: "Holistic Well-Being",
     text: "Health isn’t just about curing—it’s about preventing.We focus on preventive healthcare and personalized wellness solutions, empowering individuals to take charge of their well-being before issues arise. From AI-powered diagnostics to natural wellness solutions, we help people live healthier, longer lives.",
-    icon: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/svgviewer-output_1.svg?v=1741756778",
+    icon: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/serenity.gif?v=1744372137",
   },
   {
     title: "Trust & Transparency",
     text: "Your health is our priority.We hold ourselves to the highest standards of safety, quality, and ethics. Every product we offer is backed by rigorous scientific testing, ensuring transparency and effectiveness in everything we do.",
-    icon: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/svgviewer-output.svg?v=1741756559",
+    icon: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/agreement.gif?v=1744372129",
   },
 ]
 
@@ -158,7 +160,7 @@ const CompanyValues = () => {
                 <img
                   src={value.icon || "/placeholder.svg"}
                   alt={value.title}
-                  style={{ width: "40px", height: "40px" }}
+                  style={{ width: "60px", height: "60px" }}
                 />
               </div>
               <h3 style={companyValuesStyles.itemTitle}>{value.title}</h3>
@@ -180,7 +182,7 @@ const CompanyValues = () => {
                   <img
                     src={value.icon || "/placeholder.svg"}
                     alt={value.title}
-                    style={{ width: "40px", height: "40px" }}
+                    style={{ width: "60px", height: "60px" }}
                   />
                 </div>
                 <h3 style={companyValuesStyles.itemTitle}>{value.title}</h3>
