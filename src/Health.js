@@ -5,7 +5,7 @@ import Asection2 from './Asection2'
 import Asection3 from './Asection3'
 import Asection4 from './Asection4'
 import Asection5 from './Asection5'
-import Asection7 from './Asection7'
+import NewFooter from "./NewFoote
 
 
 
@@ -18,7 +18,7 @@ const Health = () => {
     <Asection3/>
     <Asection4/>
     <Asection5/>
-    <Asection7/>    
+    <NewFooter/>    
     </>
   )
 }
