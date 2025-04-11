@@ -5,7 +5,7 @@ import Asection2 from './Asection2'
 import Asection3 from './Asection3'
 import Asection4 from './Asection4'
 import Asection5 from './Asection5'
-import NewFooter from "./NewFoote"
+import NewFooter from "./NewFooter"
 
 
 
