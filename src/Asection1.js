@@ -19,7 +19,7 @@ const Asection1 = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="text-[30px] md:text-[36px] font-bold leading-tight text-[#13233b] mb-8"
+          className="text-[30px] md:text-[56px] font-bold leading-tight text-[#13233b] mb-8"
           style={{ fontFamily: "ROGBold" }}
         >
           Bringing the Future of Wellness to You
