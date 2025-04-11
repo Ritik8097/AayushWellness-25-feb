@@ -20,7 +20,7 @@ const Asection1 = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
           className="text-[30px] md:text-[36px] font-bold leading-tight text-[#13233b] mb-8"
-          style={{ fontFamily: "inter, sans-serif" }}
+          style={{ fontFamily: "ROGBold" }}
         >
           Bringing the Future of Wellness to You
         </motion.h2>
@@ -30,7 +30,7 @@ const Asection1 = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 1 }}
-          className="text-[20px] md:text-[22px] leading-[1.6] text-[#3a4458] font-semibold mb-6"
+          className="text-[20px] md:text-[22px] leading-[1.6] text-[#3a4458] font-semibold mb-6" style={{ fontFamily: "Minionpro" }}
         >
           At Aayush Wellness, we believe that health is not just about curing illness it's about preventing it,
           enhancing it, and making wellness a way of life.
@@ -41,7 +41,7 @@ const Asection1 = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.1, duration: 1 }}
-          className="text-[18px] md:text-[20px] leading-[1.7] text-[#3a4458] font-semibold mb-10"
+          className="text-[18px] md:text-[20px] leading-[1.7] text-[#3a4458] font-semibold mb-10" style={{ fontFamily: "Minionpro" }}
         >
           With a deep-rooted commitment to science-backed innovation and natural health solutions, we are redefining the
           wellness experience—integrating nutraceuticals, personalized healthcare, preventive wellness, and digital
