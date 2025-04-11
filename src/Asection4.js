@@ -208,7 +208,7 @@ export default function Asection4() {
       ],
     },
     {
-      img: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/top-view-of-vitamin-gummies-2025-01-08-10-18-53-utc.jpg?v=1744374183",
+      img: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/healthy-products-for-immunity-boosting-and-cold-re-2024-12-05-08-16-18-utc.jpg?v=1744376800",
       title: "What We Do",
       link: "#",
       buttonText: "Explore Aayush Wellness",
