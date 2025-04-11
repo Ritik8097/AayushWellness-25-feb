@@ -54,7 +54,7 @@ const companyValuesStyles = {
   title40: {
     fontFamily: "ROGBold",
     fontWeight: 400,
-    fontSize: "40px",
+    fontSize: "60px",
     lineHeight: "125%",
     color: "#13233b",
     textAlign: "center",
