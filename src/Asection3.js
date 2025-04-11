@@ -52,7 +52,7 @@ const companyValuesStyles = {
     color: "#3a4458",
   },
   title40: {
-    fontFamily: "Montserrat, sans-serif",
+    fontFamily: "ROGBold",
     fontWeight: 400,
     fontSize: "40px",
     lineHeight: "125%",
