@@ -19,7 +19,7 @@ const Asection1 = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="text-[30px] md:text-[56px] font-bold leading-tight text-[#13233b] mb-8"
+          className="text-[30px] md:text-[60px] font-bold leading-tight text-[#13233b] mb-8 tracking-[0.03em]"
           style={{ fontFamily: "ROGBold" }}
         >
           Bringing the Future of Wellness to You
@@ -41,7 +41,7 @@ const Asection1 = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.1, duration: 1 }}
-          className="text-[18px] md:text-[20px] leading-[1.7] text-[#3a4458] font-semibold mb-10" style={{ fontFamily: "Minionpro" }}
+          className="text-[18px] md:text-[20px] leading-[1.4] text-[#3a4458] font-regular mb-10" style={{ fontFamily: "Minionpro" }}
         >
           With a deep-rooted commitment to science-backed innovation and natural health solutions, we are redefining the
           wellness experience—integrating nutraceuticals, personalized healthcare, preventive wellness, and digital
