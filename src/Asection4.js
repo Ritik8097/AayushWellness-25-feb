@@ -208,7 +208,7 @@ export default function Asection4() {
       ],
     },
     {
-      img: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/water-2232732_1920_c1a024be-de15-4564-a9b1-f4ec18a510a5.jpg?v=1744189962",
+      img: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/top-view-of-vitamin-gummies-2025-01-08-10-18-53-utc.jpg?v=1744374183",
       title: "What We Do",
       link: "#",
       buttonText: "Explore Aayush Wellness",
@@ -273,7 +273,7 @@ export default function Asection4() {
       ],
     },
     {
-      img: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/reduced_resolution_family_image.jpg?v=1744190509",
+      img: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/20-SM958317.jpg?v=1744375249",
       title: "Why Aayush Wellness?",
       link: "#",
       buttonText: "Explore Aayush Wellness",
@@ -327,7 +327,7 @@ export default function Asection4() {
               width="24"
               height="24"
               fill="none"
-              stroke="black"
+              stroke="#13233b"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -570,13 +570,13 @@ export default function Asection4() {
                 <div
                   className="content-card"
                   style={{
-                    fontFamily: "Minionpro",
+                    fontFamily: "Inter",
                     fontSize: "18px",
                     lineHeight: "160%",
                     padding: "40px",
                     borderRadius: "25px",
                     background: "#f9f9f9",
-                    color: "#333",
+                    color: "#13233b",
                     boxShadow: "0 10px 30px rgba(0,0,0,0.15)",
                     border: "1px solid rgba(255,255,255,0.1)",
                     position: "relative",
@@ -609,7 +609,7 @@ export default function Asection4() {
                         fontFamily: "ROGBold",
                         fontSize: "32px",
                         fontWeight: "600",
-                        color: "#333",
+                        color: "#13233b",
                         marginBottom: "15px",
                         position: "relative",
                         display: "inline-block",
@@ -678,7 +678,7 @@ export default function Asection4() {
                               style={{
                                 fontSize: "28px",
                                 fontWeight: "500",
-                                color: "#333",
+                                color: "#13233b",
                                 margin: 0,
                                 position: "relative",
                                 textAlign: "left",
@@ -874,6 +874,7 @@ export default function Asection4() {
           .section-content p {
             font-size: 14px !important;
             line-height: 1.4 !important;
+            color: #13233b !important;
           }
           
           .wellness-section {
