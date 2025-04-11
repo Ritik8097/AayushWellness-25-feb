@@ -273,7 +273,7 @@ export default function Asection4() {
       ],
     },
     {
-      img: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/20-SM958317.jpg?v=1744375249",
+      img: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/20-SM958317_1.jpg?v=1744377416",
       title: "Why Aayush Wellness?",
       link: "#",
       buttonText: "Explore Aayush Wellness",
