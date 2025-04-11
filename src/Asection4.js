@@ -10,6 +10,8 @@ export default function Asection4() {
   const [hoveredTitles, setHoveredTitles] = useState({})
   const [expandedSections, setExpandedSections] = useState({})
   const [isMobile, setIsMobile] = useState(false)
+  // Store timeouts to clear them when needed
+  const hoverTimeouts = useRef({})
 
   useEffect(() => {
     // Check if we're on mobile
@@ -20,7 +22,11 @@ export default function Asection4() {
     checkMobile()
     window.addEventListener("resize", checkMobile)
 
-    return () => window.removeEventListener("resize", checkMobile)
+    return () => {
+      window.removeEventListener("resize", checkMobile)
+      // Clear any remaining timeouts on unmount
+      Object.values(hoverTimeouts.current).forEach((timeout) => clearTimeout(timeout))
+    }
   }, [])
 
   useEffect(() => {
@@ -71,11 +77,31 @@ export default function Asection4() {
   }, [])
 
   const handleTitleHover = (cardIndex, titleIndex, isHovering) => {
-    if (!isMobile) {
+    if (isMobile) return
+
+    const key = `${cardIndex}-${titleIndex}`
+
+    // Clear any existing timeout for this title
+    if (hoverTimeouts.current[key]) {
+      clearTimeout(hoverTimeouts.current[key])
+      hoverTimeouts.current[key] = null
+    }
+
+    if (isHovering) {
+      // Set immediately when hovering in
       setHoveredTitles((prev) => ({
         ...prev,
-        [`${cardIndex}-${titleIndex}`]: isHovering,
+        [key]: true,
       }))
+    } else {
+      // Add a longer delay when hovering out
+      hoverTimeouts.current[key] = setTimeout(() => {
+        setHoveredTitles((prev) => ({
+          ...prev,
+          [key]: false,
+        }))
+        hoverTimeouts.current[key] = null
+      }, 300) // Longer delay to prevent flickering
     }
   }
 
@@ -98,7 +124,7 @@ export default function Asection4() {
     {
       img: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/reduced_resolution_lab_image.jpg?v=1744190510",
       title: "How It Started",
-      link: "/gummies-sleep",
+      link: "#",
       buttonText: "Explore Aayush Wellness",
       content: "A vision to transform everyday health.",
       icon: <Sparkles className="text-amber-500" size={32} />,
@@ -184,7 +210,7 @@ export default function Asection4() {
     {
       img: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/water-2232732_1920_c1a024be-de15-4564-a9b1-f4ec18a510a5.jpg?v=1744189962",
       title: "What We Do",
-      link: "/health",
+      link: "#",
       buttonText: "Explore Aayush Wellness",
       content: "At the intersection of wellness and technology, we are shaping the future of health.",
       icon: <Activity className="text-emerald-500" size={32} />,
@@ -249,7 +275,7 @@ export default function Asection4() {
     {
       img: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/reduced_resolution_family_image.jpg?v=1744190509",
       title: "Why Aayush Wellness?",
-      link: "/investors",
+      link: "#",
       buttonText: "Explore Aayush Wellness",
       icon: <Shield className="text-indigo-500" size={32} />,
       content:
@@ -580,13 +606,13 @@ export default function Asection4() {
                   <div className="content-title " style={{ marginBottom: "20px" }}>
                     <h3
                       style={{
-                        fontSize: "28px",
+                        fontFamily: "ROGBold",
+                        fontSize: "32px",
                         fontWeight: "600",
                         color: "#333",
                         marginBottom: "15px",
                         position: "relative",
                         display: "inline-block",
-                        
                       }}
                     >
                       {item.title}
@@ -598,64 +624,87 @@ export default function Asection4() {
                           width: "80%",
                           height: "3px",
                           background: "linear-gradient(90deg, rgba(0,0,0,0.6), transparent)",
-                          
                         }}
                       ></div>
                     </h3>
-                    <p style={{ fontSize: "18px", color: "#000000"}}>{item.content}</p>
+                    <p style={{ fontSize: "22px", color: "#000000", fontFamily: "Minionpro" }}>{item.content}</p>
                   </div>
 
                   {/* Content sections with individual hover effects */}
                   <div className="content-sections">
                     {item.sections.map((section, sectionIndex) => (
                       <div key={sectionIndex} className="section-item">
-                        {/* Section title (always visible) */}
+                        {/* Section title (always visible) with extended hover area */}
                         <div
-                          className="section-title"
+                          className="section-title-wrapper"
                           style={{
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "10px",
+                            position: "relative",
                             marginTop: sectionIndex === 0 ? "30px" : "20px",
                             marginBottom: "10px",
                             cursor: "pointer",
-                            position: "relative",
-                            paddingBottom: "5px",
+                            padding: "8px 0", // Add padding to create a larger hit area
                           }}
                           onMouseEnter={() => handleTitleHover(index, sectionIndex, true)}
                           onMouseLeave={() => handleTitleHover(index, sectionIndex, false)}
                           onClick={() => toggleSection(index, sectionIndex)}
                         >
-                          <div style={{ display: "flex", alignItems: "center" }}>{section.icon}</div>
-                          <h4
+                          {/* Invisible extended hit area */}
+                          <div
+                            className="extended-hit-area"
                             style={{
-                              fontSize: "20px",
-                              fontWeight: "600",
-                              color: "#333",
-                              margin: 0,
+                              position: "absolute",
+                              top: "-15px",
+                              left: "-15px",
+                              right: "-15px",
+                              bottom: "-15px",
+                              zIndex: 1,
+                            }}
+                          />
+
+                          <div
+                            className="section-title"
+                            style={{
+                              fontFamily: "ROGBold",
+                              display: "flex",
+                              alignItems: "center",
+                              gap: "10px",
                               position: "relative",
-                              textAlign: "left",
+                              zIndex: 2,
+                              margin: 0,
                             }}
                           >
-                            {section.title}
-                            <div
+                            <div style={{ display: "flex", alignItems: "center" }}>{section.icon}</div>
+                            <h4
                               style={{
-                                position: "absolute",
-                                bottom: "-5px",
-                                left: "0",
-                                width: isTitleActive(index, sectionIndex) ? "100%" : "0%",
-                                height: "2px",
-                                background: "rgba(0,0,0,0.6)",
-                                transition: "width 0.3s ease-out",
+                                fontSize: "28px",
+                                fontWeight: "500",
+                                color: "#333",
+                                margin: 0,
+                                position: "relative",
+                                textAlign: "left",
                               }}
-                            ></div>
-                          </h4>
+                            >
+                              {section.title}
+                              <div
+                                style={{
+                                  position: "absolute",
+                                  bottom: "-5px",
+                                  left: "0",
+                                  width: isTitleActive(index, sectionIndex) ? "100%" : "0%",
+                                  height: "2px",
+                                  background: "rgba(0,0,0,0.6)",
+                                  transition: "width 0.3s ease-out",
+                                }}
+                              ></div>
+                            </h4>
+                          </div>
                         </div>
 
                         {/* Section content (visible on hover/click) */}
                         <div
-                          className="section-content"
+                          className="section-content minion-font"
                           style={{
+                            
                             fontSize: "16px",
                             lineHeight: "1.6",
                             color: "#555",
@@ -664,7 +713,7 @@ export default function Asection4() {
                             height: "auto",
                             opacity: isTitleActive(index, sectionIndex) ? 1 : 0,
                             overflow: "hidden",
-                            transition: "max-height 0.4s ease-out, opacity 0.4s ease-out",
+                            transition: "max-height 0.5s ease-out, opacity 0.5s ease-out",
                           }}
                         >
                           <p dangerouslySetInnerHTML={{ __html: section.content }}></p>
@@ -741,8 +790,20 @@ export default function Asection4() {
           --accent-color: #ecf6ff;
         }
         
-        .section-title:hover {
-          color: white;
+        /* Prevent text selection on hover to avoid flickering */
+        .section-title-wrapper {
+          user-select: none;
+          -webkit-user-select: none;
+        }
+        
+        /* Make sure the extended hit area captures all events */
+        .extended-hit-area {
+          pointer-events: auto;
+        }
+        
+        /* Ensure content doesn't interfere with hover state */
+        .section-content {
+          pointer-events: none;
         }
         
         @media (max-width: 1200px) {
@@ -759,6 +820,10 @@ export default function Asection4() {
           .image-content {
             font-size: 16px !important;
           }
+
+          .minion-font {
+  font-family: "Minionpro" !important;
+}
         }
         
         @media (max-width: 992px) {
@@ -785,11 +850,12 @@ export default function Asection4() {
         
         @media (max-width: 768px) {
           .section-content {
-            transition: max-height 0.4s ease-out, opacity 0.4s ease-out !important;
+            transition: max-height 0.5s ease-out, opacity 0.5s ease-out !important;
+            pointer-events: auto !important;
           }
           
           .content-card .content-title h3 {
-            font-size: 20px !important;
+            font-size: 26px !important;
           }
           
           .content-card .content-title p {
@@ -802,7 +868,7 @@ export default function Asection4() {
           }
           
           .section-title h4 {
-            font-size: 16px !important;
+            font-size: 23px !important;
           }
           
           .section-content p {
@@ -902,9 +968,11 @@ export default function Asection4() {
           .content-card {
             border-radius: 15px !important;
           }
-          .section-title {
+          .section-title-wrapper {
             margin-top: 10px !important;
           }
+
+          
         }
       `}</style>
     </section>
