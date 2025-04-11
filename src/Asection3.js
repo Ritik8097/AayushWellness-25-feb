@@ -48,7 +48,7 @@ const companyValuesStyles = {
   },
   itemText: {
     fontFamily: "Minionpro ",
-    fontWeight: 400,
+    
     fontSize: "18px",
     lineHeight: "145%",
     color: "#f9f9f9",
