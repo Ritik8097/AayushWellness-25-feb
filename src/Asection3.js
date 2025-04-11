@@ -38,13 +38,14 @@ const companyValuesStyles = {
     justifyContent: "center",
   },
   itemTitle: {
+    fontFamily: "ROGBold",
     marginBottom: "12px",
     fontSize: "40px",
     color: "#13233b", // Change this to your preferred color
     fontWeight: "400",
   },
   itemText: {
-    fontFamily: "Gotham Pro, sans-serif",
+    fontFamily: "Minionpro ",
     fontWeight: 400,
     fontSize: "18px",
     lineHeight: "145%",
