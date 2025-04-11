@@ -1,49 +1,42 @@
-
-import React, { useState, useEffect, useRef } from "react";
-import BlurText from './BlurText';
-
-
+import { useState, useEffect, useRef } from "react"
+import BlurText from "./BlurText"
 
 const Asection5 = () => {
-  const [isMobile, setIsMobile] = useState(false);
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef(null);
-
-  
+  const [isMobile, setIsMobile] = useState(false)
+  const [isVisible, setIsVisible] = useState(false)
+  const sectionRef = useRef(null)
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
+      setIsMobile(window.innerWidth <= 768)
+    }
 
-    handleResize(); // Check on mount
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+    handleResize() // Check on mount
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect(); // Stops observing after the first appearance
+          setIsVisible(true)
+          observer.disconnect() // Stops observing after the first appearance
         }
       },
-      { threshold: 0.1, rootMargin: "0px" }
-    );
+      { threshold: 0.1, rootMargin: "0px" },
+    )
 
     if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+      observer.observe(sectionRef.current)
     }
 
     return () => {
       if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+        observer.unobserve(sectionRef.current)
       }
-    };
-  }, []);
-
-  
+    }
+  }, [])
 
   const images = [
     "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/camille-brodard-9j1r-lLPW1o-unsplash.jpg?v=1740573256",
@@ -52,7 +45,7 @@ const Asection5 = () => {
     "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/pexels-asphotograpy-105028.jpg?v=1740573271",
     "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/tirza-van-dijk-dq0x8AvNKv8-unsplash.jpg?v=1740575836",
     "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/image_3.jpg?v=1740575855",
-  ];
+  ]
 
   const buttonStyle = {
     fontFamily: "Minionpro",
@@ -72,14 +65,32 @@ const Asection5 = () => {
     opacity: isVisible ? 1 : 0,
     transform: isVisible ? "translateY(0)" : "translateY(50px)",
     textDecoration: "none",
-  };
+  }
 
   return (
     <div
       ref={sectionRef}
       className="follow-us__container"
-      style={{ width: "100%", margin: "0 auto", maxWidth: "80vw",  marginBottom: "30px"  }}
+      style={{ width: "100%", margin: "0 auto", maxWidth: "80vw", marginBottom: "30px" }}
     >
+      {/* Add inline style tag for the media query */}
+      <style
+  dangerouslySetInnerHTML={{
+    __html: `
+      .blur-text-container p {
+        font-family: 'ROGBold' !important;
+      }
+
+      @media screen and (min-width: 769px) {
+        .blur-text-container p {
+          font-family: 'ROGBold' !important;
+        }
+      }
+    `,
+  }}
+/>
+
+
       <div
         className="follow-us__top"
         style={{
@@ -88,13 +99,16 @@ const Asection5 = () => {
           transition: "opacity 1s ease-out, transform 1s ease-out",
         }}
       >
-        <div><BlurText
+        <div className="blur-text-container">
+          <BlurText
             text="The Future of Wellness is Here"
             animateOn="view"
             revealDirection="center"
-            className="text-center font-bold text-black leading-[120%] tracking-[0.02em] w-full mb-6 pt-[60px] text-[38px] sm:text-[38px] md:text-[54px] lg:text-[94px]" style={{ fontFamily:"ROGBold"}}/>
-            </div>
-              
+            className="text-center font-bold text-black leading-[120%] tracking-[0.02em] w-full mb-6 pt-[60px] text-[38px] sm:text-[38px] md:text-[54px] lg:text-[94px]"
+            style={{ fontFamily: "ROGBold" }}
+          />
+        </div>
+
         <div
           className="follow-us__text"
           style={{
@@ -106,7 +120,7 @@ const Asection5 = () => {
             textAlign: "center",
           }}
         >
-          We’re not just about products; we’re about building a healthier tomorrow.
+          We're not just about products; we're about building a healthier tomorrow.
         </div>
         <div
           className="follow-us__text"
@@ -119,18 +133,19 @@ const Asection5 = () => {
           }}
         >
           <div
-          className="follow-us__text"
-          style={{
-            fontFamily: "Minionpro",
-            fontSize: "22px",
-            lineHeight: "150%",
-            color: "#3a4458",
-            marginBottom: "24px",
-            textAlign: "center",
-          }}
-        >
-          Join us in redefining well-being, where technology, nature, and science come together to create a smarter, healthier world.
-        </div>
+            className="follow-us__text"
+            style={{
+              fontFamily: "Minionpro",
+              fontSize: "22px",
+              lineHeight: "150%",
+              color: "#3a4458",
+              marginBottom: "24px",
+              textAlign: "center",
+            }}
+          >
+            Join us in redefining well-being, where technology, nature, and science come together to create a smarter,
+            healthier world.
+          </div>
         </div>
         <a
           href="https://www.aayushwellness.com/ourproduct"
@@ -139,18 +154,14 @@ const Asection5 = () => {
           rel="noreferrer"
           style={buttonStyle}
         >
-          @Explore Our Solutions 
+          @Explore Our Solutions
           <svg
             viewBox="0 0 26 17"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             style={{ marginLeft: "12px", maxWidth: "24px", minWidth: "24px" }}
           >
-            <path
-              d="M0 8.5h24m0 0-6.857-7M24 8.5l-6.857 7"
-              stroke="#13233b"
-              strokeWidth="1.5"
-            />
+            <path d="M0 8.5h24m0 0-6.857-7M24 8.5l-6.857 7" stroke="#13233b" strokeWidth="1.5" />
           </svg>
         </a>
       </div>
@@ -183,7 +194,7 @@ const Asection5 = () => {
             }}
           >
             <img
-              src={image}
+              src={image || "/placeholder.svg"}
               alt="Instagram Post"
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
@@ -191,14 +202,7 @@ const Asection5 = () => {
         ))}
       </div>
     </div>
-   
-  );
-};
+  )
+}
 
-export default Asection5;
-
-
-
-
-
-
+export default Asection5
