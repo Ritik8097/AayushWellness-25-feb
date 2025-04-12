@@ -123,10 +123,10 @@ const Accordionweb = () => {
               lineHeight: "100%",
             }}
           >
-            <span className="hidden md:inline" style={{ fontSize: "5.8vw" }}>
+            <span className="hidden md:inline" style={{ fontSize: "5.8vw", fontFamily: "ROGBold" }}>
               Invest, Impact, Inspire
             </span>
-            <span className="md:hidden block leading-[100%]">
+            <span className="md:hidden block leading-[100%]" style={{fontFamily: "ROGBold"}}>
               <span className="block">Invest</span>
               <span className="block">Impact</span>
               <span className="block">Inspire</span>
@@ -142,11 +142,11 @@ const Accordionweb = () => {
           >
             <span
               className="hidden md:inline"
-              style={{ fontSize: "1.25vw", maxWidth: "38.4vw" }}
+              style={{ fontSize: "1.25vw", maxWidth: "38.4vw", fontFamily: "Minionpro" }}
             >
               Scalable, sustainable, and aligned with tomorrow’s health needs.
             </span>
-            <span className="md:hidden block">
+            <span className="md:hidden block" style={{fontFamily: "Minionpro"}}>
               Scalable, sustainable, and aligned with tomorrow’s health needs.
             </span>
           </p>
