@@ -175,7 +175,7 @@ const Accordionweb = () => {
                   }}
                 >
                   <div className="card-body p-3">
-                    <h4 className="form-heading text-primary text-start text-[34px] mt-3 mb-8">
+                    <h4 className="form-heading text-primary text-start text-[34px] mt-3 mb-8" style={{fontFamily: "ROGBold"}}>
                       REPORTS
                     </h4>
                     {faqs.map((faq) => (
