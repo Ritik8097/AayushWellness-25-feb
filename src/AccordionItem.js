@@ -20,7 +20,7 @@ const AccordionItem = ({ handleToggle, active, faq }) => {
    const sortedText = Array.isArray(text) ? text : [];
 
     return (
-        <div className="rc-accordion-card !mb-0 !rounded-none">
+         <div className="rc-accordion-card !mb-0 !rounded-none">
             <div className="rc-accordion-header">
                 <div
                     className={`rc-accordion-toggle !items-center p-8 h-[71px] flex justify-between cursor-pointer ${active === id ? 'active' : ''}`}
@@ -29,7 +29,7 @@ const AccordionItem = ({ handleToggle, active, faq }) => {
                        
                     }}
                 >
-                    <h5 className="rc-accordion-title !text-[26px] font-black !text-black" style={{ color: "#000 !important" }}>{header}</h5>
+                    <h5 className="rc-accordion-title !text-[35px]  !text-black" style={{  fontFamily: "ROGBold" }}>{header}</h5>
                     {active === id ? (
                         <FaChevronUp className="rc-accordion-icon !text-black" size={16} />
                     ) : (
@@ -46,16 +46,16 @@ const AccordionItem = ({ handleToggle, active, faq }) => {
             >
                 <div className="rc-accordion-body">
                     {sortedText.map((item, index) => (
-                        <div key={index} className="pt-3">
-                            <h1 className="text-xlg font-bold">{item.header}</h1>
-                            <div className="text-sm pt-2 font-bold">
+                        <div key={index} className="pt-3" style={{fontFamily: "ROGBold"}}>
+                            <h1 className="text-xlg font-regular">{item.header}</h1>
+                            <div className="text-sm pt-2 font-bold" style={{fontFamily: "ROGBold"}}>
                                 <h1>{item.quarter}</h1>
                             </div>
                             <a
                                 href={item.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="block pt-2 !text-[#5f95cf] text-[18px]"
+                                className="block pt-2 !text-[#5f95cf] text-[28px]"
                             >
                                 <a href={item.link} download className="text-blue-500 pr-5 mt-3">
                                     <img 
