@@ -469,7 +469,7 @@ export default function AnimatedSlider() {
                       >
                         <div>
                           <span className="block font-bold text-inherit flex px-4 items-center">
-                            CSR
+                           Welfare
                             <svg
                               className={`w-4 h-4 ml-1 transition-transform duration-200 ${
                                 csrOpen ? "rotate-180" : ""
@@ -970,7 +970,7 @@ export default function AnimatedSlider() {
             onClick={() => setIsCsrSubcategoryOpen(!isCsrSubcategoryOpen)}
             className="block w-full px-4 py-3 text-[#004037] font-extrabold  flex justify-between items-center"
           >
-            <span>CSR</span>
+            <span>Welfare</span>
             <svg
               className={`w-4 h-4 transition-transform duration-200 ${
                 isCsrSubcategoryOpen ? "rotate-180" : ""
