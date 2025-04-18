@@ -16,7 +16,7 @@ import NewsletterSignup from "./NewsLetter";
 import StackImage from "./StackImage";
 import HeroSection from "./HeroSection";
 import NewFooter from "./NewFooter";
-import SmoothScroll from "./SmoothScroll"; // Import SmoothScroll
+
 
 import "./index.css";
 import SectionTrail from "./SectionTrail";
@@ -32,7 +32,7 @@ import Homedoctor from "./Homedoctor";
 
 function Layout() {
   return (
-     <SmoothScroll>
+     <>
      
       <Sliding />     
       <CleanEnergyHero/>
@@ -55,7 +55,7 @@ function Layout() {
       <NewsletterSignup />
       <NewFooter />
       {/* <FooterCopyright /> */}
-    </SmoothScroll>
+    </>
   );
 }
 
