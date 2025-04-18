@@ -36,6 +36,10 @@ import Blog3 from "./Blog3";
 import Blog4 from "./Blog4";
 import Blog5 from "./Blog5";
 import Blog6 from "./Blog6";
+import BlogH7 from "./BlogH7";
+import BlogH8 from "./BlogH8";
+import BlogH9 from "./BlogH9";
+import BlogH10 from "./BlogH10";
 
 import './index.css'
 import Healthh from "./Healthh";
@@ -70,6 +74,10 @@ const AnimatedRoutes = () => {
         <Route path="/Blog4" element={<Blog4 />} />
     <Route path="/nutraceuticals-vs-traditional" element={<Blog5 />} />
      <Route path="/top-7-ayurvedic-ingredients" element={<Blog6 />} />
+    <Route path="/BlogH7" element={<BlogH7 />} />
+     <Route path="/BlogH8" element={<BlogH8 />} />
+     <Route path="/BlogH9" element={<BlogH9 />} />
+     <Route path="/BlogH10" element={<BlogH10 />} />
 
         <Route path="ourproduct" element={<PageTransition><OurProduct /></PageTransition>} />
         <Route path="csr-at-aayush/health-check" element={<PageTransition><HealthCheck/></PageTransition>} />
