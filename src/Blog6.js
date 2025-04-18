@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import Header from "./Header";
-import Footer from "./Footer";
+import NewFooter from "./NewFooter";
 
 
 const Blog6 = () => {
@@ -110,7 +110,7 @@ const Blog6 = () => {
       </p>
             </div>
     </div>
-    <Footer/>
+    <NewFooter/>
     </>
   );
 };
