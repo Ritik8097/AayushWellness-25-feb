@@ -50,9 +50,9 @@ const Homedoctor = () => {
   return (
     <div className="homedoctor-container blocks">
       <div className="shortOffset-tilesstyle__OffsetTilesComponentHeadline-sc-ams4gs-1 kptVHS snipcss-YosCm">
-        <span className=" md:text-6xl text-[25px] leading-[1.2] md:leading-[1.2]  text-black  font-[500]   uppercase">
+        <span className=" md:text-6xl text-[35px] leading-[1.2] md:leading-[1.2]  !text-black  font-[500]   uppercase" style={{fontFamily: "ROGBold"}}>
           Expert-approved solutions,{" "}
-          <div className="shortOffset-tilesstyle__HighlightText-sc-ams4gs-5 dICZFB">
+          <div className="shortOffset-tilesstyle__HighlightText-sc-ams4gs-5 dICZFB" style={{fontFamily: "ROGBold" , color: "#33cccc"}}>
           personalized to your health.
           </div>
         </span>
@@ -61,7 +61,7 @@ const Homedoctor = () => {
       <div className="shortOffset-tilesstyle__InnerTileContainer-sc-ams4gs-2 gkoHKP snipcss-sYH3A">
         <div className="shortOffset-tilesstyle__OffsetTileContainer-sc-ams4gs-0 bpBxoP">
           <div className="shortOffset-tilesstyle__TileCopyContainer-sc-ams4gs-6 dEcTFg">
-            <span className="typographystyle__Typography-sc-1r2rdgq-0 feKJva !text-black">
+            <span className="typographystyle__Typography-sc-1r2rdgq-0 feKJva !text-black" style={{fontFamily: "ROGBold", letterSpacing: "1.1px"}}>
             Advanced Healthcare Solutions
             </span>
             {/* <span className="typographystyle__Typography-sc-1r2rdgq-0 feKJva ">
@@ -69,10 +69,10 @@ const Homedoctor = () => {
                 your schedule
               </div>
             </span> */}
-            <p className="typographystyle__Typography-sc-1r2rdgq-1 shortOffset-tilesstyle__SubTextTypography-sc-ams4gs-3 dJKpaf dnlbgo !pb-0" >
+            <p className="typographystyle__Typography-sc-1r2rdgq-1 shortOffset-tilesstyle__SubTextTypography-sc-ams4gs-3 dJKpaf dnlbgo !pb-0" style={{fontFamily: "Minionpro"}}>
             Get access to clinically tested wellness solutions, diagnostic services, and expert-driven healthcare—all in one place.
             </p>
-            <p className="typographystyle__Typography-sc-1r2rdgq-1 shortOffset-tilesstyle__SubTextTypography-sc-ams4gs-3 dJKpaf dnlbgo">
+            <p className="typographystyle__Typography-sc-1r2rdgq-1 shortOffset-tilesstyle__SubTextTypography-sc-ams4gs-3 dJKpaf dnlbgo" style={{fontFamily: "Minionpro"}}>
             Affordable health checkups & diagnostics Personalized treatment plans Backed by science, driven by care
             </p>
           </div>
@@ -94,7 +94,7 @@ const Homedoctor = () => {
         </div>
         <div className="shortOffset-tilesstyle__OffsetTileContainer-sc-ams4gs-0 bpBxoP">
           <div className="shortOffset-tilesstyle__TileCopyContainer-sc-ams4gs-6 dEcTFg">
-            <span className="typographystyle__Typography-sc-1r2rdgq-0 feKJva ">
+            <span className="typographystyle__Typography-sc-1r2rdgq-0 feKJva " style={{fontFamily: "ROGBold",letterSpacing: "1.1px"}}>
             Partnered for Your Well-Being
             </span>
             {/* <span className="typographystyle__Typography-sc-1r2rdgq-0 feKJva">
@@ -102,16 +102,16 @@ const Homedoctor = () => {
                 licensed providers
               </div>
             </span> */}
-            <p className="typographystyle__Typography-sc-1r2rdgq-1 shortOffset-tilesstyle__SubTextTypography-sc-ams4gs-3 dJKpaf dnlbgo !pb-0">
+            <p className="typographystyle__Typography-sc-1r2rdgq-1 shortOffset-tilesstyle__SubTextTypography-sc-ams4gs-3 dJKpaf dnlbgo !pb-0" style={{fontFamily: "Minionpro"}}>
             We collaborate with leading insurance providers, hospitals, and diagnostic centers to ensure comprehensive & connected healthcare services.
             </p>
-            <p className="typographystyle__Typography-sc-1r2rdgq-1 shortOffset-tilesstyle__SubTextTypography-sc-ams4gs-3 dJKpaf dnlbgo">
+            <p className="typographystyle__Typography-sc-1r2rdgq-1 shortOffset-tilesstyle__SubTextTypography-sc-ams4gs-3 dJKpaf dnlbgo" style={{fontFamily: "Minionpro"}}>
             Wide network of partnered hospitals & clinics Hassle-free insurance partners Integrated health services for a smoother experience.
             </p>
           </div>
           <a rel="" tabIndex={-1} className="cAOSLu hlVOrJ" href="/healthcare" >
             <button className="cAruRV dOQfTS" type="button">
-              <span className="dKfXOG">  Explore Our Healthcare Partners</span>
+              <span className="dKfXOG" style={{fontFamily: "Minionpro"}}>  Explore Our Healthcare Partners</span>
             </button>
           </a>
           <div className="shortOffset-tilesstyle__MediaContainer-sc-ams4gs-4 jFQpTd">
@@ -127,7 +127,7 @@ const Homedoctor = () => {
         </div>
         <div className="shortOffset-tilesstyle__OffsetTileContainer-sc-ams4gs-0 bpBxoP">
           <div className="shortOffset-tilesstyle__TileCopyContainer-sc-ams4gs-6 dEcTFg">
-            <span className="typographystyle__Typography-sc-1r2rdgq-0 feKJva">
+            <span className="typographystyle__Typography-sc-1r2rdgq-0 feKJva" style={{fontFamily: "ROGBold", letterSpacing: "1.1px"}}>
             Medical Support at Your Fingertips
             </span>
             {/* <span className="typographystyle__Typography-sc-1r2rdgq-0 feKJva">
@@ -135,16 +135,16 @@ const Homedoctor = () => {
                 proven ingredients
               </div>
             </span> */}
-            <p className="typographystyle__Typography-sc-1r2rdgq-1 shortOffset-tilesstyle__SubTextTypography-sc-ams4gs-3 dJKpaf dnlbgo !pb-0">
+            <p className="typographystyle__Typography-sc-1r2rdgq-1 shortOffset-tilesstyle__SubTextTypography-sc-ams4gs-3 dJKpaf dnlbgo !pb-0" style={{fontFamily: "Minionpro"}}>
             From telemedicine consultations to instant diagnostic results, manage your health needs with ease—anytime, anywhere.
             </p>
-            <p className="typographystyle__Typography-sc-1r2rdgq-1 shortOffset-tilesstyle__SubTextTypography-sc-ams4gs-3 dJKpaf dnlbgo">
+            <p className="typographystyle__Typography-sc-1r2rdgq-1 shortOffset-tilesstyle__SubTextTypography-sc-ams4gs-3 dJKpaf dnlbgo" style={{fontFamily: "Minionpro"}}>
             Affordable, Quick and Quality care Online & In-person consultations at your convenienceSmart Health ATMs & Digital health kiosks for instant testing.
             </p>
           </div>
           <a rel="" tabIndex={-1} className="cAOSLu hlVOrJ" href="/healthcare">
             <button className="cAruRV dOQfTS" type="button">
-              <span className="dKfXOG">Get Started with Digital Healthcare</span>
+              <span className="dKfXOG" style={{fontFamily: "Minionpro"}}>Get Started with Digital Healthcare</span>
             </button>
           </a>
           <div className="shortOffset-tilesstyle__MediaContainer-sc-ams4gs-4 jFQpTd">
@@ -160,7 +160,7 @@ const Homedoctor = () => {
         </div>
         <div className="shortOffset-tilesstyle__OffsetTileContainer-sc-ams4gs-0 bpBxoP">
           <div className="shortOffset-tilesstyle__TileCopyContainer-sc-ams4gs-6 dEcTFg">
-            <span className="typographystyle__Typography-sc-1r2rdgq-0 feKJva">
+            <span className="typographystyle__Typography-sc-1r2rdgq-0 feKJva" style={{fontFamily: "ROGBold", letterSpacing: "1.1px"}}>
             Certified Experts, Trusted Healthcare
             </span>
             {/* <span className="typographystyle__Typography-sc-1r2rdgq-0 feKJva">
@@ -168,16 +168,16 @@ const Homedoctor = () => {
                 pharmacies
               </div>
             </span> */}
-            <p className="typographystyle__Typography-sc-1r2rdgq-1 shortOffset-tilesstyle__SubTextTypography-sc-ams4gs-3 dJKpaf dnlbgo !pb-0">
+            <p className="typographystyle__Typography-sc-1r2rdgq-1 shortOffset-tilesstyle__SubTextTypography-sc-ams4gs-3 dJKpaf dnlbgo !pb-0" style={{fontFamily: "Minionpro"}}>
             Connect with certified medical professionals for expert advice, second opinions, and accurate diagnostics.
             </p>
-            <p className="typographystyle__Typography-sc-1r2rdgq-1 shortOffset-tilesstyle__SubTextTypography-sc-ams4gs-3 dJKpaf dnlbgo">
+            <p className="typographystyle__Typography-sc-1r2rdgq-1 shortOffset-tilesstyle__SubTextTypography-sc-ams4gs-3 dJKpaf dnlbgo" style={{fontFamily: "Minionpro"}}>
             Instant consultation with experienced doctorsComprehensive Health Checkups & health monitoringServing Communities with Affordable & Accessible Care.
             </p>
           </div>
           <a rel="" tabIndex={-1} className="cAOSLu hlVOrJ" href="/healthcare">
             <button className="cAruRV dOQfTS" type="button">
-              <span className="dKfXOG">Book My Consultation</span>
+              <span className="dKfXOG" style={{fontFamily: "Minionpro"}}>Book My Consultation</span>
             </button>
           </a>
 
@@ -229,10 +229,10 @@ const Homedoctor = () => {
             width: '100%',
           }}
         >
-          <p className="testimonial-cardstyle__Quote-sc-1f80141-8 bshcsw">{testimonial.quote}</p>
+          <p className="testimonial-cardstyle__Quote-sc-1f80141-8 bshcsw" style={{fontFamily: "Minionpro", color: "#000"}}>{testimonial.quote}</p>
           <div className="testimonial-cardstyle__UserDetailWrapper-sc-1f80141-10 jGXlEb">
-            <h3 className="!text-black">{testimonial.name}</h3>
-            <h3 className="!text-black">{testimonial.product}</h3>
+            <h3 className="!text-black" style={{fontFamily: "ROGBold"}}>{testimonial.name}</h3>
+            <h3 className="!text-black" style={{fontFamily: "Minionpro"}}>{testimonial.product}</h3>
           </div>
         </div>
       </div>
