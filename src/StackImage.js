@@ -60,7 +60,7 @@ const StackImage = () => {
                 className="StackedContent_media__haQuf style-mKRVT image-transition"
                 src={
                   isInView
-                    ? "https://cdn.shopify.com/videos/c/o/v/400e5697bcc6497eaf8fa8a3471479bc.mp4"
+                    ? "https://cdn.shopify.com/videos/c/o/v/9ae83fdffa0e4715b186839c452deadd.mp4"
                     : "https://cdn.shopify.com/videos/c/o/v/fed476cd8dd24d17b7ebf64e63335c99.mp4"
                 }
                 id="style-mKRVT"
@@ -91,9 +91,9 @@ const StackImage = () => {
   animateBy="words"
   direction="top"
   
-  className="md:text-6xl mb-8 text-[25px]  font-bold text-[#004037]"
+  className="md:text-6xl mb-8 text-[25px]  font-bold text-[#000]"  style={{ fontFamily: "ROGBold" }}
 />
-            <p className="  text-[20px]">
+            <p className="  text-[20px]" style={{ fontFamily: "Minionpro" }}>
             Wake up refreshed and radiant with our expertly crafted Sleep & Beauty Gummies. Infused with powerful ingredients to support deep sleep and enhance natural beauty from within.
             <br/>
             <div><br/><b>Melatonin & Chamomile</b> – Promotes restful sleep & relaxation</div>
@@ -106,7 +106,7 @@ const StackImage = () => {
               text="Learn more"
               href="https://aayushlife.com/"
             >
-              <span className=" text-[20px]">Explore Gummies</span>
+              <span className=" text-[20px] " style={{ fontFamily: "Minionpro", color: "#33cccc" }}>Explore Gummies</span>
               <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path
                   fillRule="evenodd"
@@ -128,7 +128,7 @@ const StackImage = () => {
  
 />
             {/* <h2 className={`StackedContent_title__2FGoE ${isInView ? "active-text" : ""} `}>Built on our leading data platform</h2> */}
-            <p className="  text-[20px]">
+            <p className="  text-[20px]" style={{ fontFamily: "Minionpro" }}>
             Crafted with the finest ingredients, our Pan Masala delivers an exquisite taste and rich aroma. Experience tradition with every bite, enhanced by a perfect balance of flavors.
             <br/>
             <div><br/><b>Authentic Spices </b> – A signature blend for a refreshing taste</div>
@@ -140,7 +140,7 @@ const StackImage = () => {
               text="Learn more"
               href="https://aayushveda.in/"
             >
-              <span className=" text-[20px]">Discover More</span>
+              <span className=" text-[20px]" style={{ fontFamily: "Minionpro",color: "#33cccc" }}>Discover More</span>
               <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path
                   fillRule="evenodd"
