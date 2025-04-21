@@ -12,13 +12,13 @@
   animateBy="words"
   direction="top"
   
-  className="md:text-6xl mb-8 text-[25px]  font-bold text-[#004037]"
+  className="md:text-6xl mb-8 text-[25px]  font-bold text-[#000]"
 />
      </div>
-     <p className=" pt-[15px]  text-[20px]">
+     <p className=" pt-[15px]  text-[20px]" style={{fontFamily: "Minionpro"}}>
             Wake up refreshed and radiant with our expertly crafted Sleep & Beauty Gummies. Infused with powerful ingredients to support deep sleep and enhance natural beauty from within.
             <br/>
-            <div><br/><b>Melatonin & Chamomile</b> – Promotes restful sleep & relaxation</div>
+            <div style={{fontFamily: "Minionpro"}}><br/><b>Melatonin & Chamomile</b> – Promotes restful sleep & relaxation</div>
             <div><b> Glutathione & Biotin</b>  – Enhances skin glow & strengthens hair</div>
             <div><b> Hyaluronic Acid & Collagen </b> – Boosts hydration & skin elasticity</div>
             </p>
@@ -28,7 +28,7 @@
               text="Learn more"
               href="https://aayushlife.com/"
             >
-              <span className=' text-[12px]'>Explore Gummies</span>
+              <span className=' text-[12px]' style={{fontFamily: "Minionpro", color: "#33cccc"}}>Explore Gummies</span>
               <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path
                   fillRule="evenodd"
