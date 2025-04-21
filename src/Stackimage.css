@@ -50,7 +50,7 @@
     transition: .5s visibility var(cubic-bezier(0.22,1,0.36,1)), .5s opacity var(cubic-bezier(0.22,1,0.36,1));
   }
   .active-background {
-    background-color:#f9f3e9 !important;
+    background-color:#f9f9f9 !important;
     transition: .5s visibility var(cubic-bezier(0.22,1,0.36,1)), .5s opacity var(cubic-bezier(0.22,1,0.36,1));
   }
   
@@ -307,9 +307,9 @@
     font-size: 1.6rem; 
     font-weight: 700; 
     line-height: 1; 
-    background-color: var(--color-arcadiaGreen); 
+    background-color: #33cccc; 
     border-radius: .8rem; 
-    color: var(--color-lushGreen); 
+    color: #33cccc; 
     white-space: nowrap;
 } 
 
@@ -337,32 +337,32 @@
 
 .BaseButton_baseButton__gki38.BaseButton_hasOutline__IILGk { 
     background-color: transparent; 
-    border: 1px solid var(--color-arcadiaGreen); 
-    color: var(--color-arcadiaGreen);
+    border: 1px solid #33cccc; 
+    color: #33cccc;
 } 
 
 .BaseButton_baseButton__gki38.BaseButton_isLushGreen__Of4fS.BaseButton_hasOutline__IILGk { 
-    color: var(--color-lushGreen); 
-    border-color: var(--color-lushGreen);
+    color: #33cccc; 
+    border-color: #33cccc;
 } 
 
 @media (hover: hover){ 
   .BaseButton_baseButton__gki38:hover { 
-    background-color: var(--color-arcadiaGreen--hover);
+    background-color: #33cccc;
   } 
 
   .BaseButton_baseButton__gki38.BaseButton_isLushGreen__Of4fS:hover { 
-    background-color: var(--color-lushGreen--hover);
+    background-color: #33cccc;
   } 
 
   .BaseButton_baseButton__gki38.BaseButton_hasOutline__IILGk:hover { 
-    color: var(--color-lushGreen); 
-    background-color: var(--color-arcadiaGreen);
+    color: #33cccc; 
+    background-color: #33cccc;
   } 
 
   .BaseButton_baseButton__gki38.BaseButton_isLushGreen__Of4fS.BaseButton_hasOutline__IILGk:hover { 
-    color: var(--color-cream); 
-    background-color: var(--color-lushGreen);
+    color: #33cccc; 
+    background-color: #33cccc;
   } 
 }     
 
