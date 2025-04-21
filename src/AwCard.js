@@ -22,16 +22,16 @@ const AwCard = () => {
             </div>
           
           </div> */}
-          <div className=' text-[#004037] md:text-6xl text-[25px] leading-[1.2] '>
+          <div className=' text-[#000] md:text-6xl text-[25px] leading-[1.2]'>
           <BlurText
             text="PERSONALIZED WELLNESS, POWERED BY NATURE"
             animateOn="view"
             revealDirection="center"
-            className=' text-[#004037] md:text-6xl text-[25px] leading-[1.2] font-bold'
+            className=' text-[#000] md:text-6xl text-[25px] leading-[1.2] font-bold'
           />
           </div>
         </h2>
-        <p className="Title_copy__lEX70 style-AiVpi" id="style-AiVpi">Aayush Wellness blends Ayurveda with modern science to bring you innovative, high-quality health solutions.</p>
+        <p className="Title_copy__lEX70 style-AiVpi" id="style-AiVpi" style={{fontFamily: "Minionpro", color: "#000"}}>Aayush Wellness blends Ayurveda with modern science to bring you innovative, high-quality health solutions.</p>
       </div>
       {/* <div className="Title_ctaWrapper__xSCNE style-TXqfd" id="style-TXqfd"><a className="BaseButton_baseButton__gki38 BaseButton_isLushGreen__Of4fS BaseButton_hasOutline__IILGk" text="View our solutions" href="/solutions"><span className=' text-[14px]'>View our solutions</span><svg width={11} height={10} viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path fillRule="evenodd" clipRule="evenodd" d="M7.586.531a.75.75 0 1 0-1.172.938L8.64 4.25H1a.75.75 0 0 0 0 1.5h7.64L6.414 8.531a.75.75 0 1 0 1.172.938l3.2-4a.75.75 0 0 0 0-.938l-3.2-4Z" fill="currentColor" />
@@ -43,43 +43,43 @@ const AwCard = () => {
       <div className="IconCard_contentCardWrapper__RhxGf IconCard_container__yA35h IconCard_isCream__DM_79" imagesizes="[object Object]" breadcrumbs="[object Object],[object Object]" date source topics>
         <div className="IconCard_head__LrWtD">
           <div className="IconCard_logoWrapper__TE3eO">
-            <div><img alt loading="lazy" width={28} height={28} decoding="async" data-nimg={1} src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/icon_1_-_corp_web.png?v=1739883165" className="IconCard_logo__Wwg7E style-aYJJM"  id="style-aYJJM" /></div>
+            <div><img alt loading="lazy" width={28} height={28} decoding="async" data-nimg={1} src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/sprout.gif?v=1744892674" className="IconCard_logo__Wwg7E style-aYJJM"  id="style-aYJJM" /></div>
           </div>
           <div className="CircleButton_circleButton__hdzso CircleButton_isCream__S13Cl IconCard_circleButton__4U5_0"><svg width={11} height={10} viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="false">
               <path fillRule="evenodd" clipRule="evenodd" d="M7.586.531a.75.75 0 1 0-1.172.938L8.64 4.25H1a.75.75 0 0 0 0 1.5h7.64L6.414 8.531a.75.75 0 1 0 1.172.938l3.2-4a.75.75 0 0 0 0-.938l-3.2-4Z" fill="currentColor" />
             </svg></div>
         </div>
         <div className="IconCard_content__4IB9P">
-          <div className="IconCard_title__S5GeF"><a href="/ayurveda">Natural Ingredients, Proven Benefits</a></div>
-          <p className="IconCard_text__hTwP4">Harnessing the power of nature, our products are formulated with pure herbal extracts, vitamins, and minerals for maximum effectiveness.</p>
+          <div className="IconCard_title__S5GeF"><a href="/ayurveda" style={{fontFamily: "ROGBold", color: "#fff"}}>Natural Ingredients, Proven Benefits</a></div>
+          <p className="IconCard_text__hTwP4" style={{fontFamily: "Minionpro", color: "#fff"}}>Harnessing the power of nature, our products are formulated with pure herbal extracts, vitamins, and minerals for maximum effectiveness.</p>
         </div>
       </div>
       <div className="IconCard_contentCardWrapper__RhxGf IconCard_container__yA35h IconCard_isCream__DM_79" imagesizes="[object Object]" breadcrumbs="[object Object],[object Object]" date source topics>
         <div className="IconCard_head__LrWtD">
           <div className="IconCard_logoWrapper__TE3eO">
-            <div><img alt loading="lazy" width={48} height={48} decoding="async" data-nimg={1} className="IconCard_logo__Wwg7E style-h8lYP" src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/icon_2_-_corp_web.png?v=1739883179" id="style-h8lYP" /></div>
+            <div><img alt loading="lazy" width={48} height={48} decoding="async" data-nimg={1} className="IconCard_logo__Wwg7E style-h8lYP" src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/catalyst.gif?v=1744894836" id="style-h8lYP" /></div>
           </div>
           <div className="CircleButton_circleButton__hdzso CircleButton_isCream__S13Cl IconCard_circleButton__4U5_0"><svg width={11} height={10} viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="false">
               <path fillRule="evenodd" clipRule="evenodd" d="M7.586.531a.75.75 0 1 0-1.172.938L8.64 4.25H1a.75.75 0 0 0 0 1.5h7.64L6.414 8.531a.75.75 0 1 0 1.172.938l3.2-4a.75.75 0 0 0 0-.938l-3.2-4Z" fill="currentColor" />
             </svg></div>
         </div>
         <div className="IconCard_content__4IB9P">
-          <div className="IconCard_title__S5GeF"><a href="/wellness/modern-science">Scientifically Crafted for Your Well-being</a></div>
-          <p className="IconCard_text__hTwP4">Each product is developed using rigorous research and testing, ensuring safe, effective, and results-driven wellness solutions.</p>
+          <div className="IconCard_title__S5GeF"><a href="/wellness/modern-science" style={{fontFamily: "ROGBold",color: "#fff"}}>Scientifically Crafted for Your Well-being</a></div>
+          <p className="IconCard_text__hTwP4" style={{fontFamily: "Minionpro", color: "#fff"}}>Each product is developed using rigorous research and testing, ensuring safe, effective, and results-driven wellness solutions.</p>
         </div>
       </div>
       <div className="IconCard_contentCardWrapper__RhxGf IconCard_container__yA35h IconCard_isCream__DM_79" imagesizes="[object Object]" breadcrumbs="[object Object],[object Object]" date source topics>
         <div className="IconCard_head__LrWtD">
           <div className="IconCard_logoWrapper__TE3eO">
-            <div><img alt loading="lazy" width={48} height={48} decoding="async" data-nimg={1} className="IconCard_logo__Wwg7E style-POSdl" src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/icons_corp_web.png?v=1739883191" id="style-POSdl" /></div>
+            <div><img alt loading="lazy" width={48} height={48} decoding="async" data-nimg={1} className="IconCard_logo__Wwg7E style-POSdl" src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/rate.gif?v=1744893156" id="style-POSdl" /></div>
           </div>
           <div className="CircleButton_circleButton__hdzso CircleButton_isCream__S13Cl IconCard_circleButton__4U5_0"><svg width={11} height={10} viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="false">
               <path fillRule="evenodd" clipRule="evenodd" d="M7.586.531a.75.75 0 1 0-1.172.938L8.64 4.25H1a.75.75 0 0 0 0 1.5h7.64L6.414 8.531a.75.75 0 1 0 1.172.938l3.2-4a.75.75 0 0 0 0-.938l-3.2-4Z" fill="currentColor" />
             </svg></div>
         </div>
         <div className="IconCard_content__4IB9P">
-          <div className="IconCard_title__S5GeF"><a href="/wellness/health-wellness">Delicious, Convenient, & Effective</a></div>
-          <p className="IconCard_text__hTwP4">No pills, no hassle—our wellness solutions are designed to be easy-to-use, great-tasting, and perfect for your daily routine.</p>
+          <div className="IconCard_title__S5GeF"><a href="/wellness/health-wellness" style={{fontFamily: "ROGBold",color: "#fff"}}>Delicious, Convenient, & Effective</a></div>
+          <p className="IconCard_text__hTwP4" style={{fontFamily: "Minionpro",color: "#fff"}}>No pills, no hassle—our wellness solutions are designed to be easy-to-use, great-tasting, and perfect for your daily routine.</p>
         </div>
       </div>
     </div>
