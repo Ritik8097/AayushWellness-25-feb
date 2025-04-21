@@ -2553,5 +2553,28 @@
         }
       
   ]
+    },
+  {
+      "id": 14,
+      "header": "Dividend",
+      "text": [
+     
+         {
+          "id": 100003,
+          "head": "Dividend-2025",
+          "link": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Summary_Interim_Dividend_2025.pdf?v=1745231362"
+        },
+        {
+          "id": 100004,
+          "head": "Dividend (NON-KYC)",
+          "link": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Non-KYC-2025.pdf?v=1745231363"
+        },
+        {
+          "id": 100005,
+          "head": "Dividend (NECS Initial Rejection)",
+          "link": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/NECS-Initial-Rejection-2025.pdf?v=1745231362"
+        }
+      
+  ]
     }
 ]
