@@ -79,6 +79,11 @@ html, body {
     font-weight:normal;
   }  
 }  
+
+.blur-text{
+  font-family: 'ROGBold';
+  letter-spacing: 1.1px;
+}
   body {  
     color:#838383;
     font-weight:700;
