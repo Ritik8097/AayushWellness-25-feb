@@ -198,7 +198,7 @@
 } 
 
 .IconCard_container__yA35h.IconCard_isCream__DM_79 { 
-    background-color: var(--color-offCream); 
+    background-color: #000; 
     color: var(--color-lushGreen);
 } 
 
@@ -209,7 +209,7 @@
   } 
 
   .IconCard_container__yA35h.IconCard_isCream__DM_79:hover { 
-    background-color: var(--color-lightCream);
+    background-color: #33cccc;
   } 
 }     
 
@@ -281,7 +281,7 @@
 
 .BaseButton_baseButton__gki38.BaseButton_isLushGreen__Of4fS.BaseButton_hasOutline__IILGk { 
     color: var(--color-lushGreen); 
-    border-color: var(--color-lushGreen);
+    border-color: #33cccc;
 } 
 
 @media (hover: hover){ 
@@ -300,7 +300,7 @@
 
   .BaseButton_baseButton__gki38.BaseButton_isLushGreen__Of4fS.BaseButton_hasOutline__IILGk:hover { 
     color: var(--color-cream); 
-    background-color: var(--color-lushGreen);
+    background-color: #000;
   } 
 }     
 
@@ -335,26 +335,26 @@
 
 @media (hover: hover){ 
   .CircleButton_circleButton__hdzso { 
-    transition: .5s background-color var(--ease-arcadia),.5s color var(--ease-arcadia),.5s border-color var(--ease-arcadia);
+    transition: .5s background-color #000,.5s color var(--ease-arcadia),.5s border-color var(--ease-arcadia);
   } 
 }     
 
 .CircleButton_circleButton__hdzso.CircleButton_isCream__S13Cl { 
-    color: var(--color-lushGreen); 
-    border-color: var(--color-lushGreen20);
+    color: #fff; 
+    border-color: #fff;
 } 
 
 @media (hover: hover){ 
   .CircleButton_circleButton__hdzso:hover { 
     color: var(--color-lushGreen); 
-    background-color: var(--color-arcadiaGreen); 
+    background-color: #000 !important; 
     border-color: var(--color-arcadiaGreen);
   } 
 
   .CircleButton_circleButton__hdzso.CircleButton_isCream__S13Cl:hover { 
     color: var(--color-cream); 
-    background-color: var(--color-lushGreen); 
-    border-color: var(--color-lushGreen);
+    background-color: #000 !important; 
+    border-color: #000;
   } 
 
   .IconCard_container__yA35h:hover .IconCard_circleButton__4U5_0 { 
@@ -365,7 +365,7 @@
 
   .IconCard_container__yA35h.IconCard_isCream__DM_79:hover .IconCard_circleButton__4U5_0 { 
     color: var(--color-cream); 
-    background-color: var(--color-lushGreen); 
+    background-color: #000; 
     border-color: var(--color-lushGreen);
   } 
 }     
