@@ -24,7 +24,7 @@ const CleanEnergyHero = () => {
         text: "Transforming Wellness , Transforming Lives",
       },
       mobile: {
-        src: "https://cdn.shopify.com/videos/c/o/v/27decbf1992946a5af2be99e9f2b1c7f.webm",
+        src: "https://res.cloudinary.com/dudn5tfkq/video/upload/v1745237521/Green_blue_xumdjd.m3u8",
         text: "Transforming wellness, transforming lives",
       },
     };
