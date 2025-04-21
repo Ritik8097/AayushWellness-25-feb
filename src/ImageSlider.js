@@ -101,14 +101,14 @@ const ImageSlider = () => {
 
               <div className="flex flex-col justify-between ml-3 w-2/3">
                 <div>
-                  <h3 className="text-lg !text-[#f9f3f8] font-[100] w-[80%]">
+                  <h3 className="text-lg !text-[#f9f3f8] font-[100] w-[80%]" style={{fontFamily: "Minionpro"}}>
                     {slide.title}
                   </h3>
                 </div>
                 <button
                   onClick={() => handleRedirect(slide.path)}
                   className="border-4 whitespace-nowrap uppercase border-blue-500 bg-transparent text-[#f9f3f8] text-lg py-1 px-3 rounded-lg w-fit flex items-center justify-center transition-all duration-300 hover:bg-[#f9f3f8] hover:text-black"
-                  style={{ border: "1px solid #f9f3f8", height: "28px", fontSize: "14px" }}
+                  style={{ border: "1px solid #f9f3f8", height: "28px", fontSize: "14px", style={{fontFamily: "Minionpro"}} }}
                 >
                   {slide.buttonText}
                 </button>
