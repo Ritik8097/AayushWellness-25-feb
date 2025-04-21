@@ -47,15 +47,15 @@ function HomeBlog() {
     <React.Fragment key={index}>
       {index > 0 && <div className="border-t border-gray-800 my-8"></div>}
       <article className="mb-16 md:mb-24">
-        <div className="grid md:grid-cols-2 gap-8 items-center bg-[#023932] p-[25px] rounded-xl">
+        <div className="grid md:grid-cols-2 gap-8 items-center bg-[#292929] p-[25px] rounded-xl">
           <div className="order-2 md:order-1">
-            <div className="text-gray-400 mb-4">{blog.date}</div>
-            <h2 className="text-[25px] md:text-4xl text-white font-bold mb-6">
+            <div className="text-[#33cccc] mb-4">{blog.date}</div>
+            <h2 className="text-[25px] md:text-4xl text-white font-bold mb-6" style={{fontFamily: "Minionpro"}}>
               {blog.title}
             </h2>
             <a
               href={blog.link}
-              className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
+              className="inline-flex items-center text-[#33cccc] hover:text-white transition-colors" style={{fontFamily: "Minionpro"}}
             >
               Read Post
             </a>
@@ -74,9 +74,9 @@ function HomeBlog() {
   );
 
   return (
-    <div className="min-h-screen bg-[#004037] text-white">
+    <div className="min-h-screen bg-[#000] text-[#33cccc]">
       <main className="max-w-7xl mx-auto px-4 md:px-6 py-8">
-        <h1 className="text-center text-[25px] md:text-[40px] pb-[25px] md:pb-[60px]">
+        <h1 className="text-center text-[25px] md:text-[40px] pb-[25px] md:pb-[60px]" style={{fontFamily: "Minionpro"}}>
           Blogs
         </h1>
 
@@ -100,9 +100,9 @@ function HomeBlog() {
           <button
             id="read-more-button"
             onClick={handleToggleBlogs}
-            className="relative px-8 py-4 bg-[#00c9a7] hover:bg-[#00a88a] text-black font-bold rounded-lg transform transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-[#00c9a7]/30"
+            className="relative px-8 py-4 bg-[#33cccc] hover:bg-[#33cccc] text-black font-bold rounded-lg transform transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-[#00c9a7]/30"
           >
-            <span className="relative z-10">{showMoreBlogs ? "Show Less" : "Explore More Articles"}</span>
+            <span className="relative z-10" style={{fontFamily: "Minionpro"}}>{showMoreBlogs ? "Show Less" : "Explore More Articles"}</span>
           </button>
         </div>
       </main>
