@@ -4,7 +4,7 @@ import BlurText from './BlurText'
 function StackImageMobile2() {
   return (
     <>
-    <div className=' bg-[#faf4e8]  md:hidden p-5'>
+    <div className=' bg-[#f9f9f9]  md:hidden p-5'>
     <div className=' pt-[15px]'>
     <BlurText
  text="PREMIUM BLEND, AUTHENTIC FLAVOR"
@@ -12,13 +12,13 @@ function StackImageMobile2() {
  animateBy="words"
  direction="top"
  
- className="md:text-6xl mb-8 text-[25px]  font-bold text-[#004037]"
+ className="md:text-6xl mb-8 text-[25px]  font-bold text-[#000]"
 />
     </div>
-    <p className=" pt-[15px]  text-[21px]">
+    <p className=" pt-[15px]  text-[21px]" style={{fontFamily: "Minionpro"}}>
     Crafted with the finest ingredients, our Pan Masala delivers an exquisite taste and rich aroma. Experience tradition with every bite, enhanced by a perfect balance of flavors.
             <br/>
-            <div><br/><b>Authentic Spices </b> – A signature blend for a refreshing taste</div>
+            <div style={{fontFamily: "Minionpro"}}><br/><b>Authentic Spices </b> – A signature blend for a refreshing taste</div>
             <div><b>  Premium Ingredients </b>  – Handpicked for superior quality</div>
             
            </p>
@@ -27,7 +27,7 @@ function StackImageMobile2() {
               text="Learn more"
               href="https://aayushveda.in/"
             >
-              <span className=' text-[12px]'>Discover More </span>
+              <span className=' text-[12px]' style={{fontFamily: "Minionpro", color: "#33cccc"}}>Discover More </span>
               <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path
                   fillRule="evenodd"
@@ -52,7 +52,7 @@ function StackImageMobile2() {
                decoding="async"
                data-nimg="1"
                className="StackedContent_media__haQuf style-9BbQF image-transition"
-               src="https://cdn.shopify.com/videos/c/o/v/400e5697bcc6497eaf8fa8a3471479bc.mp4"
+               src="https://cdn.shopify.com/videos/c/o/v/9ae83fdffa0e4715b186839c452deadd.mp4"
                id="style-9BbQF"
              />
            </div>
