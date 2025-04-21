@@ -69,7 +69,7 @@
 }     
 
 .Block_isLushGreen__N9AXS { 
-    background-color: var(--color-lushGreen); 
+    background-color: #000; 
     color: var(--color-cream);
 } 
 
@@ -115,7 +115,7 @@
     flex-direction: column; 
     justify-content: space-between; 
     padding: 2.4rem; 
-    background-color: var(--color-black20); 
+    background-color: #262626; 
     color: var(--color-cream); 
     border-radius: 1.6rem; 
     gap: 5.4rem;
@@ -158,7 +158,7 @@
 @media (hover: hover){ 
   .IconCard_container__yA35h:hover { 
     box-shadow: var(--dropShadow); 
-    background-color: var(--color-midGreen);
+    background-color: #33cccc;
   } 
 }     
 
@@ -210,6 +210,7 @@
     line-height: 1.5; 
     letter-spacing: .02em; 
     margin-top: 1.6rem;
+    font-family: "Minionpro";
 } 
 
 .IconCard_head__LrWtD { 
@@ -245,14 +246,14 @@
 
   .CircleButton_circleButton__hdzso:hover { 
     color: var(--color-lushGreen); 
-    background-color: var(--color-arcadiaGreen); 
+    background-color: #292929; 
     border-color: var(--color-arcadiaGreen);
   } 
 
   .IconCard_container__yA35h:hover .IconCard_circleButton__4U5_0 { 
     color: var(--color-lushGreen); 
-    background-color: var(--color-arcadiaGreen); 
-    border-color: var(--color-arcadiaGreen);
+    background-color: #000; 
+    border-color: #fff;
   } 
 }     
 
@@ -260,14 +261,16 @@
     font-size: clamp(1.8rem,1.428vw,2.4rem); 
     font-weight: 700; 
     line-height: 1.2; 
-    letter-spacing: -.02em;
+    letter-spacing: 0.02em;
+    font-family: "ROGBold";
 } 
 
 .IconCard_text__hTwP4 { 
-   
+   font-family: "Minionpro";
     font-weight: 400; 
     line-height: 1.5; 
     margin-top: 2rem;
+    color: #fff;
 } 
 
 .TitleAnimation_title__liMEF { 
@@ -323,6 +326,10 @@
     -o-object-position: left; 
     object-position: left;
 } 
+ 
+a {
+  color: #fff !important;
+}
 
 
 /* These were inline style tags. Uses id+class to override almost everything */
