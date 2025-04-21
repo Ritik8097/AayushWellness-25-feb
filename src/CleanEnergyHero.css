@@ -254,31 +254,31 @@ object-fit: cover; /* Keeps the aspect ratio intact */
   font-size: 1.6rem; 
   font-weight: 700; 
   line-height: 1; 
-  background-color: var(--color-arcadiaGreen); 
+  background-color: #33cccc; 
   border-radius: .8rem; 
-  color: var(--color-lushGreen); 
+  color: #000; 
   white-space: nowrap;
 } 
 
 @media (hover: hover){ 
 .BaseButton_baseButton__gki38 { 
-  transition: .5s background-color var(--ease-arcadia),.5s color var(--ease-arcadia);
+  transition: .5s background-color #33cccc,.5s color var(--ease-arcadia);
 } 
 
 .BaseButton_baseButton__gki38:hover { 
-  background-color: var(--color-arcadiaGreen--hover);
+  background-color: #33cccc;
 } 
 }     
 
 .BaseButton_baseButton__gki38.BaseButton_isCream__ZNS6j { 
   color: var(--color-lushGreen); 
-  background-color: var(--color-cream);
+  background-color: #33cccc;
 } 
 
 .BaseButton_baseButton__gki38.BaseButton_hasOutline__IILGk { 
   background-color: transparent; 
   border: 1px solid var(--color-arcadiaGreen); 
-  color: var(--color-arcadiaGreen);
+  color: #33cccc;
 } 
 
 .BaseButton_baseButton__gki38.BaseButton_isCream__ZNS6j.BaseButton_hasOutline__IILGk { 
@@ -289,7 +289,7 @@ object-fit: cover; /* Keeps the aspect ratio intact */
 @media (hover: hover){ 
 .BaseButton_baseButton__gki38.BaseButton_hasOutline__IILGk:hover { 
   color: var(--color-lushGreen); 
-  background-color: var(--color-arcadiaGreen);
+  background-color: #33cccc;
 } 
 
 .BaseButton_baseButton__gki38.BaseButton_isCream__ZNS6j:hover { 
@@ -426,13 +426,14 @@ object-fit: cover; /* Keeps the aspect ratio intact */
 }
   .BaseButton_baseButton__gki38 {
     align-items: center;
-    background-color: #0eff85;
-    background-color: var(--color-arcadiaGreen);
+    background-color: #33cccc;
+    background-color: #33cccc;
     border-radius: .8rem;
     color: #004037;
     color: var(--color-lushGreen);
     column-gap: .4rem;
-    display: inline-flex
+    display: inline-flex;
+    letter-spacing: 1.1px;
 ;
     font-size: 1rem;
     font-weight: 700;
