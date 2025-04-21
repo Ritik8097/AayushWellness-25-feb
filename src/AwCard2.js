@@ -25,7 +25,7 @@ const AwCard2 = () => {
                    </div>
         </h2>
         <p style={{fontSize:"21px"
-        }} className="Title_copy__lEX70 style-EFBtr " id="style-EFBtr">From innovation to impact, discover how we are revolutionizing health and well-being.</p>
+        }} className="Title_copy__lEX70 style-EFBtr " id="style-EFBtr" Style={{fontFamily: "Minionpro"}}>From innovation to impact, discover how we are revolutionizing health and well-being.</p>
       </div>
     </div>
   </div>
@@ -34,21 +34,21 @@ const AwCard2 = () => {
       <div className="IconCard_contentCardWrapper__RhxGf IconCard_container__yA35h" imagesizes="[object Object]" breadcrumbs date source topics>
         <div className="IconCard_head__LrWtD">
           <div className="IconCard_logoWrapper__TE3eO">
-            <div><img alt loading="lazy" width={150} height={150} decoding="async" data-nimg={1} className="IconCard_logo__Wwg7E style-S5ilE" src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/corp_web_new_icons_-1.png?v=1739883301" id="style-S5ilE" /></div>
+            <div><img alt loading="lazy" width={150} height={150} decoding="async" data-nimg={1} className="IconCard_logo__Wwg7E style-S5ilE" src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/trading.gif?v=1744892684" id="style-S5ilE" /></div>
           </div>
           <div className="CircleButton_circleButton__hdzso IconCard_circleButton__4U5_0"><svg width={11} height={10} viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="false">
               <path fillRule="evenodd" clipRule="evenodd" d="M7.586.531a.75.75 0 1 0-1.172.938L8.64 4.25H1a.75.75 0 0 0 0 1.5h7.64L6.414 8.531a.75.75 0 1 0 1.172.938l3.2-4a.75.75 0 0 0 0-.938l-3.2-4Z" fill="currentColor" />
             </svg></div>
         </div>
         <div className="IconCard_content__4IB9P">
-          <div className="IconCard_title__S5GeF"><Link  to="/growth-accelerator" >Accelerator</Link></div>
-          <p className="IconCard_text__hTwP4">Supporting emerging wellness brands with resources, funding, and expert mentorship to scale successfully.</p>
+          <div className="IconCard_title__S5GeF" ><Link  to="/growth-accelerator" Style={{fontFamily: "ROGBold", color: "#fff"}}>Accelerator</Link></div>
+          <p className="IconCard_text__hTwP4" Style={{fontFamily: "Minionpro"}}>Supporting emerging wellness brands with resources, funding, and expert mentorship to scale successfully.</p>
         </div>
       </div>
       <div className="IconCard_contentCardWrapper__RhxGf IconCard_container__yA35h" imagesizes="[object Object]" breadcrumbs date source topics>
         <div className="IconCard_head__LrWtD">
           <div className="IconCard_logoWrapper__TE3eO">
-            <div><img alt loading="lazy" width={150} height={150} decoding="async" data-nimg={1} className="IconCard_logo__Wwg7E style-jZK21" src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/new_icons_corp_web.png?v=1740397824" /></div>
+            <div><img alt loading="lazy" width={150} height={150} decoding="async" data-nimg={1} className="IconCard_logo__Wwg7E style-jZK21" src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/serenity_1.gif?v=1744892673" /></div>
           </div>
           <div className="CircleButton_circleButton__hdzso IconCard_circleButton__4U5_0"><svg width={11} height={10} viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="false">
               <path fillRule="evenodd" clipRule="evenodd" d="M7.586.531a.75.75 0 1 0-1.172.938L8.64 4.25H1a.75.75 0 0 0 0 1.5h7.64L6.414 8.531a.75.75 0 1 0 1.172.938l3.2-4a.75.75 0 0 0 0-.938l-3.2-4Z" fill="currentColor" />
@@ -62,7 +62,7 @@ const AwCard2 = () => {
       <div className="IconCard_contentCardWrapper__RhxGf IconCard_container__yA35h" imagesizes="[object Object]" breadcrumbs date source topics>
         <div className="IconCard_head__LrWtD">
           <div className="IconCard_logoWrapper__TE3eO">
-            <div><img alt loading="lazy" width={150} height={150} decoding="async" data-nimg={1} className="IconCard_logo__Wwg7E style-gmsgY" src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/new_icons_corp_web_3.png?v=1740397816" /></div>
+            <div><img alt loading="lazy" width={150} height={150} decoding="async" data-nimg={1} className="IconCard_logo__Wwg7E style-gmsgY" src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/boss_1.gif?v=1744892676" /></div>
           </div>
           <div className="CircleButton_circleButton__hdzso IconCard_circleButton__4U5_0"><svg width={11} height={10} viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="false">
               <path fillRule="evenodd" clipRule="evenodd" d="M7.586.531a.75.75 0 1 0-1.172.938L8.64 4.25H1a.75.75 0 0 0 0 1.5h7.64L6.414 8.531a.75.75 0 1 0 1.172.938l3.2-4a.75.75 0 0 0 0-.938l-3.2-4Z" fill="currentColor" />
@@ -76,7 +76,7 @@ const AwCard2 = () => {
       <div className="IconCard_contentCardWrapper__RhxGf IconCard_container__yA35h" imagesizes="[object Object]" breadcrumbs date source topics>
         <div className="IconCard_head__LrWtD">
           <div className="IconCard_logoWrapper__TE3eO">
-            <div><img alt loading="lazy" width={150} height={150} decoding="async" data-nimg={1} className="IconCard_logo__Wwg7E style-bqSSA" src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/corp_web_new_icons_-4.png?v=1739883397" id="style-bqSSA" /></div>
+            <div><img alt loading="lazy" width={150} height={150} decoding="async" data-nimg={1} className="IconCard_logo__Wwg7E style-bqSSA" src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/physics_1.gif?v=1744893157" id="style-bqSSA" /></div>
           </div>
           <div className="CircleButton_circleButton__hdzso IconCard_circleButton__4U5_0"><svg width={11} height={10} viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="false">
               <path fillRule="evenodd" clipRule="evenodd" d="M7.586.531a.75.75 0 1 0-1.172.938L8.64 4.25H1a.75.75 0 0 0 0 1.5h7.64L6.414 8.531a.75.75 0 1 0 1.172.938l3.2-4a.75.75 0 0 0 0-.938l-3.2-4Z" fill="currentColor" />
@@ -90,7 +90,7 @@ const AwCard2 = () => {
       <div className="IconCard_contentCardWrapper__RhxGf IconCard_container__yA35h" imagesizes="[object Object]" breadcrumbs date source topics>
         <div className="IconCard_head__LrWtD">
           <div className="IconCard_logoWrapper__TE3eO">
-            <div><img alt loading="lazy" width={155} height={155} decoding="async" data-nimg={1} className="IconCard_logo__Wwg7E style-iySzl" src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/new_icons_corp_web_2.png?v=1740397805" id="style-iySzl" /></div>
+            <div><img alt loading="lazy" width={155} height={155} decoding="async" data-nimg={1} className="IconCard_logo__Wwg7E style-iySzl" src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/planet-earth.gif?v=1744892681" id="style-iySzl" /></div>
           </div>
           <div className="CircleButton_circleButton__hdzso IconCard_circleButton__4U5_0"><svg width={11} height={10} viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="false">
               <path fillRule="evenodd" clipRule="evenodd" d="M7.586.531a.75.75 0 1 0-1.172.938L8.64 4.25H1a.75.75 0 0 0 0 1.5h7.64L6.414 8.531a.75.75 0 1 0 1.172.938l3.2-4a.75.75 0 0 0 0-.938l-3.2-4Z" fill="currentColor" />
