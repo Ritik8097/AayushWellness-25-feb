@@ -1,32 +1,71 @@
-import React, {  useState } from "react";
-import "./CleanEnergyHero.css"; // Make sure to include your CSS file
+import React, { useEffect, useRef, useState } from "react";
+import "./CleanEnergyHero.css";
 import BlurText from "./BlurText";
+import Hls from "hls.js";
 
 const CleanEnergyHero = () => {
- 
- 
+  const videoRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
 
- 
+  // Detect mobile device
+  useEffect(() => {
+    const mobileCheck = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    setIsMobile(mobileCheck);
+  }, []);
+
+  // Load HLS video dynamically
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const videos = {
+      desktop: {
+        src: "https://res.cloudinary.com/dudn5tfkq/video/upload/v1745237521/Green_blue_xumdjd.m3u8",
+        text: "Transforming Wellness , Transforming Lives",
+      },
+      mobile: {
+        src: "https://cdn.shopify.com/videos/c/o/v/27decbf1992946a5af2be99e9f2b1c7f.webm",
+        text: "Transforming wellness, transforming lives",
+      },
+    };
+
+    const videoSrc = isMobile ? videos.mobile.src : videos.desktop.src;
+
+    if (Hls.isSupported()) {
+      const hls = new Hls();
+      hls.loadSource(videoSrc);
+      hls.attachMedia(video);
+      hls.on(Hls.Events.MANIFEST_PARSED, () => {
+        video.play();
+      });
+    } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
+      // Safari fallback
+      video.src = videoSrc;
+      video.addEventListener("loadedmetadata", () => {
+        video.play();
+      });
+    }
+  }, [isMobile]);
 
   return (
-    <div className="md:flex md:w-full  bg-[#004037] block  items-center pl-[20px] blocks">
-      <div className="HomeHero_content__DYNN6">
-      <BlurText
-  text="Science & Ayurveda for a Healthier Tomorrow"
-  delay={150}
-  animateBy="words"
-  direction="top"
-  
-  className="md:text-6xl mb-8 text-[25px]  font-bold text-[#f9f3e8] uppercase"
-/>
-        <p className="HomeHero_copy__GS3c3">
-        Aayush Wellness blends ancient Ayurveda with modern science to create premium wellness solutions for your body, mind, and soul.
+    <div className="md:flex md:w-full bg-[#000] block items-center pl-[20px] blocks">
+      {/* Text Content */}
+      <div className="HomeHero_content__DYNN6" style={{fontFamily: "ROGBold"}}>
+        <BlurText
+          text="Science & Ayurveda for a Healthier Tomorrow"
+          
+          delay={150}
+          animateBy="words"
+          direction="top"
+          className="md:text-6xl mb-8 text-[25px] font-bold text-[#fff] uppercase" style={{ fontFamily: "ROGBold" }}
+        />
+        <p className="HomeHero_copy__GS3c3 !text-[#fff]" style={{fontFamily: "Minionpro"}}>
+          Aayush Wellness blends ancient Ayurveda with modern science to create
+          premium wellness solutions for your body, mind, and soul.
         </p>
         <div className="MultiButton_multiButton__iqSU8 HomeHero_multiButton__TZa0b">
           <a
             className="BaseButton_baseButton__gki38"
-            id="194ff0e7-f0e7-4000-8ff0e7f7a0-cc4"
-            text="Request demo"
             href="/ourproduct"
           >
             <span>Explore Our Products</span>
@@ -46,45 +85,22 @@ const CleanEnergyHero = () => {
               />
             </svg>
           </a>
-         
         </div>
       </div>
 
+      {/* Video Section */}
       <div className="HomeHero_mediaWrapper__g_1Dk">
         <div className="Video_container__CkVas HomeHero_media__R_Dw1">
-        <video
-  
-  autoPlay
-  loop
-  playsInline
-  muted  // Some browsers require muted autoplay
-   // Optional: Remove this if you don't want controls
- 
->
-  <source src="https://cdn.shopify.com/videos/c/o/v/27decbf1992946a5af2be99e9f2b1c7f.mp4" type="video/mp4"/>
-  <source src="https://cdn.shopify.com/videos/c/o/v/27decbf1992946a5af2be99e9f2b1c7f.webm" type="video/webm"/>
-  Your browser does not support the video tag.
-</video>
-            
-          {/* <video
-            className="Video_media__oBfuR snipcss0-0-0-1"
+          <video
             ref={videoRef}
             autoPlay
             loop
+            muted
             playsInline
+            className="w-full h-full object-cover rounded-xl shadow-lg"
           >
-            <source
-              src="https://cdn.shopify.com/videos/c/o/v/9c6744b80a83409d97fe49afe6fdac3d.mp4"
-              type="video/mp4"
-              className="snipcss0-1-1-2"
-            />
-            <source
-              src="https://cdn.shopify.com/videos/c/o/v/9c6744b80a83409d97fe49afe6fdac3d.mp4"
-              type="video/webm"
-              className="snipcss0-1-1-3"
-            />
-          </video> */}
-          
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </div>
