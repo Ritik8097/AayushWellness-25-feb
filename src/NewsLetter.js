@@ -28,8 +28,8 @@ export default function NewsletterSignup() {
     }
 };
   return (
-    <div className="bg-[#f9f3e8] blocks"> 
-      <div className="max-w-screen-md mx-auto py-20 px-4 text-center bg-[#f9f3e8] ">
+    <div className="bg-[#fff] blocks"> 
+      <div className="max-w-screen-md mx-auto py-20 px-4 text-center bg-[#fff] ">
         <section className="mb-10">
         <h3
   className="text-[25px] md:text-[60px] text-center font-bold mb-6 leading-[1]"
@@ -39,11 +39,11 @@ export default function NewsletterSignup() {
     text="Stay Connected with Aayush Wellness"
     animateOn="view"
     revealDirection="center"
-    className="text-[25px] md:text-[60px] font-bold leading-[1] text-[#004037]"
+    className="text-[35px] md:text-[60px] font-bold leading-[1] text-[#000]" style={{fontFamily: "ROGBold"}}
   />
 </h3>
 
-          <p className="text-lg text-gray-600 mb-6">
+          <p className="text-lg text-gray-600 mb-6" style={{fontFamily: "Minionpro"}}>
             Subscribe to our newsletter and be the first to know about our
             latest health and wellness products, expert tips, and exclusive
             offers. Join our community and embark on a journey towards a
@@ -65,7 +65,7 @@ export default function NewsletterSignup() {
             />
             <button
               type="submit"
-              className="bg-[#12c167] text-[#004037] px-4 py-2 rounded-md  transition-colors duration-300 font-bold"
+              className="bg-[#33cccc] text-[#000] px-4 py-2 rounded-md  transition-colors duration-300 font-bold" style={{fontFamily: "Minionpro"}}
             >
               SUBSCRIBE
             </button>
