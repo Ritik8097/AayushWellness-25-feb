@@ -108,7 +108,7 @@ const ImageSlider = () => {
                 <button
                   onClick={() => handleRedirect(slide.path)}
                   className="border-4 whitespace-nowrap uppercase border-blue-500 bg-transparent text-[#f9f3f8] text-lg py-1 px-3 rounded-lg w-fit flex items-center justify-center transition-all duration-300 hover:bg-[#f9f3f8] hover:text-black"
-                  style={{ border: "1px solid #f9f3f8", height: "28px", fontSize: "14px", style={{fontFamily: "Minionpro"}} }}
+                  style={{ border: "1px solid #f9f3f8", height: "28px", fontSize: "14px", fontFamily: "Minionpro" }}
                 >
                   {slide.buttonText}
                 </button>
