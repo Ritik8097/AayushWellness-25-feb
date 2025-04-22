@@ -327,9 +327,7 @@
     object-position: left;
 } 
  
-a {
-  color: #fff !important;
-}
+
 
 
 /* These were inline style tags. Uses id+class to override almost everything */
