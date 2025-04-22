@@ -90,8 +90,8 @@ const ProductCard = ({ product }) => {
       onMouseOut={(e) => (e.currentTarget.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.05)")}
     >
       <div className="p-6 h-full flex flex-col">
-        <div className="text-black-500 text-sm font-medium mb-2">{product.category}</div>
-        <h2 className="text-xl font-bold mb-4">{product.title}</h2>
+        <div className="text-black-500 text-sm font-medium mb-2" style={{fontFamily: "Minionpro"}}>{product.category}</div>
+        <h2 className="text-[24px] font-bold mb-4" style={{fontFamily: "ROGBold", letterSpacing: "1px"}}>{product.title}</h2>
 
         <div className="relative flex-grow flex items-center justify-center">
           <div
@@ -107,8 +107,8 @@ const ProductCard = ({ product }) => {
 
           {showDetails && (
             <div className="absolute inset-0 flex flex-col justify-start p-4">
-              <p className="text-black text-sm sm:text-base mb-2 sm:mb-4">{product.description}</p>
-              <div className="flex flex-wrap gap-1 sm:gap-2">
+              <p className="text-black text-sm sm:text-base mb-2 sm:mb-4" style={{fontFamily: "Minionpro"}}>{product.description}</p>
+              <div className="flex flex-wrap gap-1 sm:gap-2" style={{fontFamily: "Minionpro"}}>
                 {product.options.map((option, index) => (
                   <span
                     key={index}
