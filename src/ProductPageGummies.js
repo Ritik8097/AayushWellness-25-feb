@@ -1,4 +1,3 @@
-
 import { useState, useRef, useEffect } from "react"
 import { Plus, ChevronLeft, ChevronRight, Minus } from "lucide-react"
 import Header from "./Header"
@@ -99,13 +98,13 @@ const ProductGummies = () => {
   const faqItems = [
     {
       question: "What kind of testing do you do for Beauty Gummies?",
-      answer: (
-        <div className="space-y-4">
-          <p>
-          We prioritize quality and safety by conducting rigorous in-house and third-party testing on every batch of our Beauty Gummies. Our testing ensures that each gummy meets the highest standards for purity, potency, and compliance with regulations on heavy metals, microbes, and allergens. Because you deserve only the best for your beauty and wellness!
-          </p>
-        </div>
-      ),
+      answer:
+        
+          
+          "We prioritize quality and safety by conducting rigorous in-house and third-party testing on every batch of our Beauty Gummies. Our testing ensures that each gummy meets the highest standards for purity, potency, and compliance with regulations on heavy metals, microbes, and allergens. Because you deserve only the best for your beauty and wellness!"
+         
+        
+      ,
     },
     {
       question: "How and when should I take Beauty Gummies?",
@@ -263,11 +262,11 @@ const ProductGummies = () => {
         <div className="flex flex-col md:flex-row relative gap-[80px]">
           {/* Product Details Section - Left side */}
           <div ref={contentRef} className="w-full md:py-20 px-0 md:pl-[150px] max-w-[755px]">
-            <h1 className="text-[35px] font-bold text-[#d15523] mb-1">Beauty Vitamin Gummies</h1>
-            <p className="text-base text-[#d15523] mb-6 italic">Aayush Wellness </p>
+            <h1 className="text-[50px] font-bold text-[#d15523] mb-1" style={{fontFamily: "ROGBold"}}>Beauty Vitamin Gummies</h1>
+            <p className="text-base text-[#d15523] mb-6 italic" style={{fontFamily: "Minionpro"}}>Aayush Wellness </p>
 
             <div className="border-t border-b border-gray-200 py-6 mb-6">
-              <p className="text-base text-gray-700 mb-4">
+              <p className="text-base text-gray-700 mb-4" style={{fontFamily: "Minionpro"}}>
                 "Our Beauty BioSeries™ Gummies are clinically shown to support healthy skin, hair, and nails while promoting hydration and collagen synthesis for a radiant glow."
               </p>
             </div>
@@ -281,9 +280,9 @@ const ProductGummies = () => {
                     <div className="w-5 h-5 rounded-full border border-[#d15523] flex items-center justify-center mr-3">
                       <div className="w-3 h-3 rounded-full bg-[#d15523]"></div>
                     </div>
-                    <span className="font-medium">Buy once</span>
+                    <span className="font-medium" style={{fontFamily: "Minionpro"}}>Buy once</span>
                   </div>
-                  <span className="font-bold text-[#d15523]">₹599</span>
+                  <span className="font-bold text-[#d15523]" style={{fontFamily: "Minionpro"}}>₹599</span>
                 </div>
               </div>
             </div>
@@ -294,7 +293,7 @@ const ProductGummies = () => {
                 className="w-full"
                 style={{ display: "block" }}
               >
-                <button className="bg-[#d15523] text-white py-3 px-6 rounded-lg w-full text-center font-semibold">
+                <button className="bg-[#d15523] text-white text-[25px] py-3 px-6 rounded-lg w-full text-center font-semibold" style={{fontFamily: "Minionpro"}}>
                   Shop Now
                 </button>
               </Link>
@@ -302,7 +301,7 @@ const ProductGummies = () => {
 
             <div className="space-y-4">
               <div>
-                <p className="text-base text-gray-700 mb-4">
+                <p className="text-base text-gray-700 mb-4" style={{fontFamily: "Minionpro"}}>
                   Say hello to radiant skin and luscious hair with our Glow Beauty Gummies. Crafted with a blend of Modern Scientific ingredients such as Glutathione, Hyaluronic Acid, and Biotin, and Active Ayurveda such as Curcumin and Sea Buckthorn Extract. These gummies support skin hydration, repair, and nourishment while promoting healthy hair growth, helping you achieve a youthful, glowing complexion and strong, vibrant locks. These gummies are Non-GMO & 100% Vegan.
                 </p>
               </div>
@@ -313,7 +312,7 @@ const ProductGummies = () => {
                   className="w-full py-4 flex justify-between items-center"
                   onClick={() => toggleSidebar("supplement")}
                 >
-                  <span className="font-semibold text-[#d15523]">Supplement Facts</span>
+                  <span className="font-semibold text-[#d15523] text-[26px]" style={{fontFamily: "Minionpro"}}>Supplement Facts</span>
                   <Plus className="h-5 w-5 text-[#d15523]" />
                 </button>
               </div>
@@ -323,7 +322,7 @@ const ProductGummies = () => {
                   className="w-full py-4 flex justify-between items-center"
                   onClick={() => toggleSidebar("results")}
                 >
-                  <span className="font-semibold text-[#d15523]">Clinically-Proven Results</span>
+                  <span className="font-semibold text-[#d15523] text-[26px]" style={{fontFamily: "Minionpro"}}>Clinically-Proven Results</span>
                   <Plus className="h-5 w-5 text-[#d15523]" />
                 </button>
               </div>
@@ -391,7 +390,7 @@ const ProductGummies = () => {
 
           {/* Content Section */}
           <div className="lg:w-1/2">
-            <h2 className="text-[42px] font-bold text-[#d15523] mb-12">Nourish Your Beauty from the Inside Out
+            <h2 className="text-[46px] font-bold text-[#d15523] mb-12" style={{fontFamily: "ROGBold"}}>Nourish Your Beauty from the Inside Out
 
 
 
@@ -400,7 +399,7 @@ const ProductGummies = () => {
 
 
 </h2>
-            <p className="text-lg text-gray-700 mb-16">
+            <p className="text-lg text-gray-700 mb-16" style={{fontFamily: "Minionpro"}}>
             Reveal your glow with Aayush Wellness technology, designed to nourish your skin, hair, and nails from within for a healthier, more radiant appearance.
             </p>
             {/* Timeline */}
@@ -428,8 +427,8 @@ const ProductGummies = () => {
 
                     {/* Content */}
                     <div className="transition-all duration-1000 ease-in-out">
-                      <h3 className="text-[22px] font-semibold mb-2 text-[#d15523]">{item.title}</h3>
-                      <p className=" text-[18px] leading-relaxed text-gray-600">{item.description}</p>
+                      <h3 className="text-[22px] font-semibold mb-2 text-[#d15523]" style={{fontFamily: "ROGBold", letterSpacing: "1px"}}>{item.title}</h3>
+                      <p className=" text-[18px] leading-relaxed text-gray-600" style={{fontFamily: "Minionpro"}}>{item.description}</p>
                     </div>
                   </div>
                 ))}
@@ -444,9 +443,9 @@ const ProductGummies = () => {
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
           {/* Text Section */}
           <div className="lg:w-1/2 order-2 lg:order-1">
-            <h2 className="text-[42px] font-bold text-[#d15523] mb-6">Experience Radiant Beauty from Within</h2>
+            <h2 className="text-[42px] font-bold text-[#d15523] mb-6" style={{fontFamily: "ROGBold"}}>Experience Radiant Beauty from Within</h2>
             <div className="w-24 h-1 bg-[#d15523] mb-8"></div>
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-gray-700" style={{fontFamily: "Minionpro"}}>
             Our revolutionary beauty gummies are designed to enhance your skin, hair, and nails from within. The unique formula nourishes your body with essential vitamins and nutrients, promoting a radiant and healthy glow.
             </p>
           </div>
@@ -475,7 +474,7 @@ const ProductGummies = () => {
       >
         <div className="p-6 h-full overflow-y-auto">
           <div className="flex justify-between items-center mb-6">
-            <h3 className="text-[40px] font-bold text-[#d15523]">
+            <h3 className="text-[40px] font-bold text-[#d15523]" style={{fontFamily: "ROGBold"}}>
               {activeSidebar === "supplement" && "Supplement Facts"}
               {activeSidebar === "use" && "How to Use"}
               {activeSidebar === "results" && "Clinically-Proven Results"}
@@ -511,41 +510,41 @@ const ProductGummies = () => {
               <div className="space-y-4 mb-8">
   <div className="flex items-center space-x-3">
     <Library className="text-[#d15523] w-6 h-6" />
-    <span className="text-gray-700">Non-GMO Certified</span>
+    <span className="text-gray-700" style={{fontFamily: "Minionpro"}}>Non-GMO Certified</span>
   </div>
   <div className="flex items-center space-x-3">
     <Leaf className="text-[#d15523] w-6 h-6" />
-    <span className="text-gray-700">Carbon Free Certified</span>
+    <span className="text-gray-700" style={{fontFamily: "Minionpro"}}>Carbon Free Certified</span>
   </div>
   <div className="flex items-center space-x-3">
     <ShieldCheck className="text-[#d15523] w-6 h-6" />
-    <span className="text-gray-700">Clean Label Certified</span>
+    <span className="text-gray-700" style={{fontFamily: "Minionpro"}}>Clean Label Certified</span>
   </div>
   <div className="flex items-center space-x-3">
     <SearchCheck className="text-[#d15523] w-6 h-6" />
-    <span className="text-gray-700">Clinically Studied Ingredients</span>
+    <span className="text-gray-700" style={{fontFamily: "Minionpro"}}>Clinically Studied Ingredients</span>
   </div>
   <div className="flex items-center space-x-3">
     <Vegan className="text-[#d15523] w-6 h-6" />
-    <span className="text-gray-700">Vegan</span>
+    <span className="text-gray-700" style={{fontFamily: "Minionpro"}}>Vegan</span>
   </div>
   <div className="flex items-center space-x-3">
     <WheatOff className="text-[#d15523] w-6 h-6" />
-    <span className="text-gray-700">Gluten & Major Allergen Free</span>
+    <span className="text-gray-700" style={{fontFamily: "Minionpro"}}>Gluten & Major Allergen Free</span>
   </div>
   <div className="flex items-center space-x-3">
     <PackageCheck className="text-[#d15523] w-6 h-6" />
-    <span className="text-gray-700">Made Traceable®</span>
+    <span className="text-gray-700" style={{fontFamily: "Minionpro"}}>Made Traceable®</span>
   </div>
   <div className="flex items-center space-x-3">
     <Microscope className="text-[#d15523] w-6 h-6" />
-    <span className="text-gray-700">Third-Party Tested (for heavy metals & microbes)</span>
+    <span className="text-gray-700" style={{fontFamily: "Minionpro"}}>Third-Party Tested (for heavy metals & microbes)</span>
   </div>
 </div>
 
               {/* Supplement Facts Box */}
               <div className="border border-gray-300 rounded-lg p-6 bg-gray-50 mb-8">
-                <h3 className="text-[30px] text-[#d15523]  mb-4">Supplement Facts</h3>
+                <h3 className="text-[30px] text-[#d15523]  mb-4" style={{fontFamily: "ROGBold"}}>Supplement Facts</h3>
                 <p className="text-sm text-gray-600 mb-2">
                   <strong>Serving Size:</strong> 2 Vegan Gummies
                 </p>
@@ -575,11 +574,11 @@ const ProductGummies = () => {
                 </p>
                 <div className="border-t border-b border-gray-300 py-4">
         
-                  <div className="text-sm text-gray-500">*Recommended Daily Allowance (RDA) not established.</div>
-                  <div className="text-sm text-gray-500">*RDA of nutrients Daily Allowances as per Guidelines of indian Council of Medical Research(ICMR) 2020 Adult.</div>
+                  <div className="text-sm text-gray-500" style={{fontFamily: "Minionpro"}}>*Recommended Daily Allowance (RDA) not established.</div>
+                  <div className="text-sm text-gray-500" style={{fontFamily: "Minionpro"}}>*RDA of nutrients Daily Allowances as per Guidelines of indian Council of Medical Research(ICMR) 2020 Adult.</div>
                 </div>
               </div>
-              <p className="text-sm text-gray-600 mt-4">
+              <p className="text-sm text-gray-600 mt-4" style={{fontFamily: "Minionpro"}}>
                 <strong>Other Ingredients:</strong>  Sucrose, Gelling Agent(INS 406,440), Binding Agent(INS 407,412), Preservative (INS 202), Acidity Regulator(INS 330),Polysorbate(TWEEN 80), contains oermitted Synthetic Foof Colour (INS 133), and Added Flavour (Nature Identical Flavour Substance Blueberry)
               </p>
             </div>
@@ -608,12 +607,12 @@ const ProductGummies = () => {
 
           {activeSidebar === "results" && (
             <div>
-              <p className="mb-4">Beauty  Gummies
+              <p className="mb-4" style={{fontFamily: "Minionpro"}}>
               Our Beauty  Gummies are clinically shown to support healthy skin, hair, and nails while promoting hydration and collagen synthesis for a radiant glow.:</p>
               <div className="space-y-4">
                 <div className="border-b pb-3">
-                  <h4 className="font-bold mb-1 text-[#d15523]">Clinically Studied Benefits:</h4>
-                  <ol className="text-medium">
+                  <h4 className="font-bold mb-1 text-[#d15523] text-[24px]" style={{fontFamily: "ROGBold"}}>Clinically Studied Benefits:</h4>
+                  <ol className="text-medium" style={{fontFamily: "Minionpro"}}>
                     <li>Supports visibly healthier hair, skin, and nails  </li>
                     <li>
                     Promotes collagen production for skin elasticity
@@ -622,12 +621,12 @@ const ProductGummies = () => {
                   </ol>
                 </div>
                 <div className="border-b pb-3">
-                  <h4 className="font-bold mb-1 text-[#d15523]">About Our Clinical Study</h4>
-                  <p className="text-medium">The Beauty  Gummies Pharmacokinetics Study and the 8-week supplementation study were conducted in partnership with a leading research institution. Designed as a randomized, double-blind, placebo-controlled trial, this study follows the gold standard in human research, ensuring scientific credibility and measurable results.</p>
+                  <h4 className="font-bold mb-1 text-[#d15523] text-[24px]" style={{fontFamily: "ROGBold"}}>About Our Clinical Study</h4>
+                  <p className="text-medium" style={{fontFamily: "Minionpro"}}>The Beauty  Gummies Pharmacokinetics Study and the 8-week supplementation study were conducted in partnership with a leading research institution. Designed as a randomized, double-blind, placebo-controlled trial, this study follows the gold standard in human research, ensuring scientific credibility and measurable results.</p>
                 </div>
                 
               </div>
-              <p className="mt-4 text-sm italic">
+              <p className="mt-4 text-sm italic" style={{fontFamily: "Minionpro"}}>
               *Results based on a double-blind, placebo-controlled study with 120 participants over 30 days, showing visible improvements in skin radiance, hair strength, and nail health.
               </p>
             </div>
@@ -671,7 +670,7 @@ const ProductGummies = () => {
   <div className="relative flex flex-col lg:flex-row justify-between items-start z-10">
     {/* Title Section */}
     <div className="w-full lg:w-1/3 mb-12 lg:mb-0">
-      <h2 className="text-[32px] md:text-[40px] font-bold text-[#d15523] leading-tight">
+      <h2 className="text-[32px] md:text-[60px] font-bold text-[#d15523] leading-tight" style={{fontFamily: "ROGBold"}}>
         Frequent Questions
       </h2>
     </div>
@@ -688,7 +687,7 @@ const ProductGummies = () => {
               className="w-full flex justify-between items-start py-6 text-left focus:outline-none group"
               onClick={() => toggleAccordion(index)}
             >
-              <h3 className="text-lg md:text-xl font-semibold text-[#d15523] pr-8">{item.question}</h3>
+              <h3 className="text-[22px] md:text-[24px] font-semibold text-[#d15523] pr-8" style={{fontFamily: "Minionpro"}}>{item.question}</h3>
               <span className="flex-shrink-0 mt-1">
                 {openIndex === index ? (
                   <Minus className="h-5 w-5 text-[#d15523]" />
@@ -703,7 +702,7 @@ const ProductGummies = () => {
                 openIndex === index ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
               }`}
             >
-              <div className="pb-6 text-gray-600 text-lg leading-relaxed">{item.answer}</div>
+              <div className="pb-6 text-gray-600 text-[24px] leading-relaxed" style={{fontFamily: "Minionpro"}}>{item.answer}</div>
             </div>
           </div>
         ))}
