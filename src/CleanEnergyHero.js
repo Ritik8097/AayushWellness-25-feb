@@ -57,7 +57,7 @@ const CleanEnergyHero = () => {
           delay={150}
           animateBy="words"
           direction="top"
-          className="md:text-6xl mb-8 text-[25px] font-bold text-[#fff] uppercase" style={{ fontFamily: "ROGBold" }}
+          className="md:text-6xl mb-8 text-[30px] font-bold text-[#fff] uppercase" style={{ fontFamily: "ROGBold" }}
         />
         <p className="HomeHero_copy__GS3c3 !text-[#fff]" style={{fontFamily: "Minionpro"}}>
           Aayush Wellness blends ancient Ayurveda with modern science to create
