@@ -390,7 +390,7 @@ const ProductGummies = () => {
 
           {/* Content Section */}
           <div className="lg:w-1/2">
-            <h2 className="text-[46px] font-bold text-[#d15523] mb-12" style={{fontFamily: "ROGBold"}}>Nourish Your Beauty from the Inside Out
+            <h2 className="text-[46px] font-bold text-[#d15523] mb-12" style={{fontFamily: "ROGBold", letterSpacing: "1px"}}>Nourish Your Beauty from the Inside Out
 
 
 
@@ -443,7 +443,7 @@ const ProductGummies = () => {
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
           {/* Text Section */}
           <div className="lg:w-1/2 order-2 lg:order-1">
-            <h2 className="text-[42px] font-bold text-[#d15523] mb-6" style={{fontFamily: "ROGBold"}}>Experience Radiant Beauty from Within</h2>
+            <h2 className="text-[42px] font-bold text-[#d15523] mb-6" style={{fontFamily: "ROGBold", letterSpacing: "1px"}}>Experience Radiant Beauty from Within</h2>
             <div className="w-24 h-1 bg-[#d15523] mb-8"></div>
             <p className="text-lg text-gray-700" style={{fontFamily: "Minionpro"}}>
             Our revolutionary beauty gummies are designed to enhance your skin, hair, and nails from within. The unique formula nourishes your body with essential vitamins and nutrients, promoting a radiant and healthy glow.
