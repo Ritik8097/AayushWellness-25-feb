@@ -496,7 +496,7 @@ const ProducCarousal = () => {
 
           {/* Content Section */}
           <div className="lg:w-1/2">
-            <h2 className="text-[42px] font-bold text-[#730a0a] mb-12" style={{fontFamily: "ROGBold"}}>Elevate Your Taste with Herbal Perfection</h2>
+            <h2 className="text-[42px] font-bold text-[#730a0a] mb-12" style={{fontFamily: "ROGBold", letterSpacing: "1px"}}>Elevate Your Taste with Herbal Perfection</h2>
             <p className="text-lg text-gray-700 mb-16">
               Indulge in the rich flavors of Aayush Herbal Pan Masala, crafted with a blend of traditional herbs and
               spices for a refreshing and satisfying experience.
@@ -542,7 +542,7 @@ const ProducCarousal = () => {
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
           {/* Text Section */}
           <div className="lg:w-1/2 order-2 lg:order-1">
-            <h2 className="text-[42px] font-bold text-[#730a0a] mb-6" style={{fontFamily: "ROGBold"}}>
+            <h2 className="text-[42px] font-bold text-[#730a0a] mb-6" style={{fontFamily: "ROGBold", letterSpacing: "1px"}}>
               Experience the Pure Flavor of Nature’s Goodness
             </h2>
             <div className="w-24 h-1 bg-[#730a0a] mb-8"></div>
