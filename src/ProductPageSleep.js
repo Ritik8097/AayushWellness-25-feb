@@ -1,4 +1,3 @@
-
 import { useState, useRef, useEffect } from "react";
 import { Plus, ChevronLeft, ChevronRight, Minus } from "lucide-react";
 import Header from "./Header";
@@ -119,17 +118,16 @@ const ProductPageSleep = () => {
   const faqItems = [
     {
       question: "What kind of testing do you do?",
-      answer: (
-        <div className="space-y-4">
-          <p>
-          We ensure the highest quality by conducting rigorous in-house and third-party testing on every batch of our Sleep Gummies. While third-party testing isn't always required, we believe in complete transparency so you know exactly what you're consuming.
-          </p>
-          <p>
-          Each batch undergoes tests for purity, potency, and safety, ensuring compliance with regulations on heavy metals, microbes, and other contaminants. Your health and peace of mind are our top priorities.
-
-          </p>
-        </div>
-      ),
+      answer: 
+        
+          
+          
+          "We ensure the highest quality by conducting rigorous in-house and third-party testing on every batch of our Sleep Gummies. While third-party testing isn't always required, we believe in complete transparency so you know exactly what you're consuming. "
+         
+        
+          
+        
+      ,
     },
     {
       question: "How and when should I take Sleep Gummies?",
@@ -288,15 +286,15 @@ const ProductPageSleep = () => {
               ref={contentRef}
               className="w-full md:py-20 px-0 md:pl-[150px] max-w-[755px]"
             >
-              <h1 className="text-[35px] font-bold text-[#420560] mb-1">
+              <h1 className="text-[40px] md:text-[50px] font-bold text-[#420560] mb-1" style={{fontFamily: "ROGBold"}}>
                 Dreamy Sleep Gummies
               </h1>
-              <p className="text-base text-[#420560] mb-6 italic">
+              <p className="text-base text-[#420560] mb-6 italic" style={{fontFamily: "Minionpro"}}>
                 Aayush Wellness{" "}
               </p>
 
               <div className="border-t border-b border-gray-200 py-6 mb-6">
-                <p className="text-base text-gray-700 mb-4">
+                <p className="text-base text-gray-700 mb-4" style={{fontFamily: "Minionpro"}}>
                  "The world's first sleep supplement powered by Aayush Wellness, clinically proven to improve sleep quality, reduce stress, and promote relaxation with science-backed ingredients." 🌙💤
                 </p>
               </div>
@@ -312,9 +310,9 @@ const ProductPageSleep = () => {
                       <div className="w-5 h-5 rounded-full border border-[#420560] flex items-center justify-center mr-3">
                         <div className="w-3 h-3 rounded-full bg-[#420560]"></div>
                       </div>
-                      <span className="font-medium">Buy once</span>
+                      <span className="font-medium" style={{fontFamily: "Minionpro"}}>Buy once</span>
                     </div>
-                    <span className="font-bold text-[#420560]">₹599</span>
+                    <span className="font-bold text-[#420560]" style={{fontFamily: "Minionpro"}}>₹599</span>
                   </div>
                 </div>
               </div>
@@ -325,7 +323,7 @@ const ProductPageSleep = () => {
                   className="w-full"
                   style={{ display: "block" }}
                 >
-                  <button className="bg-[#420560] text-white py-3 px-6 rounded-lg w-full text-center font-semibold">
+                  <button className="bg-[#420560] text-white text-[25px] py-3 px-6 rounded-lg w-full text-center font-semibold" style={{fontFamily: "Minionpro"}}>
                     Shop Now
                   </button>
                 </Link>
@@ -333,7 +331,7 @@ const ProductPageSleep = () => {
 
               <div className="space-y-4">
                 <div>
-                  <p className="text-base text-gray-700 mb-4">
+                  <p className="text-base text-gray-700 mb-4" style={{fontFamily: "Minionpro"}}>
                     Say hello to restful nights and refreshed mornings with our Sleep Bliss Gummies. 🌙
                     Crafted with a powerful blend of Modern Scientific ingredients like Melatonin, L-Theanine, and Magnesium, combined with Active Ayurveda such as Ashwagandha and Brahmi Extract, these gummies promote relaxation, reduce stress, and support a healthy sleep cycle. Wake up feeling rejuvenated and ready to take on the day.
                   </p>
@@ -345,7 +343,7 @@ const ProductPageSleep = () => {
                     className="w-full py-4 flex justify-between items-center"
                     onClick={() => toggleSidebar("supplement")}
                   >
-                    <span className="font-semibold text-[#420560]">
+                    <span className="font-semibold text-[#420560] text-[26px]" style={{fontFamily: "Minionpro"}}>
                       Supplement Facts
                     </span>
                     <Plus className="h-5 w-5 text-[#420560]" />
@@ -357,7 +355,7 @@ const ProductPageSleep = () => {
                     className="w-full py-4 flex justify-between items-center"
                     onClick={() => toggleSidebar("results")}
                   >
-                    <span className="font-semibold text-[#420560]">
+                    <span className="font-semibold text-[#420560] text-[26px]" style={{fontFamily: "Minionpro"}}>
                       Clinically-Proven Results
                     </span>
                     <Plus className="h-5 w-5 text-[#420560]" />
@@ -457,10 +455,10 @@ const ProductPageSleep = () => {
 
           {/* Content Section */}
           <div className="lg:w-1/2">
-            <h2 className="text-[48px] font-bold text-[#420560] mb-12">
+            <h2 className="text-[48px] font-bold text-[#420560] mb-12" style={{fontFamily: "ROGBold"}}>
               Embrace the Night's Rhythm
             </h2>
-            <p className="text-lg text-gray-700 mb-16">
+            <p className="text-lg text-gray-700 mb-16" style={{fontFamily: "Minionpro"}}>
               Regain your rest with Aayush Wellness technology, designed to
               align with your body's natural sleep rhythm for deeper,
               restorative sleep.
@@ -490,10 +488,10 @@ const ProductPageSleep = () => {
 
                     {/* Content */}
                     <div className="transition-all duration-1000 ease-in-out">
-                      <h3 className="text-[22px] font-semibold mb-2 text-[#420560]">
+                      <h3 className="text-[25px] font-semibold mb-2 text-[#420560] " style={{fontFamily: "ROGBold", letterSpacing: '1px'}}>
                         {item.title}
                       </h3>
-                      <p className=" text-[18px] leading-relaxed text-gray-600">
+                      <p className=" text-[20px] leading-relaxed text-gray-600" style={{fontFamily: "Minionpro"}}>
                         {item.description}
                       </p>
                     </div>
@@ -510,11 +508,11 @@ const ProductPageSleep = () => {
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
           {/* Text Section */}
           <div className="lg:w-1/2 order-2 lg:order-1">
-            <h2 className="text-[40px] font-bold text-[#420560] mb-6">
+            <h2 className="text-[40px] font-bold text-[#420560] mb-6" style={{fontFamily: "ROGBold"}}>
               Experience Deep Restful Sleep
             </h2>
             <div className="w-24 h-1 bg-[#420560] mb-8"></div>
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-gray-700" style={{fontFamily: "Minionpro"}}>
               Our revolutionary sleep gummies are designed to help you fall
               asleep faster and stay asleep longer. The unique formula works
               with your body's natural rhythms to promote deep, restorative
@@ -533,7 +531,7 @@ const ProductPageSleep = () => {
                 playsInline
               >
                 <source
-                  src="https://cdn.shopify.com/videos/c/o/v/7b950b8f7866491d95cd42dca56417a8.mp4"
+                  src="https://cdn.shopify.com/videos/c/o/v/477b7c8c59ea4160858117ef561e69b3.mp4"
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.
@@ -552,14 +550,14 @@ const ProductPageSleep = () => {
       >
         <div className="p-6 h-full overflow-y-auto">
           <div className="flex justify-between items-center mb-6">
-            <h3 className="text-[40px] font-bold text-[#420560]">
+            <h3 className="text-[40px] font-bold text-[#420560]" style={{fontFamily: "ROGBold"}}>
               {activeSidebar === "supplement" && "Supplement Facts"}
               {activeSidebar === "use" && "How to Use"}
               {activeSidebar === "results" && "Clinically-Proven Results"}
             </h3>
             <button
               onClick={() => setActiveSidebar(null)}
-              className="text-gray-500 hover:text-gray-700"
+              className="text-[#420560] "
             >
               ✕
             </button>
@@ -591,37 +589,37 @@ const ProductPageSleep = () => {
                <div className="space-y-4 mb-8">
                 <div className="flex items-center space-x-3">
                   <Leaf className="text-[#420560] w-6 h-6" />
-                  <span className="text-gray-700">Plant-Based Formulation</span>
+                  <span className="text-gray-700" style={{fontFamily: "Minionpro"}}>Plant-Based Formulation</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <FlaskConical className="text-[#420560] w-6 h-6" />
-                  <span className="text-gray-700">Clinically Researched Ingredients</span>
+                  <span className="text-gray-700" style={{fontFamily: "Minionpro"}}>Clinically Researched Ingredients</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <ShieldCheck className="text-[#420560] w-6 h-6" />
-                  <span className="text-gray-700">Non Habit-Forming </span>
+                  <span className="text-gray-700" style={{fontFamily: "Minionpro"}}>Non Habit-Forming </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Moon className="text-[#420560] w-6 h-6" />
-                  <span className="text-gray-700">
+                  <span className="text-gray-700" style={{fontFamily: "Minionpro"}}>
                   Supports Restful Sleep & Relaxation
                   </span>
                 </div>
-                <div className="flex items-center space-x-3">
+                <div className="flex items-center space-x-3" style={{fontFamily: "Minionpro"}}>
                   <Vegan className="text-[#420560] w-6 h-6" />
                   <span className="text-gray-700">100% Vegan & Gluten-Free</span>
                 </div>
-                <div className="flex items-center space-x-3">
+                <div className="flex items-center space-x-3" style={{fontFamily: "Minionpro"}}>
                   <Microscope className="text-[#420560] w-6 h-6" />
                   <span className="text-gray-700">
                   Lab-Tested for Purity & Quality
                   </span>
                 </div>
-                <div className="flex items-center space-x-3">
+                <div className="flex items-center space-x-3" style={{fontFamily: "Minionpro"}}>
                   <PackageCheck className="text-[#420560] w-6 h-6" />
                   <span className="text-gray-700">Non-GMO Certified </span>
                 </div>
-                <div className="flex items-center space-x-3">
+                <div className="flex items-center space-x-3" style={{fontFamily: "Minionpro"}}>
                   <Flag className="text-[#420560] w-6 h-6" />
                   <span className="text-gray-700">
                   Made in India, FSSAI Certified
@@ -631,39 +629,39 @@ const ProductPageSleep = () => {
 
               {/* Supplement Facts Box */}
               <div className="border border-gray-300 rounded-lg p-6 bg-gray-50 mb-8">
-                <h3 className="text-[30px] text-[#420560]  mb-4">
+                <h3 className="text-[30px] text-[#420560]  mb-4" style={{fontFamily: "ROGBold"}}>
                   Supplement Facts
                 </h3>
-                <p className="text-sm text-gray-600 mb-2">
+                <p className="text-md text-gray-600 mb-2" style={{fontFamily: "Minionpro"}}>
                   <strong>Serving Size:</strong> 2 Vegan Gummies
                 </p>
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-md text-gray-600 mb-4" style={{fontFamily: "Minionpro"}}>
                   <strong>Servings Per Container:</strong> 30
                 </p>
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-md text-gray-600 mb-4" style={{fontFamily: "Minionpro"}}>
                   <strong>Amount Per Serving:</strong> % DV
                 </p>
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-md text-gray-600 mb-4" style={{fontFamily: "Minionpro"}}>
                   <strong>Melatonin (as plant-based source):</strong> 5mg
                 </p>
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-md text-gray-600 mb-4" style={{fontFamily: "Minionpro"}}>
                   <strong>L-Theanine:</strong> 200mg
                 </p>
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-md text-gray-600 mb-4" style={{fontFamily: "Minionpro"}}>
                   <strong>Chamomile Extract:</strong> 150mg
                 </p>
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-md text-gray-600 mb-4" style={{fontFamily: "Minionpro"}}>
                   <strong>Lemon Balm Extract :</strong> 100mg
                 </p>
 
-                <div className="border-t border-b border-gray-300 py-4">
-                  <div className="text-sm text-gray-500">
+                <div className="border-t border-b border-gray-300 py-4" style={{fontFamily: "Minionpro"}}>
+                  <div className="text-md text-gray-500">
                     ** Daily Value (DV) not established.
                   </div>
-                  <div className="text-sm text-gray-500">*RDA of nutrients Daily Allowances as per Guidelines of indian Council of Medical Research(ICMR) 2020 Adult.</div>
+                  <div className="text-sm text-gray-500" style={{fontFamily: "Minionpro"}}>*RDA of nutrients Daily Allowances as per Guidelines of indian Council of Medical Research(ICMR) 2020 Adult.</div>
                 </div>
               </div>
-              <p className="text-sm text-gray-600 mt-4">
+              <p className="text-sm text-gray-600 mt-4" style={{fontFamily: "Minionpro"}}>
                 <strong>Other Ingredients:</strong>
                 Sucrose, Gelling Agent(INS 406,440), Binding Agent(INS 407,412),Preservative(INS 202), Acidity Regulator(INS 330),Polysorbate(TWEEN 80), contains oermitted Synthetic Foof Colour (INS 133), and Added Flavour (Nature Identical Flavour Substance Blueberry)
               </p>
@@ -707,17 +705,17 @@ const ProductPageSleep = () => {
 
           {activeSidebar === "results" && (
             <div>
-              <p className="mb-4">
+              <p className="mb-4" style={{fontFamily: "Minionpro"}}>
                 Our Sleep Gummies are clinically shown to support a
                 faster onset of sleep and sustained restfulness throughout the
                 night, helping you wake up refreshed.*†
               </p>
               <div className="space-y-4">
                 <div className="border-b pb-3">
-                  <h4 className="font-bold mb-1 text-[#420560]">
+                  <h4 className="font-semibold mb-1 text-[#420560] text-[24px]" style={{fontFamily: "ROGBold"}}>
                     Clinically Studied Benefits:
                   </h4>
-                  <ol className="text-medium">
+                  <ol className="text-medium" style={{fontFamily: "Minionpro"}}>
                     <li> Reduces time to fall asleep by 43% </li>
                     <li>
                       Promotes deeper and more restorative sleep patterns 
@@ -726,10 +724,10 @@ const ProductPageSleep = () => {
                   </ol>
                 </div>
                 <div className="border-b pb-3">
-                  <h4 className="font-bold mb-1 text-[#420560]">
+                  <h4 className="font-semibold mb-1 text-[#420560] text-[24px]" style={{fontFamily: "ROGBold"}}>
                   About Our Clinical Study
                   </h4>
-                  <p className="text-medium">
+                  <p className="text-medium" style={{fontFamily: "Minionpro"}}>
                   The Ritual Sleep  Gummies Pharmacokinetics Study and the 2-week supplementation study were conducted in partnership with a leading research institution. Designed as a randomized, double-blind, placebo-controlled trial, this study follows the gold standard in human research, ensuring scientific credibility and measurable results.
                   </p>
                 </div>
@@ -783,7 +781,7 @@ const ProductPageSleep = () => {
         <div className="relative flex flex-col lg:flex-row justify-between items-start z-10">
           {/* Title Section */}
           <div className="w-full lg:w-1/3 mb-12 lg:mb-0">
-            <h2 className="text-[32px] md:text-[40px] font-bold text-[#420560] leading-tight">
+            <h2 className="text-[32px] md:text-[48px] font-bold text-[#420560] leading-tight" style={{fontFamily: "ROGBold"}}>
               Frequent Questions
             </h2>
           </div>
@@ -802,7 +800,7 @@ const ProductPageSleep = () => {
                     className="w-full flex justify-between items-start py-6 text-left focus:outline-none group"
                     onClick={() => toggleAccordion(index)}
                   >
-                    <h3 className="text-lg md:text-xl font-semibold text-[#420560] pr-8">
+                    <h3 className="text-xlg md:text-xxl font-semibold text-[#420560] pr-8" style={{fontFamily: "ROGBold"}}>
                       {item.question}
                     </h3>
                     <span className="flex-shrink-0 mt-1">
@@ -821,7 +819,7 @@ const ProductPageSleep = () => {
                         : "max-h-0 opacity-0"
                     }`}
                   >
-                    <div className="pb-6 text-gray-600 text-lg leading-relaxed">
+                    <div className="pb-6 text-gray-600 text-lg leading-relaxed" style={{fontFamily: "Minionpro"}}>
                       {item.answer}
                     </div>
                   </div>
