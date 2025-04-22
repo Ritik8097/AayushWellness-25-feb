@@ -455,7 +455,7 @@ const ProductPageSleep = () => {
 
           {/* Content Section */}
           <div className="lg:w-1/2">
-            <h2 className="text-[48px] font-bold text-[#420560] mb-12" style={{fontFamily: "ROGBold"}}>
+            <h2 className="text-[48px] font-bold text-[#420560] mb-12" style={{fontFamily: "ROGBold", letterSpacing: "1px"}}>
               Embrace the Night's Rhythm
             </h2>
             <p className="text-lg text-gray-700 mb-16" style={{fontFamily: "Minionpro"}}>
@@ -508,7 +508,7 @@ const ProductPageSleep = () => {
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
           {/* Text Section */}
           <div className="lg:w-1/2 order-2 lg:order-1">
-            <h2 className="text-[40px] font-bold text-[#420560] mb-6" style={{fontFamily: "ROGBold"}}>
+            <h2 className="text-[40px] font-bold text-[#420560] mb-6" style={{fontFamily: "ROGBold", letterSpacing: "1px"}}>
               Experience Deep Restful Sleep
             </h2>
             <div className="w-24 h-1 bg-[#420560] mb-8"></div>
