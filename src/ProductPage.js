@@ -299,11 +299,11 @@ const ProducCarousal = () => {
           <div className="flex flex-col md:flex-row relative gap-[80px]">
             {/* Product Details Section - Left side */}
             <div ref={contentRef} className="w-full md:py-20 px-0 md:pl-[150px] max-w-[755px]">
-              <h1 className="text-[35px] font-bold text-[#730a0a] mb-1">Aayush Herbal Masala</h1>
-              <p className="text-base text-[#730a0a] mb-6 italic">Swaad Wahi, Sehat Bhi ✅ </p>
+              <h1 className="text-[40px] md:text-[50px] font-bold text-[#730a0a] mb-1" style={{fontFamily: "ROGBold"}}>Aayush Herbal Masala</h1>
+              <p className="text-base text-[#730a0a] mb-6 italic" style={{fontFamily: "Minionpro"}}>Swaad Wahi, Sehat Bhi ✅ </p>
 
               <div className="border-t border-b border-gray-200 py-6 mb-6">
-                <p className="text-base text-gray-700 mb-4">
+                <p className="text-base text-gray-700 mb-4" style={{fontFamily: "Minionpro"}}>
                   "Crafted with premium-quality ingredients, Aayush Herbal Pan Masala delivers an authentic taste with a
                   herbal twist."
                 </p>
@@ -327,7 +327,7 @@ const ProducCarousal = () => {
                         className="w-full h-full object-cover rounded-lg !pt-0"
                       />
                     </div>
-                    <span className="mt-2 text-[#004080] font-medium">Blue</span>
+                    <span className="mt-2 text-[#004080] font-medium" style={{fontFamily: "Minionpro"}}>Blue</span>
                   </div>
 
                   {/* Black Variant */}
@@ -345,7 +345,7 @@ const ProducCarousal = () => {
                         className="w-full h-full object-cover rounded-lg !pt-0"
                       />
                     </div>
-                    <span className="mt-2 text-[#000000] font-medium">Black</span>
+                    <span className="mt-2 text-[#000000] font-medium" style={{fontFamily: "Minionpro"}}>Black</span>
                   </div>
 
                   {/* Gold Variant */}
@@ -363,7 +363,7 @@ const ProducCarousal = () => {
                         className="w-full h-full object-cover rounded-lg !pt-0"
                       />
                     </div>
-                    <span className="mt-2 text-[#D4AF37] font-medium">Gold</span>
+                    <span className="mt-2 text-[#D4AF37] font-medium" style={{fontFamily: "Minionpro"}}>Gold</span>
                   </div>
                 </div>
               </div>
@@ -377,9 +377,9 @@ const ProducCarousal = () => {
                       <div className="w-5 h-5 rounded-full border border-[#730a0a] flex items-center justify-center mr-3">
                         <div className="w-3 h-3 rounded-full bg-[#730a0a]"></div>
                       </div>
-                      <span className="font-medium">Buy once</span>
+                      <span className="font-medium" style={{fontFamily: "Minionpro"}}>Buy once</span>
                     </div>
-                    <span className="font-bold text-[#730a0a]">₹599</span>
+                    <span className="font-bold text-[#730a0a]" style={{fontFamily: "Minionpro"}}>₹599</span>
                   </div>
                 </div>
               </div>
@@ -390,7 +390,7 @@ const ProducCarousal = () => {
                   className="w-full"
                   style={{ display: "block" }}
                 >
-                  <button className="bg-[#730a0a] text-white py-3 px-6 rounded-lg w-full text-center font-semibold">
+                  <button className="bg-[#730a0a] text-white py-3 px-6 rounded-lg w-full text-center font-semibold" style={{fontFamily: "Minionpro"}}>
                     Shop Now
                   </button>
                 </Link>
@@ -398,7 +398,7 @@ const ProducCarousal = () => {
 
               <div className="space-y-4">
                 <div>
-                  <p className="text-base text-gray-700 mb-4">
+                  <p className="text-base text-gray-700 mb-4" style={{fontFamily: "Minionpro"}}>
                     An exquisite, all-natural concoction designed to harmonise and rejuvenate your senses using the
                     heritage of Ayurveda. Crafted from a precise blend of natural & ayurvedic herbs with healing
                     properties, this pan masala and gutka alternative is not only a delight for your taste buds but also
@@ -415,7 +415,7 @@ const ProducCarousal = () => {
                     className="w-full py-4 flex justify-between items-center"
                     onClick={() => toggleSidebar("supplement")}
                   >
-                    <span className="font-semibold text-[#730a0a]">Supplement Facts</span>
+                    <span className="font-semibold text-[#730a0a] text-[26px]" style={{fontFamily: "Minionpro"}}>Supplement Facts</span>
                     <Plus className="h-5 w-5 text-[#730a0a]" />
                   </button>
                 </div>
@@ -425,7 +425,7 @@ const ProducCarousal = () => {
                     className="w-full py-4 flex justify-between items-center"
                     onClick={() => toggleSidebar("results")}
                   >
-                    <span className="font-semibold text-[#730a0a]">Clinically-Proven Results</span>
+                    <span className="font-semibold text-[#730a0a] text-[26px]" style={{fontFamily: "Minionpro"}}>Clinically-Proven Results</span>
                     <Plus className="h-5 w-5 text-[#730a0a]" />
                   </button>
                 </div>
@@ -496,7 +496,7 @@ const ProducCarousal = () => {
 
           {/* Content Section */}
           <div className="lg:w-1/2">
-            <h2 className="text-[42px] font-bold text-[#730a0a] mb-12">Elevate Your Taste with Herbal Perfection</h2>
+            <h2 className="text-[42px] font-bold text-[#730a0a] mb-12" style={{fontFamily: "ROGBold"}}>Elevate Your Taste with Herbal Perfection</h2>
             <p className="text-lg text-gray-700 mb-16">
               Indulge in the rich flavors of Aayush Herbal Pan Masala, crafted with a blend of traditional herbs and
               spices for a refreshing and satisfying experience.
@@ -526,8 +526,8 @@ const ProducCarousal = () => {
 
                     {/* Content */}
                     <div className="transition-all duration-1000 ease-in-out">
-                      <h3 className="text-[22px] font-semibold mb-2 text-[#730a0a]">{item.title}</h3>
-                      <p className=" text-[18px] leading-relaxed text-gray-600">{item.description}</p>
+                      <h3 className="text-[22px] font-semibold mb-2 text-[#730a0a]" style={{fontFamily: "ROGBold", letterSpacing: "1px"}}>{item.title}</h3>
+                      <p className=" text-[18px] leading-relaxed text-gray-600" style={{fontFamily: "Minionpro"}}>{item.description}</p>
                     </div>
                   </div>
                 ))}
@@ -542,11 +542,11 @@ const ProducCarousal = () => {
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
           {/* Text Section */}
           <div className="lg:w-1/2 order-2 lg:order-1">
-            <h2 className="text-[42px] font-bold text-[#730a0a] mb-6">
+            <h2 className="text-[42px] font-bold text-[#730a0a] mb-6" style={{fontFamily: "ROGBold"}}>
               Experience the Pure Flavor of Nature’s Goodness
             </h2>
             <div className="w-24 h-1 bg-[#730a0a] mb-8"></div>
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-gray-700" style={{fontFamily: "Minionpro"}}>
               Our premium Aayush Herbal Pan Masala is crafted with a unique blend of traditional herbs and spices,
               delivering a refreshing and aromatic experience. The rich flavors and fine ingredients offer a satisfying
               taste with a herbal twist.
@@ -577,7 +577,7 @@ const ProducCarousal = () => {
       >
         <div className="p-6 h-full overflow-y-auto">
           <div className="flex justify-between items-center mb-6">
-            <h3 className="text-[40px] font-bold text-[#730a0a]">
+            <h3 className="text-[40px] font-bold text-[#730a0a]" style={{fontFamily: "ROGBold"}}>
               {activeSidebar === "supplement" && "Supplement Facts"}
               {activeSidebar === "use" && "How to Use"}
               {activeSidebar === "results" && "Clinically-Proven Results"}
@@ -613,77 +613,77 @@ const ProducCarousal = () => {
               <div className="space-y-4 mb-8">
                 <div className="flex items-center space-x-3">
                   <Library className="text-[#730a0a] w-6 h-6" />
-                  <span className="text-gray-700">Non-GMO Certified</span>
+                  <span className="text-gray-700" style={{fontFamily: "Minionpro"}}>Non-GMO Certified</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Leaf className="text-[#730a0a] w-6 h-6" />
-                  <span className="text-gray-700">Carbon Free Certified</span>
+                  <span className="text-gray-700" style={{fontFamily: "Minionpro"}}>Carbon Free Certified</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <ShieldCheck className="text-[#730a0a] w-6 h-6" />
-                  <span className="text-gray-700">Clean Label Certified</span>
+                  <span className="text-gray-700" style={{fontFamily: "Minionpro"}}>Clean Label Certified</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <SearchCheck className="text-[#730a0a] w-6 h-6" />
-                  <span className="text-gray-700">Clinically Studied Ingredients</span>
+                  <span className="text-gray-700" style={{fontFamily: "Minionpro"}}>Clinically Studied Ingredients</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Vegan className="text-[#730a0a] w-6 h-6" />
-                  <span className="text-gray-700">Vegan</span>
+                  <span className="text-gray-700" style={{fontFamily: "Minionpro"}}>Vegan</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <WheatOff className="text-[#730a0a] w-6 h-6" />
-                  <span className="text-gray-700">Gluten & Major Allergen Free</span>
+                  <span className="text-gray-700" style={{fontFamily: "Minionpro"}}>Gluten & Major Allergen Free</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <PackageCheck className="text-[#730a0a] w-6 h-6" />
-                  <span className="text-gray-700">Made Traceable®</span>
+                  <span className="text-gray-700" style={{fontFamily: "Minionpro"}}>Made Traceable®</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Microscope className="text-[#730a0a] w-6 h-6" />
-                  <span className="text-gray-700">Third-Party Tested (for heavy metals & microbes)</span>
+                  <span className="text-gray-700" style={{fontFamily: "Minionpro"}}>Third-Party Tested (for heavy metals & microbes)</span>
                 </div>
               </div>
 
               {/* Supplement Facts Box */}
               <div className="border border-gray-300 rounded-lg p-6 bg-gray-50 mb-8">
-                <h3 className="text-[30px] text-[#730a0a]  mb-4">Supplement Facts</h3>
-                <p className="text-sm text-gray-600 mb-2">
+                <h3 className="text-[30px] text-[#730a0a]  mb-4" style={{fontFamily: "ROGBold"}}>Supplement Facts</h3>
+                <p className="text-sm text-gray-600 mb-2" style={{fontFamily: "Minionpro"}}>
                   <strong>Serving Size:</strong> 1 Herbal Sachet (5g)
                 </p>
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-sm text-gray-600 mb-4" style={{fontFamily: "Minionpro"}}>
                   <strong>Servings Per Container:</strong> 30
                 </p>
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-sm text-gray-600 mb-4" style={{fontFamily: "Minionpro"}}>
                   <strong>Amount Per Serving:</strong> % DV
                 </p>
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-sm text-gray-600 mb-4" style={{fontFamily: "Minionpro"}}>
                   <strong>Cardamom Extract: </strong> 200mg
                 </p>
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-sm text-gray-600 mb-4" style={{fontFamily: "Minionpro"}}>
                   <strong>Fennel Seeds: </strong> 150mg
                 </p>
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-sm text-gray-600 mb-4" style={{fontFamily: "Minionpro"}}>
                   <strong>Clove Extract: </strong> 100mg
                 </p>
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-sm text-gray-600 mb-4" style={{fontFamily: "Minionpro"}}>
                   <strong>VLicorice Root:</strong>  75mg
                 </p>
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-sm text-gray-600 mb-4" style={{fontFamily: "Minionpro"}}>
                   <strong>Mint Leaves:</strong>  50mg
                 </p>
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-sm text-gray-600 mb-4" style={{fontFamily: "Minionpro"}}>
                   <strong>Areca Nut Substitute (Herbal Blend):</strong>  300mg
                 </p>
-                <div className="border-t border-b border-gray-300 py-4">
+                <div className="border-t border-b border-gray-300 py-4" style={{fontFamily: "Minionpro"}}>
                   <div className="flex justify-between text-gray-700">
                     <span>Rose Petals:</span>
                     <span>50mg</span>
                   </div>
-                  <div className="text-sm text-gray-500">** Daily Value (DV) not established.</div>
+                  <div className="text-sm text-gray-500" style={{fontFamily: "Minionpro"}}>** Daily Value (DV) not established.</div>
                 </div>
               </div>
-              <p className="text-sm text-gray-600 mt-4">
+              <p className="text-sm text-gray-600 mt-4" style={{fontFamily: "Minionpro"}}>
                 <strong>Other Ingredients:</strong> Organic ,Herbal Colours,Haldi, Mint Leaves, Clove, Cardamom, fennel Seeds,Elaichi,Rose petals.
               </p>
             </div>
@@ -712,26 +712,26 @@ const ProducCarousal = () => {
 
           {activeSidebar === "results" && (
             <div>
-              <p className="mb-4">
+              <p className="mb-4" style={{fontFamily: "Minionpro"}}>
               Our Herbal Pan Masala is expertly crafted using a unique blend of natural herbs and aromatic spices, delivering a refreshing and authentic taste. Carefully formulated, it offers a delightful experience while promoting oral freshness and overall well-being.
               </p>
               <div className="space-y-4">
                 <div className="border-b pb-3">
-                  <h4 className="font-bold mb-1 text-[#730a0a]">Key Benefits:</h4>
-                  <ol className="text-medium">
+                  <h4 className="font-bold mb-1 text-[#730a0a] text-[24px]" style={{fontFamily: "ROGBold"}}>Key Benefits:</h4>
+                  <ol className="text-medium" style={{fontFamily: "Minionpro"}}>
                     <li>Freshens Breath Naturally: Helps combat bad breath with its herbal infusion. </li>
                     <li>No Harmful Chemicals: Free from tobacco, nicotine, and artificial additives.</li>
                     <li>Calming & Refreshing: Infused with mild herbs for a soothing effect.</li>
                   </ol>
                 </div>
                 <div className="border-b pb-3">
-                  <h4 className="font-bold mb-1 text-[#730a0a]">About Our Clinical Study</h4>
-                  <p className="text-medium">
+                  <h4 className="font-bold mb-1 text-[#730a0a] text-[24px]" style={{fontFamily: "ROGBold"}}>About Our Clinical Study</h4>
+                  <p className="text-medium" style={{fontFamily: "Minionpro"}}>
                   Our Herbal Pan Masala is produced following strict quality control standards. The ingredients are sourced from trusted farms, ensuring purity and freshness.Our herbal formulation is backed by traditional ayurvedic wisdom and validated by modern scientific research. The combination of time-tested herbs and spices ensures a safe and enjoyable chewing experience without harmful side effects.
                   </p>
                 </div>
               </div>
-              <p className="mt-4 text-sm italic">
+              <p className="mt-4 text-sm italic" style={{fontFamily: "Minionpro"}}>
                 *✨ Experience the rich taste and refreshing aroma of our premium Herbal Pan Masala – crafted for connoisseurs who appreciate purity and flavor. 🌿
               </p>
             </div>
@@ -775,7 +775,7 @@ const ProducCarousal = () => {
         <div className="relative flex flex-col lg:flex-row justify-between items-start z-10">
           {/* Title Section */}
           <div className="w-full lg:w-1/3 mb-12 lg:mb-0">
-            <h2 className="text-[32px] md:text-[40px] font-bold text-[#730a0a] leading-tight">Frequent Questions</h2>
+            <h2 className="text-[32px] md:text-[40px] font-bold text-[#730a0a] leading-tight" style={{fontFamily: "ROGBold"}}>Frequent Questions</h2>
           </div>
 
           {/* FAQ Accordion Section */}
@@ -790,7 +790,7 @@ const ProducCarousal = () => {
                     className="w-full flex justify-between items-start py-6 text-left focus:outline-none group"
                     onClick={() => toggleAccordion(index)}
                   >
-                    <h3 className="text-lg md:text-xl font-semibold text-[#730a0a] pr-8">{item.question}</h3>
+                    <h3 className="text-[22px] md:text-[24px]  font-semibold text-[#730a0a] pr-8" style={{fontFamily: "Minionpro"}}>{item.question}</h3>
                     <span className="flex-shrink-0 mt-1">
                       {openIndex === index ? (
                         <Minus className="h-5 w-5 text-[#730a0a]" />
@@ -805,7 +805,7 @@ const ProducCarousal = () => {
                       openIndex === index ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
                     }`}
                   >
-                    <div className="pb-6 text-gray-600 text-lg leading-relaxed">{item.answer}</div>
+                    <div className="pb-6 text-gray-600 text-lg leading-relaxed" style={{fontFamily: "Minionpro"}}>{item.answer}</div>
                   </div>
                 </div>
               ))}
