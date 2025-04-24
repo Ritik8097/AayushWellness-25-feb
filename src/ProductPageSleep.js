@@ -30,12 +30,16 @@ const ProductPageSleep = () => {
   const progressLineRef = useRef(null);
 
   const images = [
-   "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/1st_Banner_-_Product_Preview_-_22-1-2025.jpg?v=1742647416",
-    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/3rd_Banner_-_Benefits_-_25-1-2025.jpg?v=1742647369",
-    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/2nd_Banner_-_Ingredients_-_24-1-2025.jpg?v=1742647430",
-    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/9th_Banner_-_Product_room_bg_-_22-1-2025.jpg?v=1742646656",
-    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/4th_Banner_-_How_it_works_-_24-1-2025.jpg?v=1742647394",
-    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/7th_Banner_-_Comparisn_Competitors_-_25-1-2025_2.jpg?v=1742647280",
+   "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/New_Theme_Banner_-_4rd_Banner_-_Sleep_-_24-3-2025.jpg?v=1745495576",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/New_Theme_Banner_-_7th_Banner_-_Sleep_-_26-3-2025.jpg?v=1745495576",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/New_Theme_Banner_-_3rd_Banner_-_Sleep_-_24-3-2025.jpg?v=1745495576",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/New_Theme_Banner_-_8th_Banner_-_Sleep_-_26-3-2025.jpg?v=1745495576",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/New_Theme_Banner_-_6th_Banner_-_Sleep_-_24-3-2025_-_ingr_3.jpg?v=1745495576",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/New_Theme_Banner_-_10th_Banner_-_Sleep_-_01-4-2025.jpg?v=1745495576",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/New_Theme_Banner_-_4rd_Banner_-_Sleep_-_24-3-2025_-_C.jpg?v=1745495576",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/New_Theme_Banner_-_9th_Banner_-_Sleep_-_01-4-2025_-_option_4.jpg?v=1745495576",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/New_Theme_Banner_-_5th_Banner_-_Sleep_-_24-3-2025_2.jpg?v=1745495575",
+    "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/New_Theme_Banner_-_1st_Banner_-_Sleep_-_22-3-2025_-_option_2.jpg?v=1745495576",
     "https://iili.io/dWaG5Xt.gif",
   ];
 
