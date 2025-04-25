@@ -6,6 +6,18 @@ function HomeBlog() {
 
   const additionalBlogs = [
     {
+          date: "18. 04. 2025",
+          title: "The Power of Mindfulness: How It Can Improve Your Mental and Physical Health",
+          link: "/BlogH7",
+          image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_5.jpg?v=1744959350",
+    },
+    {
+      date: "18. 04. 2025",
+      title: "The Role of Yoga in Holistic Wellness and Overall Health",
+      link: "/BlogH8",
+      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_6.jpg?v=1744959349",
+    },
+    {
       date: "18. 04. 2025",
       title: "Home Workouts That Actually Work: Fitness Without the Gym",
       link: "/BlogH9",
@@ -82,16 +94,16 @@ function HomeBlog() {
 
         {renderBlog({
           date: "18. 04. 2025",
-          title: "The Power of Mindfulness: How It Can Improve Your Mental and Physical Health",
-          link: "/BlogH7",
-          image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_5.jpg?v=1744959350",
+          title: "Unlock the Benefits of Sleep: The Health Hack You Need",
+          link: "/BlogH11",
+          image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_1.jpg?v=1745575993",
         }, 0)}
 
         {renderBlog({
           date: "18. 04. 2025",
-          title: "The Role of Yoga in Holistic Wellness and Overall Health",
-          link: "/BlogH8",
-          image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_6.jpg?v=1744959349",
+          title: "The Effects of Too Much Screen Time on Your Health and How to Fix It",
+          link: "/BlogH12",
+          image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_2.jpg?v=1745575992",
         }, 1)}
 
         {showMoreBlogs && additionalBlogs.map((blog, index) => renderBlog(blog, index + 2))}
