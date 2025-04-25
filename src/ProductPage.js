@@ -369,7 +369,7 @@ const ProducCarousal = () => {
               </div>
 
               <div className="mb-8">
-                <h3 className="text-lg font-medium mb-4">Select Your Cadence</h3>
+                
 
                 <div className="space-y-4">
                   <div className="border border-gray-200 rounded-lg p-4 flex justify-between items-center">
