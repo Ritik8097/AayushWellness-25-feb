@@ -38,7 +38,7 @@ const ProductPageSleep = lazy(() => import("./ProductPageSleep"));
 const AayushVenture = lazy(() => import("./AayushVenture"));
 const Health = lazy(() => import("./Health"));
 const Healthh = lazy(() => import("./Healthh"));
-const WelfareSection = lazy(() => import("./Welfaresection"));
+
 const Blog1 = lazy(() => import("./Blog1"));
 const Blog2 = lazy(() => import("./Blog2"));
 const Blog3 = lazy(() => import("./Blog3"));
@@ -107,7 +107,7 @@ const AnimatedRoutes = () => {
         <Route path="sustainability/lifecycle" element={<PageTransition><LifeCycle/></PageTransition>} />
         <Route path="adminpage" element={<PageTransition><AdminPage/></PageTransition>} />
         <Route path="*" element={<PageTransition><ErrorPage /></PageTransition>} />
-        <Route path="welfare" element={<PageTransition><WelfareSection/></PageTransition>} />
+        
         
       </Routes>
       </Suspense>
