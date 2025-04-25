@@ -108,6 +108,7 @@ const HNewFooter = () => {
                                            <li><Link to="/csr-at-aayush/malnutrition" onClick={() => window.scrollTo(0, 0)} className="text-muted-foreground hover:text-primary"  style={{color:'#ffffff'}}>Malnutrition</Link></li>
                                            <li><Link to="/csr-at-aayush/health-check" onClick={() => window.scrollTo(0, 0)} className="text-muted-foreground hover:text-primary"  style={{color:'#ffffff'}}>Healthcare Check</Link></li>
                                            <li><Link to="/sustainability" onClick={() => window.scrollTo(0, 0)} className="text-muted-foreground hover:text-primary"  style={{color:'#ffffff'}}>Sustainability</Link></li>
+                                           <li><Link to="/investors" onClick={() => window.scrollTo(0, 0)} className="text-muted-foreground hover:text-primary"  style={{color:'#ffffff'}}>Investors</Link></li>
                                            <li><Link to="/healthcare" onClick={() => window.scrollTo(0, 0)} className="text-muted-foreground hover:text-primary" style={{color:'#ffffff'}}>Healthcare</Link></li>
                                        </ul>
                                    </div>
