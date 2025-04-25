@@ -1,54 +1,65 @@
-import { BrowserRouter as Router, Route, Switch, Routes, useLocation } from "react-router-dom";
-import Layout from "./Layout";
-import Pdf from "./Pdf";
-import AdminPage from "./AdminPage";
-import LifeCycle from "./LifeCycle";
-import AboutUs from "./AboutUs";
-import WaterRisk from "./WaterRisk";
-import Ayurveda from "./Ayurveda";
-import ErrorPage from "./ErrorPage";
-import CsrAtAayush from "./CsrAtAayush";
-import Investors from "./Investors";
-import CompanyIntro from "./CompanyIntro";
-import ModernScience from "./ModernScience";
-import HealthWellness from "./HealthWellness";
-import MissionVision from "./MissionVision";
-import Malnutrition from "./Malnutrition";
-import HealthCheck from "./HealthCheck";
-import OurProduct from "./OurProduct";
-import Sustnability from "./Sustnability";
-import PressRelease from "./PressRelease";
-import Career from "./Career";
-import Support from "./Support";
-import InTheNews from "./InTheNews";
-import Library from "./Library";
-import PrivacyPolicy from "./PrivacyPolicy";
-import ProductCarousel from "./ProductPage";
-import ProductGummies from "./ProductPageGummies";
-import ProductPageSleep from "./ProductPageSleep";
-import AayushVenture from "./AayushVenture";
-import Health from "./Health";
-import PageTransition from "./PageTransition";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import { Suspense, lazy } from "react";
 import { AnimatePresence } from "framer-motion";
-import Blog1 from "./Blog1";
-import Blog2 from "./Blog2";
-import Blog3 from "./Blog3";
-import Blog4 from "./Blog4";
-import Blog5 from "./Blog5";
-import Blog6 from "./Blog6";
-import BlogH7 from "./BlogH7";
-import BlogH8 from "./BlogH8";
-import BlogH9 from "./BlogH9";
-import BlogH10 from "./BlogH10";
+import PageTransition from "./PageTransition";
+import './index.css';
+import PageSkeleton from "./PageSkeleton";
 
-import './index.css'
-import Healthh from "./Healthh";
+// Regular import for homepage
+import Layout from "./Layout";
+
+// Lazy imports for inner pages
+const Pdf = lazy(() => import("./Pdf"));
+const AdminPage = lazy(() => import("./AdminPage"));
+const LifeCycle = lazy(() => import("./LifeCycle"));
+const AboutUs = lazy(() => import("./AboutUs"));
+const WaterRisk = lazy(() => import("./WaterRisk"));
+const Ayurveda = lazy(() => import("./Ayurveda"));
+const ErrorPage = lazy(() => import("./ErrorPage"));
+const CsrAtAayush = lazy(() => import("./CsrAtAayush"));
+const Investors = lazy(() => import("./Investors"));
+const CompanyIntro = lazy(() => import("./CompanyIntro"));
+const ModernScience = lazy(() => import("./ModernScience"));
+const HealthWellness = lazy(() => import("./HealthWellness"));
+const MissionVision = lazy(() => import("./MissionVision"));
+const Malnutrition = lazy(() => import("./Malnutrition"));
+const HealthCheck = lazy(() => import("./HealthCheck"));
+const OurProduct = lazy(() => import("./OurProduct"));
+const Sustnability = lazy(() => import("./Sustnability"));
+const PressRelease = lazy(() => import("./PressRelease"));
+const Career = lazy(() => import("./Career"));
+const Support = lazy(() => import("./Support"));
+const InTheNews = lazy(() => import("./InTheNews"));
+const Library = lazy(() => import("./Library"));
+const PrivacyPolicy = lazy(() => import("./PrivacyPolicy"));
+const ProductCarousel = lazy(() => import("./ProductPage"));
+const ProductGummies = lazy(() => import("./ProductPageGummies"));
+const ProductPageSleep = lazy(() => import("./ProductPageSleep"));
+const AayushVenture = lazy(() => import("./AayushVenture"));
+const Health = lazy(() => import("./Health"));
+const Healthh = lazy(() => import("./Healthh"));
+const WelfareSection = lazy(() => import("./Welfaresection"));
+const Blog1 = lazy(() => import("./Blog1"));
+const Blog2 = lazy(() => import("./Blog2"));
+const Blog3 = lazy(() => import("./Blog3"));
+const Blog4 = lazy(() => import("./Blog4"));
+const Blog5 = lazy(() => import("./Blog5"));
+const Blog6 = lazy(() => import("./Blog6"));
+const BlogH7 = lazy(() => import("./BlogH7"));
+const BlogH8 = lazy(() => import("./BlogH8"));
+const BlogH9 = lazy(() => import("./BlogH9"));
+const BlogH10 = lazy(() => import("./BlogH10"));
+
+
+
 const AnimatedRoutes = () => {
   const location = useLocation();
 
   return (
     <AnimatePresence mode="wait">
+      <Suspense fallback={<PageSkeleton />}>
       <Routes location={location} key={location.pathname}>
+      
         <Route path="/" element={<PageTransition><Layout /></PageTransition>} />
         <Route path="sustainability" element={<PageTransition><Sustnability /></PageTransition>} />
         <Route path="newsroom/in-the-news" element={<PageTransition><PressRelease/></PageTransition>} />
@@ -74,14 +85,15 @@ const AnimatedRoutes = () => {
         <Route path="/Blog4" element={<Blog4 />} />
     <Route path="/nutraceuticals-vs-traditional" element={<Blog5 />} />
      <Route path="/top-7-ayurvedic-ingredients" element={<Blog6 />} />
-    <Route path="/BlogH7" element={<BlogH7 />} />
+
+     <Route path="/BlogH7" element={<BlogH7 />} />
      <Route path="/BlogH8" element={<BlogH8 />} />
      <Route path="/BlogH9" element={<BlogH9 />} />
      <Route path="/BlogH10" element={<BlogH10 />} />
 
         <Route path="ourproduct" element={<PageTransition><OurProduct /></PageTransition>} />
         <Route path="csr-at-aayush/health-check" element={<PageTransition><HealthCheck/></PageTransition>} />
-        <Route path="csr-at-aayush/malnutrition" element={<PageTransition><Malnutrition/></PageTransition>} />
+        <Route path="csr-at-aayush/malnutrition" element={<PageTransition><WelfareSection/></PageTransition>} />
         <Route path="investors" element={<PageTransition><Investors/></PageTransition>} />
         <Route path="wellness/modern-science" element={<PageTransition><ModernScience/></PageTransition>} />
         <Route path="about/company-intro" element={<PageTransition><CompanyIntro/></PageTransition>} />
@@ -95,7 +107,10 @@ const AnimatedRoutes = () => {
         <Route path="sustainability/lifecycle" element={<PageTransition><LifeCycle/></PageTransition>} />
         <Route path="adminpage" element={<PageTransition><AdminPage/></PageTransition>} />
         <Route path="*" element={<PageTransition><ErrorPage /></PageTransition>} />
+        <Route path="welfare" element={<PageTransition><WelfareSection/></PageTransition>} />
+        
       </Routes>
+      </Suspense>
     </AnimatePresence>
   );
 };
