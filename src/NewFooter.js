@@ -224,6 +224,14 @@ const NewFooter = () => {
                     Sustainability
                   </Link>
                 </li>
+                      <li> 
+                    <Link
+                    to="/investors"
+                    className="text-white no-underline hover:underline  text-[20px]"
+                  >
+                    Investor
+                  </Link>
+                  </li>
                 <li>
                   <Link to="/healthcare" className="text-white no-underline hover:underline  text-[20px]">
                     Healthcare
