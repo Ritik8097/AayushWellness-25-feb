@@ -120,25 +120,26 @@ const NewFooter = () => {
             </form>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-8 md:gap-10 md:pl-[3rem] ">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-10 md:pl-[3rem] ">
             <div className="min-w-[120px]">
               <h3 className="mb-4 text-xxxl font-medium">Company</h3>
               <ul className="list-none p-0">
                 <li className="mb-2">
-                  <Link to="/about-us" className="text-white no-underline hover:underline  text-[20px]">
+                  <Link
+                    to="/about-us"
+                    className="text-white no-underline hover:underline  text-[20px]"
+                  >
                     About Us
                   </Link>
                 </li>
                 <li className="mb-2">
-                  <Link
-                    to="/about/company-intro"
-                    className="text-white no-underline hover:underline  text-[20px]"
-                  >
-                    Our Story
-                  </Link>
+                 
                 </li>
                 <li className="mb-2">
-                  <Link to="/career" className="text-white no-underline hover:underline  text-[20px]">
+                  <Link
+                    to="/support"
+                    className="text-white no-underline hover:underline  text-[20px]"
+                  >
                     Contact Us
                   </Link>
                 </li>
@@ -164,7 +165,10 @@ const NewFooter = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/ayurveda" className="text-white no-underline hover:underline  text-[20px]">
+                  <Link
+                    to="/ayurveda"
+                    className="text-white no-underline hover:underline  text-[20px]"
+                  >
                     Ayurveda
                   </Link>
                 </li>
@@ -175,8 +179,8 @@ const NewFooter = () => {
                   >
                     Health & Wellness
                   </Link>
-                </li>                               
-              </ul>             
+                </li>
+              </ul>
             </div>
             <div className="min-w-[120px]">
               <h3 className="mb-4 text-xxxl font-medium ">Newsroom</h3>
@@ -197,12 +201,43 @@ const NewFooter = () => {
                     Press Release
                   </Link>
                 </li>
-                
-                </ul>
-              </div>
+                <li>
+                  {/* <Link
+                    to="/newsroom/library"
+                    className="text-white no-underline hover:underline  text-[20px]"
+                  >
+                    Library
+                  </Link> */}
+                </li>
+              </ul>
+            </div>
             <div className="min-w-[120px]">
               <h3 className="mb-4 text-xxxl  font-medium">Corporate</h3>
               <ul className="list-none p-0">
+              <li> 
+                    <Link
+                    to="/investors"
+                    className="text-white no-underline hover:underline  text-[20px]"
+                  >
+                    Investor
+                  </Link>
+                  </li>
+                <li>
+                  <Link
+                    to="/healthcare"
+                    className="text-white no-underline hover:underline  text-[20px]"
+                  >
+                    Healthcare
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/growth-accelerator"
+                    className="text-white no-underline hover:underline  text-[20px]"
+                  >
+                    Accelarator
+                  </Link>
+                </li>
                 <li>
                   <Link
                     to="/csr-at-aayush/malnutrition"
@@ -220,31 +255,15 @@ const NewFooter = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/sustainability" className="text-white no-underline hover:underline  text-[20px]">
+                  <Link
+                    to="/sustainability"
+                    className="text-white no-underline hover:underline  text-[20px]"
+                  >
                     Sustainability
                   </Link>
+                                 
                 </li>
-                      <li> 
-                    <Link
-                    to="/investors"
-                    className="text-white no-underline hover:underline  text-[20px]"
-                  >
-                    Investor
-                  </Link>
-                  </li>
-                <li>
-                  <Link to="/healthcare" className="text-white no-underline hover:underline  text-[20px]">
-                    Healthcare
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/growth-accelerator"
-                    className="text-white no-underline hover:underline  text-[20px]"
-                  >
-                    Accelarator
-                  </Link>
-                </li>
+               
               </ul>
             </div>
           </div>
