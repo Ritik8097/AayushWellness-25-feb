@@ -16,8 +16,11 @@ const AccordionItem = ({ handleToggle, active, faq }) => {
         }
     }, [active, id]);
 
-    // Sort text array in descending order based on 'head'
-   const sortedText = Array.isArray(text) ? text : [];
+        // Sort text array in descending order based on 'head'
+//    const sortedText = Array.isArray(text) ? text : [];
+
+// Reverse text array to show latest data first
+const sortedText = Array.isArray(text) ? [...text].reverse() : [];
 
     return (
          <div className="rc-accordion-card !mb-0 !rounded-none">
