@@ -802,7 +802,7 @@ const ProductPageSleep = () => {
                     className="w-full flex justify-between items-start py-6 text-left focus:outline-none group"
                     onClick={() => toggleAccordion(index)}
                   >
-                    <h3 className="text-xlg md:text-xxl font-semibold text-[#420560] pr-8" style={{fontFamily: "ROGBold"}}>
+                    <h3 className="text-xlg md:text-[24px] font-semibold text-[#420560] pr-8" style={{fontFamily: "ROGBold"}}>
                       {item.question}
                     </h3>
                     <span className="flex-shrink-0 mt-1">
