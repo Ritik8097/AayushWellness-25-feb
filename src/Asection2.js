@@ -8,8 +8,8 @@ const Asection2 = () => {
 
   useEffect(() => {
     const isMobile = window.innerWidth <= 768;
-    const mobileVideo = "https://res.cloudinary.com/dudn5tfkq/video/upload/v1744351327/about_us_vidoes_-_portarit_2_npgan5.m3u8";
-    const desktopVideo = "https://res.cloudinary.com/dudn5tfkq/video/upload/v1744351322/about_us_vidoes_2_er4z6o.m3u8";
+    const mobileVideo = "https://res.cloudinary.com/dyelrauyn/video/upload/v1746703367/q177lanbq16ep5td0pv2.m3u8";
+    const desktopVideo = "https://res.cloudinary.com/dyelrauyn/video/upload/v1746703313/fqjtnrvctr8snre1wac0.m3u8";
     setVideoSrc(isMobile ? mobileVideo : desktopVideo);
   }, []);
 
