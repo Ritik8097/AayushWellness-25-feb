@@ -344,7 +344,7 @@ export default function HealthAgentForm() {
                     animation: "fadeIn 0.5s ease forwards 0.3s",
                   }}
                 >
-                  <h1 className="font-bold text-[#233f8f] text-3xl sm:text-4xl mb-2">Healthcare Health Agent Form</h1>
+                  <h1 className="font-bold !text-[#233f8f] text-3xl sm:text-4xl mb-2">Healthcare Health Agent Form</h1>
                   <p className="text-gray-600 mb-1 max-w-2xl mx-auto">
                     Become a trusted health representative in your community and start your journey with us.
                   </p>
