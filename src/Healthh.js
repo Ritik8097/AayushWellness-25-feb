@@ -8,6 +8,7 @@ import Service from './Service'
 import Testimonal from './Testimonal'
 import HNewFooter from './HNewfooter'
 import EarningPotentialSection from './Earningpotential'
+import FormSelector from './Form-Selector'
 
 
 const Healthh = () => {
@@ -16,6 +17,7 @@ const Healthh = () => {
     <Header/>
     <Banner/>
     <Banner2 />
+    <FormSelector />
     <Specialities/>
     <Service/>
      <Blog />
