@@ -7,6 +7,7 @@ import PageSkeleton from "./PageSkeleton";
 
 // Regular import for homepage
 import Layout from "./Layout";
+import LabTieUpForm from "./Labtieup";
 
 // Lazy imports for inner pages
 const Pdf = lazy(() => import("./Pdf"));
@@ -78,6 +79,7 @@ const AnimatedRoutes = () => {
     <Route path="gummies" element={<PageTransition><ProductGummies /></PageTransition>} />
     <Route path="gummies-sleep" element={<PageTransition><ProductPageSleep /></PageTransition>} />
         <Route path="healthcare" element={<PageTransition><Healthh /></PageTransition>} />
+        <Route path="healthcare/Lab-registration" element={<PageTransition><LabTieUpForm /></PageTransition>} />
         <Route path="pan-masala" element={<PageTransition><ProductCarousel /></PageTransition>} />
         <Route path="gummies" element={<PageTransition><ProductGummies /></PageTransition>} />
         <Route path="gummies-sleep" element={<PageTransition><ProductPageSleep /></PageTransition>} />
