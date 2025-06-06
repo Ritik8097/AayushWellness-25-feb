@@ -11,9 +11,9 @@ function MissionVision() {
 
   // Replace with your Cloudinary video URLs (must be .m3u8 format)
   const DESKTOP_VIDEO_URL =
-    "https://res.cloudinary.com/dyelrauyn/video/upload/v1746705348/ur6urwkotb4kl7r4twfq.m3u8"
+    "https://cdn.shopify.com/videos/c/o/v/8007cadc8fd24346821ed19cd1964ce6.mp4"
   const MOBILE_VIDEO_URL =
-    "https://res.cloudinary.com/dyelrauyn/video/upload/v1746705344/eb4kqbvu48fawrrfixap.m3u8"
+    "https://cdn.shopify.com/videos/c/o/v/0c69667d47d748a0a886cfda5c5759c0.mp4"
 
   useEffect(() => {
     setTimeout(() => {
