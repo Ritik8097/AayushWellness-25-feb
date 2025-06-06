@@ -178,7 +178,7 @@ const LabTieUpForm = () => {
         formDataToSend.append("labRateCard", formData.labRateCard)
       }
 
-      const response = await fetch("http://localhost:5000/api/lab/add", {
+      const response = await fetch("https://formbackend-n4tm.onrender.com/api/lab/add", {
         method: "POST",
         body: formDataToSend,
         // Note: Don't set Content-Type header when sending FormData
