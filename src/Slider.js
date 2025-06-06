@@ -72,11 +72,11 @@ export default function AnimatedSlider() {
 
   const videos = {
     desktop: {
-      src: "https://res.cloudinary.com/dyelrauyn/video/upload/v1746700590/i3zu4g8orngubxgdi0dc.m3u8",
+      src: "https://res.cloudinary.com/dcx9ybp2v/video/upload/v1749207774/dptufqngnc84pruxbfjd.m3u8",
       text: "Transforming Wellness , Transforming Lives",
     },
     mobile: {
-      src: "https://res.cloudinary.com/dyelrauyn/video/upload/v1746700592/ngahi3e9q6of8ezb7zfw.m3u8",
+      src: "https://res.cloudinary.com/dcx9ybp2v/video/upload/v1749207776/bgf8ijbmeytp2u7h8cka.m3u8",
       text: "Transforming wellness, transforming lives",
     },
   }
