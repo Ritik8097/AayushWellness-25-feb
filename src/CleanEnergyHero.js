@@ -20,11 +20,11 @@ const CleanEnergyHero = () => {
 
     const videos = {
        desktop: {
-        src: "https://res.cloudinary.com/dyelrauyn/video/upload/v1746702998/nidxfgeqigjs3ttwflv1.m3u8",
+        src: "https://res.cloudinary.com/dcx9ybp2v/video/upload/v1749207736/hcfbwnasinbcd0nuqqyx.m3u8",
         text: "Transforming Wellness , Transforming Lives",
       },
       mobile: {
-        src: "https://res.cloudinary.com/dyelrauyn/video/upload/v1746702998/nidxfgeqigjs3ttwflv1.m3u8",
+        src: "https://res.cloudinary.com/dcx9ybp2v/video/upload/v1749207736/hcfbwnasinbcd0nuqqyx.m3u8",
         text: "Transforming wellness, transforming lives",
       },
     };
