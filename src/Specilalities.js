@@ -177,10 +177,10 @@ const Specialities = () => {
                 <button className="read-more" onClick={() => openModal(service)}>
                   Learn More 
                 </button>
-                <div className="services-shape">
+                <div className="services-shape" style={{ display: 'none' }}>
                   <img
                     src="https://www.xpresscure.com/img/services-card-shape.png"
-                    alt="Image"
+                    alt="Image" 
                   />
                 </div>
               </div>
