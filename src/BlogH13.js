@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Header from "./Header";
 import NewFooter from "./NewFooter";
 
-const BlogH14 = () => {
+const BlogH13 = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -108,4 +108,4 @@ const BlogH14 = () => {
     );
 };
 
-export default BlogH14;
+export default BlogH13;
