@@ -41,6 +41,18 @@ function HomeBlog() {
       link: "/top-7-ayurvedic-ingredients",
       image: "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/BLOG_-_2.jpg?v=17408342490",
     },
+     {
+     date: "18. 04. 2025",
+          title: "Unlock the Benefits of Sleep: The Health Hack You Need",
+          link: "/BlogH11",
+          image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_1.jpg?v=1745575993",
+    },
+    {
+       date: "18. 04. 2025",
+          title: "The Effects of Too Much Screen Time on Your Health and How to Fix It",
+          link: "/BlogH12",
+          image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_2.jpg?v=1745575992",
+    },
   ];
 
   const handleToggleBlogs = () => {
@@ -93,17 +105,17 @@ function HomeBlog() {
         </h1>
 
         {renderBlog({
-          date: "18. 04. 2025",
-          title: "Unlock the Benefits of Sleep: The Health Hack You Need",
-          link: "/BlogH11",
-          image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_1.jpg?v=1745575993",
+         date: "21. 06. 2025",
+      title: "Easy Ways to Detox Your Body Naturally at Home",
+      link: "/BlogH13",
+      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_13.jpg?v=1750338371",
         }, 0)}
 
         {renderBlog({
-          date: "18. 04. 2025",
-          title: "The Effects of Too Much Screen Time on Your Health and How to Fix It",
-          link: "/BlogH12",
-          image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_2.jpg?v=1745575992",
+       date: "21. 06. 2025",
+      title: "Stress vs Burnout: How to Tell the Difference and Heal Naturally",
+      link: "/BlogH14",
+      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_12.jpg?v=1750338371",
         }, 1)}
 
         {showMoreBlogs && additionalBlogs.map((blog, index) => renderBlog(blog, index + 2))}
