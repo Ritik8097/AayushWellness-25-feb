@@ -6,6 +6,19 @@ function HomeBlog() {
 
   const additionalBlogs = [
     {
+date: "21. 06. 2025",
+      title: "Easy Ways to Detox Your Body Naturally at Home",
+      link: "/BlogH13",
+      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_13.jpg?v=1750338371"
+
+    },
+    {
+ date: "21. 06. 2025",
+      title: "Stress vs Burnout: How to Tell the Difference and Heal Naturally",
+      link: "/BlogH14",
+      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_12.jpg?v=1750338371"
+    },
+    {
           date: "18. 04. 2025",
           title: "The Power of Mindfulness: How It Can Improve Your Mental and Physical Health",
           link: "/BlogH7",
@@ -29,18 +42,6 @@ function HomeBlog() {
       link: "/BlogH10",
       image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_9.jpg?v=1744959346",
     },
-    {
-      date: "01. 03. 2025",
-      title: "Nutraceuticals vs. Traditional Supplements: What's the Difference?",
-      link: "/nutraceuticals-vs-traditional",
-      image: "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/BLOG_-1.jpg?v=1740834248",
-    },
-    {
-      date: "01. 03. 2025",
-      title: "Top 7 Ayurvedic Ingredients to Improve Focus and Mental Clarity.",
-      link: "/top-7-ayurvedic-ingredients",
-      image: "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/BLOG_-_2.jpg?v=17408342490",
-    },
      {
      date: "18. 04. 2025",
           title: "Unlock the Benefits of Sleep: The Health Hack You Need",
@@ -53,6 +54,19 @@ function HomeBlog() {
           link: "/BlogH12",
           image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_2.jpg?v=1745575992",
     },
+    {
+      date: "01. 03. 2025",
+      title: "Nutraceuticals vs. Traditional Supplements: What's the Difference?",
+      link: "/nutraceuticals-vs-traditional",
+      image: "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/BLOG_-1.jpg?v=1740834248",
+    },
+    {
+      date: "01. 03. 2025",
+      title: "Top 7 Ayurvedic Ingredients to Improve Focus and Mental Clarity.",
+      link: "/top-7-ayurvedic-ingredients",
+      image: "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/BLOG_-_2.jpg?v=17408342490",
+    },
+    
   ];
 
   const handleToggleBlogs = () => {
@@ -105,17 +119,17 @@ function HomeBlog() {
         </h1>
 
         {renderBlog({
-         date: "21. 06. 2025",
-      title: "Easy Ways to Detox Your Body Naturally at Home",
-      link: "/BlogH13",
-      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_13.jpg?v=1750338371",
+         date: "25. 06. 2025",
+      title: "Side Effects of Chewing Tobacco: What It’s Really Doing to Your Body",
+      link: "/BlogH15",
+      image: "  https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_15.jpg?v=1750765642 ",
         }, 0)}
 
         {renderBlog({
-       date: "21. 06. 2025",
-      title: "Stress vs Burnout: How to Tell the Difference and Heal Naturally",
-      link: "/BlogH14",
-      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_12.jpg?v=1750338371",
+       date: "25. 06. 2025",
+      title: " How Practicing Gratitude Can Transform Your Emotional and Physical Wellness",
+      link: "/BlogH16",
+      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_14.jpg?v=1750765644",
         }, 1)}
 
         {showMoreBlogs && additionalBlogs.map((blog, index) => renderBlog(blog, index + 2))}
