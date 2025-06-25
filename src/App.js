@@ -54,8 +54,8 @@ const BlogH11 = lazy(() => import("./BlogH11"));
 const BlogH12 = lazy(() => import("./BlogH12")); 
 const BlogH13 = lazy(() => import("./BlogH13")); 
 const BlogH14 = lazy(() => import("./BlogH14")); 
-const BlogH13 = lazy(() => import("./BlogH15")); 
-const BlogH14 = lazy(() => import("./BlogH16")); 
+const BlogH15 = lazy(() => import("./BlogH15")); 
+const BlogH16 = lazy(() => import("./BlogH16")); 
 
 
 
