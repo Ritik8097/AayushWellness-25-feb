@@ -54,6 +54,8 @@ const BlogH11 = lazy(() => import("./BlogH11"));
 const BlogH12 = lazy(() => import("./BlogH12")); 
 const BlogH13 = lazy(() => import("./BlogH13")); 
 const BlogH14 = lazy(() => import("./BlogH14")); 
+const BlogH13 = lazy(() => import("./BlogH15")); 
+const BlogH14 = lazy(() => import("./BlogH16")); 
 
 
 
@@ -100,6 +102,9 @@ const AnimatedRoutes = () => {
      <Route path="/BlogH12" element={<BlogH12 />} />
       <Route path="/BlogH13" element={<BlogH13 />} />
      <Route path="/BlogH14" element={<BlogH14 />} />
+  <Route path="/BlogH15" element={<BlogH15 />} />
+     <Route path="/BlogH16" element={<BlogH16 />} />
+
 
         <Route path="ourproduct" element={<PageTransition><OurProduct /></PageTransition>} />
         <Route path="csr-at-aayush/health-check" element={<PageTransition><HealthCheck/></PageTransition>} />
