@@ -6,12 +6,27 @@ function HomeBlog() {
 
   const additionalBlogs = [
     {
+      date: "25. 06. 2025",
+      title: "Side Effects of Chewing Tobacco: What It’s Really Doing to Your Body",
+      link: "/BlogH15",
+      image: "  https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_15.jpg?v=1750765642 ",
+        }, 
+
+      {
+       date: "25. 06. 2025",
+      title: " How Practicing Gratitude Can Transform Your Emotional and Physical Wellness",
+      link: "/BlogH16",
+      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_14.jpg?v=1750765644",
+      },
+
+      {
 date: "21. 06. 2025",
       title: "Easy Ways to Detox Your Body Naturally at Home",
       link: "/BlogH13",
       image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_13.jpg?v=1750338371"
 
     },
+
     {
  date: "21. 06. 2025",
       title: "Stress vs Burnout: How to Tell the Difference and Heal Naturally",
@@ -66,6 +81,7 @@ date: "21. 06. 2025",
       link: "/top-7-ayurvedic-ingredients",
       image: "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/BLOG_-_2.jpg?v=17408342490",
     },
+
     
   ];
 
@@ -120,16 +136,16 @@ date: "21. 06. 2025",
 
         {renderBlog({
          date: "25. 06. 2025",
-      title: "Side Effects of Chewing Tobacco: What It’s Really Doing to Your Body",
-      link: "/BlogH15",
-      image: "  https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_15.jpg?v=1750765642 ",
+      title: "Sattvic Diet: The Underrated Key to Calm, Clear Thinking",
+      link: "/BlogH17",
+      image: "  https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_16.jpg?v=1750919519 ",
         }, 0)}
 
         {renderBlog({
        date: "25. 06. 2025",
-      title: " How Practicing Gratitude Can Transform Your Emotional and Physical Wellness",
-      link: "/BlogH16",
-      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_14.jpg?v=1750765644",
+      title: " Exploring Mental Health Stigma in Today’s Fast-Moving World",
+      link: "/BlogH18",
+      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_17.jpg?v=1750919516",
         }, 1)}
 
         {showMoreBlogs && additionalBlogs.map((blog, index) => renderBlog(blog, index + 2))}
