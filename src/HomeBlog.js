@@ -81,6 +81,20 @@ date: "21. 06. 2025",
       link: "/top-7-ayurvedic-ingredients",
       image: "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/BLOG_-_2.jpg?v=17408342490",
     },
+    {
+       date: "25. 06. 2025",
+      title: "Sattvic Diet: The Underrated Key to Calm, Clear Thinking",
+      link: "/BlogH17",
+      image: "  https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_16.jpg?v=1750919519 ",
+    },
+    {
+       date: "25. 06. 2025",
+      title: " Exploring Mental Health Stigma in Today’s Fast-Moving World",
+      link: "/BlogH18",
+      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_17.jpg?v=1750919516",
+
+    },
+     
 
     
   ];
@@ -135,17 +149,17 @@ date: "21. 06. 2025",
         </h1>
 
         {renderBlog({
-         date: "25. 06. 2025",
-      title: "Sattvic Diet: The Underrated Key to Calm, Clear Thinking",
-      link: "/BlogH17",
-      image: "  https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_16.jpg?v=1750919519 ",
+         date: "03. 07. 2025",
+      title: " Top 5 Natural Ways to Boost Your Energy and Wellness Every Day",
+      link: "/BlogH19",
+      image: "  https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_18.jpg?v=1751461690 ",
         }, 0)}
 
         {renderBlog({
-       date: "25. 06. 2025",
-      title: " Exploring Mental Health Stigma in Today’s Fast-Moving World",
-      link: "/BlogH18",
-      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_17.jpg?v=1750919516",
+       date: "03. 07. 2025",
+      title: " How Harmful Ingredients in Pan Masala Affect Your Health",
+      link: "/BlogH20",
+      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_19.jpg?v=1751461688",
         }, 1)}
 
         {showMoreBlogs && additionalBlogs.map((blog, index) => renderBlog(blog, index + 2))}
