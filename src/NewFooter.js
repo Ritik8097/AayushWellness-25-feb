@@ -6,15 +6,15 @@ import Hls from "hls.js"
 const NewFooter = () => {
   const [email, setEmail] = useState("")
   const [isSubscribed, setIsSubscribed] = useState(false)
-  const [videoSrc, setVideoSrc] = useState("https://res.cloudinary.com/dcx9ybp2v/video/upload/v1749207762/npnaafafzefb05xaqkrd.m3u8")
+  const [videoSrc, setVideoSrc] = useState("https://res.cloudinary.com/da2qlhv5l/video/upload/v1751522007/rnmwqvamasqxg9jgh7y3_o1ippt.m3u8")
   const videoRef = useRef(null)
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 768) {
-        setVideoSrc("https://res.cloudinary.com/dcx9ybp2v/video/upload/v1749207777/tvtxuonjslcbkekbyvit.m3u8")
+        setVideoSrc("https://res.cloudinary.com/da2qlhv5l/video/upload/v1751522016/zyrxramkyunlff9ffpxd_ud83cl.m3u8")
       } else {
-        setVideoSrc("https://res.cloudinary.com/dcx9ybp2v/video/upload/v1749207762/npnaafafzefb05xaqkrd.m3u8")
+        setVideoSrc("https://res.cloudinary.com/da2qlhv5l/video/upload/v1751522007/rnmwqvamasqxg9jgh7y3_o1ippt.m3u8")
       }
     }
 
