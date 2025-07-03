@@ -1593,6 +1593,13 @@
           "head": "Aayush Tax Policy",
           "link": "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Aayush-Tax_Policy.pdf?v=1732863486"
         }
+        ,
+        
+        {
+          "id": 203,
+          "head": "Policy on insider trading latest amended",
+          "link": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Policy_on_Insider_Trading_Latest_Amended.pdf?v=1751542836"
+        }
         
       ]
     }
@@ -2610,6 +2617,23 @@
           "link": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/NECS-Initial-Rejection-2025.pdf?v=1745231362"
         }
       
+  ]
+    },
+  {
+      "id": 14,
+      "header": "MOA / AOA",
+      "text": [
+     
+         {
+          "id": 1000001,
+          "head": "MOA_Aaysuh_Wellness",
+          "link": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Final_Altered_MOA_Aaysuh_Wellness.pdf?v=1751542836"
+        },
+        {
+          "id": 1000002,
+          "head": "AOA_Aaysuh_Wellness",
+          "link": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Article_of_Association.pdf?v=1751542836"
+        }      
   ]
     }
 ]
