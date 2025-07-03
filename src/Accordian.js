@@ -11,9 +11,9 @@ let faqs = require("./faqs.json");
 
 // Replace with your Cloudinary .m3u8 video URLs
 const DESKTOP_VIDEO_URL =
-  "https://res.cloudinary.com/dcx9ybp2v/video/upload/v1749207779/rena5uonguwj9inya2bj.m3u8";
+  "https://res.cloudinary.com/da2qlhv5l/video/upload/v1751522024/cpu2q2nw2hqz1sxv4tto_zwdr6q.m3u8";
 const MOBILE_VIDEO_URL =
-  "https://res.cloudinary.com/dcx9ybp2v/video/upload/v1749207774/v8vib59gxbzypkzd4ebq.m3u8";
+  "https://res.cloudinary.com/da2qlhv5l/video/upload/v1751522029/wzndszlpi7gdabmjkqtg_ucdn0x.m3u8";
 
 const Accordionweb = () => {
   const [active, setActive] = useState(faqs[0].id);
