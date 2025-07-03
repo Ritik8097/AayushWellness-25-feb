@@ -70,13 +70,13 @@ export default function AnimatedSlider() {
     return () => window.removeEventListener("resize", handleResize)
   }, [])
 
-  const videos = {
+ const videos = {
     desktop: {
-      src: "https://res.cloudinary.com/dcx9ybp2v/video/upload/v1749207774/dptufqngnc84pruxbfjd.m3u8",
+      src: "https://res.cloudinary.com/da2qlhv5l/video/upload/v1751521930/Homeabnner1_lytfiz.m3u8",
       text: "Transforming Wellness , Transforming Lives",
     },
     mobile: {
-      src: "https://res.cloudinary.com/dcx9ybp2v/video/upload/v1749207776/bgf8ijbmeytp2u7h8cka.m3u8",
+      src: "https://res.cloudinary.com/da2qlhv5l/video/upload/v1751522018/ngahi3e9q6of8ezb7zfw_1_qw7cty.m3u8",
       text: "Transforming wellness, transforming lives",
     },
   }
