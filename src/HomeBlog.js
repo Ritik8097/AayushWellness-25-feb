@@ -93,7 +93,19 @@ date: "21. 06. 2025",
       link: "/BlogH18",
       image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_17.jpg?v=1750919516",
 
-    },
+    },{
+     date: "03. 07. 2025",
+      title: " Top 5 Natural Ways to Boost Your Energy and Wellness Every Day",
+      link: "/BlogH19",
+      image: "  https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_18.jpg?v=1751461690 ",
+        },
+
+      {
+       date: "03. 07. 2025",
+      title: " How Harmful Ingredients in Pan Masala Affect Your Health",
+      link: "/BlogH20",
+      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_19.jpg?v=1751461688",
+        },
      
 
     
@@ -149,17 +161,17 @@ date: "21. 06. 2025",
         </h1>
 
         {renderBlog({
-         date: "03. 07. 2025",
-      title: " Top 5 Natural Ways to Boost Your Energy and Wellness Every Day",
-      link: "/BlogH19",
-      image: "  https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_18.jpg?v=1751461690 ",
+         date: "05. 07. 2025",
+      title: " How Meditation Can Enhance Your Overall Wellness and Calm Your Mind",
+      link: "/BlogH21",
+      image: " https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_20.jpg?v=1751719097",
         }, 0)}
 
         {renderBlog({
-       date: "03. 07. 2025",
-      title: " How Harmful Ingredients in Pan Masala Affect Your Health",
-      link: "/BlogH20",
-      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_19.jpg?v=1751461688",
+       date: "05. 07. 2025",
+      title: " Surprising Reasons You’re Still Tired After 8 Hours of Sleep",
+      link: "/BlogH22",
+      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_21.jpg?v=1751719094",
         }, 1)}
 
         {showMoreBlogs && additionalBlogs.map((blog, index) => renderBlog(blog, index + 2))}
