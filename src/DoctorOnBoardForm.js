@@ -120,7 +120,7 @@ const DoctorOnboardForm = () => {
       const controller = new AbortController()
       const timeoutId = setTimeout(() => controller.abort(), 60000) // 60 second timeout
 
-      const response = await fetch("https://formbackend-n4tm.onrender.com/api/doctors/add", {
+      const response = await fetch("https://healthcare-backend-production-dc4c.up.railway.app/api/doctors/add", {
         method: "POST",
         body: formData,
      
@@ -190,7 +190,7 @@ const DoctorOnboardForm = () => {
       const controller = new AbortController()
       const timeoutId = setTimeout(() => controller.abort(), 60000) // 60 second timeout
 
-      const response = await fetch("https://formbackend-n4tm.onrender.com/api/doctors/download", {
+      const response = await fetch("https://healthcare-backend-production-dc4c.up.railway.app/api/doctors/download", {
         signal: controller.signal,
       })
 
