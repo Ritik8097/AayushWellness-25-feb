@@ -177,7 +177,7 @@ export default function FranchiseOnBoardForm() {
       const controller = new AbortController()
       const timeoutId = setTimeout(() => controller.abort(), 60000) // 60 second timeout
 
-      const response = await fetch("https://formbackend-n4tm.onrender.com/api/franchise/add", {
+      const response = await fetch("https://healthcare-backend-production-dc4c.up.railway.app/api/franchise/add", {
         method: "POST",
         body: formData,
       })
@@ -248,7 +248,7 @@ export default function FranchiseOnBoardForm() {
       const controller = new AbortController()
       const timeoutId = setTimeout(() => controller.abort(), 60000) // 60 second timeout
 
-      const response = await fetch("https://formbackend-n4tm.onrender.com/api/franchise/download", {
+      const response = await fetch("https://healthcare-backend-production-dc4c.up.railway.app/api/franchise/download", {
         signal: controller.signal,
       })
 
