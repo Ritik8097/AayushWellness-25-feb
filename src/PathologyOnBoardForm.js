@@ -146,7 +146,7 @@ export default function PathologyPartnershipForm() {
       const timeoutId = setTimeout(() => controller.abort(), 60000) // 60 second timeout
 
       // Use a specific endpoint that only returns pathology data (not doctor data)
-      const response = await fetch("https://formbackend-n4tm.onrender.com/api/pathology/download", {
+      const response = await fetch("https://healthcare-backend-production-dc4c.up.railway.app/api/pathology/download", {
         signal: controller.signal,
       })
 
@@ -207,7 +207,7 @@ export default function PathologyPartnershipForm() {
       const controller = new AbortController()
       const timeoutId = setTimeout(() => controller.abort(), 60000) // 60 second timeout
 
-      const response = await fetch("https://formbackend-n4tm.onrender.com/api/pathology/add", {
+      const response = await fetch("https://healthcare-backend-production-dc4c.up.railway.app/api/pathology/add", {
         method: "POST",
         body: formData,
       })
