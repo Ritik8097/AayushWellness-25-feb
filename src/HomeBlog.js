@@ -5,6 +5,33 @@ function HomeBlog() {
   const buttonRef = useRef(null);
 
   const additionalBlogs = [
+
+    {
+         date: "05. 07. 2025",
+      title: " How Meditation Can Enhance Your Overall Wellness and Calm Your Mind",
+      link: "/BlogH21",
+      image: " https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_20.jpg?v=1751719097",
+        },
+
+        {
+       date: "05. 07. 2025",
+      title: " Surprising Reasons You’re Still Tired After 8 Hours of Sleep",
+      link: "/BlogH22",
+      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_21.jpg?v=1751719094",
+        },
+    {
+     date: "03. 07. 2025",
+      title: " Top 5 Natural Ways to Boost Your Energy and Wellness Every Day",
+      link: "/BlogH19",
+      image: "  https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_18.jpg?v=1751461690 ",
+        },
+
+      {
+       date: "03. 07. 2025",
+      title: " How Harmful Ingredients in Pan Masala Affect Your Health",
+      link: "/BlogH20",
+      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_19.jpg?v=1751461688",
+        },
     {
       date: "25. 06. 2025",
       title: "Side Effects of Chewing Tobacco: What It’s Really Doing to Your Body",
@@ -42,13 +69,13 @@ date: "21. 06. 2025",
     {
       date: "18. 04. 2025",
       title: "The Role of Yoga in Holistic Wellness and Overall Health",
-      link: "/BlogH8",
+      link: "/BlogH18",
       image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_6.jpg?v=1744959349",
     },
     {
       date: "18. 04. 2025",
       title: "Home Workouts That Actually Work: Fitness Without the Gym",
-      link: "/BlogH9",
+      link: "/BlogH19",
       image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_7.jpg?v=1744959347",
     },
     {
@@ -93,19 +120,7 @@ date: "21. 06. 2025",
       link: "/BlogH18",
       image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_17.jpg?v=1750919516",
 
-    },{
-     date: "03. 07. 2025",
-      title: " Top 5 Natural Ways to Boost Your Energy and Wellness Every Day",
-      link: "/BlogH19",
-      image: "  https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_18.jpg?v=1751461690 ",
-        },
-
-      {
-       date: "03. 07. 2025",
-      title: " How Harmful Ingredients in Pan Masala Affect Your Health",
-      link: "/BlogH20",
-      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_19.jpg?v=1751461688",
-        },
+    },
      
 
     
@@ -161,17 +176,17 @@ date: "21. 06. 2025",
         </h1>
 
         {renderBlog({
-         date: "05. 07. 2025",
-      title: " How Meditation Can Enhance Your Overall Wellness and Calm Your Mind",
-      link: "/BlogH21",
-      image: " https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_20.jpg?v=1751719097",
+         date: "09. 07. 2025",
+      title: "  Herbal Stress Relief Remedies: Natural Ways to Reduce Anxiety and Stay Calm",
+      link: "/BlogH23",
+      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Blog_23.jpg?v=1751981381",
         }, 0)}
 
         {renderBlog({
-       date: "05. 07. 2025",
-      title: " Surprising Reasons You’re Still Tired After 8 Hours of Sleep",
-      link: "/BlogH22",
-      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_21.jpg?v=1751719094",
+       date: "09. 07. 2025",
+      title: "Skin Glow Supplements: How Beauty Gummies Support Clearer, Healthier Skin",
+      link: "/BlogH24",
+      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Blog_22.jpg?v=1751981382",
         }, 1)}
 
         {showMoreBlogs && additionalBlogs.map((blog, index) => renderBlog(blog, index + 2))}
