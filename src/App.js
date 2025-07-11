@@ -4,6 +4,7 @@ import { AnimatePresence } from "framer-motion";
 import PageTransition from "./PageTransition";
 import './index.css';
 import PageSkeleton from "./PageSkeleton";
+import PressReleases from "./Releases";
 
 // Regular import for homepage
 import Layout from "./Layout";
@@ -83,6 +84,7 @@ const AnimatedRoutes = () => {
         <Route path="newsroom/press-release" element={<PageTransition><InTheNews /></PageTransition>} />
         <Route path="newsroom/library" element={<PageTransition><Library /></PageTransition>} />
         <Route path="privacy-policy" element={<PageTransition><PrivacyPolicy /></PageTransition>} />
+        <Route path="press-releases" element={<PageTransition><PressReleases /></PageTransition>} />
         
         <Route path="growth-accelerator" element={<PageTransition><AayushVenture /></PageTransition>} />
         {/* this is for about us only name health*/}
