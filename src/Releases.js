@@ -35,7 +35,7 @@ const pressReleaseBody = `
   <p style="margin-bottom: 20px; color: black;">
     <b>Key Features of Aayush Health</b>
   </p>
-  <ul style="margin-left:1.5em;">
+  <ul>
     <li><b>24x7 Access to Verified Doctors:</b> Across general and specialty care disciplines.</li>
     <li><b>Digital Prescriptions:</b> Instantly available post consultation.</li>
     <li><b>Health Records Management:</b> Track, store, and share health documents securely.</li>
@@ -51,7 +51,7 @@ const pressReleaseBody = `
   <p style="margin-bottom: 20px; color: black;">
     Aayush Health is built to support and complement national initiatives like:
   </p>
-  <ul style="margin-left:1.5em; margin-bottom: 20px; ">
+  <ul style="margin-bottom: 20px; ">
    <b> <li>Ayushman Bharat Digital Mission (ABDM)</li></b>
   <b>  <li>National Digital Health Mission (NDHM)</li></b>
    <b> <li>Unified Health Interface (UHI)</li> </b>
@@ -100,7 +100,7 @@ const pressReleaseBody2 = `
   <p style="margin-bottom: 20px; color: black;">
     In today’s fragmented healthcare environment, accessing even the most basic services often means long wait times, confusing logistics, and high costs. With the launch of this initiative, Aayush Wellness Limited eliminates these challenges by offering a unified digital healthcare ecosystem, where:
   </p>
-  <ul style="margin-left:1.5em; color: black;">
+  <ul style="color: black;">
     <li>Patients can book tests online</li>
     <li>Samples are collected from their doorstep</li>
     <li>Doctors consult remotely</li>
