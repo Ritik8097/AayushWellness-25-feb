@@ -160,14 +160,14 @@ const pressReleaseBody3 = `
   <p style="margin-bottom: 20px; color: black;">
     The newly formed Singapore subsidiary will serve as a regional base to launch and scale the company’s nutraceutical and wellness products across the ASEAN region. Singapore has been identified as an optimal location due to its:
   </p>
-  <ul style="margin-left:1.5em; color: black;">
+  <ul style="color: black;">
     <li>Strong consumer demand for holistic wellness and health supplements</li>
     <li>Business-friendly environment and regulatory clarity</li>
     <li>Robust infrastructure and access to neighboring markets</li>
     <li>Position as a trusted international trade and innovation hub</li>
   </ul>
   <p style="margin-bottom: 20px; color: black;">
-    “Our new Singapore-based subsidiary will enable us to tap into one of the world’s most dynamic wellness markets, offering greater agility in operations, regulatory efficiency, and direct access to high-growth ASEAN economies. This is a critical step toward building a global wellness brand,”<br/>
+    “Our new Singapore-based subsidiary will enable us to tap into one of the world’s most dynamic wellness markets, offering greater agility in operations, regulatory efficiency, and direct access to high-growth ASEAN economies. This is a critical step toward building a global wellness brand,”
     said <b>Mr. Naveena Kumar, Managing Director, Aayush Wellness Limited.</b>
   </p>
   <p style="margin-bottom: 20px; color: black;">
@@ -179,7 +179,7 @@ const pressReleaseBody3 = `
   <p style="margin-bottom: 20px; color: black;">
     Singapore’s own nutraceutical sector is valued at over USD 1.3 billion, fueled by high health literacy, an aging population, and increasing demand for plant-based and science-backed wellness products. This provides a launchpad for Aayush Wellness Limited to expand into neighboring markets such as:
   </p>
-  <ul style="margin-left:1.5em; color: black;">
+  <ul style="color: black;">
     <li>Malaysia</li>
     <li>Indonesia</li>
     <li>Thailand</li>
@@ -191,7 +191,7 @@ const pressReleaseBody3 = `
   <p style="margin-bottom: 20px; color: black;">
     The formation of the subsidiary is not just an operational extension, it is a strategic investment in regional innovation and distribution. Key focus areas will include:
   </p>
-  <ul style="margin-left:1.5em; color: black;">
+  <ul style="color: black;">
     <li>Localization of Product Offerings: Tailoring formulations to meet regional consumer preferences and regulatory guidelines.</li>
     <li>Strategic Alliances: Building partnerships with regional distributors, e-commerce platforms, and wellness retailers.</li>
     <li>Export-Led Growth: Driving exports from India while expanding global brand presence.</li>
@@ -206,7 +206,7 @@ const pressReleaseBody3 = `
   <p style="margin-bottom: 20px; color: black;">
     This move complements Aayush Wellness’s diversified operations across:
   </p>
-  <ul style="margin-left:1.5em; color: black;">
+  <ul style=" color: black;">
     <li>Primary healthcare services</li>
     <li>Diagnostics & teleconsultation</li>
     <li>Nutraceuticals & herbal formulations</li>
