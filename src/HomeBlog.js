@@ -7,6 +7,19 @@ function HomeBlog() {
   const additionalBlogs = [
 
     {
+         date: "12. 07. 2025",
+      title: "Skin Glow Supplements: How Beauty Gummies Support Clearer, Healthier Skin",
+      link: "/BlogH24",
+      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Blog_22.jpg?v=1751981382",
+        },
+
+        {
+       date: "12. 07. 2025",
+      title: "  Herbal Stress Relief Remedies: Natural Ways to Reduce Anxiety and Stay Calm",
+      link: "/BlogH23",
+      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Blog_23.jpg?v=1751981381",
+        },
+    {
          date: "05. 07. 2025",
       title: " How Meditation Can Enhance Your Overall Wellness and Calm Your Mind",
       link: "/BlogH21",
@@ -176,17 +189,17 @@ date: "21. 06. 2025",
         </h1>
 
         {renderBlog({
-         date: "09. 07. 2025",
-      title: "  Herbal Stress Relief Remedies: Natural Ways to Reduce Anxiety and Stay Calm",
-      link: "/BlogH23",
-      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Blog_23.jpg?v=1751981381",
+         date: "12. 07. 2025",
+      title: "Daily Wellness Routine for Balanced Mind and Healthy Body",
+      link: "/BlogH26",
+      image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Blog_25.jpg?v=1752318696",
         }, 0)}
 
         {renderBlog({
-       date: "09. 07. 2025",
-      title: "Skin Glow Supplements: How Beauty Gummies Support Clearer, Healthier Skin",
-      link: "/BlogH24",
-      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Blog_22.jpg?v=1751981382",
+       date: "12. 07. 2025",
+      title: "Pan Masala Addiction: Causes, Symptoms, and Herbal Alternatives",
+      link: "/BlogH25",
+      image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Blog_24.jpg?v=1752318692",
         }, 1)}
 
         {showMoreBlogs && additionalBlogs.map((blog, index) => renderBlog(blog, index + 2))}
