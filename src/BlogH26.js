@@ -35,7 +35,7 @@ const BlogH26 = () => {
                         Daily Wellness Routine for Balanced Mind and Healthy Body
                     </h1>
                     <img
-                        src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_20.jpg?v=1751719097"
+                        src="https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Blog_25.jpg?v=1752318696"
                         alt="Daily Wellness Routine"
                         className="w-full h-auto md:h-[400px] lg:h-[500px] object-cover rounded-lg shadow-lg"
                     />
