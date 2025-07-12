@@ -35,7 +35,7 @@ const BlogH25 = () => {
                         Pan Masala Addiction: Causes, Symptoms, and Herbal Alternatives
                     </h1>
                     <img
-                        src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BLOG_20.jpg?v=1751719097"
+                        src="https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Blog_24.jpg?v=1752318692"
                         alt="Pan Masala Awareness"
                         className="w-full h-auto md:h-[400px] lg:h-[500px] object-cover rounded-lg shadow-lg"
                     />
