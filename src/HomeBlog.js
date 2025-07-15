@@ -5,6 +5,19 @@ function HomeBlog() {
   const buttonRef = useRef(null);
 
   const additionalBlogs = [
+    {
+          date: "12. 07. 2025",
+      title: "Daily Wellness Routine for Balanced Mind and Healthy Body",
+      link: "/BlogH26",
+      image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Blog_25.jpg?v=1752318696",
+        },
+
+     {
+          date: "12. 07. 2025",
+      title: "Pan Masala Addiction: Causes, Symptoms, and Herbal Alternatives",
+      link: "/BlogH25",
+      image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Blog_24.jpg?v=1752318692",
+        },
 
     {
          date: "12. 07. 2025",
@@ -189,17 +202,17 @@ date: "21. 06. 2025",
         </h1>
 
         {renderBlog({
-         date: "12. 07. 2025",
-      title: "Daily Wellness Routine for Balanced Mind and Healthy Body",
-      link: "/BlogH26",
-      image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Blog_25.jpg?v=1752318696",
+         date: "15. 07. 2025",
+      title: "The Role of Sleep Gummies in Supporting Natural and Restful Sleep",
+      link: "/BlogH27",
+      image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Blog_26.jpg?v=1752559874",
         }, 0)}
 
         {renderBlog({
-       date: "12. 07. 2025",
-      title: "Pan Masala Addiction: Causes, Symptoms, and Herbal Alternatives",
-      link: "/BlogH25",
-      image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Blog_24.jpg?v=1752318692",
+        date: "15. 07. 2025",
+      title: "Skin Glow Supplements: How Beauty Gummies Support Clearer, Healthier Skin",
+      link: "/BlogH28",
+      image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Blog_27.jpg?v=1752559874",
         }, 1)}
 
         {showMoreBlogs && additionalBlogs.map((blog, index) => renderBlog(blog, index + 2))}
