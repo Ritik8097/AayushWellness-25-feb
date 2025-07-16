@@ -56,13 +56,13 @@ const products = [
   },
   {
     id: 6,
-    category: "COMING SOON – COLLAGEN GUMMIES",
-    title: "COLLAGEN GLOW GUMMY",
-    image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/coming_us_banner.jpg?v=1724408124",
+    category: "BRAIN FUEL",
+    title: "BRAIN FUEL",
+    image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/brain.jpg?v=1752674242",
     description:
       "Coming soon! A powerful mix of Marine Collagen, Hyaluronic Acid, and Vitamin E to support skin elasticity, hydration, and youthful radiance from the inside out.",
     options: ["Collagen Blend", "Anti-Aging Support", "3.Clinically Backed"],
-    url: "/gummies-sleep",
+    url: "/brain-fuel",
   },
 ]
 
