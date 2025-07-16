@@ -37,6 +37,7 @@ const PrivacyPolicy = lazy(() => import("./PrivacyPolicy"));
 const ProductCarousel = lazy(() => import("./ProductPage"));
 const ProductGummies = lazy(() => import("./ProductPageGummies"));
 const ProductPageSleep = lazy(() => import("./ProductPageSleep"));
+const ProductPageBrain = lazy(() => import("./ProductPageBrain"));
 const AayushVenture = lazy(() => import("./AayushVenture"));
 const Health = lazy(() => import("./Health"));
 const Healthh = lazy(() => import("./Healthh"));
@@ -101,6 +102,7 @@ const AnimatedRoutes = () => {
         <Route path="pan-masala" element={<PageTransition><ProductCarousel /></PageTransition>} />
         <Route path="gummies" element={<PageTransition><ProductGummies /></PageTransition>} />
         <Route path="gummies-sleep" element={<PageTransition><ProductPageSleep /></PageTransition>} />
+  <Route path="brain-fuel" element={<PageTransition><ProductPageBrain /></PageTransition>} />
         <Route path="/Blog1" element={<Blog1 />} />
         <Route path="/Blog2" element={<Blog2 />} />
         <Route path="/Blog3" element={<Blog3 />} />
