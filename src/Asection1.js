@@ -22,7 +22,7 @@ const Asection1 = () => {
           className="text-[30px] md:text-[60px] font-bold leading-tight text-[#13233b] mb-8 tracking-[0.03em]"
           style={{ fontFamily: "ROGBold" }}
         >
-          Bringing the Future of Wellness to You
+          Bringing the Future of Wellness to Youu
         </motion.h2>
 
         {/* First Paragraph */}
