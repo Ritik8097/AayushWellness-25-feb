@@ -321,7 +321,7 @@ const ProductPageSleep = () => {
 
               <div className="mb-8">
                 <Link
-                  to="https://aayushlife.com/products/dreamy-sleep-gummies"
+                  to="https://store.aayushwellness.com/collections/all/products/dreamy-sleep-gummies-1"
                   className="w-full"
                   style={{ display: "block" }}
                 >
