@@ -22,9 +22,9 @@ const ProductGummies = () => {
 
   const images = [
     
-    'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/New_Theme_Banner_-_1st_Banner_-_Beauty_-_01-4-2025.jpg?v=1745496376',  
-    'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/New_Theme_Banner_-_8th_Banner_-_Beauty_-_03-4-2025.jpg?v=1745496375',
-    'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/New_Theme_Banner_-_2nd_Banner_-_Beauty_-_01-4-2025_2.jpg?v=1745496376',
+    'https://cdn.shopify.com/s/files/1/0674/9614/9171/files/9th_banner_-_Certified_-_21-1-2025.jpg?v=1752666082',  
+    'https://cdn.shopify.com/s/files/1/0674/9614/9171/files/2nd_Banner_-_Ingredients_-_27-1-2025.jpg?v=1752666082',
+    'https://cdn.shopify.com/s/files/1/0674/9614/9171/files/New_Theme_Banner_-_1st_Banner_-_Beauty_-_01-4-2025.jpg?v=1752665938',
     'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/New_Theme_Banner_-_9th_Banner_-_Beauty_-_03-4-2025_1.jpg?v=1745496375',
     "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/New_Theme_Banner_-_3rd_Banner_-_Beauty_-_02-4-2025_3.jpg?v=1745496375",
     "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/New_Theme_Banner_-_4th_Banner_-_Beauty_-_02-4-2025_2.jpg?v=1745496376",
