@@ -386,7 +386,7 @@ const ProducCarousal = () => {
 
               <div className="mb-8">
                 <Link
-                  to="https://aayushveda.in/products/aayush-herbal-pan-masala"
+                  to="https://store.aayushwellness.com/products/aayush-herbal-pan-masala1?variant=44894215962813"
                   className="w-full"
                   style={{ display: "block" }}
                 >
