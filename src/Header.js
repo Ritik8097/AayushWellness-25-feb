@@ -126,7 +126,7 @@ export default function AnimatedSlider() {
               <Link to="/">
                 <img
                   className="md:h-[5.7rem] h-[4rem] md:pt-3 md:pb-3"
-                  src="https://aayushlife.com/cdn/shop/files/Aayush_Wellness_Limited_-_Logo_-_17-10-2024-02_240x.png?v=1729951951"
+                  src="https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Aayush_Wellness_Limited_-_Logo_-_17-10-2024-02_-_png_2.png?v=1752667313"
                   alt="logo"
                 />
               </Link>
