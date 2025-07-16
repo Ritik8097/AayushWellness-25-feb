@@ -289,7 +289,7 @@ const ProductGummies = () => {
 
             <div className="mb-8">
               <Link
-                to="https://aayushlife.com/products/beauty-vitamin-gummies"
+                to="https://store.aayushwellness.com/collections/all/products/beauty-vitamin-gummies-1"
                 className="w-full"
                 style={{ display: "block" }}
               >
