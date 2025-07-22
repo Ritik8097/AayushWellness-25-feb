@@ -293,9 +293,7 @@ date: "21. 06. 2025",
           <div className="bg-green-900/30 border border-green-600 text-green-300 px-4 py-3 rounded-lg mb-8 text-center">
             <p className="font-medium">
               🎉 {cmsBlogs.length} new article{cmsBlogs.length !== 1 ? 's' : ''} published! 
-              <Link to="/admin/blog-cms" className="ml-2 underline hover:text-green-100">
-                Manage Content
-              </Link>
+              
             </p>
           </div>
         )}
