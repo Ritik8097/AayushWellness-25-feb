@@ -1,24 +1,56 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
+import { blogService } from '../src/services/blogService';
+import BlogContentRenderer from './BlogContentRenderer';
 
 function HomeBlog() {
   const [showMoreBlogs, setShowMoreBlogs] = useState(false);
+  const [cmsBlogs, setCmsBlogs] = useState([]);
+  const [loading, setLoading] = useState(true);
   const buttonRef = useRef(null);
 
-  const additionalBlogs = [
-    {
-          date: "12. 07. 2025",
-      title: "Daily Wellness Routine for Balanced Mind and Healthy Body",
-      link: "/BlogH26",
-      image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Blog_25.jpg?v=1752318696",
-        },
+  // Load CMS blogs from Firebase
+  useEffect(() => {
+    const loadCMSBlogs = async () => {
+      try {
+        setLoading(true);
+        console.log('Loading blogs from Firebase...');
+        const firebaseBlogs = await blogService.getAllBlogs();
+        console.log('Loaded blogs:', firebaseBlogs);
+        const publishedBlogs = firebaseBlogs
+          .filter(blog => blog.status === 'published')
+          .sort((a, b) => {
+            // Sort by createdAt timestamp first, then by date field
+            const dateA = a.createdAt?.toDate?.() || new Date(a.date || a.createdAt);
+            const dateB = b.createdAt?.toDate?.() || new Date(b.date || b.createdAt);
+            return dateB - dateA; // Latest first
+          });
+        console.log('Published blogs:', publishedBlogs);
+        setCmsBlogs(publishedBlogs);
+      } catch (error) {
+        console.error('Error loading CMS blogs:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
 
+    loadCMSBlogs();
+  }, []);
+
+  // Static blogs (existing ones)
+  const staticBlogs = [
      {
-          date: "12. 07. 2025",
-      title: "Pan Masala Addiction: Causes, Symptoms, and Herbal Alternatives",
-      link: "/BlogH25",
-      image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Blog_24.jpg?v=1752318692",
+          date: "17. 07. 2025",
+      title: "The Hidden Dangers of Pan Masala and Why Herbal Masala Is a Healthier Choice",
+      link: "/BlogH29",
+      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Blog_29.jpg?v=1752754497",
         },
-
+ {
+        date: "17. 07. 2025",
+      title: " How to Reduce Digital Fatigue Naturally with Ayurveda and Meditation",
+      link: "/BlogH30",
+      image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Blog_28.jpg?v=1752754506",
+        },
     {
          date: "12. 07. 2025",
       title: "Skin Glow Supplements: How Beauty Gummies Support Clearer, Healthier Skin",
@@ -152,6 +184,23 @@ date: "21. 06. 2025",
     
   ];
 
+  // Convert CMS blogs to the same format as static blogs
+  const cmsFormattedBlogs = cmsBlogs.map(blog => ({
+    date: blog.date || new Date(blog.createdAt).toLocaleDateString('en-GB').replace(/\//g, '. '),
+    title: blog.title,
+    link: `/blog/${blog.slug}`,
+    image: blog.image,
+    excerpt: blog.excerpt,
+    category: blog.category,
+    featured: blog.featured,
+    isCMS: true
+  }));
+
+  // Combine CMS blogs (first) and static blogs, then split into initial and additional
+  const allBlogs = [...cmsFormattedBlogs, ...staticBlogs];
+  const initialBlogs = allBlogs.slice(0, 6);
+  const additionalBlogs = allBlogs.slice(6);
+
   const handleToggleBlogs = () => {
     setShowMoreBlogs((prev) => !prev);
   };
@@ -168,24 +217,53 @@ date: "21. 06. 2025",
     <React.Fragment key={index}>
       {index > 0 && <div className="border-t border-gray-800 my-8"></div>}
       <article className="mb-16 md:mb-24">
-        <div className="grid md:grid-cols-2 gap-8 items-center bg-[#292929] p-[25px] rounded-xl">
+        <div className="grid md:grid-cols-2 gap-8 items-center bg-[#292929] p-[25px] rounded-xl relative">
+          {/* CMS Blog Badge */}
+          {blog.isCMS && (
+            <div className="absolute top-4 left-4 z-10">
+              <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                New
+              </span>
+            </div>
+          )}
+          
+          {/* Featured Badge */}
+          {blog.featured && (
+            <div className="absolute top-4 right-4 z-10">
+              <span className="bg-yellow-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                Featured
+              </span>
+            </div>
+          )}
+
           <div className="order-2 md:order-1">
             <div className="text-[#33cccc] mb-4">{blog.date}</div>
+            {blog.category && (
+              <div className="text-gray-400 text-sm mb-2">{blog.category}</div>
+            )}
             <h2 className="text-[25px] md:text-4xl text-white font-bold mb-6" style={{fontFamily: "Minionpro"}}>
               {blog.title}
             </h2>
-            <a
-              href={blog.link}
+            {blog.excerpt && (
+              <p className="text-gray-300 mb-4 text-sm line-clamp-3">
+                {blog.excerpt}
+              </p>
+            )}
+            <Link
+              to={blog.link}
               className="inline-flex items-center text-[#33cccc] hover:text-white transition-colors" style={{fontFamily: "Minionpro"}}
             >
               Read Post
-            </a>
+              <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
           </div>
           <div className="order-1 md:order-2">
             <img
               src={blog.image || "/placeholder.svg"}
               alt={blog.title}
-              className="w-full h-64 md:h-80 object-fill rounded-lg"
+              className="w-full h-64 md:h-80 object-fill rounded-lg !pt-0 "
               loading="lazy"
             />
           </div>
@@ -197,35 +275,61 @@ date: "21. 06. 2025",
   return (
     <div className="min-h-screen bg-[#000] text-[#33cccc]">
       <main className="max-w-7xl mx-auto px-4 md:px-6 py-8">
-        <h1 className="text-center text-[25px] md:text-[40px] pb-[25px] md:pb-[60px]" style={{fontFamily: "Minionpro"}}>
-          Blogs
-        </h1>
-
-        {renderBlog({
-         date: "15. 07. 2025",
-      title: "The Role of Sleep Gummies in Supporting Natural and Restful Sleep",
-      link: "/BlogH27",
-      image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Blog_26.jpg?v=1752559874",
-        }, 0)}
-
-        {renderBlog({
-        date: "15. 07. 2025",
-      title: "Skin Glow Supplements: How Beauty Gummies Support Clearer, Healthier Skin",
-      link: "/BlogH28",
-      image: "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Blog_27.jpg?v=1752559874",
-        }, 1)}
-
-        {showMoreBlogs && additionalBlogs.map((blog, index) => renderBlog(blog, index + 2))}
-
-        <div className="flex justify-center my-12" ref={buttonRef}>
-          <button
-            id="read-more-button"
-            onClick={handleToggleBlogs}
-            className="relative px-8 py-4 bg-[#33cccc] hover:bg-[#33cccc] text-black font-bold rounded-lg transform transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-[#00c9a7]/30"
+        <div className="flex justify-between items-center mb-8">
+          <h1 className="text-center text-[25px] md:text-[40px] pb-[25px] md:pb-[60px]" style={{fontFamily: "Minionpro"}}>
+            Blogs
+          </h1>
+          {/* <Link 
+            to="/blogs"
+            className="text-[#33cccc] hover:text-white transition-colors underline"
+            style={{fontFamily: "Minionpro"}}
           >
-            <span className="relative z-10" style={{fontFamily: "Minionpro"}}>{showMoreBlogs ? "Show Less" : "Explore More Articles"}</span>
-          </button>
+            View All Blogs
+          </Link> */}
         </div>
+
+        {/* CMS Status Indicator */}
+        {cmsBlogs.length > 0 && (
+          <div className="bg-green-900/30 border border-green-600 text-green-300 px-4 py-3 rounded-lg mb-8 text-center">
+            <p className="font-medium">
+              🎉 {cmsBlogs.length} new article{cmsBlogs.length !== 1 ? 's' : ''} published! 
+              <Link to="/admin/blog-cms" className="ml-2 underline hover:text-green-100">
+                Manage Content
+              </Link>
+            </p>
+          </div>
+        )}
+
+        {/* Show initial blogs (6 blogs) */}
+        {initialBlogs.map((blog, index) => renderBlog(blog, index))}
+
+        {/* Show additional blogs when expanded */}
+        {showMoreBlogs && additionalBlogs.map((blog, index) => renderBlog(blog, index + initialBlogs.length))}
+
+        {/* Show More/Less Button - only if there are additional blogs */}
+        {additionalBlogs.length > 0 && (
+          <div className="flex justify-center my-12" ref={buttonRef}>
+            <button
+              id="read-more-button"
+              onClick={handleToggleBlogs}
+              className="relative px-8 py-4 bg-[#33cccc] hover:bg-[#33cccc] text-black font-bold rounded-lg transform transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-[#00c9a7]/30"
+            >
+              <span className="relative z-10" style={{fontFamily: "Minionpro"}}>
+                {showMoreBlogs ? "Show Less" : `Explore ${additionalBlogs.length} More Articles`}
+              </span>
+            </button>
+          </div>
+        )}
+
+        {/* CSS for line-clamp */}
+        <style jsx>{`
+          .line-clamp-3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+          }
+        `}</style>
       </main>
     </div>
   );
