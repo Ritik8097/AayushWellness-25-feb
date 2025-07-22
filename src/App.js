@@ -4,11 +4,19 @@ import { AnimatePresence } from "framer-motion";
 import PageTransition from "./PageTransition";
 import './index.css';
 import PageSkeleton from "./PageSkeleton";
-import PressReleases from "./Releases";
+import { AuthProvider } from "./contexts/Authcontext";
 
 // Regular import for homepage
 import Layout from "./Layout";
 import LabTieUpForm from "./Labtieup";
+import PressReleases from "./Releases";
+import InitializeCMS from "./InitializeCMS";
+import AdminLogin from "./AdminLogin";
+
+// CMS Components
+const BlogCMS = lazy(() => import("./BlogCMS"));
+const DynamicBlog = lazy(() => import("./DynamicBlog"));
+const BlogList = lazy(() => import("./BlogList"));
 
 // Lazy imports for inner pages
 const Pdf = lazy(() => import("./Pdf"));
@@ -37,7 +45,6 @@ const PrivacyPolicy = lazy(() => import("./PrivacyPolicy"));
 const ProductCarousel = lazy(() => import("./ProductPage"));
 const ProductGummies = lazy(() => import("./ProductPageGummies"));
 const ProductPageSleep = lazy(() => import("./ProductPageSleep"));
-const ProductPageBrain = lazy(() => import("./ProductPageBrain"));
 const AayushVenture = lazy(() => import("./AayushVenture"));
 const Health = lazy(() => import("./Health"));
 const Healthh = lazy(() => import("./Healthh"));
@@ -64,12 +71,6 @@ const BlogH19 = lazy(() => import("./BlogH19"));
 const BlogH20 = lazy(() => import("./BlogH20")); 
 const BlogH21 = lazy(() => import("./BlogH21")); 
 const BlogH22 = lazy(() => import("./BlogH22")); 
-const BlogH23 = lazy(() => import("./BlogH23")); 
-const BlogH24 = lazy(() => import("./BlogH24")); 
-const BlogH25 = lazy(() => import("./BlogH25")); 
-const BlogH26 = lazy(() => import("./BlogH26"));
-const BlogH27 = lazy(() => import("./BlogH27")); 
-const BlogH28 = lazy(() => import("./BlogH28")); 
 
 
 
@@ -91,6 +92,12 @@ const AnimatedRoutes = () => {
         <Route path="privacy-policy" element={<PageTransition><PrivacyPolicy /></PageTransition>} />
         <Route path="press-releases" element={<PageTransition><PressReleases /></PageTransition>} />
         
+        {/* CMS Routes */}
+        <Route path="/admin/login" element={<PageTransition><AdminLogin /></PageTransition>} />
+        <Route path="/admin/blog-cms" element={<PageTransition><BlogCMS /></PageTransition>} />
+        <Route path="/blogs" element={<PageTransition><BlogList /></PageTransition>} />
+        <Route path="/blog/:slug" element={<PageTransition><DynamicBlog /></PageTransition>} />
+        
         <Route path="growth-accelerator" element={<PageTransition><AayushVenture /></PageTransition>} />
         {/* this is for about us only name health*/}
         <Route path="about-us" element={<PageTransition><Health /></PageTransition>} />
@@ -102,7 +109,6 @@ const AnimatedRoutes = () => {
         <Route path="pan-masala" element={<PageTransition><ProductCarousel /></PageTransition>} />
         <Route path="gummies" element={<PageTransition><ProductGummies /></PageTransition>} />
         <Route path="gummies-sleep" element={<PageTransition><ProductPageSleep /></PageTransition>} />
-  <Route path="brain-fuel" element={<PageTransition><ProductPageBrain /></PageTransition>} />
         <Route path="/Blog1" element={<Blog1 />} />
         <Route path="/Blog2" element={<Blog2 />} />
         <Route path="/Blog3" element={<Blog3 />} />
@@ -126,12 +132,6 @@ const AnimatedRoutes = () => {
      <Route path="/BlogH20" element={<BlogH20 />} />
    <Route path="/BlogH21" element={<BlogH21 />} />
      <Route path="/BlogH22" element={<BlogH22 />} />
-  <Route path="/BlogH23" element={<BlogH23 />} />
-     <Route path="/BlogH24" element={<BlogH24 />} />
-   <Route path="/BlogH25" element={<BlogH25 />} />
-     <Route path="/BlogH26" element={<BlogH26 />} />
-     <Route path="/BlogH27" element={<BlogH27 />} />
-     <Route path="/BlogH28" element={<BlogH28 />} />
 
 
         <Route path="ourproduct" element={<PageTransition><OurProduct /></PageTransition>} />
@@ -151,6 +151,8 @@ const AnimatedRoutes = () => {
         <Route path="adminpage" element={<PageTransition><AdminPage/></PageTransition>} />
         <Route path="*" element={<PageTransition><ErrorPage /></PageTransition>} />
         
+
+        
         
       </Routes>
       </Suspense>
@@ -161,8 +163,11 @@ const AnimatedRoutes = () => {
 function App() {
   return (
     <Router>
-    <AnimatedRoutes />
-  </Router>
+      <AuthProvider>
+        <InitializeCMS />
+        <AnimatedRoutes />
+      </AuthProvider>
+    </Router>
   );
 }
 
